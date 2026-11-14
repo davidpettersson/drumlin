@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -56 480 640" width="480" height="640">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-24" y="-56" width="480" height="640" fill="#fff"/>
+<text x="0" y="-20" class="title">Domain model</text>
+<rect x="0" y="0" width="78.11" height="24" class="shape heavy"/>
+<rect x="0" y="24" width="432" height="232" class="shape heavy"/>
+<text x="12" y="16.5" class="name" text-anchor="start">Ordering</text>
+<rect x="168" y="48" width="96" height="48" class="shape"/>
+<text x="216" y="76.5" class="name" text-anchor="middle">Order</text>
+<rect x="24" y="168" width="96" height="48" class="shape"/>
+<text x="72" y="196.5" class="name" text-anchor="middle">LineItem</text>
+<rect x="160" y="160" width="112" height="64" class="shape"/>
+<text x="216" y="187.5" class="small" text-anchor="middle">«enumeration»</text>
+<text x="216" y="204.5" class="name" text-anchor="middle">OrderState</text>
+<rect x="312" y="160" width="96" height="64" class="shape"/>
+<text x="360" y="187.5" class="small" text-anchor="middle">«interface»</text>
+<text x="360" y="204.5" class="name" text-anchor="middle">Pricing</text>
+<rect x="144" y="320" width="71.93" height="24" class="shape heavy"/>
+<rect x="144" y="344" width="144" height="216" class="shape heavy"/>
+<text x="156" y="336.5" class="name" text-anchor="start">Catalog</text>
+<rect x="168" y="368" width="96" height="48" class="shape"/>
+<text x="216" y="396.5" class="name" text-anchor="middle">Product</text>
+<rect x="168" y="480" width="96" height="48" class="shape"/>
+<text x="216" y="508.5" class="name" text-anchor="middle">Category</text>
+<path d="M168 72 L72 72 L72 168" class="edge"/>
+<path d="M67.5 158 L72 168 L76.5 158" class="edge head"/>
+<path d="M216 96 L216 160" class="edge dashed fine"/>
+<path d="M211.5 150 L216 160 L220.5 150" class="edge head fine"/>
+<path d="M264 72 L360 72 L360 160" class="edge dashed fine"/>
+<path d="M355.5 150 L360 160 L364.5 150" class="edge head fine"/>
+<path d="M216 416 L216 480" class="edge"/>
+<path d="M211.5 470 L216 480 L220.5 470" class="edge head"/>
+<path d="M72 216 L72 392 L168 392" class="edge"/>
+<path d="M158 396.5 L168 392 L158 387.5" class="edge head"/>
+<path d="M240 256 L240 344" class="edge dashed fine"/>
+<path d="M235.5 334 L240 344 L244.5 334" class="edge head fine"/>
+<text x="120" y="65" class="small halo" text-anchor="middle">contains</text>
+<text x="248" y="304" class="small halo" text-anchor="start">«import»</text>
+</svg>

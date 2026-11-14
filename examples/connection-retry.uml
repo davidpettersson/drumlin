@@ -1,0 +1,23 @@
+diagram activity "Connection retry with backoff"
+start
+action "Resolve host"
+if "resolved" {
+  repeat {
+    action "Open socket"
+    action "TLS handshake"
+    if "failed" {
+      action "Wait for backoff"
+    }
+  } until "connected or attempts exhausted"
+  if "connected" {
+    action "Send greeting"
+  } else {
+    action "Report unreachable"
+    stop
+  }
+} else {
+  action "Report DNS failure"
+  stop
+}
+action "Mark session ready"
+stop

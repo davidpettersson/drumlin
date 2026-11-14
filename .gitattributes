@@ -1,0 +1,5 @@
+# Copyright 2026 David Pettersson
+# SPDX-License-Identifier: Apache-2.0
+# Check out every text file with LF line endings on every platform: the golden tests compare drawings
+# byte for byte, and diagram sources must read the same everywhere.
+* text=auto eol=lf
