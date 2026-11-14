@@ -70,6 +70,12 @@ fn overlapping(a: &Run, b: &Run) -> bool {
     (a.at - b.at).abs() < EPS && a.lo.max(b.lo) < a.hi.min(b.hi) - EPS
 }
 
+/// Parallel runs closer than `gap` for some length, without lying on top of each other.
+fn side_by_side(x: &Run, y: &Run, gap: f64) -> bool {
+    let d = (x.at - y.at).abs();
+    d > EPS && d < gap - EPS && x.lo.max(y.lo) < x.hi.min(y.hi) - EPS
+}
+
 fn same_point(a: Point, b: Point) -> bool {
     (a.0 - b.0).abs() < EPS && (a.1 - b.1).abs() < EPS
 }
@@ -123,12 +129,24 @@ pub fn overlaps_between(a: &[Point], b: &[Point]) -> usize {
 /// some length closer than `gap`, without lying on top of each other.
 pub fn close_runs(a: &[Point], b: &[Point], gap: f64) -> usize {
     let ((ha, va), (hb, vb)) = (runs(a), runs(b));
-    let near = |x: &Run, y: &Run| {
-        let d = (x.at - y.at).abs();
-        d > EPS && d < gap - EPS && x.lo.max(y.lo) < x.hi.min(y.hi) - EPS
-    };
+    let near = |x: &Run, y: &Run| side_by_side(x, y, gap);
     let count = |xs: &[Run], ys: &[Run]| xs.iter().map(|x| ys.iter().filter(|y| near(x, y)).count()).sum::<usize>();
     count(&ha, &hb) + count(&va, &vb)
+}
+
+/// Crossings, overlaps and close runs of `a` against each of `others`, as
+/// `crossings_between`, `overlaps_between` and `close_runs` would sum them.
+pub fn against<'a>(a: &[Point], others: impl Iterator<Item = &'a [Point]>, gap: f64) -> (usize, usize, usize) {
+    let (ha, va) = runs(a);
+    let near = |x: &Run, y: &Run| side_by_side(x, y, gap);
+    let count = |xs: &[Run], ys: &[Run], f: &dyn Fn(&Run, &Run) -> bool| xs.iter().map(|x| ys.iter().filter(|y| f(x, y)).count()).sum::<usize>();
+    others.fold((0, 0, 0), |(c, o, n), b| {
+        let (hb, vb) = runs(b);
+        let crossings = count(&ha, &vb, &crosses) + count(&hb, &va, &crosses);
+        let overlaps = if share_an_end(a, b) { 0 } else { count(&ha, &hb, &overlapping) + count(&va, &vb, &overlapping) };
+        let close = count(&ha, &hb, &near) + count(&va, &vb, &near);
+        (c + crossings, o + overlaps, n + close)
+    })
 }
 
 /// Pairs of different lines that leave one point in the same direction, so they
