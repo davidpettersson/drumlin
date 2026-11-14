@@ -529,6 +529,21 @@ mod tests {
     use super::*;
 
     #[test]
+    fn against_sums_the_pairwise_counts() {
+        let a = vec![(0.0, 20.0), (100.0, 20.0), (100.0, 80.0)];
+        let others = [
+            vec![(50.0, 0.0), (50.0, 60.0)],
+            vec![(20.0, 20.0), (60.0, 20.0)],
+            vec![(10.0, 24.0), (90.0, 24.0)],
+            vec![(0.0, 20.0), (0.0, 90.0)],
+            vec![(104.0, 30.0), (104.0, 70.0), (130.0, 70.0)],
+        ];
+        let expected = others.iter().fold((0, 0, 0), |(c, o, n), b| (c + crossings_between(&a, b), o + overlaps_between(&a, b), n + close_runs(&a, b, 8.0)));
+        assert_eq!(against(&a, others.iter().map(|p| p.as_slice()), 8.0), expected);
+        assert!(expected.0 > 0 && expected.1 > 0 && expected.2 > 0, "every count is exercised: {expected:?}");
+    }
+
+    #[test]
     fn size_sums_line_lengths_and_rounds_once() {
         let lines = vec![vec![(0.0, 0.0), (0.0, 40.0), (30.0, 40.0)], vec![(0.0, 0.0), (3.0, 4.0)], vec![(5.0, 5.0)]];
         assert_eq!(length(&lines[0]), 70.0);

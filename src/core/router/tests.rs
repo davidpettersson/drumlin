@@ -3,7 +3,7 @@
 
 //! Unit tests for the router.
 
-use super::grid::{blocked, simplify};
+use super::grid::{blocked, route_afresh, simplify};
 use super::nudge::{is_orthogonal, SEPARATION};
 use super::*;
 use crate::core::{ends, metrics};
@@ -86,7 +86,15 @@ fn unobstructed_connection_is_straight() {
 #[test]
 fn routing_is_deterministic() {
     let problem = across(vec![rect(200.0, 40.0, 96.0, 128.0)]);
-    assert_eq!(route(&problem), route(&problem));
+    assert_eq!(route_afresh(&problem), route_afresh(&problem));
+}
+
+#[test]
+fn a_remembered_route_is_the_route_afresh() {
+    let problem = across(vec![rect(200.0, 40.0, 96.0, 128.0)]);
+    let first = route(&problem);
+    assert_eq!(first, route_afresh(&problem));
+    assert_eq!(route(&problem), first);
 }
 
 #[test]

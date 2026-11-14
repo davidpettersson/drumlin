@@ -10,8 +10,9 @@ use super::nudge::nudge;
 use super::{manhattan, Body, Connection, Problem, Solution, Strips, Terminal};
 use crate::core::geometry::{snap, snap_up, Point, Rect, Side, GRID};
 use crate::core::metrics;
+use std::cell::RefCell;
 use std::cmp::Reverse;
-use std::collections::BinaryHeap;
+use std::collections::{BinaryHeap, HashMap};
 
 const BEND: i64 = 48;
 const CROSS: i64 = 144;
@@ -22,6 +23,40 @@ const NARROW: f64 = 48.0;
 const ROUNDS: usize = 3;
 
 type Lane = (usize, usize, bool);
+
+/// Where a lane's entry sits in an array with one entry per unit segment.
+fn lane_index(ny: usize, (ix, iy, horizontal): Lane) -> usize {
+    (ix * ny + iy) * 2 + horizontal as usize
+}
+
+/// One connection's obstacle and strip tests, one entry per unit segment,
+/// each worked out the first time a search tries its segment. A connection's
+/// obstacles and strips stay the same through every round, so its tests do too.
+struct Tests {
+    ny: usize,
+    known: Vec<u8>,
+}
+
+impl Tests {
+    const TESTED: u8 = 1;
+    const BLOCKED: u8 = 2;
+    const ON_STRIP: u8 = 4;
+
+    fn new(grid: &Grid) -> Tests {
+        Tests { ny: grid.ys.len(), known: vec![0; grid.xs.len() * grid.ys.len() * 2] }
+    }
+
+    /// Whether `lane` is blocked and whether it runs along a strip, from `test`
+    /// the first time it is asked.
+    fn of(&mut self, lane: Lane, test: impl FnOnce() -> (bool, bool)) -> (bool, bool) {
+        let known = &mut self.known[lane_index(self.ny, lane)];
+        if *known & Tests::TESTED == 0 {
+            let (blocked, on_strip) = test();
+            *known = Tests::TESTED | if blocked { Tests::BLOCKED } else { 0 } | if on_strip { Tests::ON_STRIP } else { 0 };
+        }
+        (*known & Tests::BLOCKED != 0, *known & Tests::ON_STRIP != 0)
+    }
+}
 
 /// A set of lanes on one grid, one flag per unit segment.
 struct Lanes {
@@ -34,8 +69,8 @@ impl Lanes {
         Lanes { ny: grid.ys.len(), flags: vec![false; grid.xs.len() * grid.ys.len() * 2] }
     }
 
-    fn index(&self, (ix, iy, horizontal): Lane) -> usize {
-        (ix * self.ny + iy) * 2 + horizontal as usize
+    fn index(&self, lane: Lane) -> usize {
+        lane_index(self.ny, lane)
     }
 
     fn insert(&mut self, lane: Lane) {
@@ -128,7 +163,7 @@ impl Scratch {
 }
 
 /// A* between two stems, returning the grid path and the lanes it occupies.
-fn search(grid: &Grid, from: &Terminal, to: &Terminal, connection: &Connection, used: &Lanes, crossable: &Lanes, scratch: &mut Scratch, segment: &mut [u8]) -> Option<(Vec<Point>, Vec<Lane>)> {
+fn search(grid: &Grid, from: &Terminal, to: &Terminal, connection: &Connection, used: &Lanes, crossable: &Lanes, scratch: &mut Scratch, tests: &mut Tests) -> Option<(Vec<Point>, Vec<Lane>)> {
     let (nx, ny) = (grid.xs.len(), grid.ys.len());
     let (start_dir, goal_dir) = (dir_of(from.outward), dir_of(to.outward.opposite()));
     let state = |ix: usize, iy: usize, dir: usize| (ix * ny + iy) * 4 + dir;
@@ -137,16 +172,15 @@ fn search(grid: &Grid, from: &Terminal, to: &Terminal, connection: &Connection, 
     scratch.reset();
     let Scratch { dist, previous, touched } = scratch;
     // Each entry is an estimate and a state packed into one number, estimate
-    // high, so the smallest pops first and equal estimates pop by state.
+    // high, so the smallest pops first and equal estimates pop by state. An
+    // estimate is a path's cost in pixels and penalties, far below 2^31 for any
+    // drawing, and a grid has far fewer than 2^32 states; the check costs
+    // nothing measurable and stops a wrong order going unnoticed.
     let mut heap = BinaryHeap::new();
     let entry = |estimate: i64, state: usize| {
-        debug_assert!((0..1 << 31).contains(&estimate) && state < 1 << 32);
+        assert!((0..1 << 31).contains(&estimate) && state < 1 << 32, "search queue entry out of range");
         Reverse((estimate as u64) << 32 | state as u64)
     };
-    // `segment` holds whether each unit segment is blocked (bit 0) or crosses a
-    // strip (bit 1), worked out the first time a search for this connection
-    // tries it (bit 2): the connection's obstacles and strips stay the same
-    // through every round.
     let heuristic = |ix: usize, iy: usize| ((grid.xs[ix] - grid.xs[gx]).abs() + (grid.ys[iy] - grid.ys[gy]).abs()) as i64;
     let first = state(sx, sy, start_dir);
     dist[first] = 0;
@@ -186,19 +220,14 @@ fn search(grid: &Grid, from: &Terminal, to: &Terminal, connection: &Connection, 
             let (jx, jy) = (jx as usize, jy as usize);
             let (a, b) = ((grid.xs[ix], grid.ys[iy]), (grid.xs[jx], grid.ys[jy]));
             let lane = lane_of(ix, iy, next_dir);
-            let index = used.index(lane);
-            let known = &mut segment[index];
-            if *known == 0 {
-                let strips = if next_dir < 2 { &connection.strips.horizontal } else { &connection.strips.vertical };
-                *known = 4 | blocked(&connection.obstacles, a, b) as u8 | (blocked(strips, a, b) as u8) << 1;
-            }
-            let known = *known;
-            if known & 1 != 0 {
+            let strips = if next_dir < 2 { &connection.strips.horizontal } else { &connection.strips.vertical };
+            let (walled, on_strip) = tests.of(lane, || (blocked(&connection.obstacles, a, b), blocked(strips, a, b)));
+            if walled {
                 continue;
             }
             let length = manhattan(a, b) as i64;
             let bend_cost = if next_dir != dir { BEND } else { 0 };
-            let strip_cost = if known & 2 != 0 { BOUNDARY } else { 0 };
+            let strip_cost = if on_strip { BOUNDARY } else { 0 };
             let shared_cost = if used.contains(&lane) { SHARED + length * 4 } else { 0 };
             // Going straight through a vertex that another route passes through
             // at right angles is a crossing. A lane's flag is true when it runs in x.
@@ -338,7 +367,7 @@ thread_local! {
     /// Recent problems and their solutions. Layout steps that compare layouts
     /// route the same layout many times over, and routing is the costly part of
     /// drawing.
-    static SOLVED: std::cell::RefCell<std::collections::HashMap<Vec<u64>, Solution>> = std::cell::RefCell::default();
+    static SOLVED: RefCell<HashMap<Vec<u64>, Solution>> = RefCell::default();
 }
 
 /// Every value in a problem, numbers by their exact bits, so two problems have
@@ -400,7 +429,9 @@ pub fn route(problem: &Problem) -> Solution {
     solution
 }
 
-fn route_afresh(problem: &Problem) -> Solution {
+/// `route` without the memory: settles the stems, builds the grid, routes
+/// every connection over three rounds, then nudges and turns Zs into Ls.
+pub(super) fn route_afresh(problem: &Problem) -> Solution {
     let settled: Vec<Settled> = problem.connections.iter().map(settle_stems).collect();
     let grid = build_grid(problem, &settled);
     let count = settled.len();
@@ -413,7 +444,7 @@ fn route_afresh(problem: &Problem) -> Solution {
     let mut stubs: Vec<Vec<Lane>> = vec![Vec::new(); count];
     let mut failed = Vec::new();
     let mut scratch = Scratch::new(&grid);
-    let mut segments: Vec<Vec<u8>> = vec![Vec::new(); count];
+    let mut tests: Vec<Option<Tests>> = (0..count).map(|_| None).collect();
     for round in 0..ROUNDS {
         for &e in &order {
             let Settled { from, to, .. } = &settled[e];
@@ -429,10 +460,8 @@ fn route_afresh(problem: &Problem) -> Solution {
                 lanes[o].iter().for_each(|&lane| used.insert(lane));
                 lanes[o].iter().chain(&stubs[o]).for_each(|&lane| crossable.insert(lane));
             }
-            if segments[e].is_empty() {
-                segments[e] = vec![0; grid.xs.len() * grid.ys.len() * 2];
-            }
-            let (points, found) = search(&grid, from, to, &problem.connections[e], &used, &crossable, &mut scratch, &mut segments[e]).unwrap_or_else(|| {
+            let tests = tests[e].get_or_insert_with(|| Tests::new(&grid));
+            let (points, found) = search(&grid, from, to, &problem.connections[e], &used, &crossable, &mut scratch, tests).unwrap_or_else(|| {
                 if round == ROUNDS - 1 {
                     failed.push(e);
                 }
