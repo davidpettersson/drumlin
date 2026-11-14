@@ -61,7 +61,7 @@ The drawing at the top is [`examples/orders.svg`](examples/orders.svg), rendered
 [state](https://davidpettersson.github.io/drumlin/diagrams/state/examples.html) and
 [activity](https://davidpettersson.github.io/drumlin/diagrams/activity/examples.html).
 
-drumlin is young, at version 0.1.1, and written in Rust with no dependencies. The input format, the
+drumlin is young, and written in Rust with no dependencies. The input format, the
 command line and the drawings may still change between versions. The symbols follow UML 2.5.1; which
 elements each diagram kind accepts, and how a drawing looks, are drumlin's own choices (see
 [UML conformance](docs/src/reference/conformance.md)).
