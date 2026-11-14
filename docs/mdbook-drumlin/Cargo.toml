@@ -11,5 +11,5 @@ keywords = ["mdbook", "uml", "diagram", "svg", "preprocessor"]
 categories = ["command-line-utilities", "visualization"]
 
 [dependencies]
-drumlin = { path = "../..", version = "0.1.0" }
+drumlin = { path = "../..", version = "0.2.0-dev" }
 serde_json = "1"
