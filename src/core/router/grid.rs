@@ -114,6 +114,9 @@ fn search(grid: &Grid, from: &Terminal, to: &Terminal, connection: &Connection, 
     let mut dist = vec![i64::MAX; nx * ny * 4];
     let mut previous = vec![usize::MAX; nx * ny * 4];
     let mut heap = BinaryHeap::new();
+    // Whether each unit segment is blocked (bit 0) or crosses a strip (bit 1),
+    // worked out the first time the search tries it (bit 2).
+    let mut segment = vec![0u8; nx * ny * 2];
     let heuristic = |ix: usize, iy: usize| ((grid.xs[ix] - grid.xs[gx]).abs() + (grid.ys[iy] - grid.ys[gy]).abs()) as i64;
     let first = state(sx, sy, start_dir);
     dist[first] = 0;
@@ -147,14 +150,20 @@ fn search(grid: &Grid, from: &Terminal, to: &Terminal, connection: &Connection, 
             }
             let (jx, jy) = (jx as usize, jy as usize);
             let (a, b) = ((grid.xs[ix], grid.ys[iy]), (grid.xs[jx], grid.ys[jy]));
-            if blocked(&connection.obstacles, a, b) {
+            let lane = lane_of(ix, iy, next_dir);
+            let known = &mut segment[used.index(lane)];
+            if *known == 0 {
+                let strips = if next_dir < 2 { &connection.strips.horizontal } else { &connection.strips.vertical };
+                *known = 4 | blocked(&connection.obstacles, a, b) as u8 | (blocked(strips, a, b) as u8) << 1;
+            }
+            let known = *known;
+            if known & 1 != 0 {
                 continue;
             }
             let length = manhattan(a, b) as i64;
-            let strips = if next_dir < 2 { &connection.strips.horizontal } else { &connection.strips.vertical };
             let bend_cost = if next_dir != dir { BEND } else { 0 };
-            let strip_cost = if blocked(strips, a, b) { BOUNDARY } else { 0 };
-            let shared_cost = if used.contains(&lane_of(ix, iy, next_dir)) { SHARED + length * 4 } else { 0 };
+            let strip_cost = if known & 2 != 0 { BOUNDARY } else { 0 };
+            let shared_cost = if used.contains(&lane) { SHARED + length * 4 } else { 0 };
             // Going straight through a vertex that another route passes through
             // at right angles is a crossing. A lane's flag is true when it runs in x.
             let vertical_move = next_dir >= 2;
