@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -56 600 1008" width="600" height="1008">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .solid { fill: #22201c; stroke: none; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-24" y="-56" width="600" height="1008" fill="#fff"/>
+<text x="0" y="-20" class="title">Connection retry with backoff</text>
+<path d="M96 16 L96 48" class="edge"/>
+<path d="M91.5 38 L96 48 L100.5 38" class="edge head"/>
+<path d="M80 592 L0 592 L0 200 L80 200" class="edge"/>
+<path d="M70 204.5 L80 200 L70 195.5" class="edge head"/>
+<path d="M96 216 L96 248" class="edge"/>
+<path d="M91.5 238 L96 248 L100.5 238" class="edge head"/>
+<path d="M96 544 L96 576" class="edge"/>
+<path d="M91.5 566 L96 576 L100.5 566" class="edge head"/>
+<path d="M96 280 L96 312" class="edge"/>
+<path d="M91.5 302 L96 312 L100.5 302" class="edge head"/>
+<path d="M96 408 L96 448" class="edge"/>
+<path d="M91.5 438 L96 448 L100.5 438" class="edge head"/>
+<path d="M96 480 L96 512" class="edge"/>
+<path d="M91.5 502 L96 512 L100.5 502" class="edge head"/>
+<path d="M112 392 L200 392 L200 528 L112 528" class="edge"/>
+<path d="M122 523.5 L112 528 L122 532.5" class="edge head"/>
+<path d="M96 344 L96 376" class="edge"/>
+<path d="M91.5 366 L96 376 L100.5 366" class="edge head"/>
+<path d="M96 696 L96 736" class="edge"/>
+<path d="M91.5 726 L96 736 L100.5 726" class="edge head"/>
+<path d="M280 768 L280 800" class="edge"/>
+<path d="M275.5 790 L280 800 L284.5 790" class="edge head"/>
+<path d="M112 680 L280 680 L280 736" class="edge"/>
+<path d="M275.5 726 L280 736 L284.5 726" class="edge head"/>
+<path d="M96 608 L96 664" class="edge"/>
+<path d="M91.5 654 L96 664 L100.5 654" class="edge head"/>
+<path d="M96 144 L96 184" class="edge"/>
+<path d="M91.5 174 L96 184 L100.5 174" class="edge head"/>
+<path d="M472 216 L472 248" class="edge"/>
+<path d="M467.5 238 L472 248 L476.5 238" class="edge head"/>
+<path d="M112 128 L472 128 L472 184" class="edge"/>
+<path d="M467.5 174 L472 184 L476.5 174" class="edge head"/>
+<path d="M96 80 L96 112" class="edge"/>
+<path d="M91.5 102 L96 112 L100.5 102" class="edge head"/>
+<path d="M96 768 L96 848" class="edge"/>
+<path d="M91.5 838 L96 848 L100.5 838" class="edge head"/>
+<path d="M96 880 L96 912" class="edge"/>
+<path d="M91.5 902 L96 912 L100.5 902" class="edge head"/>
+<circle cx="96" cy="8" r="8" class="solid"/>
+<rect x="32" y="48" width="128" height="32" class="shape" rx="10"/>
+<text x="96" y="68" class="name" text-anchor="middle">Resolve host</text>
+<path d="M96 112 L112 128 L96 144 L80 128 Z" class="shape"/>
+<path d="M96 184 L112 200 L96 216 L80 200 Z" class="shape"/>
+<path d="M96 576 L112 592 L96 608 L80 592 Z" class="shape"/>
+<rect x="40" y="248" width="112" height="32" class="shape" rx="10"/>
+<text x="96" y="268" class="name" text-anchor="middle">Open socket</text>
+<rect x="24" y="312" width="144" height="32" class="shape" rx="10"/>
+<text x="96" y="332" class="name" text-anchor="middle">TLS handshake</text>
+<path d="M96 376 L112 392 L96 408 L80 392 Z" class="shape"/>
+<rect x="24" y="448" width="144" height="32" class="shape" rx="10"/>
+<text x="96" y="468" class="name" text-anchor="middle">Wait for backoff</text>
+<path d="M96 512 L112 528 L96 544 L80 528 Z" class="shape"/>
+<path d="M96 664 L112 680 L96 696 L80 680 Z" class="shape"/>
+<rect x="32" y="736" width="128" height="32" class="shape" rx="10"/>
+<text x="96" y="756" class="name" text-anchor="middle">Send greeting</text>
+<rect x="200" y="736" width="160" height="32" class="shape" rx="10"/>
+<text x="280" y="756" class="name" text-anchor="middle">Report unreachable</text>
+<circle cx="280" cy="808" r="8" class="shape"/>
+<circle cx="280" cy="808" r="4.5" class="solid"/>
+<rect x="392" y="184" width="160" height="32" class="shape" rx="10"/>
+<text x="472" y="204" class="name" text-anchor="middle">Report DNS failure</text>
+<circle cx="472" cy="256" r="8" class="shape"/>
+<circle cx="472" cy="256" r="4.5" class="solid"/>
+<rect x="16" y="848" width="160" height="32" class="shape" rx="10"/>
+<text x="96" y="868" class="name" text-anchor="middle">Mark session ready</text>
+<circle cx="96" cy="920" r="8" class="shape"/>
+<circle cx="96" cy="920" r="4.5" class="solid"/>
+<text x="102" y="623" class="small" text-anchor="start">[connected or attempts</text>
+<text x="102" y="637" class="small" text-anchor="start">exhausted]</text>
+<text x="47" y="584" class="small" text-anchor="start">[else]</text>
+<text x="102" y="423" class="small" text-anchor="start">[failed]</text>
+<text x="118" y="384" class="small" text-anchor="start">[else]</text>
+<text x="102" y="711" class="small" text-anchor="start">[connected]</text>
+<text x="118" y="672" class="small" text-anchor="start">[else]</text>
+<text x="102" y="159" class="small" text-anchor="start">[resolved]</text>
+<text x="118" y="120" class="small" text-anchor="start">[else]</text>
+</svg>
