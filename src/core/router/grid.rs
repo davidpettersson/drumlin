@@ -104,22 +104,51 @@ fn lane_of(ix: usize, iy: usize, dir: usize) -> Lane {
     }
 }
 
+/// The search's working arrays, kept between the searches of one `route`.
+/// Only the states and segments a search touched are reset for the next.
+struct Scratch {
+    dist: Vec<i64>,
+    previous: Vec<usize>,
+    segment: Vec<u8>,
+    touched: Vec<usize>,
+    tried: Vec<usize>,
+}
+
+impl Scratch {
+    fn new(grid: &Grid) -> Scratch {
+        let cells = grid.xs.len() * grid.ys.len();
+        Scratch { dist: vec![i64::MAX; cells * 4], previous: vec![usize::MAX; cells * 4], segment: vec![0; cells * 2], touched: Vec::new(), tried: Vec::new() }
+    }
+
+    fn reset(&mut self) {
+        for &state in &self.touched {
+            self.dist[state] = i64::MAX;
+            self.previous[state] = usize::MAX;
+        }
+        for &lane in &self.tried {
+            self.segment[lane] = 0;
+        }
+        self.touched.clear();
+        self.tried.clear();
+    }
+}
+
 /// A* between two stems, returning the grid path and the lanes it occupies.
-fn search(grid: &Grid, from: &Terminal, to: &Terminal, connection: &Connection, used: &Lanes, crossable: &Lanes) -> Option<(Vec<Point>, Vec<Lane>)> {
+fn search(grid: &Grid, from: &Terminal, to: &Terminal, connection: &Connection, used: &Lanes, crossable: &Lanes, scratch: &mut Scratch) -> Option<(Vec<Point>, Vec<Lane>)> {
     let (nx, ny) = (grid.xs.len(), grid.ys.len());
     let (start_dir, goal_dir) = (dir_of(from.outward), dir_of(to.outward.opposite()));
     let state = |ix: usize, iy: usize, dir: usize| (ix * ny + iy) * 4 + dir;
     let (sx, sy) = (grid_index(&grid.xs, from.stem.0), grid_index(&grid.ys, from.stem.1));
     let (gx, gy) = (grid_index(&grid.xs, to.stem.0), grid_index(&grid.ys, to.stem.1));
-    let mut dist = vec![i64::MAX; nx * ny * 4];
-    let mut previous = vec![usize::MAX; nx * ny * 4];
+    scratch.reset();
+    let Scratch { dist, previous, segment, touched, tried } = scratch;
     let mut heap = BinaryHeap::new();
-    // Whether each unit segment is blocked (bit 0) or crosses a strip (bit 1),
-    // worked out the first time the search tries it (bit 2).
-    let mut segment = vec![0u8; nx * ny * 2];
+    // `segment` holds whether each unit segment is blocked (bit 0) or crosses a
+    // strip (bit 1), worked out the first time the search tries it (bit 2).
     let heuristic = |ix: usize, iy: usize| ((grid.xs[ix] - grid.xs[gx]).abs() + (grid.ys[iy] - grid.ys[gy]).abs()) as i64;
     let first = state(sx, sy, start_dir);
     dist[first] = 0;
+    touched.push(first);
     heap.push(Reverse((heuristic(sx, sy), first)));
     let mut finish = None;
     while let Some(Reverse((_, current))) = heap.pop() {
@@ -135,6 +164,9 @@ fn search(grid: &Grid, from: &Terminal, to: &Terminal, connection: &Connection, 
             let turned = state(gx, gy, goal_dir);
             let total = dist[current] + BEND;
             if total < dist[turned] {
+                if dist[turned] == i64::MAX {
+                    touched.push(turned);
+                }
                 dist[turned] = total;
                 previous[turned] = current;
                 heap.push(Reverse((total, turned)));
@@ -151,8 +183,10 @@ fn search(grid: &Grid, from: &Terminal, to: &Terminal, connection: &Connection, 
             let (jx, jy) = (jx as usize, jy as usize);
             let (a, b) = ((grid.xs[ix], grid.ys[iy]), (grid.xs[jx], grid.ys[jy]));
             let lane = lane_of(ix, iy, next_dir);
-            let known = &mut segment[used.index(lane)];
+            let index = used.index(lane);
+            let known = &mut segment[index];
             if *known == 0 {
+                tried.push(index);
                 let strips = if next_dir < 2 { &connection.strips.horizontal } else { &connection.strips.vertical };
                 *known = 4 | blocked(&connection.obstacles, a, b) as u8 | (blocked(strips, a, b) as u8) << 1;
             }
@@ -176,6 +210,9 @@ fn search(grid: &Grid, from: &Terminal, to: &Terminal, connection: &Connection, 
             let next = state(jx, jy, next_dir);
             let total = dist[current] + length + bend_cost + strip_cost + shared_cost + cross_cost;
             if total < dist[next] {
+                if dist[next] == i64::MAX {
+                    touched.push(next);
+                }
                 dist[next] = total;
                 previous[next] = current;
                 heap.push(Reverse((total + heuristic(jx, jy), next)));
@@ -333,6 +370,7 @@ fn route_afresh(problem: &Problem) -> Solution {
     // What other routes must count as crossings: `lanes` plus direct lines and stems.
     let mut stubs: Vec<Vec<Lane>> = vec![Vec::new(); count];
     let mut failed = Vec::new();
+    let mut scratch = Scratch::new(&grid);
     for round in 0..ROUNDS {
         for &e in &order {
             let Settled { from, to, .. } = &settled[e];
@@ -348,7 +386,7 @@ fn route_afresh(problem: &Problem) -> Solution {
                 lanes[o].iter().for_each(|&lane| used.insert(lane));
                 lanes[o].iter().chain(&stubs[o]).for_each(|&lane| crossable.insert(lane));
             }
-            let (points, found) = search(&grid, from, to, &problem.connections[e], &used, &crossable).unwrap_or_else(|| {
+            let (points, found) = search(&grid, from, to, &problem.connections[e], &used, &crossable, &mut scratch).unwrap_or_else(|| {
                 if round == ROUNDS - 1 {
                     failed.push(e);
                 }
