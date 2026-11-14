@@ -10,6 +10,13 @@ authors = ["David Pettersson"]
 description = "Text-to-SVG UML diagrams with hand-drafted quality layout"
 repository = "https://github.com/davidpettersson/drumlin"
 readme = "README.md"
+homepage = "https://davidpettersson.github.io/drumlin/"
+documentation = "https://davidpettersson.github.io/drumlin/"
+keywords = ["uml", "diagram", "svg", "diagrams-as-code", "cli"]
+categories = ["command-line-utilities", "visualization"]
+# The published crate holds the program, its examples and the license files. The documentation book and
+# the golden drawings stay in the repository.
+include = ["/src/**", "/examples/**", "/Cargo.toml", "/README.md", "/LICENSE", "/LICENSES/**", "/NOTICE"]
 
 [dependencies]
 
