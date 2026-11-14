@@ -11,7 +11,7 @@ use super::{manhattan, Connection, Problem, Solution, Terminal};
 use crate::core::geometry::{snap, snap_up, Point, Rect, Side, GRID};
 use crate::core::metrics;
 use std::cmp::Reverse;
-use std::collections::{BinaryHeap, HashSet};
+use std::collections::BinaryHeap;
 
 const BEND: i64 = 48;
 const CROSS: i64 = 144;
@@ -22,6 +22,31 @@ const NARROW: f64 = 48.0;
 const ROUNDS: usize = 3;
 
 type Lane = (usize, usize, bool);
+
+/// A set of lanes on one grid, one flag per unit segment.
+struct Lanes {
+    ny: usize,
+    flags: Vec<bool>,
+}
+
+impl Lanes {
+    fn new(grid: &Grid) -> Lanes {
+        Lanes { ny: grid.ys.len(), flags: vec![false; grid.xs.len() * grid.ys.len() * 2] }
+    }
+
+    fn index(&self, (ix, iy, horizontal): Lane) -> usize {
+        (ix * self.ny + iy) * 2 + horizontal as usize
+    }
+
+    fn insert(&mut self, lane: Lane) {
+        let i = self.index(lane);
+        self.flags[i] = true;
+    }
+
+    fn contains(&self, lane: &Lane) -> bool {
+        self.flags[self.index(*lane)]
+    }
+}
 
 struct Grid {
     xs: Vec<f64>,
@@ -80,7 +105,7 @@ fn lane_of(ix: usize, iy: usize, dir: usize) -> Lane {
 }
 
 /// A* between two stems, returning the grid path and the lanes it occupies.
-fn search(grid: &Grid, from: &Terminal, to: &Terminal, connection: &Connection, used: &HashSet<Lane>, crossable: &HashSet<Lane>) -> Option<(Vec<Point>, Vec<Lane>)> {
+fn search(grid: &Grid, from: &Terminal, to: &Terminal, connection: &Connection, used: &Lanes, crossable: &Lanes) -> Option<(Vec<Point>, Vec<Lane>)> {
     let (nx, ny) = (grid.xs.len(), grid.ys.len());
     let (start_dir, goal_dir) = (dir_of(from.outward), dir_of(to.outward.opposite()));
     let state = |ix: usize, iy: usize, dir: usize| (ix * ny + iy) * 4 + dir;
@@ -281,8 +306,12 @@ pub fn route(problem: &Problem) -> Solution {
                 stubs[e] = run_lanes(&grid, from.point, to.point);
                 continue;
             }
-            let used: HashSet<Lane> = (0..count).filter(|&o| o != e).flat_map(|o| lanes[o].iter().copied()).collect();
-            let crossable: HashSet<Lane> = (0..count).filter(|&o| o != e).flat_map(|o| lanes[o].iter().chain(&stubs[o]).copied()).collect();
+            let mut used = Lanes::new(&grid);
+            let mut crossable = Lanes::new(&grid);
+            for o in (0..count).filter(|&o| o != e) {
+                lanes[o].iter().for_each(|&lane| used.insert(lane));
+                lanes[o].iter().chain(&stubs[o]).for_each(|&lane| crossable.insert(lane));
+            }
             let (points, found) = search(&grid, from, to, &problem.connections[e], &used, &crossable).unwrap_or_else(|| {
                 if round == ROUNDS - 1 {
                     failed.push(e);
