@@ -12,7 +12,7 @@ use crate::core::geometry::{snap, snap_up, Point, Rect, Side, GRID};
 use crate::core::metrics;
 use std::cell::RefCell;
 use std::cmp::Reverse;
-use std::collections::{BinaryHeap, HashMap};
+use std::collections::BinaryHeap;
 
 const BEND: i64 = 48;
 const CROSS: i64 = 144;
@@ -172,14 +172,13 @@ fn search(grid: &Grid, from: &Terminal, to: &Terminal, connection: &Connection, 
     scratch.reset();
     let Scratch { dist, previous, touched } = scratch;
     // Each entry is an estimate and a state packed into one number, estimate
-    // high, so the smallest pops first and equal estimates pop by state. An
-    // estimate is a path's cost in pixels and penalties, far below 2^31 for any
-    // drawing, and a grid has far fewer than 2^32 states; the check costs
-    // nothing measurable and stops a wrong order going unnoticed.
+    // in the high half, so the smallest pops first and equal estimates pop by
+    // state. Costs are never negative, and each half holds any value of its
+    // part, so the order is that of (estimate, state) pairs for any grid.
     let mut heap = BinaryHeap::new();
     let entry = |estimate: i64, state: usize| {
-        assert!((0..1 << 31).contains(&estimate) && state < 1 << 32, "search queue entry out of range");
-        Reverse((estimate as u64) << 32 | state as u64)
+        debug_assert!(estimate >= 0);
+        Reverse((estimate as u64 as u128) << 64 | state as u128)
     };
     let heuristic = |ix: usize, iy: usize| ((grid.xs[ix] - grid.xs[gx]).abs() + (grid.ys[iy] - grid.ys[gy]).abs()) as i64;
     let first = state(sx, sy, start_dir);
@@ -188,7 +187,7 @@ fn search(grid: &Grid, from: &Terminal, to: &Terminal, connection: &Connection, 
     heap.push(entry(heuristic(sx, sy), first));
     let mut finish = None;
     while let Some(Reverse(packed)) = heap.pop() {
-        let current = (packed & 0xffff_ffff) as usize;
+        let current = packed as u64 as usize;
         let dir = current % 4;
         let (ix, iy) = (current / 4 / ny, current / 4 % ny);
         if ix == gx && iy == gy && dir == goal_dir {
@@ -364,10 +363,10 @@ fn is_direct(from: &Terminal, to: &Terminal) -> bool {
 const REMEMBERED: usize = 32;
 
 thread_local! {
-    /// Recent problems and their solutions. Layout steps that compare layouts
-    /// route the same layout many times over, and routing is the costly part of
-    /// drawing.
-    static SOLVED: RefCell<HashMap<Vec<u64>, Solution>> = RefCell::default();
+    /// Recent problems by their keys and their solutions, least recently used
+    /// first. Layout steps that compare layouts route the same layout many
+    /// times over, and routing is the costly part of drawing.
+    static SOLVED: RefCell<Vec<(Vec<u64>, Solution)>> = RefCell::default();
 }
 
 /// Every value in a problem, numbers by their exact bits, so two problems have
@@ -415,16 +414,25 @@ fn key(problem: &Problem) -> Vec<u64> {
 /// recent one is answered from memory.
 pub fn route(problem: &Problem) -> Solution {
     let key = key(problem);
-    if let Some(solution) = SOLVED.with(|solved| solved.borrow().get(&key).cloned()) {
+    // A remembered problem becomes the most recently used one.
+    let remembered = SOLVED.with(|solved| {
+        let mut solved = solved.borrow_mut();
+        let found = solved.iter().position(|(known, _)| *known == key)?;
+        let entry = solved.remove(found);
+        let solution = entry.1.clone();
+        solved.push(entry);
+        Some(solution)
+    });
+    if let Some(solution) = remembered {
         return solution;
     }
     let solution = route_afresh(problem);
     SOLVED.with(|solved| {
         let mut solved = solved.borrow_mut();
         if solved.len() >= REMEMBERED {
-            solved.clear();
+            solved.remove(0);
         }
-        solved.insert(key, solution.clone());
+        solved.push((key, solution.clone()));
     });
     solution
 }

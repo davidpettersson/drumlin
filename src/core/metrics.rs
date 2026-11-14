@@ -139,7 +139,9 @@ pub fn close_runs(a: &[Point], b: &[Point], gap: f64) -> usize {
 pub fn against<'a>(a: &[Point], others: impl Iterator<Item = &'a [Point]>, gap: f64) -> (usize, usize, usize) {
     let (ha, va) = runs(a);
     let near = |x: &Run, y: &Run| side_by_side(x, y, gap);
-    let count = |xs: &[Run], ys: &[Run], f: &dyn Fn(&Run, &Run) -> bool| xs.iter().map(|x| ys.iter().filter(|y| f(x, y)).count()).sum::<usize>();
+    fn count(xs: &[Run], ys: &[Run], f: impl Fn(&Run, &Run) -> bool) -> usize {
+        xs.iter().map(|x| ys.iter().filter(|y| f(x, y)).count()).sum()
+    }
     others.fold((0, 0, 0), |(c, o, n), b| {
         let (hb, vb) = runs(b);
         let crossings = count(&ha, &vb, &crosses) + count(&hb, &va, &crosses);
