@@ -9,14 +9,20 @@ out and writes SVG. It draws five kinds of diagram: component, package, sequence
 The drawing above is [`examples/orders.svg`](examples/orders.svg), rendered from
 [`examples/orders.uml`](examples/orders.uml).
 
-drumlin is a prototype, at version 0.1.0, written in Rust with no dependencies. The input format, the
+drumlin is a prototype, at version 0.1.1, written in Rust with no dependencies. The input format, the
 command line and the drawings may still change between versions. The symbols follow UML 2.5.1; which
 elements each diagram kind accepts, and how a drawing looks, are drumlin's own choices (see
 [UML conformance](docs/src/reference/conformance.md)).
 
-## Build and use
+## Install and use
 
-There is no published package; build from source with a Rust toolchain:
+Install the published crate with a Rust toolchain:
+
+```
+cargo install drumlin
+```
+
+Or build from source:
 
 ```
 git clone https://github.com/davidpettersson/drumlin.git
