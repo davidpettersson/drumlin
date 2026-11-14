@@ -84,7 +84,7 @@ pipeline, the documentation build and the [roadmap](internals/roadmap.md).
 
 ## Status
 
-drumlin is a prototype, at version 0.1.0. The input format, the command line and the drawings may still
+drumlin is a prototype, at version 0.1.1. The input format, the command line and the drawings may still
 change. The symbols follow UML 2.5.1. Which elements each diagram kind accepts, and how a drawing looks,
 are drumlin's own choices: see [UML conformance](reference/conformance.md). Known limitations are listed
 on the [roadmap](internals/roadmap.md#known-limitations).
