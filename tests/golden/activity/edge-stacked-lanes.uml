@@ -1,0 +1,12 @@
+diagram activity "Branches that interleave lanes"
+start
+lane "A" { action "Start work" }
+lane "B" { action "Prepare" }
+if "split" {
+  lane "A" { action "Left A" }
+  lane "C" { action "Right C" }
+} else {
+  lane "B" { action "Middle B" }
+}
+lane "A" { action "Done" }
+stop

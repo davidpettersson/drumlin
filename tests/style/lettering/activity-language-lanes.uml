@@ -1,0 +1,16 @@
+diagram activity "Swimlanes"
+start
+lane "Customer" {
+  action "Place order"
+}
+lane "Warehouse" {
+  action "Pick items"
+  if "in stock" {
+    action "Ship"
+  } else {
+    lane "Customer" {
+      action "Choose substitute"
+    }
+  }
+}
+stop

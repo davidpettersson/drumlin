@@ -1,0 +1,14 @@
+diagram state "Choice, fork, join"
+[*] --> Ready
+Ready --> c : request
+choice c
+c --> f : [ok]
+c --> [*] : [denied]
+fork f
+f --> A
+f --> B
+A --> j
+B --> j
+join j
+j --> Done
+Done --> [*]

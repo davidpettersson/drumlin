@@ -1,0 +1,34 @@
+diagram sequence "Raft: replicating one log entry"
+
+actor "Client" as client
+participant "Leader" as leader <<raft>>
+participant "Follower 1" as f1
+participant "Follower 2" as f2
+participant "State machine" as sm
+
+client -> leader : command(x) {
+  leader -> leader : append to log
+  par {
+    leader -> f1 : AppendEntries(term, entry) {
+      f1 -> f1 : append and persist
+      return success
+    }
+  } and {
+    leader -> f2 : AppendEntries(term, entry) {
+      alt "log matches prevLogIndex" {
+        f2 -> f2 : append and persist
+        return success
+      } else "prevLogTerm mismatch" {
+        return reject (conflict index)
+        note right of f2: Leader walks nextIndex back and retries.
+      }
+    }
+  }
+  critical "majority acknowledged" {
+    leader -> leader : advance commitIndex
+    leader -> sm : apply(x) {
+      return result
+    }
+  }
+  return result
+}

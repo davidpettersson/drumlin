@@ -1,0 +1,13 @@
+diagram state "Entry and exit points"
+[*] --> Idle
+Idle --> again : retry
+state Login {
+  entrypoint again
+  exitpoint aborted
+  again --> Prompt
+  Prompt --> Check : submit
+  Check --> aborted : [locked out]
+  Check --> [*] : [ok]
+}
+aborted --> Idle
+Login --> Done

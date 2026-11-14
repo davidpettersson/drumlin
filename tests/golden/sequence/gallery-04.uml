@@ -1,0 +1,27 @@
+diagram sequence "TLS 1.3 handshake"
+
+participant "Client" as c
+participant "Server" as s
+participant "CA store" as ca
+
+c -> s : ClientHello(key_share, sni, supported_versions) {
+  s -> s : derive handshake secrets
+  return ServerHello(key_share)
+}
+note over c, s: Encrypted from here on: EncryptedExtensions, Certificate, CertificateVerify, Finished
+s ->> c : EncryptedExtensions
+s ->> c : Certificate
+s ->> c : CertificateVerify
+c -> ca : verify chain(certificate) {
+  return ok
+}
+alt "certificate valid" {
+  s ->> c : Finished
+  c ->> s : Finished
+  note over c, s: Application data, protected by traffic keys
+  c ->> s : HTTP request
+  s ->> c : HTTP response
+} else "verification failed" {
+  c ->> s : alert(bad_certificate)
+  c ->] : close connection
+}

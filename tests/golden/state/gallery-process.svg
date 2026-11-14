@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -56 592 696" width="592" height="696">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .solid { fill: #22201c; stroke: none; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-24" y="-56" width="592" height="696" fill="#fff"/>
+<text x="0" y="-20" class="title">Process lifecycle</text>
+<rect x="224" y="80" width="96" height="48" class="shape" rx="10"/>
+<text x="272" y="108.5" class="name" text-anchor="middle">New</text>
+<rect x="216" y="208" width="112" height="48" class="shape" rx="10"/>
+<text x="272" y="236.5" class="name" text-anchor="middle">Ready</text>
+<rect x="216" y="336" width="112" height="48" class="shape" rx="10"/>
+<text x="272" y="364.5" class="name" text-anchor="middle">Running</text>
+<rect x="448" y="464" width="96" height="48" class="shape" rx="10"/>
+<text x="496" y="492.5" class="name" text-anchor="middle">Waiting</text>
+<rect x="224" y="464" width="96" height="48" class="shape" rx="10"/>
+<text x="272" y="492.5" class="name" text-anchor="middle">Zombie</text>
+<circle cx="272" cy="8" r="8" class="solid"/>
+<circle cx="272" cy="604" r="11" class="shape"/>
+<circle cx="272" cy="604" r="6.5" class="solid"/>
+<path d="M0 464 L182 464 L192 474 L192 512 L0 512 Z" class="shape fine"/>
+<path d="M182 464 L182 474 L192 474" class="edge fine"/>
+<text x="12" y="484" class="small" text-anchor="start">Holds only its exit status until the</text>
+<text x="12" y="499" class="small" text-anchor="start">parent calls wait.</text>
+<path d="M272 16 L272 80" class="edge"/>
+<path d="M267.5 70 L272 80 L276.5 70" class="edge head"/>
+<path d="M272 128 L272 208" class="edge"/>
+<path d="M267.5 198 L272 208 L276.5 198" class="edge head"/>
+<path d="M280 256 L280 336" class="edge"/>
+<path d="M275.5 326 L280 336 L284.5 326" class="edge head"/>
+<path d="M256 336 L256 256" class="edge"/>
+<path d="M260.5 266 L256 256 L251.5 266" class="edge head"/>
+<path d="M312 384 L312 408 L464 408 L464 464" class="edge"/>
+<path d="M459.5 454 L464 464 L468.5 454" class="edge head"/>
+<path d="M528 464 L528 232 L328 232" class="edge"/>
+<path d="M338 227.5 L328 232 L338 236.5" class="edge head"/>
+<path d="M264 384 L264 464" class="edge"/>
+<path d="M259.5 454 L264 464 L268.5 454" class="edge head"/>
+<path d="M272 512 L272 592" class="edge"/>
+<path d="M267.5 582 L272 592 L276.5 582" class="edge head"/>
+<path d="M192 488 L224 488" class="edge dashed fine"/>
+<path d="M328 352 L352 352 L352 368 L328 368" class="edge"/>
+<path d="M338 363.5 L328 368 L338 372.5" class="edge head"/>
+<text x="280" y="171" class="small" text-anchor="start">admitted</text>
+<text x="288" y="299" class="small" text-anchor="start">dispatch</text>
+<text x="248" y="299" class="small" text-anchor="end">preempt [quantum expired]</text>
+<text x="272" y="427" class="small" text-anchor="start">exit() / release resources</text>
+<text x="280" y="555" class="small" text-anchor="start">reaped by parent</text>
+<text x="360" y="363" class="small" text-anchor="start">syscall [fast path] / handle inline</text>
+<text x="388" y="397.5" class="small" text-anchor="middle">wait(event) / block()</text>
+<text x="520" y="316.2" class="small" text-anchor="end">event occurs</text>
+</svg>

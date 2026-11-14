@@ -1,0 +1,217 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin lettering" viewBox="-42.12 -62 946.12 1254" width="946.12" height="1254">
+<style>
+.drumlin.lettering .lt { fill: none; stroke: #22201c; stroke-width: 1.1; stroke-linecap: round; stroke-linejoin: round; }
+.drumlin.lettering .lt-halo { fill: #fff; stroke: none; }
+.drumlin.lettering .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.lettering .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.lettering .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.lettering .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.lettering .dashed { stroke-dasharray: 7 3; }
+.drumlin.lettering .lifeline { fill: none; stroke: #22201c; stroke-width: 0.75; stroke-dasharray: 7 3; }
+.drumlin.lettering .frame { fill: none; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.lettering .solid { fill: #22201c; stroke: none; }
+.drumlin.lettering .heavy { stroke-width: 1.75; }
+.drumlin.lettering .fine { stroke-width: 0.75; }
+</style>
+<defs>
+<path id="dl-n41" d="M1.2-.6l.6-1.7M1.8-2.3l1.9-5.6 .2-.5 .6 0 .1 .1 1.9 5.7 .1 .2M1.8-2.3l4.8-.1M6.6-2.4l.6 1.8"/>
+<path id="dl-n42" d="M1.8-4.7l3.7-.1M1.8-4.7l0 4.1 3.4 0 .5-.1 .4-.1 .5-.5 .3-.7 .1-.5-.1-.7-.1-.4-.2-.4-.4-.4-.2-.2-.4-.1-.1-.1M1.8-4.7l0-3.7 3.3 0 .6 .1 .5 .3 .2 .3 .3 .5 .1 .6 0 .3-.2 .5-.1 .3-.3 .3-.6 .3-.1 .1"/>
+<path id="dl-n43" d="M6.6-7l-.3-.6-.4-.5-.5-.2-.6-.2-.6 0-.3 .1-.6 .2-.4 .2-.5 .6-.3 .4-.2 .5-.3 .7-.1 .5 0 1.2 .1 .8 .2 .6 .2 .5 .3 .4 .8 .8 .5 .3 .4 .2 .4 0 .5 0 .4-.1 .4-.2 .3-.2 .3-.4 .4-.6 .2-.4"/>
+<path id="dl-n44" d="M1.8-.6l0-7.8 2.7 0 .6 .2 .7 .4 .5 .5 .3 .7 .2 .6 .2 .8 0 1.4-.1 .6-.3 .9-.3 .5-.4 .5-.5 .4-.5 .2-.5 .1-2.6 0"/>
+<path id="dl-n45" d="M1.8-4.7l3.5 0M1.8-4.7l0 4.1 5.2 0M1.8-4.7l0-3.7 5 0"/>
+<path id="dl-n47" d="M4.7-4.2l2 0 0 2.3-.3 .5-.4 .4-.4 .3-.6 .2-.6 0-.4 0-.7-.3-.4-.3-.5-.4-.3-.6-.3-.6-.2-.6-.1-.8 0-.8 .1-.9 .3-.7 .3-.7 .7-.8 .4-.2 .7-.2 .8-.1 .6 .2 .5 .2 .4 .5 .3 .6"/>
+<path id="dl-n48" d="M1.8-.6l0-4.1M1.8-8.4l0 3.7M1.8-4.7l5.1 0M6.9-4.7l0-3.7M6.9-4.7l0 4.1"/>
+<path id="dl-n49" d="M2.1-.6l0-7.8"/>
+<path id="dl-n4e" d="M1.8-.6l0-7.8 .4 0 4.4 7.8 .4 0 0 0 0-7.8"/>
+<path id="dl-n4f" d="M1.5-4.1l0-1.2 .1-.5 .3-.7 .2-.5 .3-.4 .5-.6 .7-.3 .6-.2 .5 0 .7 .2 .6 .3 .5 .6 .6 .8 .3 .8 .1 .7 0 1.2-.2 .9-.4 .9-.4 .5-.5 .6-.6 .3-.5 .2-.8 0-.5-.2-.7-.4-.7-.7-.3-.7-.3-.7-.1-.9"/>
+<path id="dl-n50" d="M1.8-.6l0-3.7M1.8-4.3l3.3 0 .6-.2 .4-.2 .4-.5 .3-.8 0-.7-.1-.4-.2-.5-.4-.4-.8-.3-.3-.1-3.2 0 0 4.1"/>
+<path id="dl-n52" d="M1.8-.6l0-4.1M1.8-4.7l3.5 0M1.8-4.7l0-3.7 3.5 0 .9 .2 .3 .2 .2 .3 .2 .3 .2 .5 0 .7-.2 .5-.2 .3-.4 .4-.4 .2-.6 .1M5.3-4.7l0 .3 1.6 3.8"/>
+<path id="dl-n53" d="M1.5-2.1l.4 .6 .3 .4 .5 .3 .8 .3 .5 0 .8 0 .6-.2 .4-.2 .3-.3 .4-.5 .2-.5 0-.8-.1-.3-.3-.4-.3-.4-.6-.3-.5-.2-1.5-.3-1-.4-.5-.6-.2-.4 0-.5 .1-.4 .1-.3 .4-.5 .6-.3 .9-.2 .8 0 .4 .1 .6 .2 .6 .6 .3 .6"/>
+<path id="dl-n54" d="M1.2-8.4l3 0M4.2-.6l0-7.8M4.2-8.4l3 0"/>
+<path id="dl-n55" d="M1.8-8.4l0 6 .1 .3 .2 .6 .6 .5 .8 .4 .7 .1 .9-.1 .8-.3 .5-.5 .4-.5 .1-.6 0-5.9"/>
+<path id="dl-n56" d="M1.2-8.4l2.8 7.7 .1 .1 .2 0 0-.1 2.9-7.7"/>
+<path id="dl-n57" d="M1.2-8.4l1.9 7.6 .1 .2 .2 0 0-.1 1.7-7 .1-.5 .1-.1 .1 .1 .1 .1 1.7 7.5 0 0 .2 0 2.1-7.8"/>
+<path id="dl-n59" d="M1.2-8.4l2.7 3.6 .1 .1M4-.6l0-4.1M4-4.7l.1-.1 2.7-3.6"/>
+<path id="dl-s22" d="M1.2-5.2l0-2.2M2.9-5.2l0-2.2"/>
+<path id="dl-s28" d="M2.5 .3l-.4-.5-.4-1.1-.3-.9-.2-1.3 0-1.1 .3-1.4 .4-1.3 .6-1"/>
+<path id="dl-s29" d="M.9 .3l.5-.9 .4-1.1 .3-1.1 0-1.1 0-1.1-.3-1.1-.4-1.2-.5-1"/>
+<path id="dl-s2c" d="M1.5-.7l0-.1 .1 0 .3 .1-.1 .5-.3 .8"/>
+<path id="dl-s2e" d="M1.5-.8h0"/>
+<path id="dl-s30" d="M1.2-1.9l3.3-4.1M1.2-1.9l0 .2 .2 .2 .4 .6 .2 .1 .5 .3 .3 .1 .4-.1 .5-.3 .3-.1 .3-.5 .2-.5 .2-.6 .2-.8 0-1.3-.2-.8-.1-.5-.1-.1M1.2-1.9l-.1 0-.2-.4-.1-.7 0-.6 0-1 .1-.6 .3-.8 .2-.5 .4-.5 .4-.3 .2-.1 .6-.1 .3 .1 .4 .2 .2 .2 .4 .5 .1 .3 .1 .2"/>
+<path id="dl-s31" d="M1.3-5l.4-.3 .4-.5 .4-.4 .3-.6 .2-.6 0 6.9"/>
+<path id="dl-s33" d="M1.3-7.4l3.9 0 0 .2-.2 .5-.4 .6-.6 .8-.6 .4 0 .1M1.5-1.6l.1 .3 .6 .5 .7 .3 .6 .1 .6-.1 .8-.3 .3-.2 .5-.5 .2-.6 .1-.6-.1-.5-.3-.7-.4-.4-.5-.3-.6-.1-.7-.1 0 0M2.7-4.6l.7-.2"/>
+<path id="dl-s34" d="M5.2-2.9l-4 0 0-.7 3.3-3.8 .7 .1 0 4.4M5.2-.5l0-2.4M5.2-2.9l1.2 0"/>
+<path id="dl-s3d" d="M1.1-2.7l4.7 0M1.1-5.2l4.7 0"/>
+<path id="dl-s3f" d="M1.2-5.8l.1-.5 .2-.5 .6-.4 .5-.2 .4-.1 .6 0 .6 .1 .3 .1 .3 .3 .4 .3 .1 .3 0 .3 0 .4-.1 .3-.1 .2-.3 .3-.8 .5-.4 .4-.2 .6-.1 .8M3.3-.8h0"/>
+<path id="dl-s43" d="M5.8-6.2l-.2-.5-.4-.4-.5-.2-.5-.2-.5 0-.3 .1-.5 .2-.3 .2-.5 .5-.2 .3-.3 .5-.2 .6-.1 .5 0 1 .1 .7 .1 .5 .3 .5 .2 .4 .7 .6 .4 .3 .4 .1 .4 .1 .4 0 .3-.1 .4-.2 .2-.2 .4-.3 .3-.5 .2-.4"/>
+<path id="dl-s45" d="M1.5-4.2l3.1 0M1.5-4.2l0 3.7 4.7 0M1.5-4.2l0-3.2 4.5 0"/>
+<path id="dl-s46" d="M1.5-.5l0-3.7M1.5-4.2l3.2 0M1.5-4.2l0-3.2 4.3 0"/>
+<path id="dl-s48" d="M1.5-.5l0-3.7M1.5-7.4l0 3.2M1.5-4.2l4.6 0M6.1-4.2l0-3.2M6.1-4.2l0 3.7"/>
+<path id="dl-s4c" d="M1.5-7.4l0 6.9 4.5 0"/>
+<path id="dl-s4d" d="M1.5-.5l0-6.9 .5 0 0 .1 2.4 6.6 .1 .1 .1-.3 2.3-6.4 .1-.1 .4 0 0 6.9"/>
+<path id="dl-s4f" d="M1.3-3.6l0-1 .1-.5 .2-.6 .3-.5 .2-.3 .5-.5 .5-.3 .6-.2 .5 0 .6 .2 .4 .3 .6 .5 .4 .7 .3 .7 .1 .6 0 1.1-.2 .7-.3 .8-.3 .5-.6 .5-.5 .3-.4 .2-.7 0-.4-.2-.6-.3-.6-.6-.4-.7-.2-.6-.1-.8"/>
+<path id="dl-s52" d="M1.5-.5l0-3.6M1.5-4.1l3.1 0M1.5-4.1l0-3.3 3.2 0 .7 .2 .4 .2 .1 .2 .2 .3 .2 .4 0 .7-.2 .4-.2 .3-.3 .3-.4 .2-.6 .1M4.6-4.1l.1 .2 1.4 3.4"/>
+<path id="dl-s53" d="M1.3-1.8l.3 .5 .4 .4 .4 .2 .7 .2 .4 .1 .7-.1 .5-.1 .4-.2 .3-.2 .3-.5 .2-.5 0-.7-.1-.2-.2-.4-.4-.3-.5-.3-.4-.1-1.3-.3-.9-.3-.5-.6-.1-.3 0-.5 0-.4 .1-.2 .5-.4 .4-.3 .8-.2 .7 0 .4 .1 .5 .2 .6 .5 .3 .5"/>
+<path id="dl-s54" d="M1-7.4l2.7 0M3.7-.5l0-6.9M3.7-7.4l2.7 0"/>
+<path id="dl-s57" d="M1-7.4l1.8 6.7 0 .2 .2 0 0-.1 1.5-6.2 .1-.4 0-.1 .2 .1 0 .1 1.6 6.5 0 .1 .1 0 1.8-6.9"/>
+<path id="dl-s5b" d="M2.5 .3l-1.3 0 0-8.6 1.3 0"/>
+<path id="dl-s5d" d="M.9 .3l1.2 0 0 0 0-8.6-1.2 0"/>
+<path id="dl-s61" d="M4.7-1.5l-.1 0-.2 .4-.3 .3-.5 .3-.5 .1-.5-.1-.5-.3-.5-.4-.3-.6-.1-.8 0-.5 .2-.9 .3-.6 .4-.3 .3-.3 .5 0 .3 0 .5 0 .3 .3 .4 .3 .2 .4 .1 .1M4.7-1.5l.1 0 0 1M4.7-1.5l.1-.3 0-2.1-.1-.2M4.7-4.1l.1-.1 0-1"/>
+<path id="dl-s62" d="M1.5-.5l0-.4 0-.6 .1 0M1.5-7.4l0 3.2 .1 .1M1.6-1.5l-.1-.2 0-2.3 .1-.1M1.6-4.1l.1-.1 .2-.4 .4-.3 .4-.3 .4 0 .3 0 .5 0 .4 .3 .3 .3 .2 .4 .3 .5 .1 .8-.1 .6-.3 .8-.2 .4-.3 .3-.6 .3-.5 .1-.5-.1-.5-.3-.6-.7"/>
+<path id="dl-s63" d="M4.4-4.4l-.4-.5-.5-.3-.7 0-.6 .1-.5 .5-.3 .6-.2 .7 0 .7 .1 .6 .2 .7 .5 .5 .5 .3 .3 .1 .3 0 .3-.1 .3-.1 .3-.2 .3-.3 .2-.4"/>
+<path id="dl-s64" d="M4.8-1.5l-.2 0-.2 .4-.3 .3-.4 .3-.5 .1-.5-.1-.6-.3-.4-.4-.3-.6-.2-.8 0-.5 .2-.9 .4-.6 .3-.3 .4-.3 .4 0 .4 0 .4 0 .4 .3 .3 .3 .2 .4 .2 .1M4.8-1.5l0 0 0 .4 .1 .6M4.8-1.5l0-.3 0-2.1 0-.2M4.8-4.1l0-.1 0-3.2"/>
+<path id="dl-s65" d="M1.2-3.1l3.4 0 0-.5-.1-.7-.3-.3-.3-.4-.5-.2-.6 0-.3 0-.3 .1-.5 .5-.4 .7-.1 .8M1.2-3.1l0 .6 .2 .8 .1 .4 .3 .4 .3 .2 .6 .3 .7 0 .3-.2 .6-.3 .4-.5"/>
+<path id="dl-s66" d="M.9-5.2l1 0M1.9-.5l0-4.7M1.9-5.2l0-1.6 .2-.3 .2-.3 .4-.2 .3 0 .2 .1M1.9-5.2l1.2 0"/>
+<path id="dl-s67" d="M2.4 1.3l.4 .2 .3 0 .6 0 .4-.2 .4-.3 .1-.2 .1-.5 .1-1.8-.1 0M4.7-1.5l-.1 0-.2 .4-.3 .3-.5 .3-.5 .1-.5-.1-.5-.3-.5-.4-.3-.6-.1-.8 0-.5 .2-.9 .3-.6 .4-.3 .3-.3 .5 0 .3 0 .5 0 .3 .3 .4 .3 .2 .4 .1 .1M4.7-1.5l.1-.3 0-2.1-.1-.2M4.7-4.1l.1-.1 0-.4 .1-.6"/>
+<path id="dl-s68" d="M1.5-.5l.1-3.7M1.5-7.4l.1 3.2M1.6-4.2l0 0 .5-.6 .4-.2 .3-.1 .3-.1 .5 0 .3 0 .3 .2 .2 .2 .2 .3 .1 .6 0 3.4"/>
+<path id="dl-s69" d="M1.5-.5l0-4.7M1.5-7l0-.6"/>
+<path id="dl-s6b" d="M1.5-.5l.1-1.9M1.5-7.4l.1 5M1.6-2.4l.1-.1 1-1 .1-.1M2.8-3.6l1.7 3.1M2.8-3.6l.1-.2 1.2-1.4"/>
+<path id="dl-s6c" d="M1.5-7.4l0 6.3 .1 .6"/>
+<path id="dl-s6d" d="M1.5-.5l.1-3.7M1.5-5.2l.1 1M1.6-4.2l.5-.6 .4-.3 .4-.1 .6 0 .3 0 .3 .2 .3 .3 .2 .6M4.6-.5l0-3.6M4.6-4.1l.6-.7 .4-.3 .4-.1 .3 0 .5 0 .4 .2 .2 .2 .2 .3 .1 .6 0 3.4"/>
+<path id="dl-s6e" d="M1.5-.5l.1-3.7M1.5-5.2l.1 1M1.6-4.2l.1-.1 .4-.5 .3-.2 .3-.1 .4-.1 .4 0 .3 0 .3 .2 .3 .2 .2 .3 .1 .6 0 3.4"/>
+<path id="dl-s6f" d="M1.2-2.6l0-.5 .2-.9 .3-.6 .4-.3 .3-.3 .5 0 .3 0 .5 0 .3 .3 .4 .3 .3 .6 .2 .7 0 .9-.2 .8-.3 .5-.3 .3-.5 .3-.2 .1-.6 0-.3-.1-.4-.3-.4-.3-.2-.3-.2-.5-.1-.7"/>
+<path id="dl-s70" d="M1.5 1.5l0-3 .1 0M1.5-5.2l0 1 .1 .1M1.6-1.5l-.1-.2 0-2.3 .1-.1M1.6-4.1l.1-.1 .2-.4 .4-.3 .4-.3 .4 0 .3 0 .5 0 .4 .3 .3 .3 .2 .4 .3 .5 .1 .8-.1 .6-.3 .8-.2 .4-.3 .3-.6 .3-.5 .1-.5-.1-.5-.3-.6-.7"/>
+<path id="dl-s72" d="M1.5-.5l0-2.5 .1-.2M1.5-5.2l0 1.9 .1 .1M1.6-3.2l.1-.1 .4-.7 .3-.6 .6-.4 .3-.2 .2 0"/>
+<path id="dl-s73" d="M1.2-1.2l.3 .3 .3 .2 .5 .2 .3 .1 .4 0 .3-.1 .3-.2 .3-.2 .2-.3 .1-.4-.1-.5-.1-.3-.3-.3-.3-.1-.5-.1-.7-.1-.5-.3-.2-.2-.2-.3-.1-.5 .1-.3 .4-.4 .4-.2 .4 0 .4 0 .5 0 .4 .3 .3 .3"/>
+<path id="dl-s74" d="M.9-5.2l.9 0M1.8-.5l0-4.7M1.8-5.2l0-1.7M1.8-5.2l1 0"/>
+<path id="dl-s75" d="M1.5-5.2l0 3.5 .1 .4 .3 .4 .2 .2 .3 .2 .4 .1 .4 0 .3-.2 .5-.2 .6-.7M4.6-1.5l.1 .1 0 .9M4.6-1.5l.1-.1 0-3.6"/>
+<path id="dl-s76" d="M1-5.2l1.4 4.6 .1 .1 .3 0 0-.1 1.5-4.6"/>
+<path id="dl-s77" d="M1-5.2l1.1 4.4 .1 .3 .2 0 0-.1 1.2-4 .1-.1 .1 0 .1 .1 1.2 4 0 .1 .1 0 1.2-4.7"/>
+<path id="dl-s78" d="M1-.5l1.4-2.1 .3-.4M1.3-5.2l1.1 1.8 .3 .3M2.7-3l.1 .1 1.5 2.4M2.7-3.1l.1-.1 1.2-2"/>
+<path id="dl-s79" d="M1-5.2l1.7 4.6 .1 .1M1 1.5l.6 0 .2-.1 .3-.2 .3-.6 .4-.9 0-.2M2.8-.5l0-.1 1.5-4.6"/>
+<path id="dl-sab" d="M3.7-.5l-2.3-2.3 2.3-2.4M6.7-.5l-2.3-2.3 2.3-2.4"/>
+<path id="dl-sbb" d="M1.5-.5l2.3-2.3 0-.1-2.3-2.3M4.6-.5l2.2-2.3 0-.1-2.2-2.3"/>
+<path id="dl-t45" d="M2.3-6.1l4.5 0M2.3-6.1l0 5.3 6.7 0M2.3-6.1l0-4.7 6.5 0"/>
+<path id="dl-t47" d="M6-5.4l2.6 0 0 3-.3 .6-.6 .5-.6 .4-.7 .2-.8 .1-.5-.1-.9-.4-.5-.3-.6-.5-.4-.7-.4-.9-.3-.8-.1-1 0-1 .2-1.1 .3-.9 .5-1 .9-.9 .5-.3 .8-.3 1-.1 .8 .2 .7 .4 .5 .5 .4 .8"/>
+<path id="dl-t48" d="M2.3-.8l0-5.3M2.3-10.8l0 4.7M2.3-6.1l6.6 0M8.9-6.1l0-4.7M8.9-6.1l0 5.3"/>
+<path id="dl-t49" d="M2.6-.8l0-10"/>
+<path id="dl-t4e" d="M2.3-.8l0-10 .6 0 5.6 10 .4 0 .1 0 0-10"/>
+<path id="dl-t52" d="M2.3-.8l0-5.2M2.3-6l4.5 0M2.3-6l0-4.8 4.5 0 1.1 .3 .5 .3 .2 .3 .3 .4 .2 .6 0 1-.2 .6-.3 .4-.5 .5-.6 .3-.7 .1M6.8-6l0 .4 2.1 4.8"/>
+<path id="dl-t54" d="M1.5-10.8l3.9 0M5.4-.8l0-10M5.4-10.8l3.9 0"/>
+<path id="dl-t56" d="M1.5-10.8l3.6 9.9 .2 .1 .2 0 .1-.1 3.7-9.9"/>
+<path id="dl-t59" d="M1.5-10.8l3.5 4.6 .1 .1M5.1-.8l0-5.3M5.1-6.1l.2-.1 3.5-4.6"/>
+<path id="dl-k61" d="M5.4-1.8l-.2 .1-.2 .4-.4 .4-.5 .3-.5 .1-.7-.1-.6-.3-.4-.5-.4-.7-.2-.8 0-.6 .3-1 .4-.7 .3-.4 .5-.3 .5-.1 .4 0 .5 .1 .4 .3 .4 .4 .2 .4 .2 .1M5.4-1.8l0 .1 0 1.1M5.4-1.8l0-.2 0-2.4 0-.3M5.4-4.7l0-.1 0-1.1"/>
+<path id="dl-k65" d="M1.4-3.5l3.9 0 0-.6-.2-.8-.3-.4-.4-.4-.5-.2-.7-.1-.4 .1-.3 .1-.5 .6-.5 .8-.1 .9M1.4-3.5l-.1 .6 .3 .9 .2 .5 .3 .4 .3 .3 .6 .3 .8 0 .4-.1 .6-.4 .5-.6"/>
+<path id="dl-k66" d="M1.1-5.9l1.1 0M2.2-.6l0-5.3M2.2-5.9l0-1.8 .1-.4 .3-.3 .4-.2 .4 0 .2 .1M2.2-5.9l1.3 0"/>
+<path id="dl-k6c" d="M1.8-8.4l0 7.2 .1 .6"/>
+<path id="dl-k6f" d="M1.3-2.9l0-.6 .3-1 .4-.7 .3-.4 .5-.3 .5-.1 .4 0 .5 .1 .4 .3 .4 .4 .4 .6 .2 .9 0 1-.2 .8-.4 .6-.4 .4-.5 .3-.3 .1-.7 0-.3-.1-.5-.3-.3-.4-.2-.3-.3-.5-.2-.8"/>
+<path id="dl-k70" d="M1.8 1.8l0-3.5 0-.1M1.8-5.9l0 1.2 0 0M1.8-1.8l0-.2 0-2.5 0-.2M1.8-4.7l.2-.1 .2-.4 .4-.4 .4-.3 .5-.1 .4 0 .5 .1 .4 .3 .4 .4 .3 .4 .3 .6 .1 .9-.1 .7-.3 .9-.3 .4-.3 .4-.7 .3-.6 .1-.5-.1-.6-.3-.7-.9"/>
+<path id="dl-k72" d="M1.8-.6l0-2.8 0-.3M1.8-5.9l0 2.2 0 0M1.8-3.7l.2-.1 .3-.7 .4-.7 .7-.5 .3-.2 .3 0"/>
+<path id="dl-k74" d="M1.1-5.9l1 0M2.1-.6l0-5.3M2.1-5.9l0-1.9M2.1-5.9l1 0"/>
+</defs>
+<rect x="-42.12" y="-62" width="946.12" height="1254" fill="#fff"/>
+<g class="lt" role="img" aria-label="Everything" transform="translate(-18.12 -26)"><use href="#dl-t45"/><use href="#dl-t56" x="11.8"/><use href="#dl-t45" x="23.5"/><use href="#dl-t52" x="35.4"/><use href="#dl-t59" x="47.3"/><use href="#dl-t54" x="58.6"/><use href="#dl-t48" x="70.3"/><use href="#dl-t49" x="82.3"/><use href="#dl-t4e" x="88.6"/><use href="#dl-t47" x="100.8"/></g>
+<path d="M0 48 L0 1168" class="lifeline"/>
+<path d="M144 48 L144 1168" class="lifeline"/>
+<path d="M304 48 L304 1168" class="lifeline"/>
+<path d="M568 48 L568 1168" class="lifeline"/>
+<path d="M832 696 L832 1144" class="lifeline"/>
+<rect x="286" y="480" width="510" height="128" class="frame"/>
+<rect x="126" y="280" width="682" height="344" class="frame"/>
+<path d="M126 424 L808 424" class="frame dashed"/>
+<rect x="126" y="856" width="460" height="96" class="frame"/>
+<rect x="126" y="968" width="460" height="104" class="frame"/>
+<path d="M126 1024 L586 1024" class="frame dashed"/>
+<rect x="144" y="112" width="12" height="12" class="shape"/>
+<rect x="562" y="232" width="12" height="32" class="shape"/>
+<rect x="310" y="368" width="12" height="12" class="shape"/>
+<rect x="304" y="336" width="12" height="52" class="shape"/>
+<rect x="298" y="184" width="12" height="448" class="shape"/>
+<rect x="138" y="80" width="12" height="696" class="shape"/>
+<path d="M286 480 L334 480 L334 494 L326 502 L286 502 Z" class="shape fine"/>
+<g class="lt" role="img" aria-label="opt" transform="translate(294 495)"><use href="#dl-k6f"/><use href="#dl-k70" x="6.9"/><use href="#dl-k74" x="14.1"/></g>
+<g class="lt" role="img" aria-label="[too many attempts]" transform="translate(342 494)"><rect class="lt-halo" x="-1.5" y="-9.41" width="103.12" height="13.31"/><use href="#dl-s5b"/><use href="#dl-s74" x="3.4"/><use href="#dl-s6f" x="7"/><use href="#dl-s6f" x="13.1"/><use href="#dl-s6d" x="22.3"/><use href="#dl-s61" x="31.6"/><use href="#dl-s6e" x="37.9"/><use href="#dl-s79" x="44.2"/><use href="#dl-s61" x="52.6"/><use href="#dl-s74" x="58.9"/><use href="#dl-s74" x="62.6"/><use href="#dl-s65" x="66.3"/><use href="#dl-s6d" x="72.1"/><use href="#dl-s70" x="81.4"/><use href="#dl-s74" x="87.7"/><use href="#dl-s73" x="91.4"/><use href="#dl-s5d" x="96.8"/></g>
+<path d="M126 280 L174 280 L174 294 L166 302 L126 302 Z" class="shape fine"/>
+<g class="lt" role="img" aria-label="alt" transform="translate(134 295)"><use href="#dl-k61"/><use href="#dl-k6c" x="7.2"/><use href="#dl-k74" x="10.7"/></g>
+<g class="lt" role="img" aria-label="[password matches]" transform="translate(318 294)"><rect class="lt-halo" x="-1.5" y="-9.41" width="102.99" height="13.31"/><use href="#dl-s5b"/><use href="#dl-s70" x="3.4"/><use href="#dl-s61" x="9.7"/><use href="#dl-s73" x="16"/><use href="#dl-s73" x="21.3"/><use href="#dl-s77" x="26.6"/><use href="#dl-s6f" x="34.1"/><use href="#dl-s72" x="40.2"/><use href="#dl-s64" x="44.8"/><use href="#dl-s6d" x="54.2"/><use href="#dl-s61" x="63.5"/><use href="#dl-s74" x="69.8"/><use href="#dl-s63" x="73.5"/><use href="#dl-s68" x="79.2"/><use href="#dl-s65" x="85.5"/><use href="#dl-s73" x="91.3"/><use href="#dl-s5d" x="96.6"/></g>
+<g class="lt" role="img" aria-label="[wrong password]" transform="translate(318 438)"><rect class="lt-halo" x="-1.5" y="-9.41" width="91.26" height="13.31"/><use href="#dl-s5b"/><use href="#dl-s77" x="3.4"/><use href="#dl-s72" x="10.8"/><use href="#dl-s6f" x="15.4"/><use href="#dl-s6e" x="21.5"/><use href="#dl-s67" x="27.7"/><use href="#dl-s70" x="37.1"/><use href="#dl-s61" x="43.4"/><use href="#dl-s73" x="49.8"/><use href="#dl-s73" x="55.1"/><use href="#dl-s77" x="60.4"/><use href="#dl-s6f" x="67.9"/><use href="#dl-s72" x="74"/><use href="#dl-s64" x="78.5"/><use href="#dl-s5d" x="84.9"/></g>
+<path d="M126 856 L182 856 L182 870 L174 878 L126 878 Z" class="shape fine"/>
+<g class="lt" role="img" aria-label="loop" transform="translate(134 871)"><use href="#dl-k6c"/><use href="#dl-k6f" x="3.5"/><use href="#dl-k6f" x="10.4"/><use href="#dl-k70" x="17.4"/></g>
+<g class="lt" role="img" aria-label="[every 30s]" transform="translate(190 870)"><rect class="lt-halo" x="-1.5" y="-9.41" width="57.91" height="13.31"/><use href="#dl-s5b"/><use href="#dl-s65" x="3.4"/><use href="#dl-s76" x="9.2"/><use href="#dl-s65" x="14.5"/><use href="#dl-s72" x="20.4"/><use href="#dl-s79" x="24.9"/><use href="#dl-s33" x="33.3"/><use href="#dl-s30" x="40.6"/><use href="#dl-s73" x="46.2"/><use href="#dl-s5d" x="51.6"/></g>
+<path d="M126 968 L174 968 L174 982 L166 990 L126 990 Z" class="shape fine"/>
+<g class="lt" role="img" aria-label="par" transform="translate(134 983)"><use href="#dl-k70"/><use href="#dl-k61" x="7.2"/><use href="#dl-k72" x="14.4"/></g>
+<circle cx="0" cy="0" r="6" class="shape"/>
+<path d="M0 6 L0 18 M-12 10 L12 10 M0 18 L-8 30 M0 18 L8 30" class="edge"/>
+<g class="lt" role="img" aria-label="User" transform="translate(-18.12 44)"><use href="#dl-n55"/><use href="#dl-n53" x="9.4"/><use href="#dl-n45" x="18.4"/><use href="#dl-n52" x="27.6"/></g>
+<rect x="80" y="0" width="128" height="48" class="shape"/>
+<g class="lt" role="img" aria-label="«service»" transform="translate(117.92 19)"><use href="#dl-sab"/><use href="#dl-s73" x="8.3"/><use href="#dl-s65" x="13.6"/><use href="#dl-s72" x="19.4"/><use href="#dl-s76" x="24"/><use href="#dl-s69" x="29.3"/><use href="#dl-s63" x="32.4"/><use href="#dl-s65" x="38.1"/><use href="#dl-sbb" x="43.9"/></g>
+<g class="lt" role="img" aria-label="API Gateway" transform="translate(97.82 35)"><use href="#dl-n41"/><use href="#dl-n50" x="9.1"/><use href="#dl-n49" x="18.2"/><use href="#dl-n47" x="27.3"/><use href="#dl-n41" x="36.3"/><use href="#dl-n54" x="45.4"/><use href="#dl-n45" x="54.6"/><use href="#dl-n57" x="63.8"/><use href="#dl-n41" x="75.2"/><use href="#dl-n59" x="84.4"/></g>
+<rect x="240" y="0" width="128" height="48" class="shape"/>
+<g class="lt" role="img" aria-label="Auth Service" transform="translate(253.71 28)"><use href="#dl-n41"/><use href="#dl-n55" x="9.1"/><use href="#dl-n54" x="18.6"/><use href="#dl-n48" x="27.7"/><use href="#dl-n53" x="41.4"/><use href="#dl-n45" x="50.4"/><use href="#dl-n52" x="59.6"/><use href="#dl-n56" x="69"/><use href="#dl-n49" x="78.1"/><use href="#dl-n43" x="83"/><use href="#dl-n45" x="92.1"/></g>
+<rect x="528" y="0" width="80" height="48" class="shape"/>
+<g class="lt" role="img" aria-label="DB" transform="translate(559.13 28)"><use href="#dl-n44"/><use href="#dl-n42" x="9.2"/></g>
+<rect x="784" y="648" width="96" height="48" class="shape"/>
+<g class="lt" role="img" aria-label="Session" transform="translate(802.26 676)"><use href="#dl-n53"/><use href="#dl-n45" x="9"/><use href="#dl-n53" x="18.2"/><use href="#dl-n53" x="27.2"/><use href="#dl-n49" x="36.1"/><use href="#dl-n4f" x="41"/><use href="#dl-n4e" x="50.7"/></g>
+<rect x="132" y="1088" width="448" height="40" class="shape fine"/>
+<path d="M132 1088 L180 1088 L180 1100 L172 1108 L132 1108 Z" class="shape fine"/>
+<g class="lt" role="img" aria-label="ref" transform="translate(140 1101)"><use href="#dl-k72"/><use href="#dl-k65" x="5.2"/><use href="#dl-k66" x="11.8"/></g>
+<g class="lt" role="img" aria-label="Replicate state" transform="translate(318.29 1110.5)"><use href="#dl-s52"/><use href="#dl-s65" x="7.6"/><use href="#dl-s70" x="13.4"/><use href="#dl-s6c" x="19.7"/><use href="#dl-s69" x="22.8"/><use href="#dl-s63" x="25.9"/><use href="#dl-s61" x="31.6"/><use href="#dl-s74" x="37.9"/><use href="#dl-s65" x="41.6"/><use href="#dl-s73" x="50.5"/><use href="#dl-s74" x="55.9"/><use href="#dl-s61" x="59.6"/><use href="#dl-s74" x="65.9"/><use href="#dl-s65" x="69.6"/></g>
+<path d="M576 544 L774 544 L784 554 L784 592 L576 592 Z" class="shape fine"/>
+<path d="M774 544 L774 554 L784 554" class="edge fine"/>
+<g class="lt" role="img" aria-label="Locked for fifteen minutes, then" transform="translate(588 564)"><use href="#dl-s4c"/><use href="#dl-s6f" x="7"/><use href="#dl-s63" x="13.1"/><use href="#dl-s6b" x="18.8"/><use href="#dl-s65" x="24.5"/><use href="#dl-s64" x="30.3"/><use href="#dl-s66" x="39.8"/><use href="#dl-s6f" x="43.8"/><use href="#dl-s72" x="49.9"/><use href="#dl-s66" x="57.6"/><use href="#dl-s69" x="61.6"/><use href="#dl-s66" x="64.7"/><use href="#dl-s74" x="68.8"/><use href="#dl-s65" x="72.4"/><use href="#dl-s65" x="78.3"/><use href="#dl-s6e" x="84.1"/><use href="#dl-s6d" x="93.5"/><use href="#dl-s69" x="102.7"/><use href="#dl-s6e" x="105.8"/><use href="#dl-s75" x="112.1"/><use href="#dl-s74" x="118.3"/><use href="#dl-s65" x="122"/><use href="#dl-s73" x="127.8"/><use href="#dl-s2c" x="133.2"/><use href="#dl-s74" x="139.4"/><use href="#dl-s68" x="143.1"/><use href="#dl-s65" x="149.4"/><use href="#dl-s6e" x="155.2"/></g>
+<g class="lt" role="img" aria-label="unlocked by a sweep." transform="translate(588 579)"><use href="#dl-s75"/><use href="#dl-s6e" x="6.2"/><use href="#dl-s6c" x="12.5"/><use href="#dl-s6f" x="15.6"/><use href="#dl-s63" x="21.7"/><use href="#dl-s6b" x="27.3"/><use href="#dl-s65" x="33"/><use href="#dl-s64" x="38.8"/><use href="#dl-s62" x="48.3"/><use href="#dl-s79" x="54.6"/><use href="#dl-s61" x="63"/><use href="#dl-s73" x="72.4"/><use href="#dl-s77" x="77.8"/><use href="#dl-s65" x="85.3"/><use href="#dl-s65" x="91.1"/><use href="#dl-s70" x="96.9"/><use href="#dl-s2e" x="103.3"/></g>
+<path d="M128 712 L838 712 L848 722 L848 744 L128 744 Z" class="shape fine"/>
+<path d="M838 712 L838 722 L848 722" class="edge fine"/>
+<g class="lt" role="img" aria-label="Session lives until the user logs out or the token expires." transform="translate(140 731.5)"><use href="#dl-s53"/><use href="#dl-s65" x="7.2"/><use href="#dl-s73" x="13.1"/><use href="#dl-s73" x="18.4"/><use href="#dl-s69" x="23.7"/><use href="#dl-s6f" x="26.8"/><use href="#dl-s6e" x="32.9"/><use href="#dl-s6c" x="42.2"/><use href="#dl-s69" x="45.3"/><use href="#dl-s76" x="48.4"/><use href="#dl-s65" x="53.8"/><use href="#dl-s73" x="59.6"/><use href="#dl-s75" x="68"/><use href="#dl-s6e" x="74.3"/><use href="#dl-s74" x="80.5"/><use href="#dl-s69" x="84.2"/><use href="#dl-s6c" x="87.3"/><use href="#dl-s74" x="93.5"/><use href="#dl-s68" x="97.2"/><use href="#dl-s65" x="103.4"/><use href="#dl-s75" x="112.4"/><use href="#dl-s73" x="118.6"/><use href="#dl-s65" x="123.9"/><use href="#dl-s72" x="129.8"/><use href="#dl-s6c" x="137.4"/><use href="#dl-s6f" x="140.5"/><use href="#dl-s67" x="146.6"/><use href="#dl-s73" x="152.9"/><use href="#dl-s6f" x="161.3"/><use href="#dl-s75" x="167.4"/><use href="#dl-s74" x="173.7"/><use href="#dl-s6f" x="180.5"/><use href="#dl-s72" x="186.6"/><use href="#dl-s74" x="194.2"/><use href="#dl-s68" x="197.9"/><use href="#dl-s65" x="204.2"/><use href="#dl-s74" x="213.1"/><use href="#dl-s6f" x="216.8"/><use href="#dl-s6b" x="222.9"/><use href="#dl-s65" x="228.6"/><use href="#dl-s6e" x="234.4"/><use href="#dl-s65" x="243.8"/><use href="#dl-s78" x="249.6"/><use href="#dl-s70" x="254.9"/><use href="#dl-s69" x="261.3"/><use href="#dl-s72" x="264.3"/><use href="#dl-s65" x="268.9"/><use href="#dl-s73" x="274.7"/><use href="#dl-s2e" x="280.1"/></g>
+<path d="M0 80 L138 80" class="edge"/>
+<path d="M128 84.5 L138 80 L128 75.5 Z" class="solid"/>
+<path d="M150 96 L182 96 L182 112 L156 112" class="edge"/>
+<path d="M166 107.5 L156 112 L166 116.5 Z" class="solid"/>
+<path d="M150 152 L304 152" class="edge"/>
+<path d="M294 156.5 L304 152 L294 147.5" class="edge head"/>
+<path d="M150 184 L298 184" class="edge"/>
+<path d="M288 188.5 L298 184 L288 179.5 Z" class="solid"/>
+<path d="M310 232 L562 232" class="edge"/>
+<path d="M552 236.5 L562 232 L552 227.5 Z" class="solid"/>
+<path d="M562 264 L310 264" class="edge dashed fine"/>
+<path d="M320 259.5 L310 264 L320 268.5" class="edge head fine"/>
+<path d="M310 320 L342 320 L342 336 L316 336" class="edge"/>
+<path d="M326 331.5 L316 336 L326 340.5 Z" class="solid"/>
+<path d="M316 352 L348 352 L348 368 L322 368" class="edge"/>
+<path d="M332 363.5 L322 368 L332 372.5 Z" class="solid"/>
+<path d="M298 416 L150 416" class="edge dashed fine"/>
+<path d="M160 411.5 L150 416 L160 420.5" class="edge head fine"/>
+<path d="M298 464 L150 464" class="edge dashed fine"/>
+<path d="M160 459.5 L150 464 L160 468.5" class="edge head fine"/>
+<path d="M310 528 L568 528" class="edge"/>
+<path d="M558 532.5 L568 528 L558 523.5 Z" class="solid"/>
+<path d="M150 672 L784 672" class="edge dashed fine"/>
+<path d="M774 676.5 L784 672 L774 667.5" class="edge head fine"/>
+<path d="M138 776 L0 776" class="edge dashed fine"/>
+<path d="M10 771.5 L0 776 L10 780.5" class="edge head fine"/>
+<path d="M48 808 L144 808" class="edge"/>
+<path d="M134 812.5 L144 808 L134 803.5 Z" class="solid"/>
+<circle cx="48" cy="808" r="4" class="solid"/>
+<path d="M144 840 L244 840" class="edge"/>
+<path d="M234 844.5 L244 840 L234 835.5 Z" class="solid"/>
+<circle cx="248" cy="840" r="4" class="solid"/>
+<path d="M144 904 L568 904" class="edge"/>
+<path d="M558 908.5 L568 904 L558 899.5 Z" class="solid"/>
+<path d="M568 936 L144 936" class="edge dashed fine"/>
+<path d="M154 931.5 L144 936 L154 940.5" class="edge head fine"/>
+<path d="M144 1016 L568 1016" class="edge"/>
+<path d="M558 1020.5 L568 1016 L558 1011.5" class="edge head"/>
+<path d="M144 1056 L304 1056" class="edge"/>
+<path d="M294 1060.5 L304 1056 L294 1051.5" class="edge head"/>
+<path d="M825 1137 L839 1151 M825 1151 L839 1137" class="edge"/>
+<g class="lt" role="img" aria-label="login(user, password)" transform="translate(14.88 75)"><rect class="lt-halo" x="-1.5" y="-9.41" width="111.24" height="13.31"/><use href="#dl-s6c"/><use href="#dl-s6f" x="3.1"/><use href="#dl-s67" x="9.2"/><use href="#dl-s69" x="15.5"/><use href="#dl-s6e" x="18.6"/><use href="#dl-s28" x="24.8"/><use href="#dl-s75" x="28.5"/><use href="#dl-s73" x="34.8"/><use href="#dl-s65" x="40.1"/><use href="#dl-s72" x="45.9"/><use href="#dl-s2c" x="50.5"/><use href="#dl-s70" x="56.8"/><use href="#dl-s61" x="63.1"/><use href="#dl-s73" x="69.4"/><use href="#dl-s73" x="74.7"/><use href="#dl-s77" x="80.1"/><use href="#dl-s6f" x="87.5"/><use href="#dl-s72" x="93.6"/><use href="#dl-s64" x="98.2"/><use href="#dl-s29" x="104.5"/></g>
+<g class="lt" role="img" aria-label="validate form" transform="translate(188 107.5)"><rect class="lt-halo" x="-1.5" y="-9.41" width="70.12" height="13.31"/><use href="#dl-s76"/><use href="#dl-s61" x="5.3"/><use href="#dl-s6c" x="11.6"/><use href="#dl-s69" x="14.7"/><use href="#dl-s64" x="17.8"/><use href="#dl-s61" x="24.2"/><use href="#dl-s74" x="30.5"/><use href="#dl-s65" x="34.2"/><use href="#dl-s66" x="43.1"/><use href="#dl-s6f" x="47.2"/><use href="#dl-s72" x="53.3"/><use href="#dl-s6d" x="57.8"/></g>
+<g class="lt" role="img" aria-label="audit(&quot;login attempt&quot;)" transform="translate(172.95 147)"><rect class="lt-halo" x="-1.5" y="-9.41" width="111.11" height="13.31"/><use href="#dl-s61"/><use href="#dl-s75" x="6.3"/><use href="#dl-s64" x="12.5"/><use href="#dl-s69" x="18.9"/><use href="#dl-s74" x="22"/><use href="#dl-s28" x="25.7"/><use href="#dl-s22" x="29.4"/><use href="#dl-s6c" x="33.5"/><use href="#dl-s6f" x="36.6"/><use href="#dl-s67" x="42.7"/><use href="#dl-s69" x="49"/><use href="#dl-s6e" x="52.1"/><use href="#dl-s61" x="61.4"/><use href="#dl-s74" x="67.8"/><use href="#dl-s74" x="71.5"/><use href="#dl-s65" x="75.2"/><use href="#dl-s6d" x="81"/><use href="#dl-s70" x="90.3"/><use href="#dl-s74" x="96.6"/><use href="#dl-s22" x="100.3"/><use href="#dl-s29" x="104.4"/></g>
+<g class="lt" role="img" aria-label="verify(user, password)" transform="translate(168.21 179)"><rect class="lt-halo" x="-1.5" y="-9.41" width="114.59" height="13.31"/><use href="#dl-s76"/><use href="#dl-s65" x="5.3"/><use href="#dl-s72" x="11.2"/><use href="#dl-s69" x="15.7"/><use href="#dl-s66" x="18.8"/><use href="#dl-s79" x="22.9"/><use href="#dl-s28" x="28.2"/><use href="#dl-s75" x="31.9"/><use href="#dl-s73" x="38.1"/><use href="#dl-s65" x="43.4"/><use href="#dl-s72" x="49.3"/><use href="#dl-s2c" x="53.8"/><use href="#dl-s70" x="60.1"/><use href="#dl-s61" x="66.4"/><use href="#dl-s73" x="72.7"/><use href="#dl-s73" x="78.1"/><use href="#dl-s77" x="83.4"/><use href="#dl-s6f" x="90.9"/><use href="#dl-s72" x="97"/><use href="#dl-s64" x="101.5"/><use href="#dl-s29" x="107.9"/></g>
+<g class="lt" role="img" aria-label="SELECT credentials FROM users WHERE" transform="translate(330.65 212)"><rect class="lt-halo" x="-1.5" y="-9.41" width="213.7" height="13.31"/><use href="#dl-s53"/><use href="#dl-s45" x="7.2"/><use href="#dl-s4c" x="14.7"/><use href="#dl-s45" x="21.7"/><use href="#dl-s43" x="29.2"/><use href="#dl-s54" x="36.6"/><use href="#dl-s63" x="47.1"/><use href="#dl-s72" x="52.7"/><use href="#dl-s65" x="57.3"/><use href="#dl-s64" x="63.1"/><use href="#dl-s65" x="69.5"/><use href="#dl-s6e" x="75.3"/><use href="#dl-s74" x="81.6"/><use href="#dl-s69" x="85.3"/><use href="#dl-s61" x="88.3"/><use href="#dl-s6c" x="94.7"/><use href="#dl-s73" x="97.8"/><use href="#dl-s46" x="106.2"/><use href="#dl-s52" x="113.3"/><use href="#dl-s4f" x="120.9"/><use href="#dl-s4d" x="128.8"/><use href="#dl-s75" x="140.8"/><use href="#dl-s73" x="147"/><use href="#dl-s65" x="152.3"/><use href="#dl-s72" x="158.2"/><use href="#dl-s73" x="162.7"/><use href="#dl-s57" x="171.2"/><use href="#dl-s48" x="180.5"/><use href="#dl-s45" x="188.2"/><use href="#dl-s52" x="195.7"/><use href="#dl-s45" x="203.2"/></g>
+<g class="lt" role="img" aria-label="name = ?" transform="translate(412.2 227)"><rect class="lt-halo" x="-1.5" y="-9.41" width="50.61" height="13.31"/><use href="#dl-s6e"/><use href="#dl-s61" x="6.2"/><use href="#dl-s6d" x="12.5"/><use href="#dl-s65" x="21.8"/><use href="#dl-s3d" x="30.8"/><use href="#dl-s3f" x="40.7"/></g>
+<g class="lt" role="img" aria-label="row" transform="translate(426.93 259)"><rect class="lt-halo" x="-1.5" y="-9.41" width="21.13" height="13.31"/><use href="#dl-s72"/><use href="#dl-s6f" x="4.6"/><use href="#dl-s77" x="10.7"/></g>
+<g class="lt" role="img" aria-label="sign token" transform="translate(348 331.5)"><rect class="lt-halo" x="-1.5" y="-9.41" width="54.61" height="13.31"/><use href="#dl-s73"/><use href="#dl-s69" x="5.3"/><use href="#dl-s67" x="8.4"/><use href="#dl-s6e" x="14.7"/><use href="#dl-s74" x="24.1"/><use href="#dl-s6f" x="27.8"/><use href="#dl-s6b" x="33.9"/><use href="#dl-s65" x="39.5"/><use href="#dl-s6e" x="45.4"/></g>
+<g class="lt" role="img" aria-label="read key" transform="translate(354 363.5)"><rect class="lt-halo" x="-1.5" y="-9.41" width="46.01" height="13.31"/><use href="#dl-s72"/><use href="#dl-s65" x="4.6"/><use href="#dl-s61" x="10.4"/><use href="#dl-s64" x="16.7"/><use href="#dl-s6b" x="26.2"/><use href="#dl-s65" x="31.8"/><use href="#dl-s79" x="37.7"/></g>
+<g class="lt" role="img" aria-label="token" transform="translate(210.23 411)"><rect class="lt-halo" x="-1.5" y="-9.41" width="30.54" height="13.31"/><use href="#dl-s74"/><use href="#dl-s6f" x="3.7"/><use href="#dl-s6b" x="9.8"/><use href="#dl-s65" x="15.5"/><use href="#dl-s6e" x="21.3"/></g>
+<g class="lt" role="img" aria-label="401" transform="translate(215.41 459)"><rect class="lt-halo" x="-1.5" y="-9.41" width="20.19" height="13.31"/><use href="#dl-s34"/><use href="#dl-s30" x="7.2"/><use href="#dl-s31" x="12.9"/></g>
+<g class="lt" role="img" aria-label="lock(user)" transform="translate(414.06 523)"><rect class="lt-halo" x="-1.5" y="-9.41" width="52.89" height="13.31"/><use href="#dl-s6c"/><use href="#dl-s6f" x="3.1"/><use href="#dl-s63" x="9.2"/><use href="#dl-s6b" x="14.9"/><use href="#dl-s28" x="20.5"/><use href="#dl-s75" x="24.2"/><use href="#dl-s73" x="30.5"/><use href="#dl-s65" x="35.8"/><use href="#dl-s72" x="41.6"/><use href="#dl-s29" x="46.2"/></g>
+<g class="lt" role="img" aria-label="spawn(user)" transform="translate(187.49 667)"><rect class="lt-halo" x="-1.5" y="-9.41" width="64.02" height="13.31"/><use href="#dl-s73"/><use href="#dl-s70" x="5.3"/><use href="#dl-s61" x="11.6"/><use href="#dl-s77" x="18"/><use href="#dl-s6e" x="25.4"/><use href="#dl-s28" x="31.7"/><use href="#dl-s75" x="35.4"/><use href="#dl-s73" x="41.6"/><use href="#dl-s65" x="46.9"/><use href="#dl-s72" x="52.8"/><use href="#dl-s29" x="57.3"/></g>
+<g class="lt" role="img" aria-label="session cookie" transform="translate(32.58 771)"><rect class="lt-halo" x="-1.5" y="-9.41" width="75.83" height="13.31"/><use href="#dl-s73"/><use href="#dl-s65" x="5.3"/><use href="#dl-s73" x="11.2"/><use href="#dl-s73" x="16.5"/><use href="#dl-s69" x="21.8"/><use href="#dl-s6f" x="24.9"/><use href="#dl-s6e" x="31"/><use href="#dl-s63" x="40.3"/><use href="#dl-s6f" x="46"/><use href="#dl-s6f" x="52.1"/><use href="#dl-s6b" x="58.2"/><use href="#dl-s69" x="63.9"/><use href="#dl-s65" x="67"/></g>
+<g class="lt" role="img" aria-label="metrics.flush" transform="translate(61.24 803)"><rect class="lt-halo" x="-1.5" y="-9.41" width="68.53" height="13.31"/><use href="#dl-s6d"/><use href="#dl-s65" x="9.3"/><use href="#dl-s74" x="15.1"/><use href="#dl-s72" x="18.8"/><use href="#dl-s69" x="23.4"/><use href="#dl-s63" x="26.5"/><use href="#dl-s73" x="32.1"/><use href="#dl-s2e" x="37.5"/><use href="#dl-s66" x="40.6"/><use href="#dl-s6c" x="44.6"/><use href="#dl-s75" x="47.7"/><use href="#dl-s73" x="53.9"/><use href="#dl-s68" x="59.3"/></g>
+<g class="lt" role="img" aria-label="dropped event" transform="translate(155.06 835)"><rect class="lt-halo" x="-1.5" y="-9.41" width="74.89" height="13.31"/><use href="#dl-s64"/><use href="#dl-s72" x="6.4"/><use href="#dl-s6f" x="10.9"/><use href="#dl-s70" x="17"/><use href="#dl-s70" x="23.3"/><use href="#dl-s65" x="29.6"/><use href="#dl-s64" x="35.5"/><use href="#dl-s65" x="44.9"/><use href="#dl-s76" x="50.8"/><use href="#dl-s65" x="56.1"/><use href="#dl-s6e" x="62"/><use href="#dl-s74" x="68.2"/></g>
+<g class="lt" role="img" aria-label="ping" transform="translate(204.02 899)"><rect class="lt-halo" x="-1.5" y="-9.41" width="24.96" height="13.31"/><use href="#dl-s70"/><use href="#dl-s69" x="6.3"/><use href="#dl-s6e" x="9.4"/><use href="#dl-s67" x="15.6"/></g>
+<g class="lt" role="img" aria-label="pong" transform="translate(432.52 931)"><rect class="lt-halo" x="-1.5" y="-9.41" width="27.96" height="13.31"/><use href="#dl-s70"/><use href="#dl-s6f" x="6.3"/><use href="#dl-s6e" x="12.4"/><use href="#dl-s67" x="18.6"/></g>
+<g class="lt" role="img" aria-label="write" transform="translate(202.67 1011)"><rect class="lt-halo" x="-1.5" y="-9.41" width="27.66" height="13.31"/><use href="#dl-s77"/><use href="#dl-s72" x="7.5"/><use href="#dl-s69" x="12"/><use href="#dl-s74" x="15.1"/><use href="#dl-s65" x="18.8"/></g>
+<g class="lt" role="img" aria-label="notify" transform="translate(209.76 1051)"><rect class="lt-halo" x="-1.5" y="-9.41" width="31.49" height="13.31"/><use href="#dl-s6e"/><use href="#dl-s6f" x="6.2"/><use href="#dl-s74" x="12.3"/><use href="#dl-s69" x="16"/><use href="#dl-s66" x="19.1"/><use href="#dl-s79" x="23.2"/></g>
+</svg>

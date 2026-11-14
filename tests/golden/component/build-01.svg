@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -40 1288 248" width="1288" height="248">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-24" y="-40" width="1288" height="248" fill="#fff"/>
+<text x="0" y="-4" class="title">From chapter to page</text>
+<rect x="0" y="72" width="176" height="64" class="shape"/>
+<rect x="155" y="80" width="13" height="16" class="icon"/>
+<rect x="152" y="83" width="6" height="3.5" class="icon"/>
+<rect x="152" y="89.5" width="6" height="3.5" class="icon"/>
+<text x="88" y="99.5" class="small" text-anchor="middle">«input»</text>
+<text x="88" y="116.5" class="name" text-anchor="middle">Chapter Markdown</text>
+<rect x="240" y="32" width="416" height="144" class="shape heavy"/>
+<rect x="635" y="40" width="13" height="16" class="icon"/>
+<rect x="632" y="43" width="6" height="3.5" class="icon"/>
+<rect x="632" y="49.5" width="6" height="3.5" class="icon"/>
+<text x="448" y="56" class="name" text-anchor="middle">mdBook</text>
+<rect x="264" y="80" width="144" height="64" class="shape"/>
+<rect x="387" y="88" width="13" height="16" class="icon"/>
+<rect x="384" y="91" width="6" height="3.5" class="icon"/>
+<rect x="384" y="97.5" width="6" height="3.5" class="icon"/>
+<text x="336" y="116.5" class="name" text-anchor="middle">Book Loader</text>
+<rect x="472" y="80" width="160" height="64" class="shape"/>
+<rect x="611" y="88" width="13" height="16" class="icon"/>
+<rect x="608" y="91" width="6" height="3.5" class="icon"/>
+<rect x="608" y="97.5" width="6" height="3.5" class="icon"/>
+<text x="552" y="116.5" class="name" text-anchor="middle">HTML Renderer</text>
+<rect x="824" y="16" width="160" height="64" class="shape"/>
+<rect x="963" y="24" width="13" height="16" class="icon"/>
+<rect x="960" y="27" width="6" height="3.5" class="icon"/>
+<rect x="960" y="33.5" width="6" height="3.5" class="icon"/>
+<text x="904" y="52.5" class="name" text-anchor="middle">mdbook-drumlin</text>
+<rect x="1096" y="16" width="144" height="64" class="shape"/>
+<rect x="1219" y="24" width="13" height="16" class="icon"/>
+<rect x="1216" y="27" width="6" height="3.5" class="icon"/>
+<rect x="1216" y="33.5" width="6" height="3.5" class="icon"/>
+<text x="1168" y="52.5" class="name" text-anchor="middle">drumlin crate</text>
+<rect x="824" y="120" width="160" height="64" class="shape"/>
+<rect x="963" y="128" width="13" height="16" class="icon"/>
+<rect x="960" y="131" width="6" height="3.5" class="icon"/>
+<rect x="960" y="137.5" width="6" height="3.5" class="icon"/>
+<text x="904" y="147.5" class="small" text-anchor="middle">«output»</text>
+<text x="904" y="164.5" class="name" text-anchor="middle">Published Site</text>
+<path d="M408 112 L472 112" class="edge"/>
+<path d="M462 116.5 L472 112 L462 107.5" class="edge head"/>
+<path d="M176 104 L240 104" class="edge"/>
+<path d="M230 108.5 L240 104 L230 99.5" class="edge head"/>
+<path d="M656 152 L824 152" class="edge"/>
+<path d="M814 156.5 L824 152 L814 147.5" class="edge head"/>
+<path d="M662 48 L711 48" class="edge"/>
+<path d="M772 48 L824 48" class="edge"/>
+<path d="M719 48 L762 48" class="edge dashed fine"/>
+<path d="M752 52.5 L762 48 L752 43.5" class="edge head fine"/>
+<path d="M719 56 A8 8 0 0 1 719 40" class="edge"/>
+<circle cx="767" cy="48" r="5" class="shape"/>
+<text x="743" y="35" class="small" text-anchor="middle">IPreprocess</text>
+<path d="M984 48 L1008 48" class="edge"/>
+<path d="M1069 48 L1096 48" class="edge"/>
+<path d="M1016 48 L1059 48" class="edge dashed fine"/>
+<path d="M1049 52.5 L1059 48 L1049 43.5" class="edge head fine"/>
+<path d="M1016 56 A8 8 0 0 1 1016 40" class="edge"/>
+<circle cx="1064" cy="48" r="5" class="shape"/>
+<text x="1040" y="35" class="small" text-anchor="middle">IRender</text>
+<rect x="650" y="42" width="12" height="12" class="shape"/>
+<text x="666" y="39" class="small" text-anchor="start">hook</text>
+<text x="740" y="145" class="small halo" text-anchor="middle">inline SVG</text>
+</svg>

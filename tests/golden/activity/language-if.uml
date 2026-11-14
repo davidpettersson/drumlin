@@ -1,0 +1,26 @@
+diagram activity "Decisions"
+start
+action "Parse header"
+if "valid" {
+  action "Route request"
+} else "malformed" {
+  action "Log error"
+}
+if "cached" {
+  action "Serve from cache"
+}
+if "rejected" {
+  action "Send 403"
+  stop
+}
+action "Run handler"
+if "2xx" {
+  action "Cache"
+} else if "4xx" {
+  action "Count"
+} else if "5xx" {
+  action "Alert"
+} else {
+  action "Mystery"
+}
+stop

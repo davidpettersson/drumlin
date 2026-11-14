@@ -1,0 +1,11 @@
+diagram component "Debugger"
+direction right
+
+component "Debug UI" as ui { requires IDebug }
+component Engine {
+  provides IDebug
+  requires ISymbols
+  requires ITarget
+}
+component "DWARF Reader" as dwarf { provides ISymbols }
+component "ptrace Backend" as ptrace { provides ITarget }

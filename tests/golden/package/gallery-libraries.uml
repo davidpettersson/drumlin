@@ -1,0 +1,18 @@
+diagram package "Library dependency graph"
+direction right
+
+package app
+package "http-client" as http
+package "json" as json
+package "tls" as tls
+package "logging" as log
+package "platform" as plat
+
+app ..> http : <<import>>
+app ..> json : <<import>>
+app ..> log : <<import>>
+http ..> tls : <<access>>
+http ..> log
+json ..> plat
+tls ..> plat
+log ..> plat

@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -56 1384 688" width="1384" height="688">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-24" y="-56" width="1384" height="688" fill="#fff"/>
+<text x="0" y="-20" class="title">Order Platform</text>
+<rect x="0" y="128" width="56.48" height="24" class="shape heavy"/>
+<rect x="0" y="152" width="192" height="120" class="shape heavy"/>
+<text x="12" y="144.5" class="name" text-anchor="start">Edge</text>
+<rect x="24" y="176" width="144" height="64" class="shape"/>
+<rect x="147" y="184" width="13" height="16" class="icon"/>
+<rect x="144" y="187" width="6" height="3.5" class="icon"/>
+<rect x="144" y="193.5" width="6" height="3.5" class="icon"/>
+<text x="96" y="212.5" class="name" text-anchor="middle">Web Gateway</text>
+<rect x="392" y="0" width="528" height="400" class="shape heavy"/>
+<rect x="899" y="8" width="13" height="16" class="icon"/>
+<rect x="896" y="11" width="6" height="3.5" class="icon"/>
+<rect x="896" y="17.5" width="6" height="3.5" class="icon"/>
+<text x="656" y="24" class="name" text-anchor="middle">Order Service</text>
+<rect x="416" y="160" width="144" height="64" class="shape"/>
+<rect x="539" y="168" width="13" height="16" class="icon"/>
+<rect x="536" y="171" width="6" height="3.5" class="icon"/>
+<rect x="536" y="177.5" width="6" height="3.5" class="icon"/>
+<text x="488" y="196.5" class="name" text-anchor="middle">API Handler</text>
+<rect x="696" y="48" width="160" height="64" class="shape"/>
+<rect x="835" y="56" width="13" height="16" class="icon"/>
+<rect x="832" y="59" width="6" height="3.5" class="icon"/>
+<rect x="832" y="65.5" width="6" height="3.5" class="icon"/>
+<text x="776" y="84.5" class="name" text-anchor="middle">Pricing Engine</text>
+<rect x="712" y="160" width="128" height="64" class="shape"/>
+<rect x="819" y="168" width="13" height="16" class="icon"/>
+<rect x="816" y="171" width="6" height="3.5" class="icon"/>
+<rect x="816" y="177.5" width="6" height="3.5" class="icon"/>
+<text x="776" y="196.5" class="name" text-anchor="middle">Outbox</text>
+<path d="M672 312 L870 312 L880 322 L880 376 L672 376 Z" class="shape fine"/>
+<path d="M870 312 L870 322 L880 322" class="edge fine"/>
+<text x="684" y="332.5" class="small" text-anchor="start">Publishes at least once.</text>
+<text x="684" y="347.5" class="small" text-anchor="start">Consumers deduplicate on event</text>
+<text x="684" y="362.5" class="small" text-anchor="start">id.</text>
+<rect x="592" y="440" width="128" height="64" class="shape"/>
+<rect x="699" y="448" width="13" height="16" class="icon"/>
+<rect x="696" y="451" width="6" height="3.5" class="icon"/>
+<rect x="696" y="457.5" width="6" height="3.5" class="icon"/>
+<text x="656" y="467.5" class="small" text-anchor="middle">«external»</text>
+<text x="656" y="484.5" class="name" text-anchor="middle">Identity</text>
+<rect x="1160" y="128" width="105.94" height="24" class="shape heavy"/>
+<rect x="1160" y="152" width="176" height="216" class="shape heavy"/>
+<text x="1172" y="144.5" class="name" text-anchor="start">Infrastructure</text>
+<rect x="1184" y="176" width="128" height="64" class="shape"/>
+<rect x="1291" y="184" width="13" height="16" class="icon"/>
+<rect x="1288" y="187" width="6" height="3.5" class="icon"/>
+<rect x="1288" y="193.5" width="6" height="3.5" class="icon"/>
+<text x="1248" y="212.5" class="name" text-anchor="middle">Event Bus</text>
+<rect x="1184" y="280" width="128" height="64" class="shape"/>
+<rect x="1291" y="288" width="13" height="16" class="icon"/>
+<rect x="1288" y="291" width="6" height="3.5" class="icon"/>
+<rect x="1288" y="297.5" width="6" height="3.5" class="icon"/>
+<text x="1248" y="307.5" class="small" text-anchor="middle">«database»</text>
+<text x="1248" y="324.5" class="name" text-anchor="middle">Postgres</text>
+<rect x="592" y="544" width="128" height="64" class="shape"/>
+<rect x="699" y="552" width="13" height="16" class="icon"/>
+<rect x="696" y="555" width="6" height="3.5" class="icon"/>
+<rect x="696" y="561.5" width="6" height="3.5" class="icon"/>
+<text x="656" y="580.5" class="name" text-anchor="middle">Billing</text>
+<path d="M592 576 L560 576" class="edge"/>
+<circle cx="554" cy="576" r="6" class="shape"/>
+<text x="554" y="564" class="small" text-anchor="middle">IInvoices</text>
+<path d="M398 192 L416 192" class="edge"/>
+<path d="M406 196.5 L416 192 L406 187.5" class="edge head"/>
+<path d="M560 192 L712 192" class="edge"/>
+<path d="M702 196.5 L712 192 L702 187.5" class="edge head"/>
+<path d="M840 192 L914 192" class="edge"/>
+<path d="M904 196.5 L914 192 L904 187.5" class="edge head"/>
+<path d="M920 312 L1184 312" class="edge dashed fine"/>
+<path d="M1174 316.5 L1184 312 L1174 307.5" class="edge head fine"/>
+<path d="M776 312 L776 224" class="edge dashed fine"/>
+<path d="M926 192 L1023 192" class="edge"/>
+<path d="M1084 192 L1184 192" class="edge"/>
+<path d="M1031 192 L1074 192" class="edge dashed fine"/>
+<path d="M1064 196.5 L1074 192 L1064 187.5" class="edge head fine"/>
+<path d="M1031 200 A8 8 0 0 1 1031 184" class="edge"/>
+<circle cx="1079" cy="192" r="5" class="shape"/>
+<text x="1055" y="179" class="small" text-anchor="middle">IEventBus</text>
+<path d="M720 576 L852 576" class="edge"/>
+<path d="M913 576 L1048 576 L1048 224 L1184 224" class="edge"/>
+<path d="M860 576 L903 576" class="edge dashed fine"/>
+<path d="M893 580.5 L903 576 L893 571.5" class="edge head fine"/>
+<path d="M860 584 A8 8 0 0 1 860 568" class="edge"/>
+<circle cx="908" cy="576" r="5" class="shape"/>
+<text x="884" y="563" class="small" text-anchor="middle">IEventBus</text>
+<path d="M168 224 L288 224 L288 472 L408 472" class="edge"/>
+<path d="M469 472 L592 472" class="edge"/>
+<path d="M416 472 L459 472" class="edge dashed fine"/>
+<path d="M449 476.5 L459 472 L449 467.5" class="edge head fine"/>
+<path d="M416 480 A8 8 0 0 1 416 464" class="edge"/>
+<circle cx="464" cy="472" r="5" class="shape"/>
+<text x="440" y="459" class="small" text-anchor="middle">IIdentity</text>
+<path d="M168 192 L245 192" class="edge"/>
+<path d="M306 192 L386 192" class="edge"/>
+<path d="M253 192 L296 192" class="edge dashed fine"/>
+<path d="M286 196.5 L296 192 L286 187.5" class="edge head fine"/>
+<path d="M253 200 A8 8 0 0 1 253 184" class="edge"/>
+<circle cx="301" cy="192" r="5" class="shape"/>
+<text x="277" y="179" class="small" text-anchor="middle">IOrders</text>
+<path d="M488 160 L488 80 L560 80" class="edge"/>
+<path d="M621 80 L696 80" class="edge"/>
+<path d="M568 80 L611 80" class="edge dashed fine"/>
+<path d="M601 84.5 L611 80 L601 75.5" class="edge head fine"/>
+<path d="M568 88 A8 8 0 0 1 568 72" class="edge"/>
+<circle cx="616" cy="80" r="5" class="shape"/>
+<text x="592" y="67" class="small" text-anchor="middle">IPricing</text>
+<rect x="386" y="186" width="12" height="12" class="shape"/>
+<text x="382" y="183" class="small" text-anchor="end">api</text>
+<rect x="914" y="186" width="12" height="12" class="shape"/>
+<text x="930" y="183" class="small" text-anchor="start">events</text>
+<text x="636" y="185" class="small halo" text-anchor="middle">persist</text>
+<text x="1012.4" y="305" class="small halo" text-anchor="middle">SQL</text>
+</svg>

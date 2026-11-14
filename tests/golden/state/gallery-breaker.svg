@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-21.32 -56 490.87 496" width="490.87" height="496">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .solid { fill: #22201c; stroke: none; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-21.32" y="-56" width="490.87" height="496" fill="#fff"/>
+<text x="2.68" y="-20" class="title">Circuit breaker</text>
+<rect x="96" y="80" width="112" height="64" class="shape" rx="10"/>
+<text x="152" y="100.5" class="name" text-anchor="middle">Closed</text>
+<text x="108" y="124" class="small" text-anchor="start">do / count failures</text>
+<path d="M96 112 L208 112" class="edge fine"/>
+<rect x="104" y="368" width="96" height="48" class="shape" rx="10"/>
+<text x="152" y="396.5" class="name" text-anchor="middle">HalfOpen</text>
+<rect x="104" y="240" width="96" height="48" class="shape" rx="10"/>
+<text x="152" y="268.5" class="name" text-anchor="middle">Open</text>
+<circle cx="152" cy="8" r="8" class="solid"/>
+<path d="M152 16 L152 80" class="edge"/>
+<path d="M147.5 70 L152 80 L156.5 70" class="edge head"/>
+<path d="M152 144 L152 240" class="edge"/>
+<path d="M147.5 230 L152 240 L156.5 230" class="edge head"/>
+<path d="M160 288 L160 368" class="edge"/>
+<path d="M155.5 358 L160 368 L164.5 358" class="edge head"/>
+<path d="M200 392 L344 392 L344 168 L192 168 L192 144" class="edge"/>
+<path d="M196.5 154 L192 144 L187.5 154" class="edge head"/>
+<path d="M136 368 L136 288" class="edge"/>
+<path d="M140.5 298 L136 288 L131.5 298" class="edge head"/>
+<path d="M208 104 L232 104 L232 120 L208 120" class="edge"/>
+<path d="M218 115.5 L208 120 L218 124.5" class="edge head"/>
+<path d="M200 256 L224 256 L224 272 L200 272" class="edge"/>
+<path d="M210 267.5 L200 272 L210 276.5" class="edge head"/>
+<text x="160" y="195" class="small" text-anchor="start">failures &gt;= threshold / start timer</text>
+<text x="168" y="331" class="small" text-anchor="start">timer expired</text>
+<text x="352" y="188.5" class="small" text-anchor="start">probe succeeded</text>
+<text x="352" y="201.5" class="small" text-anchor="start">/ reset failure count</text>
+<text x="128" y="331" class="small" text-anchor="end">probe failed / restart timer</text>
+<text x="240" y="115" class="small" text-anchor="start">success / reset failure count</text>
+<text x="232" y="267" class="small" text-anchor="start">call / fail fast</text>
+</svg>

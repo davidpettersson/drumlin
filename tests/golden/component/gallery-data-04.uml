@@ -1,0 +1,18 @@
+diagram component "Model serving"
+direction right
+
+component Client { requires IPredict }
+
+package "Serving" as serving {
+  component Router { provides IPredict }
+  component "Model A" as a
+  component "Model B" as b
+  Router --> a : 95%
+  Router --> b : 5%
+}
+
+component "Feature Store" as features <<database>>
+component "Metrics Sink" as metrics
+
+serving ..> features : lookup
+serving ..> metrics : latency

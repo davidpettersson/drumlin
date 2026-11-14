@@ -1,0 +1,11 @@
+diagram activity "Loops"
+start
+while "queue not empty" {
+  action "Pop task"
+  action "Run task"
+}
+repeat {
+  action "Read block"
+  action "Verify CRC"
+} until "CRC ok"
+stop

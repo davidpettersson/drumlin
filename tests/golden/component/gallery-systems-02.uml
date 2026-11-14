@@ -1,0 +1,26 @@
+diagram component "LSM storage engine"
+direction right
+
+component Client { requires IKeyValue }
+
+component Engine as engine {
+  port kv provides IKeyValue
+  component "Write Path" as write
+  component "Read Path" as read
+  component Memtable
+  component "Write-Ahead Log" as wal
+  component Compactor
+
+  kv --> write
+  kv --> read
+  write --> wal : append
+  write --> Memtable : insert
+  read --> Memtable : probe
+}
+
+component "Block Cache" as cache { provides ICache }
+component "SSTable Files" as sst <<filesystem>>
+
+engine ..> cache : uses
+engine --> sst : flush, read
+note wal: Replayed on startup before the engine accepts writes.

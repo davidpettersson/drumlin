@@ -1,0 +1,9 @@
+diagram package "Containment"
+
+package Types
+class Shape
+class Point
+class Color
+Types +-- Shape
+Types +-- Point
+Types +-- Color

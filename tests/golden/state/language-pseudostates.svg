@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -56 376 1008" width="376" height="1008">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .solid { fill: #22201c; stroke: none; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-24" y="-56" width="376" height="1008" fill="#fff"/>
+<text x="0" y="-20" class="title">Every pseudostate</text>
+<path d="M48 208 L60 220 L48 232 L36 220 Z" class="shape"/>
+<circle cx="184" cy="448" r="5" class="solid"/>
+<rect x="88" y="536" width="184" height="8" class="solid"/>
+<rect x="40" y="608" width="288" height="224" class="shape heavy" rx="10"/>
+<text x="184" y="628.5" class="name" text-anchor="middle">Tasks</text>
+<path d="M40 640 L328 640" class="edge fine"/>
+<path d="M180 640 L180 832" class="edge dashed fine"/>
+<text x="52" y="662" class="small" text-anchor="start">left</text>
+<rect x="56" y="680" width="96" height="48" class="shape" rx="10"/>
+<text x="104" y="708.5" class="name" text-anchor="middle">A</text>
+<circle cx="104" cy="804" r="11" class="shape"/>
+<circle cx="104" cy="804" r="6.5" class="solid"/>
+<text x="204" y="662" class="small" text-anchor="start">right</text>
+<rect x="208" y="680" width="96" height="48" class="shape" rx="10"/>
+<text x="256" y="708.5" class="name" text-anchor="middle">B</text>
+<circle cx="256" cy="804" r="11" class="shape"/>
+<circle cx="256" cy="804" r="6.5" class="solid"/>
+<path d="M176 912 L192 928 M192 912 L176 928" class="edge"/>
+<rect x="136" y="312" width="96" height="48" class="shape" rx="10"/>
+<text x="184" y="340.5" class="name" text-anchor="middle">Queued</text>
+<rect x="0" y="80" width="96" height="48" class="shape" rx="10"/>
+<text x="48" y="108.5" class="name" text-anchor="middle">Ready</text>
+<rect x="0" y="312" width="96" height="48" class="shape" rx="10"/>
+<text x="48" y="340.5" class="name" text-anchor="middle">Worker</text>
+<circle cx="48" cy="8" r="8" class="solid"/>
+<path d="M48 16 L48 80" class="edge"/>
+<path d="M43.5 70 L48 80 L52.5 70" class="edge head"/>
+<path d="M48 128 L48 208" class="edge"/>
+<path d="M43.5 198 L48 208 L52.5 198" class="edge head"/>
+<path d="M48 232 L48 256 L40 256 L40 312" class="edge"/>
+<path d="M35.5 302 L40 312 L44.5 302" class="edge head"/>
+<path d="M60 220 L184 220 L184 312" class="edge"/>
+<path d="M179.5 302 L184 312 L188.5 302" class="edge head"/>
+<path d="M184 360 L184 443" class="edge"/>
+<path d="M179.5 433 L184 443 L188.5 433" class="edge head"/>
+<path d="M80 360 L80 448 L179 448" class="edge"/>
+<path d="M169 452.5 L179 448 L169 443.5" class="edge head"/>
+<path d="M184 453 L184 536" class="edge"/>
+<path d="M179.5 526 L184 536 L188.5 526" class="edge head"/>
+<path d="M104 544 L104 680" class="edge"/>
+<path d="M99.5 670 L104 680 L108.5 670" class="edge head"/>
+<path d="M256 544 L256 680" class="edge"/>
+<path d="M251.5 670 L256 680 L260.5 670" class="edge head"/>
+<path d="M104 728 L104 792" class="edge"/>
+<path d="M99.5 782 L104 792 L108.5 782" class="edge head"/>
+<path d="M256 728 L256 792" class="edge"/>
+<path d="M251.5 782 L256 792 L260.5 782" class="edge head"/>
+<path d="M184 832 L184 916" class="edge"/>
+<path d="M179.5 906 L184 916 L188.5 906" class="edge head"/>
+<text x="56" y="171" class="small" text-anchor="start">request</text>
+<text x="48" y="275" class="small" text-anchor="start">[workers free] / assign</text>
+<text x="192" y="275" class="small" text-anchor="start">[all busy]</text>
+<text x="192" y="403" class="small" text-anchor="start">worker free</text>
+<text x="88" y="403" class="small" text-anchor="start">done</text>
+<text x="192" y="499" class="small" text-anchor="start">/ prepare</text>
+<text x="192" y="875" class="small" text-anchor="start">fatal</text>
+</svg>

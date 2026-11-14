@@ -1,0 +1,5 @@
+package "Domain" {
+  component Orders
+  component Customers
+  Orders --> Customers
+}

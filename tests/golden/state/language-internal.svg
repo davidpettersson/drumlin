@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -56 224 376" width="224" height="376">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .solid { fill: #22201c; stroke: none; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-24" y="-56" width="224" height="376" fill="#fff"/>
+<text x="0" y="-20" class="title">Password entry</text>
+<rect x="0" y="80" width="176" height="112" class="shape" rx="10"/>
+<text x="88" y="100.5" class="name" text-anchor="middle">Typing</text>
+<text x="12" y="124" class="small" text-anchor="start">entry / set echo invisible</text>
+<text x="12" y="140" class="small" text-anchor="start">exit / set echo normal</text>
+<text x="12" y="156" class="small" text-anchor="start">character / handle character</text>
+<text x="12" y="172" class="small" text-anchor="start">help / display help</text>
+<path d="M0 112 L176 112" class="edge fine"/>
+<circle cx="88" cy="8" r="8" class="solid"/>
+<circle cx="88" cy="284" r="11" class="shape"/>
+<circle cx="88" cy="284" r="6.5" class="solid"/>
+<path d="M88 16 L88 80" class="edge"/>
+<path d="M83.5 70 L88 80 L92.5 70" class="edge head"/>
+<path d="M88 192 L88 272" class="edge"/>
+<path d="M83.5 262 L88 272 L92.5 262" class="edge head"/>
+<text x="96" y="235" class="small" text-anchor="start">enter</text>
+</svg>

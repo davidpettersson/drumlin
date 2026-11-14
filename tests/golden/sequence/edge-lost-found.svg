@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-116 -56 320 264" width="320" height="264">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .lifeline { fill: none; stroke: #22201c; stroke-width: 0.75; stroke-dasharray: 7 3; }
+.drumlin.pens .frame { fill: none; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .solid { fill: #22201c; stroke: none; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-116" y="-56" width="320" height="264" fill="#fff"/>
+<text x="-92" y="-20" class="title">Lost and found</text>
+<path d="M0 40 L0 184" class="lifeline"/>
+<path d="M96 40 L96 184" class="lifeline"/>
+<rect x="-40" y="0" width="80" height="40" class="shape"/>
+<text x="0" y="24" class="name" text-anchor="middle">A</text>
+<rect x="56" y="0" width="80" height="40" class="shape"/>
+<text x="96" y="24" class="name" text-anchor="middle">B</text>
+<path d="M-88 72 L0 72" class="edge"/>
+<path d="M-10 76.5 L0 72 L-10 67.5 Z" class="solid"/>
+<circle cx="-88" cy="72" r="4" class="solid"/>
+<path d="M-88 104 L0 104" class="edge"/>
+<path d="M-10 108.5 L0 104 L-10 99.5" class="edge head"/>
+<circle cx="-88" cy="104" r="4" class="solid"/>
+<path d="M96 136 L164 136" class="edge"/>
+<path d="M154 140.5 L164 136 L154 131.5 Z" class="solid"/>
+<circle cx="168" cy="136" r="4" class="solid"/>
+<path d="M96 168 L172 168" class="edge"/>
+<path d="M162 172.5 L172 168 L162 163.5" class="edge head"/>
+<circle cx="176" cy="168" r="4" class="solid"/>
+<text x="-46" y="67" class="small halo" text-anchor="middle">found sync</text>
+<text x="-46" y="99" class="small halo" text-anchor="middle">found async</text>
+<text x="127" y="131" class="small halo" text-anchor="middle">lost sync</text>
+<text x="131" y="163" class="small halo" text-anchor="middle">lost async</text>
+</svg>

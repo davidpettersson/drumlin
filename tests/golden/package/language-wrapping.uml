@@ -1,0 +1,10 @@
+diagram package "Unconnected members fold into rows"
+
+package Kernel {
+  class Scheduler
+  class Timer
+  class Mutex
+  class Channel
+  class Pipe
+  class Signal
+}

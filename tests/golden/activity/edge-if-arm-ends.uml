@@ -1,0 +1,12 @@
+diagram activity "First arm ends"
+start
+action "Read request"
+if "unauthorised" {
+  action "Send 401"
+  stop
+} else {
+  action "Load account"
+  action "Check limits"
+}
+action "Reply"
+stop

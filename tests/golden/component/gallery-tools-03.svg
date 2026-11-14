@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -56 976 392" width="976" height="392">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-24" y="-56" width="976" height="392" fill="#fff"/>
+<text x="0" y="-20" class="title">Build system</text>
+<rect x="0" y="0" width="128" height="64" class="shape"/>
+<rect x="107" y="8" width="13" height="16" class="icon"/>
+<rect x="104" y="11" width="6" height="3.5" class="icon"/>
+<rect x="104" y="17.5" width="6" height="3.5" class="icon"/>
+<text x="64" y="27.5" class="small" text-anchor="middle">«input»</text>
+<text x="64" y="44.5" class="name" text-anchor="middle">Build Files</text>
+<rect x="192" y="0" width="144" height="64" class="shape"/>
+<rect x="315" y="8" width="13" height="16" class="icon"/>
+<rect x="312" y="11" width="6" height="3.5" class="icon"/>
+<rect x="312" y="17.5" width="6" height="3.5" class="icon"/>
+<text x="264" y="36.5" class="name" text-anchor="middle">Graph Builder</text>
+<rect x="408" y="0" width="128" height="64" class="shape"/>
+<rect x="515" y="8" width="13" height="16" class="icon"/>
+<rect x="512" y="11" width="6" height="3.5" class="icon"/>
+<rect x="512" y="17.5" width="6" height="3.5" class="icon"/>
+<text x="472" y="36.5" class="name" text-anchor="middle">Scheduler</text>
+<rect x="744" y="0" width="160" height="64" class="shape"/>
+<rect x="883" y="8" width="13" height="16" class="icon"/>
+<rect x="880" y="11" width="6" height="3.5" class="icon"/>
+<rect x="880" y="17.5" width="6" height="3.5" class="icon"/>
+<text x="824" y="36.5" class="name" text-anchor="middle">Local Executor</text>
+<rect x="744" y="112" width="160" height="64" class="shape"/>
+<rect x="883" y="120" width="13" height="16" class="icon"/>
+<rect x="880" y="123" width="6" height="3.5" class="icon"/>
+<rect x="880" y="129.5" width="6" height="3.5" class="icon"/>
+<text x="824" y="148.5" class="name" text-anchor="middle">Content Cache</text>
+<path d="M720 264 L918 264 L928 274 L928 312 L720 312 Z" class="shape fine"/>
+<path d="M918 264 L918 274 L928 274" class="edge fine"/>
+<text x="732" y="284" class="small" text-anchor="start">Keyed by a hash of each action's</text>
+<text x="732" y="299" class="small" text-anchor="start">inputs.</text>
+<path d="M128 32 L192 32" class="edge"/>
+<path d="M182 36.5 L192 32 L182 27.5" class="edge head"/>
+<path d="M336 32 L408 32" class="edge"/>
+<path d="M398 36.5 L408 32 L398 27.5" class="edge head"/>
+<path d="M824 264 L824 176" class="edge dashed fine"/>
+<path d="M472 64 L472 144 L576 144" class="edge"/>
+<path d="M637 144 L744 144" class="edge"/>
+<path d="M584 144 L627 144" class="edge dashed fine"/>
+<path d="M617 148.5 L627 144 L617 139.5" class="edge head fine"/>
+<path d="M584 152 A8 8 0 0 1 584 136" class="edge"/>
+<circle cx="632" cy="144" r="5" class="shape"/>
+<text x="608" y="131" class="small" text-anchor="middle">ICache</text>
+<path d="M536 32 L608 32" class="edge"/>
+<path d="M669 32 L744 32" class="edge"/>
+<path d="M616 32 L659 32" class="edge dashed fine"/>
+<path d="M649 36.5 L659 32 L649 27.5" class="edge head fine"/>
+<path d="M616 40 A8 8 0 0 1 616 24" class="edge"/>
+<circle cx="664" cy="32" r="5" class="shape"/>
+<text x="640" y="19" class="small" text-anchor="middle">IExecutor</text>
+<text x="160" y="25" class="small halo" text-anchor="middle">parse</text>
+<text x="372" y="25" class="small halo" text-anchor="middle">actions</text>
+</svg>

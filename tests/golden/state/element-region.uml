@@ -1,0 +1,11 @@
+diagram state "Regions"
+state Active {
+  region "input" {
+    [*] --> Reading
+    Reading --> [*]
+  }
+  region "output" {
+    [*] --> Writing
+    Writing --> [*]
+  }
+}

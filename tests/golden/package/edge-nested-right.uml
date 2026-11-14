@@ -1,0 +1,6 @@
+diagram package "Parent and nested"
+direction right
+package Parent {
+  package Child
+  Child ..> Parent : <<import>>
+}

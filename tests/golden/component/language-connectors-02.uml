@@ -1,0 +1,3 @@
+component Producer
+component Consumer
+Producer --> Consumer : batches, 64 KiB max

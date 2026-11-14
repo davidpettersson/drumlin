@@ -1,0 +1,10 @@
+diagram sequence "Boundaries"
+
+participant Bus
+participant Handler
+
+[-> Bus : interrupt
+Bus -> Handler : dispatch() {
+  Handler ->] : retransmit (no ack)
+  return handled
+}

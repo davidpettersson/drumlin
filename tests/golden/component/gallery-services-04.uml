@@ -1,0 +1,18 @@
+diagram component "API gateway"
+direction right
+
+component "Mobile App" as mobile { requires IPublicApi }
+component "Web App" as web { requires IPublicApi }
+
+component Gateway {
+  provides IPublicApi
+  requires IAuth
+  requires ICatalog
+  requires ICheckout
+}
+
+package "Services" as services {
+  component Auth { provides IAuth }
+  component Catalog { provides ICatalog }
+  component Checkout { provides ICheckout }
+}

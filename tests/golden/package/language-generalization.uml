@@ -1,0 +1,13 @@
+diagram package "Classifiers"
+direction right
+
+interface Shape <<abstract>>
+class Circle
+class Square
+class Base
+enum Kind
+
+Circle ..|> Shape
+Square ..|> Shape
+Circle --|> Base
+Base --> Kind : tags

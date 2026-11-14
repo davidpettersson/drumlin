@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -56 464 1000" width="464" height="1000">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .solid { fill: #22201c; stroke: none; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-24" y="-56" width="464" height="1000" fill="#fff"/>
+<text x="0" y="-20" class="title">Build and release pipeline</text>
+<path d="M192 16 L192 48" class="edge"/>
+<path d="M187.5 38 L192 48 L196.5 38" class="edge head"/>
+<path d="M192 80 L192 112" class="edge"/>
+<path d="M187.5 102 L192 112 L196.5 102" class="edge head"/>
+<path d="M192 144 L192 176" class="edge"/>
+<path d="M187.5 166 L192 176 L196.5 166" class="edge head"/>
+<path d="M48 376 L48 408" class="edge"/>
+<path d="M43.5 398 L48 408 L52.5 398" class="edge head"/>
+<path d="M48 310 L48 344" class="edge"/>
+<path d="M43.5 334 L48 344 L52.5 334" class="edge head"/>
+<path d="M192 310 L192 344" class="edge"/>
+<path d="M187.5 334 L192 344 L196.5 334" class="edge head"/>
+<path d="M352 310 L352 344" class="edge"/>
+<path d="M347.5 334 L352 344 L356.5 334" class="edge head"/>
+<path d="M48 440 L48 472" class="edge"/>
+<path d="M43.5 462 L48 472 L52.5 462" class="edge head"/>
+<path d="M192 376 L192 472" class="edge"/>
+<path d="M187.5 462 L192 472 L196.5 462" class="edge head"/>
+<path d="M352 376 L352 472" class="edge"/>
+<path d="M347.5 462 L352 472 L356.5 462" class="edge head"/>
+<path d="M192 208 L192 304" class="edge"/>
+<path d="M187.5 294 L192 304 L196.5 294" class="edge head"/>
+<path d="M192 478 L192 512" class="edge"/>
+<path d="M187.5 502 L192 512 L196.5 502" class="edge head"/>
+<path d="M192 680 L192 712" class="edge"/>
+<path d="M187.5 702 L192 712 L196.5 702" class="edge head"/>
+<path d="M192 608 L192 648" class="edge"/>
+<path d="M187.5 638 L192 648 L196.5 638" class="edge head"/>
+<path d="M192 744 L192 776" class="edge"/>
+<path d="M187.5 766 L192 776 L196.5 766" class="edge head"/>
+<path d="M208 592 L296 592 L296 792 L208 792" class="edge"/>
+<path d="M218 787.5 L208 792 L218 796.5" class="edge head"/>
+<path d="M192 544 L192 576" class="edge"/>
+<path d="M187.5 566 L192 576 L196.5 566" class="edge head"/>
+<path d="M192 808 L192 840" class="edge"/>
+<path d="M187.5 830 L192 840 L196.5 830" class="edge head"/>
+<path d="M192 872 L192 904" class="edge"/>
+<path d="M187.5 894 L192 904 L196.5 894" class="edge head"/>
+<path d="M216 288 L216 304" class="edge dashed fine"/>
+<circle cx="192" cy="8" r="8" class="solid"/>
+<rect x="128" y="48" width="128" height="32" class="shape" rx="10"/>
+<text x="192" y="68" class="name" text-anchor="middle">Fetch sources</text>
+<rect x="104" y="112" width="176" height="32" class="shape" rx="10"/>
+<text x="192" y="132" class="name" text-anchor="middle">Resolve dependencies</text>
+<rect x="152" y="176" width="80" height="32" class="shape"/>
+<text x="192" y="196" class="name" text-anchor="middle">Lockfile</text>
+<rect x="32" y="304" width="336" height="6" class="solid"/>
+<rect x="0" y="344" width="96" height="32" class="shape" rx="10"/>
+<text x="48" y="364" class="name" text-anchor="middle">Compile</text>
+<rect x="8" y="408" width="80" height="32" class="shape" rx="10"/>
+<text x="48" y="428" class="name" text-anchor="middle">Link</text>
+<rect x="128" y="344" width="128" height="32" class="shape" rx="10"/>
+<text x="192" y="364" class="name" text-anchor="middle">Run unit tests</text>
+<rect x="288" y="344" width="128" height="32" class="shape" rx="10"/>
+<text x="352" y="364" class="name" text-anchor="middle">Lint and audit</text>
+<rect x="32" y="472" width="336" height="6" class="solid"/>
+<rect x="120" y="512" width="144" height="32" class="shape" rx="10"/>
+<text x="192" y="532" class="name" text-anchor="middle">Package artifacts</text>
+<path d="M192 576 L208 592 L192 608 L176 592 Z" class="shape"/>
+<rect x="128" y="648" width="128" height="32" class="shape" rx="10"/>
+<text x="192" y="668" class="name" text-anchor="middle">Sign artifacts</text>
+<path d="M120 712 L252 712 L264 728 L252 744 L120 744 Z" class="shape"/>
+<text x="192" y="732" class="name" text-anchor="middle">Publish release</text>
+<path d="M192 776 L208 792 L192 808 L176 792 Z" class="shape"/>
+<rect x="128" y="840" width="128" height="32" class="shape" rx="10"/>
+<text x="192" y="860" class="name" text-anchor="middle">Notify the team</text>
+<circle cx="192" cy="912" r="8" class="shape"/>
+<circle cx="192" cy="912" r="4.5" class="solid"/>
+<path d="M216 240 L366 240 L376 250 L376 288 L216 288 Z" class="shape fine"/>
+<path d="M366 240 L366 250 L376 250" class="edge fine"/>
+<text x="228" y="260" class="small" text-anchor="start">Compile, test and lint run</text>
+<text x="228" y="275" class="small" text-anchor="start">concurrently.</text>
+<text x="198" y="623" class="small" text-anchor="start">[tag build]</text>
+<text x="214" y="584" class="small" text-anchor="start">[else]</text>
+</svg>

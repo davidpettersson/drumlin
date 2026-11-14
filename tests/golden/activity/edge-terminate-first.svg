@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -56 408 400" width="408" height="400">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .solid { fill: #22201c; stroke: none; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-24" y="-56" width="408" height="400" fill="#fff"/>
+<text x="0" y="-20" class="title">Early exits</text>
+<path d="M160 152 L160 184" class="edge"/>
+<path d="M155.5 174 L160 184 L164.5 174" class="edge head"/>
+<path d="M64 64 L160 64 L160 120" class="edge"/>
+<path d="M155.5 110 L160 120 L164.5 110" class="edge head"/>
+<path d="M296 152 L296 184" class="edge"/>
+<path d="M291.5 174 L296 184 L300.5 174" class="edge head"/>
+<path d="M64 64 L296 64 L296 120" class="edge"/>
+<path d="M291.5 110 L296 120 L300.5 110" class="edge head"/>
+<path d="M48 16 L48 48" class="edge"/>
+<path d="M43.5 38 L48 48 L52.5 38" class="edge head"/>
+<path d="M48 80 L48 240" class="edge"/>
+<path d="M43.5 230 L48 240 L52.5 230" class="edge head"/>
+<path d="M48 272 L48 304" class="edge"/>
+<path d="M43.5 294 L48 304 L52.5 294" class="edge head"/>
+<circle cx="48" cy="8" r="8" class="solid"/>
+<path d="M48 48 L64 64 L48 80 L32 64 Z" class="shape"/>
+<rect x="120" y="120" width="80" height="32" class="shape" rx="10"/>
+<text x="160" y="140" class="name" text-anchor="middle">Reject</text>
+<circle cx="160" cy="192" r="8" class="shape"/>
+<circle cx="160" cy="192" r="4.5" class="solid"/>
+<rect x="232" y="120" width="128" height="32" class="shape" rx="10"/>
+<text x="296" y="140" class="name" text-anchor="middle">Queue for later</text>
+<circle cx="296" cy="192" r="8" class="shape"/>
+<path d="M290.34 186.34 L301.66 197.66 M290.34 197.66 L301.66 186.34" class="edge"/>
+<rect x="0" y="240" width="96" height="32" class="shape" rx="10"/>
+<text x="48" y="260" class="name" text-anchor="middle">Process</text>
+<circle cx="48" cy="312" r="8" class="shape"/>
+<circle cx="48" cy="312" r="4.5" class="solid"/>
+<text x="134" y="56" class="small" text-anchor="start">[bad input]</text>
+<text x="273" y="56" class="small" text-anchor="start">[throttled]</text>
+<text x="54" y="95" class="small" text-anchor="start">[else]</text>
+</svg>

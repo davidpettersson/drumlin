@@ -1,0 +1,18 @@
+diagram activity "Nested two-armed decisions"
+start
+action "Receive order"
+if "paid" {
+  if "in stock" {
+    action "Ship"
+  } else {
+    action "Back-order"
+  }
+} else {
+  if "retry allowed" {
+    action "Ask again"
+  } else {
+    action "Cancel order"
+  }
+}
+action "Close"
+stop

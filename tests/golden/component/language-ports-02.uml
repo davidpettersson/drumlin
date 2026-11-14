@@ -1,0 +1,2 @@
+component Radio { port rx provides IPackets }
+component Stack { port input requires IPackets }

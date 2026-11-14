@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-64 -56 384 408" width="384" height="408">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .lifeline { fill: none; stroke: #22201c; stroke-width: 0.75; stroke-dasharray: 7 3; }
+.drumlin.pens .frame { fill: none; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .solid { fill: #22201c; stroke: none; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-64" y="-56" width="384" height="408" fill="#fff"/>
+<text x="-40" y="-20" class="title">Parallel and critical regions</text>
+<path d="M0 40 L0 328" class="lifeline"/>
+<path d="M160 40 L160 328" class="lifeline"/>
+<path d="M256 40 L256 328" class="lifeline"/>
+<rect x="-18" y="56" width="292" height="104" class="frame"/>
+<path d="M-18 112 L274 112" class="frame dashed"/>
+<rect x="-18" y="176" width="257.92" height="136" class="frame"/>
+<rect x="-6" y="256" width="12" height="12" class="shape"/>
+<path d="M-18 56 L30 56 L30 70 L22 78 L-18 78 Z" class="shape fine"/>
+<text x="-10" y="71" class="name" text-anchor="start">par</text>
+<path d="M-18 176 L54 176 L54 190 L46 198 L-18 198 Z" class="shape fine"/>
+<text x="-10" y="191" class="name" text-anchor="start">critical</text>
+<text x="168" y="190" class="small halo" text-anchor="start">[mutex held]</text>
+<rect x="-40" y="0" width="80" height="40" class="shape"/>
+<text x="0" y="24" class="name" text-anchor="middle">Task A</text>
+<rect x="120" y="0" width="80" height="40" class="shape"/>
+<text x="160" y="24" class="name" text-anchor="middle">Lock</text>
+<rect x="216" y="0" width="80" height="40" class="shape"/>
+<text x="256" y="24" class="name" text-anchor="middle">Task B</text>
+<path d="M0 104 L160 104" class="edge"/>
+<path d="M150 108.5 L160 104 L150 99.5 Z" class="solid"/>
+<path d="M256 144 L160 144" class="edge"/>
+<path d="M170 139.5 L160 144 L170 148.5 Z" class="solid"/>
+<path d="M160 224 L0 224" class="edge dashed fine"/>
+<path d="M10 219.5 L0 224 L10 228.5" class="edge head fine"/>
+<path d="M0 240 L32 240 L32 256 L6 256" class="edge"/>
+<path d="M16 251.5 L6 256 L16 260.5 Z" class="solid"/>
+<path d="M0 296 L160 296" class="edge"/>
+<path d="M150 300.5 L160 296 L150 291.5 Z" class="solid"/>
+<text x="80" y="99" class="small halo" text-anchor="middle">acquire()</text>
+<text x="208" y="139" class="small halo" text-anchor="middle">acquire()</text>
+<text x="80" y="219" class="small halo" text-anchor="middle">granted</text>
+<text x="38" y="251.5" class="small halo" text-anchor="start">update state</text>
+<text x="80" y="291" class="small halo" text-anchor="middle">release()</text>
+</svg>

@@ -1,0 +1,21 @@
+diagram activity "Build and release pipeline"
+start
+action "Fetch sources"
+action "Resolve dependencies"
+object "Lockfile"
+fork {
+  action "Compile"
+  action "Link"
+} and {
+  action "Run unit tests"
+} and {
+  action "Lint and audit"
+}
+note: Compile, test and lint run concurrently.
+action "Package artifacts"
+if "tag build" {
+  action "Sign artifacts"
+  send "Publish release"
+}
+action "Notify the team"
+stop

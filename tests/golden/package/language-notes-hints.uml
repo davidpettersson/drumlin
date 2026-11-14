@@ -1,0 +1,13 @@
+diagram package "Notes and hints"
+
+package Core {
+  package Parser
+  package Checker
+  package Emitter
+  package Runtime
+  package Stdlib
+  Parser left-of Checker
+}
+class Tool
+Tool ..> Core : <<import>>
+note Tool: Built separately.

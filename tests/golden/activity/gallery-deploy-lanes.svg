@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -56 976 968" width="976" height="968">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .solid { fill: #22201c; stroke: none; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-24" y="-56" width="976" height="968" fill="#fff"/>
+<text x="0" y="-20" class="title">Deployment with parallel checks</text>
+<rect x="0" y="0" width="224" height="888" class="shape heavy"/>
+<rect x="0" y="0" width="224" height="32" class="shape heavy"/>
+<text x="112" y="21" class="name" text-anchor="middle">Developer</text>
+<rect x="224" y="0" width="176" height="888" class="shape heavy"/>
+<rect x="224" y="0" width="176" height="32" class="shape heavy"/>
+<text x="312" y="21" class="name" text-anchor="middle">CI</text>
+<rect x="400" y="0" width="192" height="888" class="shape heavy"/>
+<rect x="400" y="0" width="192" height="32" class="shape heavy"/>
+<text x="496" y="21" class="name" text-anchor="middle">Staging</text>
+<rect x="592" y="0" width="160" height="888" class="shape heavy"/>
+<rect x="592" y="0" width="160" height="32" class="shape heavy"/>
+<text x="672" y="21" class="name" text-anchor="middle">Security</text>
+<rect x="752" y="0" width="176" height="888" class="shape heavy"/>
+<rect x="752" y="0" width="176" height="32" class="shape heavy"/>
+<text x="840" y="21" class="name" text-anchor="middle">Production</text>
+<path d="M112 72 L112 104" class="edge"/>
+<path d="M107.5 94 L112 104 L116.5 94" class="edge head"/>
+<path d="M112 136 L112 168 L312 168 L312 184" class="edge"/>
+<path d="M307.5 174 L312 184 L316.5 174" class="edge head"/>
+<path d="M312 216 L312 248" class="edge"/>
+<path d="M307.5 238 L312 248 L316.5 238" class="edge head"/>
+<path d="M312 280 L312 312 L496 312 L496 328" class="edge"/>
+<path d="M491.5 318 L496 328 L500.5 318" class="edge head"/>
+<path d="M496 360 L496 392" class="edge"/>
+<path d="M491.5 382 L496 392 L500.5 382" class="edge head"/>
+<path d="M496 462 L496 496" class="edge"/>
+<path d="M491.5 486 L496 496 L500.5 486" class="edge head"/>
+<path d="M672 462 L672 496" class="edge"/>
+<path d="M667.5 486 L672 496 L676.5 486" class="edge head"/>
+<path d="M312 462 L312 496" class="edge"/>
+<path d="M307.5 486 L312 496 L316.5 486" class="edge head"/>
+<path d="M496 528 L496 576" class="edge"/>
+<path d="M491.5 566 L496 576 L500.5 566" class="edge head"/>
+<path d="M672 528 L672 576" class="edge"/>
+<path d="M667.5 566 L672 576 L676.5 566" class="edge head"/>
+<path d="M312 528 L312 576" class="edge"/>
+<path d="M307.5 566 L312 576 L316.5 566" class="edge head"/>
+<path d="M496 424 L496 456" class="edge"/>
+<path d="M491.5 446 L496 456 L500.5 446" class="edge head"/>
+<path d="M128 648 L840 648 L840 704" class="edge"/>
+<path d="M835.5 694 L840 704 L844.5 694" class="edge head"/>
+<path d="M112 664 L112 704" class="edge"/>
+<path d="M107.5 694 L112 704 L116.5 694" class="edge head"/>
+<path d="M840 736 L840 800 L128 800" class="edge"/>
+<path d="M138 795.5 L128 800 L138 804.5" class="edge head"/>
+<path d="M112 736 L112 784" class="edge"/>
+<path d="M107.5 774 L112 784 L116.5 774" class="edge head"/>
+<path d="M496 582 L496 616 L112 616 L112 632" class="edge"/>
+<path d="M107.5 622 L112 632 L116.5 622" class="edge head"/>
+<path d="M112 816 L112 848" class="edge"/>
+<path d="M107.5 838 L112 848 L116.5 838" class="edge head"/>
+<circle cx="112" cy="64" r="8" class="solid"/>
+<rect x="48" y="104" width="128" height="32" class="shape" rx="10"/>
+<text x="112" y="124" class="name" text-anchor="middle">Merge to main</text>
+<rect x="256" y="184" width="112" height="32" class="shape" rx="10"/>
+<text x="312" y="204" class="name" text-anchor="middle">Build image</text>
+<path d="M248 248 L364 248 L376 264 L364 280 L248 280 Z" class="shape"/>
+<text x="312" y="268" class="name" text-anchor="middle">Image ready</text>
+<path d="M432 328 L560 328 L560 360 L432 360 L444 344 Z" class="shape"/>
+<text x="496" y="348" class="name" text-anchor="middle">Image ready</text>
+<rect x="424" y="392" width="144" height="32" class="shape" rx="10"/>
+<text x="496" y="412" class="name" text-anchor="middle">Deploy to staging</text>
+<rect x="296" y="456" width="392" height="6" class="solid"/>
+<rect x="440" y="496" width="112" height="32" class="shape" rx="10"/>
+<text x="496" y="516" class="name" text-anchor="middle">Smoke tests</text>
+<rect x="616" y="496" width="112" height="32" class="shape" rx="10"/>
+<text x="672" y="516" class="name" text-anchor="middle">Scan image</text>
+<rect x="248" y="496" width="128" height="32" class="shape" rx="10"/>
+<text x="312" y="516" class="name" text-anchor="middle">Contract tests</text>
+<rect x="296" y="576" width="392" height="6" class="solid"/>
+<path d="M112 632 L128 648 L112 664 L96 648 Z" class="shape"/>
+<rect x="776" y="704" width="128" height="32" class="shape" rx="10"/>
+<text x="840" y="724" class="name" text-anchor="middle">Roll out canary</text>
+<rect x="24" y="704" width="176" height="32" class="shape" rx="10"/>
+<text x="112" y="724" class="name" text-anchor="middle">Roll back and file issue</text>
+<path d="M112 784 L128 800 L112 816 L96 800 Z" class="shape"/>
+<circle cx="112" cy="856" r="8" class="shape"/>
+<circle cx="112" cy="856" r="4.5" class="solid"/>
+<text x="134" y="640" class="small" text-anchor="start">[all green]</text>
+<text x="118" y="679" class="small" text-anchor="start">[else]</text>
+</svg>

@@ -1,0 +1,23 @@
+diagram component "Compiler pipeline"
+direction down
+
+component Driver { requires ITokens }
+
+package "Front End" as front {
+  component Lexer { provides ITokens }
+  component Parser
+  component "Type Checker" as sema
+  Lexer --> Parser : tokens
+  Parser --> sema : AST
+}
+
+package "Back End" as back {
+  component "IR Builder" as ir
+  component Optimizer
+  component "Code Generator" as codegen { provides ITarget }
+  ir --> Optimizer
+  Optimizer --> codegen : SSA
+}
+
+sema --> ir : typed AST
+Driver ..> codegen : invoke

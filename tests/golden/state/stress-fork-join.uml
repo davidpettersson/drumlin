@@ -1,0 +1,14 @@
+diagram state "Boot sequence"
+[*] --> Power
+Power --> f : rail good
+fork f
+f --> Clocks
+f --> Memory
+f --> Radio
+Clocks --> j
+Memory --> j
+Radio --> j
+join j
+j --> Ready : / log boot time
+Ready --> [*]
+note Radio: Calibration may take seconds on a cold start.

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -56 248 600" width="248" height="600">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .solid { fill: #22201c; stroke: none; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-24" y="-56" width="248" height="600" fill="#fff"/>
+<text x="0" y="-20" class="title">Entry and exit points</text>
+<rect x="0" y="208" width="176" height="288" class="shape heavy" rx="10"/>
+<text x="88" y="228.5" class="name" text-anchor="start">Login</text>
+<rect x="24" y="328" width="96" height="48" class="shape" rx="10"/>
+<text x="72" y="356.5" class="name" text-anchor="middle">Prompt</text>
+<rect x="24" y="80" width="96" height="48" class="shape" rx="10"/>
+<text x="72" y="108.5" class="name" text-anchor="middle">Idle</text>
+<circle cx="72" cy="8" r="8" class="solid"/>
+<path d="M72 16 L72 80" class="edge"/>
+<path d="M67.5 70 L72 80 L76.5 70" class="edge head"/>
+<path d="M72 128 L72 200" class="edge"/>
+<path d="M67.5 190 L72 200 L76.5 190" class="edge head"/>
+<path d="M72 216 L72 328" class="edge"/>
+<path d="M67.5 318 L72 328 L76.5 318" class="edge head"/>
+<path d="M72 376 L72 488" class="edge"/>
+<path d="M67.5 478 L72 488 L76.5 478" class="edge head"/>
+<path d="M72 504 L72 520 L200 520 L200 104 L120 104" class="edge"/>
+<path d="M130 99.5 L120 104 L130 108.5" class="edge head"/>
+<circle cx="72" cy="208" r="8" class="shape"/>
+<text x="84" y="202" class="small" text-anchor="start">again</text>
+<circle cx="72" cy="496" r="8" class="shape"/>
+<path d="M66.32 490.32 L77.68 501.68 M66.32 501.68 L77.68 490.32" class="edge"/>
+<text x="84" y="510" class="small" text-anchor="start">aborted</text>
+<text x="80" y="419" class="small" text-anchor="start">[locked out]</text>
+<text x="80" y="167" class="small" text-anchor="start">retry</text>
+</svg>

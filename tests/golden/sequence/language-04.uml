@@ -1,0 +1,14 @@
+diagram sequence "Nested calls"
+
+participant "main()" as m
+participant Parser
+participant Lexer
+
+m -> Parser : parse(source) {
+  Parser -> Lexer : next() {
+    Lexer -> Lexer : skip whitespace
+    return token
+  }
+  Parser -> Parser : build tree
+  return ast
+}

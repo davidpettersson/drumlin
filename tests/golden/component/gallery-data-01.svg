@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -56 1040 248" width="1040" height="248">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-24" y="-56" width="1040" height="248" fill="#fff"/>
+<text x="0" y="-20" class="title">Nightly ETL</text>
+<rect x="0" y="0" width="176" height="64" class="shape"/>
+<rect x="155" y="8" width="13" height="16" class="icon"/>
+<rect x="152" y="11" width="6" height="3.5" class="icon"/>
+<rect x="152" y="17.5" width="6" height="3.5" class="icon"/>
+<text x="88" y="27.5" class="small" text-anchor="middle">«database»</text>
+<text x="88" y="44.5" class="name" text-anchor="middle">Source Databases</text>
+<rect x="240" y="0" width="128" height="64" class="shape"/>
+<rect x="347" y="8" width="13" height="16" class="icon"/>
+<rect x="344" y="11" width="6" height="3.5" class="icon"/>
+<rect x="344" y="17.5" width="6" height="3.5" class="icon"/>
+<text x="304" y="36.5" class="name" text-anchor="middle">Extract</text>
+<rect x="440" y="0" width="128" height="64" class="shape"/>
+<rect x="547" y="8" width="13" height="16" class="icon"/>
+<rect x="544" y="11" width="6" height="3.5" class="icon"/>
+<rect x="544" y="17.5" width="6" height="3.5" class="icon"/>
+<text x="504" y="36.5" class="name" text-anchor="middle">Transform</text>
+<rect x="664" y="0" width="128" height="64" class="shape"/>
+<rect x="771" y="8" width="13" height="16" class="icon"/>
+<rect x="768" y="11" width="6" height="3.5" class="icon"/>
+<rect x="768" y="17.5" width="6" height="3.5" class="icon"/>
+<text x="728" y="36.5" class="name" text-anchor="middle">Load</text>
+<rect x="864" y="0" width="128" height="64" class="shape"/>
+<rect x="971" y="8" width="13" height="16" class="icon"/>
+<rect x="968" y="11" width="6" height="3.5" class="icon"/>
+<rect x="968" y="17.5" width="6" height="3.5" class="icon"/>
+<text x="928" y="27.5" class="small" text-anchor="middle">«database»</text>
+<text x="928" y="44.5" class="name" text-anchor="middle">Warehouse</text>
+<rect x="656" y="104" width="144" height="64" class="shape"/>
+<rect x="779" y="112" width="13" height="16" class="icon"/>
+<rect x="776" y="115" width="6" height="3.5" class="icon"/>
+<rect x="776" y="121.5" width="6" height="3.5" class="icon"/>
+<text x="728" y="140.5" class="name" text-anchor="middle">Data Quality</text>
+<path d="M176 32 L240 32" class="edge"/>
+<path d="M230 36.5 L240 32 L230 27.5" class="edge head"/>
+<path d="M368 32 L440 32" class="edge"/>
+<path d="M430 36.5 L440 32 L430 27.5" class="edge head"/>
+<path d="M568 32 L664 32" class="edge"/>
+<path d="M654 36.5 L664 32 L654 27.5" class="edge head"/>
+<path d="M792 32 L864 32" class="edge"/>
+<path d="M854 36.5 L864 32 L854 27.5" class="edge head"/>
+<path d="M504 64 L504 136 L656 136" class="edge dashed fine"/>
+<path d="M646 140.5 L656 136 L646 131.5" class="edge head fine"/>
+<text x="404" y="25" class="small halo" text-anchor="middle">parquet</text>
+<text x="580" y="129" class="small halo" text-anchor="middle">assertions</text>
+</svg>

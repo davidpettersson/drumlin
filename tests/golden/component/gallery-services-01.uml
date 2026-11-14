@@ -1,0 +1,21 @@
+diagram component "Hexagonal service"
+direction right
+
+component "HTTP Adapter" as http { requires IUseCases }
+
+component Core as core {
+  port api provides IUseCases
+  port repo requires IRepository
+  port publish requires IEvents
+
+  component "Use Cases" as cases
+  component "Domain Model" as model
+
+  api --> cases
+  cases --> model
+  cases --> repo
+  cases --> publish
+}
+
+component "SQL Adapter" as sql { provides IRepository }
+component "Kafka Adapter" as kafka { provides IEvents }

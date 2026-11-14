@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-32 -56 655.12 640" width="655.12" height="640">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .solid { fill: #22201c; stroke: none; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-32" y="-56" width="655.12" height="640" fill="#fff"/>
+<text x="-8" y="-20" class="title">Long labels</text>
+<rect x="136" y="80" width="112" height="48" class="shape" rx="10"/>
+<text x="192" y="108.5" class="name" text-anchor="middle">A</text>
+<rect x="32" y="264" width="96" height="48" class="shape" rx="10"/>
+<text x="80" y="292.5" class="name" text-anchor="middle">B</text>
+<rect x="168" y="264" width="96" height="48" class="shape" rx="10"/>
+<text x="216" y="292.5" class="name" text-anchor="middle">C</text>
+<rect x="24" y="392" width="112" height="64" class="shape" rx="10"/>
+<text x="80" y="428.5" class="name" text-anchor="middle">D</text>
+<circle cx="192" cy="8" r="8" class="solid"/>
+<circle cx="80" cy="548" r="11" class="shape"/>
+<circle cx="80" cy="548" r="6.5" class="solid"/>
+<path d="M192 16 L192 80" class="edge"/>
+<path d="M187.5 70 L192 80 L196.5 70" class="edge head"/>
+<path d="M136 104 L-8 104 L-8 288 L32 288" class="edge"/>
+<path d="M22 292.5 L32 288 L22 283.5" class="edge head"/>
+<path d="M192 128 L192 264" class="edge"/>
+<path d="M187.5 254 L192 264 L196.5 254" class="edge head"/>
+<path d="M72 312 L72 392" class="edge"/>
+<path d="M67.5 382 L72 392 L76.5 382" class="edge head"/>
+<path d="M184 312 L184 368 L96 368 L96 392" class="edge"/>
+<path d="M91.5 382 L96 392 L100.5 382" class="edge head"/>
+<path d="M120 392 L120 376 L456 376 L456 104 L248 104" class="edge"/>
+<path d="M258 99.5 L248 104 L258 108.5" class="edge head"/>
+<path d="M80 456 L80 536" class="edge"/>
+<path d="M75.5 526 L80 536 L84.5 526" class="edge head"/>
+<path d="M136 416 L160 416 L160 432 L136 432" class="edge"/>
+<path d="M146 427.5 L136 432 L146 436.5" class="edge head"/>
+<text x="0" y="177" class="small" text-anchor="start">a very long trigger name with</text>
+<text x="0" y="190" class="small" text-anchor="start">many words [and a guard that</text>
+<text x="0" y="203" class="small" text-anchor="start">keeps going for a while]</text>
+<text x="0" y="216" class="small" text-anchor="start">/ then an effect that also goes on</text>
+<text x="0" y="229" class="small" text-anchor="start">and on</text>
+<text x="200" y="190" class="small" text-anchor="start">another long one [x &gt; 0 and y &lt; 0]</text>
+<text x="200" y="203" class="small" text-anchor="start">/ do_something_with_a_long_name(argument,</text>
+<text x="200" y="216" class="small" text-anchor="start">another_argument)</text>
+<text x="80" y="355" class="small" text-anchor="start">short</text>
+<text x="464" y="190" class="small" text-anchor="start">reset everything back to the</text>
+<text x="464" y="203" class="small" text-anchor="start">beginning</text>
+<text x="464" y="216" class="small" text-anchor="start">/ clear()</text>
+<text x="88" y="499" class="small" text-anchor="start">give up</text>
+<text x="168" y="414" class="small" text-anchor="start">retry the operation again [attempts</text>
+<text x="168" y="427" class="small" text-anchor="start">remaining]</text>
+<text x="168" y="440" class="small" text-anchor="start">/ backoff()</text>
+<text x="192" y="343" class="small" text-anchor="start">somewhat longer label here [flag]</text>
+</svg>

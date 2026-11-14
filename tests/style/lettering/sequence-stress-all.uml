@@ -1,0 +1,43 @@
+diagram sequence "Everything"
+actor "User" as u
+participant "API Gateway" as a <<service>>
+participant "Auth Service" as auth
+participant "DB" as db
+
+u -> a : login(user, password) {
+  a -> a : validate form
+  a ->> auth : audit("login attempt")
+  a -> auth : verify(user, password) {
+    auth -> db : SELECT credentials FROM users WHERE name = ? {
+      return row
+    }
+    alt "password matches" {
+      auth -> auth : sign token {
+        auth -> auth : read key
+      }
+      return token
+    } else "wrong password" {
+      auth --> a : 401
+      opt "too many attempts" {
+        auth -> db : lock(user)
+        note right of db: Locked for fifteen minutes, then unlocked by a sweep.
+      }
+    }
+  }
+  a -> new "Session" as s : spawn(user)
+  note over a, s: Session lives until the user logs out or the token expires.
+  return session cookie
+}
+[-> a : metrics.flush
+a ->] : dropped event
+loop "every 30s" {
+  a -> db : ping
+  db --> a : pong
+}
+par {
+  a ->> db : write
+} and {
+  a ->> auth : notify
+}
+ref over a, db : Replicate state
+destroy s

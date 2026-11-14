@@ -1,0 +1,4 @@
+diagram component "Hello"
+
+component Client { requires IGreeting }
+component Server { provides IGreeting }

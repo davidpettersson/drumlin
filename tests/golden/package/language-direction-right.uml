@@ -1,0 +1,10 @@
+diagram package "Containment, left to right"
+direction right
+
+package "api" as api
+package "core" as core
+class Router
+class Handler
+core +-- Router
+core +-- Handler
+api ..> core : <<import>>

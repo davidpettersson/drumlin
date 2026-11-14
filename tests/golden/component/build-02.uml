@@ -1,0 +1,2 @@
+component Client { requires IGreeting }
+component Server { provides IGreeting }

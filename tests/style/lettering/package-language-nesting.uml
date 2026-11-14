@@ -1,0 +1,12 @@
+diagram package "Nesting and keywords"
+
+package "Platform" as pf <<model>> {
+  package "Kernel" as kernel {
+    class Scheduler
+    class Timer
+  }
+  package Drivers
+  Drivers ..> kernel : <<access>>
+}
+package Empty
+Empty left-of pf

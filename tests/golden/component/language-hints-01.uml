@@ -1,0 +1,6 @@
+diagram component "Without align"
+component Gateway
+component Auth
+component Orders
+Gateway --> Auth
+Auth --> Orders

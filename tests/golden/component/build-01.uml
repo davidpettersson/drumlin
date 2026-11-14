@@ -1,0 +1,22 @@
+diagram component "From chapter to page"
+direction right
+
+component "Chapter Markdown" as md <<input>>
+
+component mdBook as book {
+  port hook requires IPreprocess
+  component "Book Loader" as loader
+  component "HTML Renderer" as html
+  loader --> html
+}
+
+component "mdbook-drumlin" as pre {
+  provides IPreprocess
+  requires IRender
+}
+
+component "drumlin crate" as lib { provides IRender }
+component "Published Site" as site <<output>>
+
+md --> book
+book --> site : inline SVG

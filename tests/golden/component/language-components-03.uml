@@ -1,0 +1,3 @@
+component "Orders DB" as db <<database>>
+component "Billing API" as api <<external>>
+api --> db

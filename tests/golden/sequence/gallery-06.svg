@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-140 -56 756 648" width="756" height="648">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .lifeline { fill: none; stroke: #22201c; stroke-width: 0.75; stroke-dasharray: 7 3; }
+.drumlin.pens .frame { fill: none; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .solid { fill: #22201c; stroke: none; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-140" y="-56" width="756" height="648" fill="#fff"/>
+<text x="-116" y="-20" class="title">Page fault</text>
+<path d="M0 48 L0 568" class="lifeline"/>
+<path d="M120 48 L120 568" class="lifeline"/>
+<path d="M296 48 L296 568" class="lifeline"/>
+<path d="M536 176 L536 512" class="lifeline"/>
+<rect x="102" y="240" width="412" height="256" class="frame"/>
+<path d="M102 440 L514 440" class="frame dashed"/>
+<rect x="120" y="208" width="12" height="12" class="shape"/>
+<rect x="290" y="288" width="12" height="96" class="shape"/>
+<rect x="120" y="416" width="12" height="12" class="shape"/>
+<rect x="114" y="112" width="12" height="440" class="shape"/>
+<path d="M102 240 L150 240 L150 254 L142 262 L102 262 Z" class="shape fine"/>
+<text x="110" y="255" class="name" text-anchor="start">alt</text>
+<text x="158" y="254" class="small halo" text-anchor="start">[anonymous page]</text>
+<text x="158" y="454" class="small halo" text-anchor="start">[invalid access]</text>
+<rect x="-40" y="0" width="80" height="48" class="shape"/>
+<text x="0" y="28" class="name" text-anchor="middle">MMU</text>
+<rect x="80" y="0" width="80" height="48" class="shape"/>
+<text x="120" y="28" class="name" text-anchor="middle">Kernel</text>
+<rect x="240" y="0" width="112" height="48" class="shape"/>
+<text x="296" y="28" class="name" text-anchor="middle">Swap device</text>
+<rect x="480" y="128" width="112" height="48" class="shape"/>
+<text x="536" y="147" class="small" text-anchor="middle">«per fault»</text>
+<text x="536" y="163" class="name" text-anchor="middle">Fault context</text>
+<path d="M310 304 L492 304 L502 314 L502 352 L310 352 Z" class="shape fine"/>
+<path d="M492 304 L492 314 L502 314" class="edge fine"/>
+<text x="322" y="324" class="small" text-anchor="start">The request is queued and the</text>
+<text x="322" y="339" class="small" text-anchor="start">task sleeps.</text>
+<path d="M-112 80 L0 80" class="edge"/>
+<path d="M-10 84.5 L0 80 L-10 75.5 Z" class="solid"/>
+<circle cx="-112" cy="80" r="4" class="solid"/>
+<path d="M0 112 L114 112" class="edge"/>
+<path d="M104 116.5 L114 112 L104 107.5 Z" class="solid"/>
+<path d="M126 152 L480 152" class="edge dashed fine"/>
+<path d="M470 156.5 L480 152 L470 147.5" class="edge head fine"/>
+<path d="M126 192 L158 192 L158 208 L132 208" class="edge"/>
+<path d="M142 203.5 L132 208 L142 212.5 Z" class="solid"/>
+<path d="M126 288 L290 288" class="edge"/>
+<path d="M280 292.5 L290 288 L280 283.5 Z" class="solid"/>
+<path d="M290 384 L126 384" class="edge dashed fine"/>
+<path d="M136 379.5 L126 384 L136 388.5" class="edge head fine"/>
+<path d="M126 400 L158 400 L158 416 L132 416" class="edge"/>
+<path d="M142 411.5 L132 416 L142 420.5 Z" class="solid"/>
+<path d="M126 480 L242 480" class="edge"/>
+<path d="M232 484.5 L242 480 L232 475.5 Z" class="solid"/>
+<circle cx="246" cy="480" r="4" class="solid"/>
+<path d="M114 552 L0 552" class="edge dashed fine"/>
+<path d="M10 547.5 L0 552 L10 556.5" class="edge head fine"/>
+<path d="M529 505 L543 519 M529 519 L543 505" class="edge"/>
+<text x="-58" y="75" class="small halo" text-anchor="middle">translate(vaddr)</text>
+<text x="57" y="107" class="small halo" text-anchor="middle">page fault(vaddr)</text>
+<text x="208" y="147" class="small halo" text-anchor="middle">allocate</text>
+<text x="164" y="203.5" class="small halo" text-anchor="start">find VMA</text>
+<text x="208" y="283" class="small halo" text-anchor="middle">read(slot)</text>
+<text x="208" y="379" class="small halo" text-anchor="middle">page</text>
+<text x="164" y="411.5" class="small halo" text-anchor="start">map page</text>
+<text x="181" y="475" class="small halo" text-anchor="middle">SIGSEGV to task</text>
+<text x="57" y="547" class="small halo" text-anchor="middle">retry the access</text>
+</svg>

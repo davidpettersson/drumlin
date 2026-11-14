@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -56 240 400" width="240" height="400">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-24" y="-56" width="240" height="400" fill="#fff"/>
+<text x="0" y="-20" class="title">Dependency cycle</text>
+<rect x="72" y="0" width="40" height="16" class="shape"/>
+<rect x="72" y="16" width="112" height="48" class="shape"/>
+<text x="128" y="44.5" class="name" text-anchor="middle">A</text>
+<rect x="0" y="128" width="40" height="16" class="shape"/>
+<rect x="0" y="144" width="112" height="48" class="shape"/>
+<text x="56" y="172.5" class="name" text-anchor="middle">B</text>
+<rect x="80" y="256" width="40" height="16" class="shape"/>
+<rect x="80" y="272" width="112" height="48" class="shape"/>
+<text x="136" y="300.5" class="name" text-anchor="middle">C</text>
+<path d="M72 40 L56 40 L56 144" class="edge dashed fine"/>
+<path d="M51.5 134 L56 144 L60.5 134" class="edge head fine"/>
+<path d="M56 192 L56 296 L80 296" class="edge dashed fine"/>
+<path d="M70 300.5 L80 296 L70 291.5" class="edge head fine"/>
+<path d="M136 272 L136 64" class="edge dashed fine"/>
+<path d="M140.5 74 L136 64 L131.5 74" class="edge head fine"/>
+<path d="M160 64 L160 272" class="edge dashed fine"/>
+<text x="64" y="248" class="small halo" text-anchor="start">«use»</text>
+<text x="128" y="203.2" class="small halo" text-anchor="end">«use»</text>
+</svg>

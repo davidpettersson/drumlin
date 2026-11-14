@@ -1,0 +1,24 @@
+diagram sequence "RPC with retry"
+
+participant "Client stub" as stub
+participant "Circuit breaker" as cb
+participant "Service" as svc
+
+loop "(1,3)" {
+  stub -> cb : allow? {
+    return true
+  }
+  stub -> svc : GetOrder(id, deadline=200ms) {
+    alt "reply before deadline" {
+      return order
+      break "success" {
+        stub ->> cb : record success
+      }
+    } else "deadline exceeded" {
+      stub -> stub : sleep(backoff with jitter)
+      stub ->> cb : record failure
+    }
+  }
+}
+stub --> stub : surface error to caller
+note right of stub: The stub surfaces the last error once retries run out.

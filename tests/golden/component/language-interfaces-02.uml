@@ -1,0 +1,5 @@
+component Codec {
+  provides IEncode
+  provides IDecode
+  requires IAllocator
+}

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-28 -24 339.6 112" width="339.6" height="112">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-28" y="-24" width="339.6" height="112" fill="#fff"/>
+
+<rect x="78.26" y="0" width="128" height="64" class="shape"/>
+<rect x="185.26" y="8" width="13" height="16" class="icon"/>
+<rect x="182.26" y="11" width="6" height="3.5" class="icon"/>
+<rect x="182.26" y="17.5" width="6" height="3.5" class="icon"/>
+<text x="142.26" y="36.5" class="name" text-anchor="middle">Controller</text>
+<path d="M212.26 32 L269.99 32" class="edge"/>
+<path d="M277.99 40 A8 8 0 0 1 277.99 24" class="edge"/>
+<text x="275.99" y="20" class="small" text-anchor="middle">ICan</text>
+<path d="M72.26 32 L21.26 32" class="edge"/>
+<circle cx="15.26" cy="32" r="6" class="shape"/>
+<text x="15.26" y="20" class="small" text-anchor="middle">IControl</text>
+<rect x="72.26" y="26" width="12" height="12" class="shape"/>
+<text x="68.26" y="23" class="small" text-anchor="end">ctl</text>
+<rect x="200.26" y="26" width="12" height="12" class="shape"/>
+<text x="216.26" y="23" class="small" text-anchor="start">bus</text>
+</svg>

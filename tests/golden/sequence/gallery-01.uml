@@ -1,0 +1,22 @@
+diagram sequence "TCP connection"
+
+participant "Client" as c
+participant "Server" as s
+
+note over c, s: Three-way handshake
+c ->> s : SYN seq=x
+s ->> c : SYN+ACK seq=y, ack=x+1
+c ->> s : ACK ack=y+1
+note over c, s: Established
+c ->> s : data seq=x+1, len=512
+s ->> c : ACK ack=x+513
+opt "segment lost" {
+  c ->] : data seq=x+513
+  c ->> s : retransmit after RTO
+}
+note over c, s: Graceful close
+c ->> s : FIN
+s ->> c : ACK
+s ->> c : FIN
+c ->> s : ACK
+note right of c: TIME_WAIT for 2 MSL before the socket is freed.

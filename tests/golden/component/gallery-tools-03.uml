@@ -1,0 +1,12 @@
+diagram component "Build system"
+direction right
+
+component "Build Files" as files <<input>>
+component "Graph Builder" as graph
+component Scheduler { requires IExecutor, ICache }
+component "Local Executor" as local { provides IExecutor }
+component "Content Cache" as cache { provides ICache }
+
+files --> graph : parse
+graph --> Scheduler : actions
+note cache: Keyed by a hash of each action's inputs.

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -56 416 256" width="416" height="256">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-24" y="-56" width="416" height="256" fill="#fff"/>
+<text x="0" y="-20" class="title">Containment</text>
+<rect x="128" y="0" width="40" height="16" class="shape"/>
+<rect x="128" y="16" width="112" height="48" class="shape"/>
+<text x="184" y="44.5" class="name" text-anchor="middle">Types</text>
+<rect x="0" y="128" width="96" height="48" class="shape"/>
+<text x="48" y="156.5" class="name" text-anchor="middle">Shape</text>
+<rect x="136" y="128" width="96" height="48" class="shape"/>
+<text x="184" y="156.5" class="name" text-anchor="middle">Point</text>
+<rect x="272" y="128" width="96" height="48" class="shape"/>
+<text x="320" y="156.5" class="name" text-anchor="middle">Color</text>
+<path d="M184 64 L184 96 L48 96 L48 128" class="edge"/>
+<path d="M184 64 L184 96 L184 128" class="edge"/>
+<path d="M184 64 L184 96 L320 96 L320 128" class="edge"/>
+<circle cx="184" cy="70" r="6" class="shape"/>
+<path d="M178 70 L190 70 M184 64 L184 76" class="edge"/>
+</svg>

@@ -1,0 +1,21 @@
+diagram state "Motor controller"
+direction right
+[*] --> Stopped
+Stopped --> Running : start [interlock closed] / enable drive
+Running --> Stopped : stop / ramp down
+Running --> Faulted : overcurrent
+state Running {
+  do / run control loop
+  region "speed" {
+    [*] --> Accelerating
+    Accelerating --> Cruising : at setpoint
+    Cruising --> Accelerating : setpoint raised
+    Cruising --> Cruising : tick / adjust duty
+  }
+  region "thermal" {
+    [*] --> Cool
+    Cool --> Hot : temp > limit / throttle()
+    Hot --> Cool : temp < hysteresis / unthrottle()
+  }
+}
+Faulted --> [*]

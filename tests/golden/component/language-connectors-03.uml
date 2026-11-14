@@ -1,0 +1,6 @@
+component Parser
+component Lexer
+component Preprocessor
+Parser --> Lexer : next token
+Lexer --> Preprocessor : include
+Preprocessor --> Parser : macro expansion

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -24 384 184" width="384" height="184">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-24" y="-24" width="384" height="184" fill="#fff"/>
+
+<rect x="8" y="0" width="128" height="64" class="shape"/>
+<rect x="115" y="8" width="13" height="16" class="icon"/>
+<rect x="112" y="11" width="6" height="3.5" class="icon"/>
+<rect x="112" y="17.5" width="6" height="3.5" class="icon"/>
+<text x="72" y="36.5" class="name" text-anchor="middle">Reader</text>
+<rect x="208" y="0" width="128" height="64" class="shape"/>
+<rect x="315" y="8" width="13" height="16" class="icon"/>
+<rect x="312" y="11" width="6" height="3.5" class="icon"/>
+<rect x="312" y="17.5" width="6" height="3.5" class="icon"/>
+<text x="272" y="36.5" class="name" text-anchor="middle">Writer</text>
+<path d="M0 104 L134 104 L144 114 L144 136 L0 136 Z" class="shape fine"/>
+<path d="M134 104 L134 114 L144 114" class="edge fine"/>
+<text x="12" y="123.5" class="small" text-anchor="start">Lock-free. May retry.</text>
+<path d="M208 104 L326 104 L336 114 L336 136 L208 136 Z" class="shape fine"/>
+<path d="M326 104 L326 114 L336 114" class="edge fine"/>
+<text x="220" y="123.5" class="small" text-anchor="start">Single owner only.</text>
+<path d="M136 32 L208 32" class="edge"/>
+<path d="M198 36.5 L208 32 L198 27.5" class="edge head"/>
+<path d="M72 104 L72 64" class="edge dashed fine"/>
+<path d="M272 104 L272 64" class="edge dashed fine"/>
+<text x="172" y="25" class="small halo" text-anchor="middle">wakes</text>
+</svg>

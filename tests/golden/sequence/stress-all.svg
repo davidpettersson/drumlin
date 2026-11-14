@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-38.68 -62 950.68 1238" width="950.68" height="1238">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .lifeline { fill: none; stroke: #22201c; stroke-width: 0.75; stroke-dasharray: 7 3; }
+.drumlin.pens .frame { fill: none; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .solid { fill: #22201c; stroke: none; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-38.68" y="-62" width="950.68" height="1238" fill="#fff"/>
+<text x="-14.68" y="-26" class="title">Everything</text>
+<path d="M0 48 L0 1152" class="lifeline"/>
+<path d="M144 48 L144 1152" class="lifeline"/>
+<path d="M304 48 L304 1152" class="lifeline"/>
+<path d="M600 48 L600 1152" class="lifeline"/>
+<path d="M848 680 L848 1128" class="lifeline"/>
+<rect x="286" y="464" width="526" height="128" class="frame"/>
+<rect x="126" y="264" width="698" height="344" class="frame"/>
+<path d="M126 408 L824 408" class="frame dashed"/>
+<rect x="126" y="840" width="492" height="96" class="frame"/>
+<rect x="126" y="952" width="492" height="104" class="frame"/>
+<path d="M126 1008 L618 1008" class="frame dashed"/>
+<rect x="144" y="112" width="12" height="12" class="shape"/>
+<rect x="594" y="216" width="12" height="32" class="shape"/>
+<rect x="310" y="352" width="12" height="12" class="shape"/>
+<rect x="304" y="320" width="12" height="52" class="shape"/>
+<rect x="298" y="184" width="12" height="432" class="shape"/>
+<rect x="138" y="80" width="12" height="680" class="shape"/>
+<path d="M286 464 L334 464 L334 478 L326 486 L286 486 Z" class="shape fine"/>
+<text x="294" y="479" class="name" text-anchor="start">opt</text>
+<text x="342" y="478" class="small halo" text-anchor="start">[too many attempts]</text>
+<path d="M126 264 L174 264 L174 278 L166 286 L126 286 Z" class="shape fine"/>
+<text x="134" y="279" class="name" text-anchor="start">alt</text>
+<text x="318" y="278" class="small halo" text-anchor="start">[password matches]</text>
+<text x="318" y="422" class="small halo" text-anchor="start">[wrong password]</text>
+<path d="M126 840 L182 840 L182 854 L174 862 L126 862 Z" class="shape fine"/>
+<text x="134" y="855" class="name" text-anchor="start">loop</text>
+<text x="190" y="854" class="small halo" text-anchor="start">[every 30s]</text>
+<path d="M126 952 L174 952 L174 966 L166 974 L126 974 Z" class="shape fine"/>
+<text x="134" y="967" class="name" text-anchor="start">par</text>
+<circle cx="0" cy="0" r="6" class="shape"/>
+<path d="M0 6 L0 18 M-12 10 L12 10 M0 18 L-8 30 M0 18 L8 30" class="edge"/>
+<text x="0" y="44" class="name" text-anchor="middle">User</text>
+<rect x="88" y="0" width="112" height="48" class="shape"/>
+<text x="144" y="19" class="small" text-anchor="middle">«service»</text>
+<text x="144" y="35" class="name" text-anchor="middle">API Gateway</text>
+<rect x="248" y="0" width="112" height="48" class="shape"/>
+<text x="304" y="28" class="name" text-anchor="middle">Auth Service</text>
+<rect x="560" y="0" width="80" height="48" class="shape"/>
+<text x="600" y="28" class="name" text-anchor="middle">DB</text>
+<rect x="808" y="632" width="80" height="48" class="shape"/>
+<text x="848" y="660" class="name" text-anchor="middle">Session</text>
+<rect x="132" y="1072" width="480" height="40" class="shape fine"/>
+<path d="M132 1072 L180 1072 L180 1084 L172 1092 L132 1092 Z" class="shape fine"/>
+<text x="140" y="1085" class="name" text-anchor="start">ref</text>
+<text x="372" y="1094.5" class="small" text-anchor="middle">Replicate state</text>
+<path d="M608 528 L790 528 L800 538 L800 576 L608 576 Z" class="shape fine"/>
+<path d="M790 528 L790 538 L800 538" class="edge fine"/>
+<text x="620" y="548" class="small" text-anchor="start">Locked for fifteen minutes, then</text>
+<text x="620" y="563" class="small" text-anchor="start">unlocked by a sweep.</text>
+<path d="M128 696 L854 696 L864 706 L864 728 L128 728 Z" class="shape fine"/>
+<path d="M854 696 L854 706 L864 706" class="edge fine"/>
+<text x="140" y="715.5" class="small" text-anchor="start">Session lives until the user logs out or the token expires.</text>
+<path d="M0 80 L138 80" class="edge"/>
+<path d="M128 84.5 L138 80 L128 75.5 Z" class="solid"/>
+<path d="M150 96 L182 96 L182 112 L156 112" class="edge"/>
+<path d="M166 107.5 L156 112 L166 116.5 Z" class="solid"/>
+<path d="M150 152 L304 152" class="edge"/>
+<path d="M294 156.5 L304 152 L294 147.5" class="edge head"/>
+<path d="M150 184 L298 184" class="edge"/>
+<path d="M288 188.5 L298 184 L288 179.5 Z" class="solid"/>
+<path d="M310 216 L594 216" class="edge"/>
+<path d="M584 220.5 L594 216 L584 211.5 Z" class="solid"/>
+<path d="M594 248 L310 248" class="edge dashed fine"/>
+<path d="M320 243.5 L310 248 L320 252.5" class="edge head fine"/>
+<path d="M310 304 L342 304 L342 320 L316 320" class="edge"/>
+<path d="M326 315.5 L316 320 L326 324.5 Z" class="solid"/>
+<path d="M316 336 L348 336 L348 352 L322 352" class="edge"/>
+<path d="M332 347.5 L322 352 L332 356.5 Z" class="solid"/>
+<path d="M298 400 L150 400" class="edge dashed fine"/>
+<path d="M160 395.5 L150 400 L160 404.5" class="edge head fine"/>
+<path d="M298 448 L150 448" class="edge dashed fine"/>
+<path d="M160 443.5 L150 448 L160 452.5" class="edge head fine"/>
+<path d="M310 512 L600 512" class="edge"/>
+<path d="M590 516.5 L600 512 L590 507.5 Z" class="solid"/>
+<path d="M150 656 L808 656" class="edge dashed fine"/>
+<path d="M798 660.5 L808 656 L798 651.5" class="edge head fine"/>
+<path d="M138 760 L0 760" class="edge dashed fine"/>
+<path d="M10 755.5 L0 760 L10 764.5" class="edge head fine"/>
+<path d="M48 792 L144 792" class="edge"/>
+<path d="M134 796.5 L144 792 L134 787.5 Z" class="solid"/>
+<circle cx="48" cy="792" r="4" class="solid"/>
+<path d="M144 824 L244 824" class="edge"/>
+<path d="M234 828.5 L244 824 L234 819.5 Z" class="solid"/>
+<circle cx="248" cy="824" r="4" class="solid"/>
+<path d="M144 888 L600 888" class="edge"/>
+<path d="M590 892.5 L600 888 L590 883.5 Z" class="solid"/>
+<path d="M600 920 L144 920" class="edge dashed fine"/>
+<path d="M154 915.5 L144 920 L154 924.5" class="edge head fine"/>
+<path d="M144 1000 L600 1000" class="edge"/>
+<path d="M590 1004.5 L600 1000 L590 995.5" class="edge head"/>
+<path d="M144 1040 L304 1040" class="edge"/>
+<path d="M294 1044.5 L304 1040 L294 1035.5" class="edge head"/>
+<path d="M841 1121 L855 1135 M841 1135 L855 1121" class="edge"/>
+<text x="69" y="75" class="small halo" text-anchor="middle">login(user, password)</text>
+<text x="188" y="107.5" class="small halo" text-anchor="start">validate form</text>
+<text x="227" y="147" class="small halo" text-anchor="middle">audit("login attempt")</text>
+<text x="224" y="179" class="small halo" text-anchor="middle">verify(user, password)</text>
+<text x="451.17" y="211" class="small halo" text-anchor="middle">SELECT credentials FROM users WHERE name = ?</text>
+<text x="452" y="243" class="small halo" text-anchor="middle">row</text>
+<text x="348" y="315.5" class="small halo" text-anchor="start">sign token</text>
+<text x="354" y="347.5" class="small halo" text-anchor="start">read key</text>
+<text x="224" y="395" class="small halo" text-anchor="middle">token</text>
+<text x="224" y="443" class="small halo" text-anchor="middle">401</text>
+<text x="455" y="507" class="small halo" text-anchor="middle">lock(user)</text>
+<text x="218" y="651" class="small halo" text-anchor="middle">spawn(user)</text>
+<text x="69" y="755" class="small halo" text-anchor="middle">session cookie</text>
+<text x="94" y="787" class="small halo" text-anchor="middle">metrics.flush</text>
+<text x="191" y="819" class="small halo" text-anchor="middle">dropped event</text>
+<text x="215" y="883" class="small halo" text-anchor="middle">ping</text>
+<text x="461" y="915" class="small halo" text-anchor="middle">pong</text>
+<text x="215" y="995" class="small halo" text-anchor="middle">write</text>
+<text x="224" y="1035" class="small halo" text-anchor="middle">notify</text>
+</svg>

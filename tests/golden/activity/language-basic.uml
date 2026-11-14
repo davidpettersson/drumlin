@@ -1,0 +1,7 @@
+diagram activity "Actions in a flow"
+start
+action "Validate request"
+action Handle
+object "Order"
+action "Store order"
+stop

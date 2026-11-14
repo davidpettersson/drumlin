@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -56 351.14 800" width="351.14" height="800">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .solid { fill: #22201c; stroke: none; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-24" y="-56" width="351.14" height="800" fill="#fff"/>
+<text x="0" y="-20" class="title">Choice, fork, join</text>
+<path d="M136 208 L148 220 L136 232 L124 220 Z" class="shape"/>
+<rect x="32" y="312" width="168" height="8" class="solid"/>
+<rect x="32" y="512" width="184" height="8" class="solid"/>
+<rect x="0" y="384" width="96" height="48" class="shape" rx="10"/>
+<text x="48" y="412.5" class="name" text-anchor="middle">A</text>
+<rect x="136" y="384" width="96" height="48" class="shape" rx="10"/>
+<text x="184" y="412.5" class="name" text-anchor="middle">B</text>
+<rect x="88" y="584" width="96" height="48" class="shape" rx="10"/>
+<text x="136" y="612.5" class="name" text-anchor="middle">Done</text>
+<rect x="88" y="80" width="96" height="48" class="shape" rx="10"/>
+<text x="136" y="108.5" class="name" text-anchor="middle">Ready</text>
+<circle cx="136" cy="8" r="8" class="solid"/>
+<circle cx="136" cy="708" r="11" class="shape"/>
+<circle cx="136" cy="708" r="6.5" class="solid"/>
+<path d="M136 16 L136 80" class="edge"/>
+<path d="M131.5 70 L136 80 L140.5 70" class="edge head"/>
+<path d="M136 128 L136 208" class="edge"/>
+<path d="M131.5 198 L136 208 L140.5 198" class="edge head"/>
+<path d="M136 232 L136 312" class="edge"/>
+<path d="M131.5 302 L136 312 L140.5 302" class="edge head"/>
+<path d="M148 220 L256 220 L256 708 L148 708" class="edge"/>
+<path d="M158 703.5 L148 708 L158 712.5" class="edge head"/>
+<path d="M48 320 L48 384" class="edge"/>
+<path d="M43.5 374 L48 384 L52.5 374" class="edge head"/>
+<path d="M184 320 L184 384" class="edge"/>
+<path d="M179.5 374 L184 384 L188.5 374" class="edge head"/>
+<path d="M48 432 L48 512" class="edge"/>
+<path d="M43.5 502 L48 512 L52.5 502" class="edge head"/>
+<path d="M184 432 L184 512" class="edge"/>
+<path d="M179.5 502 L184 512 L188.5 502" class="edge head"/>
+<path d="M136 520 L136 584" class="edge"/>
+<path d="M131.5 574 L136 584 L140.5 574" class="edge head"/>
+<path d="M136 632 L136 696" class="edge"/>
+<path d="M131.5 686 L136 696 L140.5 686" class="edge head"/>
+<text x="144" y="171" class="small" text-anchor="start">request</text>
+<text x="144" y="275" class="small" text-anchor="start">[ok]</text>
+<text x="264" y="475" class="small" text-anchor="start">[denied]</text>
+</svg>

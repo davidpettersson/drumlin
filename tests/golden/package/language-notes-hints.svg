@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -56 816 336" width="816" height="336">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-24" y="-56" width="816" height="336" fill="#fff"/>
+<text x="0" y="-20" class="title">Notes and hints</text>
+<rect x="0" y="112" width="54.14" height="24" class="shape heavy"/>
+<rect x="0" y="136" width="768" height="120" class="shape heavy"/>
+<text x="12" y="128.5" class="name" text-anchor="start">Core</text>
+<rect x="24" y="160" width="40" height="16" class="shape"/>
+<rect x="24" y="176" width="112" height="48" class="shape"/>
+<text x="80" y="204.5" class="name" text-anchor="middle">Parser</text>
+<rect x="176" y="160" width="40" height="16" class="shape"/>
+<rect x="176" y="176" width="112" height="48" class="shape"/>
+<text x="232" y="204.5" class="name" text-anchor="middle">Checker</text>
+<rect x="328" y="160" width="40" height="16" class="shape"/>
+<rect x="328" y="176" width="112" height="48" class="shape"/>
+<text x="384" y="204.5" class="name" text-anchor="middle">Emitter</text>
+<rect x="480" y="160" width="40" height="16" class="shape"/>
+<rect x="480" y="176" width="112" height="48" class="shape"/>
+<text x="536" y="204.5" class="name" text-anchor="middle">Runtime</text>
+<rect x="632" y="160" width="40" height="16" class="shape"/>
+<rect x="632" y="176" width="112" height="48" class="shape"/>
+<text x="688" y="204.5" class="name" text-anchor="middle">Stdlib</text>
+<rect x="336" y="0" width="96" height="48" class="shape"/>
+<text x="384" y="28.5" class="name" text-anchor="middle">Tool</text>
+<path d="M464 8 L566 8 L576 18 L576 40 L464 40 Z" class="shape fine"/>
+<path d="M566 8 L566 18 L576 18" class="edge fine"/>
+<text x="476" y="27.5" class="small" text-anchor="start">Built separately.</text>
+<path d="M384 48 L384 136" class="edge dashed fine"/>
+<path d="M379.5 126 L384 136 L388.5 126" class="edge head fine"/>
+<path d="M464 24 L432 24" class="edge dashed fine"/>
+<text x="392" y="96" class="small halo" text-anchor="start">«import»</text>
+</svg>

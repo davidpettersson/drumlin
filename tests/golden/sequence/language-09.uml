@@ -1,0 +1,11 @@
+diagram sequence "Boot"
+
+participant Bootloader as bl
+participant Kernel as k
+participant Init as i
+
+ref over bl, k : Verify signature
+bl -> k : jump(entry)
+note over k: Interrupts stay masked until the scheduler starts.
+k -> new "PID 1" as p : exec
+note right of p: Everything runs under this process.

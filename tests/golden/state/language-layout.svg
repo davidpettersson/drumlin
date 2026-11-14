@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -56 192.65 520" width="192.65" height="520">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .solid { fill: #22201c; stroke: none; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-24" y="-56" width="192.65" height="520" fill="#fff"/>
+<text x="0" y="-20" class="title">layout longest-path</text>
+<rect x="0" y="80" width="96" height="48" class="shape" rx="10"/>
+<text x="48" y="108.5" class="name" text-anchor="middle">Idle</text>
+<rect x="0" y="192" width="96" height="48" class="shape" rx="10"/>
+<text x="48" y="220.5" class="name" text-anchor="middle">Running</text>
+<rect x="0" y="304" width="96" height="48" class="shape" rx="10"/>
+<text x="48" y="332.5" class="name" text-anchor="middle">Stopping</text>
+<circle cx="48" cy="8" r="8" class="solid"/>
+<circle cx="48" cy="428" r="11" class="shape"/>
+<circle cx="48" cy="428" r="6.5" class="solid"/>
+<path d="M48 16 L48 80" class="edge"/>
+<path d="M43.5 70 L48 80 L52.5 70" class="edge head"/>
+<path d="M48 128 L48 192" class="edge"/>
+<path d="M43.5 182 L48 192 L52.5 182" class="edge head"/>
+<path d="M48 240 L48 304" class="edge"/>
+<path d="M43.5 294 L48 304 L52.5 294" class="edge head"/>
+<path d="M48 352 L48 416" class="edge"/>
+<path d="M43.5 406 L48 416 L52.5 406" class="edge head"/>
+</svg>

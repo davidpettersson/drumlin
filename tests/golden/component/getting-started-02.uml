@@ -1,0 +1,9 @@
+diagram component "Hello, again"
+
+package "Backend" {
+  component Server { provides IGreeting }
+  component Store <<database>>
+  Server --> Store : read
+}
+
+component Client { requires IGreeting }

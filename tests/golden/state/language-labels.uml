@@ -1,0 +1,9 @@
+diagram state "Transition labels"
+direction right
+[*] --> Waiting
+Waiting --> Armed : arm, rearm [sensors ready] / log("armed")
+Armed --> Waiting : disarm
+Armed --> Armed : tick / count()
+Armed --> Armed : drift [abs(x) > limit] / correct()
+Armed --> Firing : trigger [armed and not locked] / ignite(); start_timer()
+Firing --> [*] : done

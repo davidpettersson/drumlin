@@ -1,0 +1,8 @@
+diagram state "Local transitions"
+[*] --> Active
+state Active {
+  [*] --> One
+  One --> Two : next
+  Two --> Active : reset
+}
+Active --> [*]

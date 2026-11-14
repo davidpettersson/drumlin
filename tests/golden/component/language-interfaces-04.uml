@@ -1,0 +1,4 @@
+component Logger { provides ILog }
+component Net { requires ILog }
+component Disk { requires ILog }
+component UI { requires ILog }

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -56 600 187.5" width="600" height="187.5">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .solid { fill: #22201c; stroke: none; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-24" y="-56" width="600" height="187.5" fill="#fff"/>
+<text x="0" y="-20" class="title">Transitions</text>
+<rect x="336" y="0" width="96" height="64" class="shape" rx="10"/>
+<text x="384" y="36.5" class="name" text-anchor="middle">Armed</text>
+<rect x="80" y="0" width="96" height="64" class="shape" rx="10"/>
+<text x="128" y="36.5" class="name" text-anchor="middle">Waiting</text>
+<circle cx="8" cy="32" r="8" class="solid"/>
+<circle cx="540" cy="32" r="11" class="shape"/>
+<circle cx="540" cy="32" r="6.5" class="solid"/>
+<path d="M16 32 L80 32" class="edge"/>
+<path d="M70 36.5 L80 32 L70 27.5" class="edge head"/>
+<path d="M176 32 L336 32" class="edge"/>
+<path d="M326 36.5 L336 32 L326 27.5" class="edge head"/>
+<path d="M432 32 L528 32" class="edge"/>
+<path d="M518 36.5 L528 32 L518 27.5" class="edge head"/>
+<path d="M376 64 L376 88 L392 88 L392 64" class="edge"/>
+<path d="M396.5 74 L392 64 L387.5 74" class="edge head"/>
+<text x="256" y="18.5" class="small" text-anchor="middle">arm [ready] / log()</text>
+<text x="480" y="18.5" class="small" text-anchor="middle">done</text>
+<text x="376" y="104.5" class="small" text-anchor="start">tick / count()</text>
+</svg>

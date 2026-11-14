@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -56 224 400" width="224" height="400">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .solid { fill: #22201c; stroke: none; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-24" y="-56" width="224" height="400" fill="#fff"/>
+<text x="0" y="-20" class="title">Signals</text>
+<path d="M88 16 L88 48" class="edge"/>
+<path d="M83.5 38 L88 48 L92.5 38" class="edge head"/>
+<path d="M88 80 L88 112" class="edge"/>
+<path d="M83.5 102 L88 112 L92.5 102" class="edge head"/>
+<path d="M88 144 L88 176" class="edge"/>
+<path d="M83.5 166 L88 176 L92.5 166" class="edge head"/>
+<path d="M88 208 L88 240" class="edge"/>
+<path d="M83.5 230 L88 240 L92.5 230" class="edge head"/>
+<path d="M88 272 L88 304" class="edge"/>
+<path d="M83.5 294 L88 304 L92.5 294" class="edge head"/>
+<circle cx="88" cy="8" r="8" class="solid"/>
+<rect x="16" y="48" width="144" height="32" class="shape" rx="10"/>
+<text x="88" y="68" class="name" text-anchor="middle">Request payment</text>
+<path d="M0 112 L164 112 L176 128 L164 144 L0 144 Z" class="shape"/>
+<text x="88" y="132" class="name" text-anchor="middle">PaymentRequested</text>
+<path d="M0 176 L176 176 L176 208 L0 208 L12 192 Z" class="shape"/>
+<text x="88" y="196" class="name" text-anchor="middle">PaymentConfirmed</text>
+<rect x="32" y="240" width="112" height="32" class="shape" rx="10"/>
+<text x="88" y="260" class="name" text-anchor="middle">Ship goods</text>
+<circle cx="88" cy="312" r="8" class="shape"/>
+<circle cx="88" cy="312" r="4.5" class="solid"/>
+</svg>

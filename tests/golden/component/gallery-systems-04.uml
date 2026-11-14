@@ -1,0 +1,20 @@
+diagram component "Container runtime"
+direction right
+
+component CLI { requires IRuntimeApi }
+
+component Daemon {
+  provides IRuntimeApi
+  requires IOci
+  requires IImages
+}
+
+component "Image Store" as images { provides IImages }
+
+component Shim {
+  provides IOci
+  requires ISyscalls
+}
+
+component "Linux Kernel" as kernel <<platform>> { provides ISyscalls }
+note Shim: Outlives the daemon so that containers survive restarts.

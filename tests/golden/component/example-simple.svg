@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-32 -56 311.79 1120" width="311.79" height="1120">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-32" y="-56" width="311.79" height="1120" fill="#fff"/>
+<text x="-8" y="-20" class="title">Compiler Pipeline</text>
+<rect x="40" y="0" width="128" height="64" class="shape"/>
+<rect x="147" y="8" width="13" height="16" class="icon"/>
+<rect x="144" y="11" width="6" height="3.5" class="icon"/>
+<rect x="144" y="17.5" width="6" height="3.5" class="icon"/>
+<text x="104" y="36.5" class="name" text-anchor="middle">Driver</text>
+<rect x="0" y="176" width="85.08" height="24" class="shape heavy"/>
+<rect x="0" y="200" width="192" height="376" class="shape heavy"/>
+<text x="12" y="192.5" class="name" text-anchor="start">Front End</text>
+<rect x="32" y="224" width="128" height="64" class="shape"/>
+<rect x="139" y="232" width="13" height="16" class="icon"/>
+<rect x="136" y="235" width="6" height="3.5" class="icon"/>
+<rect x="136" y="241.5" width="6" height="3.5" class="icon"/>
+<text x="96" y="260.5" class="name" text-anchor="middle">Lexer</text>
+<rect x="32" y="352" width="128" height="64" class="shape"/>
+<rect x="139" y="360" width="13" height="16" class="icon"/>
+<rect x="136" y="363" width="6" height="3.5" class="icon"/>
+<rect x="136" y="369.5" width="6" height="3.5" class="icon"/>
+<text x="96" y="388.5" class="name" text-anchor="middle">Parser</text>
+<rect x="24" y="480" width="144" height="64" class="shape"/>
+<rect x="147" y="488" width="13" height="16" class="icon"/>
+<rect x="144" y="491" width="6" height="3.5" class="icon"/>
+<rect x="144" y="497.5" width="6" height="3.5" class="icon"/>
+<text x="96" y="516.5" class="name" text-anchor="middle">Type Checker</text>
+<rect x="-8" y="640" width="83.53" height="24" class="shape heavy"/>
+<rect x="-8" y="664" width="208" height="376" class="shape heavy"/>
+<text x="4" y="656.5" class="name" text-anchor="start">Back End</text>
+<rect x="32" y="688" width="128" height="64" class="shape"/>
+<rect x="139" y="696" width="13" height="16" class="icon"/>
+<rect x="136" y="699" width="6" height="3.5" class="icon"/>
+<rect x="136" y="705.5" width="6" height="3.5" class="icon"/>
+<text x="96" y="724.5" class="name" text-anchor="middle">IR Builder</text>
+<rect x="32" y="816" width="128" height="64" class="shape"/>
+<rect x="139" y="824" width="13" height="16" class="icon"/>
+<rect x="136" y="827" width="6" height="3.5" class="icon"/>
+<rect x="136" y="833.5" width="6" height="3.5" class="icon"/>
+<text x="96" y="852.5" class="name" text-anchor="middle">Optimizer</text>
+<rect x="16" y="952" width="160" height="64" class="shape"/>
+<rect x="155" y="960" width="13" height="16" class="icon"/>
+<rect x="152" y="963" width="6" height="3.5" class="icon"/>
+<rect x="152" y="969.5" width="6" height="3.5" class="icon"/>
+<text x="96" y="988.5" class="name" text-anchor="middle">Code Generator</text>
+<path d="M136 952 L136 920" class="edge"/>
+<circle cx="136" cy="914" r="6" class="shape"/>
+<text x="148" y="918" class="small" text-anchor="start">ITarget</text>
+<path d="M96 288 L96 352" class="edge"/>
+<path d="M91.5 342 L96 352 L100.5 342" class="edge head"/>
+<path d="M96 416 L96 480" class="edge"/>
+<path d="M91.5 470 L96 480 L100.5 470" class="edge head"/>
+<path d="M96 752 L96 816" class="edge"/>
+<path d="M91.5 806 L96 816 L100.5 806" class="edge head"/>
+<path d="M96 880 L96 952" class="edge"/>
+<path d="M91.5 942 L96 952 L100.5 942" class="edge head"/>
+<path d="M96 544 L96 688" class="edge"/>
+<path d="M91.5 678 L96 688 L100.5 678" class="edge head"/>
+<path d="M168 32 L216 32 L216 984 L176 984" class="edge dashed fine"/>
+<path d="M186 979.5 L176 984 L186 988.5" class="edge head fine"/>
+<path d="M104 64 L104 112" class="edge"/>
+<path d="M104 173 L104 224" class="edge"/>
+<path d="M104 120 L104 163" class="edge dashed fine"/>
+<path d="M99.5 153 L104 163 L108.5 153" class="edge head fine"/>
+<path d="M96 120 A8 8 0 0 1 112 120" class="edge"/>
+<circle cx="104" cy="168" r="5" class="shape"/>
+<text x="117" y="148" class="small" text-anchor="start">ITokens</text>
+<text x="104" y="324" class="small halo" text-anchor="start">tokens</text>
+<text x="104" y="452" class="small halo" text-anchor="start">AST</text>
+<text x="104" y="920" class="small halo" text-anchor="start">SSA</text>
+<text x="104" y="620" class="small halo" text-anchor="start">typed AST</text>
+<text x="224" y="512" class="small halo" text-anchor="start">invoke</text>
+</svg>

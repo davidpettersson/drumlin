@@ -1,0 +1,17 @@
+diagram state "Composite states and history"
+[*] --> Off
+Off --> Playing : power
+state Playing {
+  entry / spin up
+  do / stream
+  exit / spin down
+  [*] --> Track
+  Track --> Track : next / advance
+  Track --> Seeking : seek
+  Seeking --> Track : found
+  [H]
+}
+Playing --> Paused : pause
+Paused --> Playing[H] : resume
+Playing --> Off : power
+Paused --> Off : power

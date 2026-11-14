@@ -1,0 +1,6 @@
+package "Storage" {
+  component Journal
+  component Pages
+  Journal --> Pages
+  note Journal: fsync before every commit record.
+}

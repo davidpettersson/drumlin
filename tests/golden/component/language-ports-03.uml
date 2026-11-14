@@ -1,0 +1,4 @@
+component Controller {
+  port ctl provides IControl
+  port bus requires ICan
+}

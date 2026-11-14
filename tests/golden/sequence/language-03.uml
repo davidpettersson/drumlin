@@ -1,0 +1,10 @@
+diagram sequence "Kinds of message"
+
+participant Client
+participant Server
+
+Client -> Server : request()
+Server --> Client : response
+Client ->> Server : fire and forget
+Server -> Server : log the request
+Server ->> Server : schedule cleanup

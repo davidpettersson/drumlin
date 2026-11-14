@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -56 336 384" width="336" height="384">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .solid { fill: #22201c; stroke: none; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-24" y="-56" width="336" height="384" fill="#fff"/>
+<text x="0" y="-20" class="title">Regions</text>
+<rect x="0" y="0" width="288" height="304" class="shape heavy" rx="10"/>
+<text x="144" y="20.5" class="name" text-anchor="middle">Active</text>
+<path d="M0 32 L288 32" class="edge fine"/>
+<path d="M140 32 L140 304" class="edge dashed fine"/>
+<text x="12" y="54" class="small" text-anchor="start">input</text>
+<rect x="16" y="152" width="96" height="48" class="shape" rx="10"/>
+<text x="64" y="180.5" class="name" text-anchor="middle">Reading</text>
+<circle cx="64" cy="80" r="8" class="solid"/>
+<circle cx="64" cy="276" r="11" class="shape"/>
+<circle cx="64" cy="276" r="6.5" class="solid"/>
+<text x="164" y="54" class="small" text-anchor="start">output</text>
+<rect x="168" y="152" width="96" height="48" class="shape" rx="10"/>
+<text x="216" y="180.5" class="name" text-anchor="middle">Writing</text>
+<circle cx="216" cy="80" r="8" class="solid"/>
+<circle cx="216" cy="276" r="11" class="shape"/>
+<circle cx="216" cy="276" r="6.5" class="solid"/>
+<path d="M64 88 L64 152" class="edge"/>
+<path d="M59.5 142 L64 152 L68.5 142" class="edge head"/>
+<path d="M64 200 L64 264" class="edge"/>
+<path d="M59.5 254 L64 264 L68.5 254" class="edge head"/>
+<path d="M216 88 L216 152" class="edge"/>
+<path d="M211.5 142 L216 152 L220.5 142" class="edge head"/>
+<path d="M216 200 L216 264" class="edge"/>
+<path d="M211.5 254 L216 264 L220.5 254" class="edge head"/>
+</svg>

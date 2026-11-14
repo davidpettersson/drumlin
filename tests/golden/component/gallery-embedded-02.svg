@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -56 392 624" width="392" height="624">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-24" y="-56" width="392" height="624" fill="#fff"/>
+<text x="0" y="-20" class="title">Battery sensor node</text>
+<rect x="184" y="304" width="160" height="64" class="shape"/>
+<rect x="323" y="312" width="13" height="16" class="icon"/>
+<rect x="320" y="315" width="6" height="3.5" class="icon"/>
+<rect x="320" y="321.5" width="6" height="3.5" class="icon"/>
+<text x="264" y="340.5" class="name" text-anchor="middle">Sampling Task</text>
+<rect x="200" y="480" width="128" height="64" class="shape"/>
+<rect x="307" y="488" width="13" height="16" class="icon"/>
+<rect x="304" y="491" width="6" height="3.5" class="icon"/>
+<rect x="304" y="497.5" width="6" height="3.5" class="icon"/>
+<text x="264" y="516.5" class="name" text-anchor="middle">I2C Driver</text>
+<rect x="64" y="128" width="136" height="64" class="shape"/>
+<rect x="179" y="136" width="13" height="16" class="icon"/>
+<rect x="176" y="139" width="6" height="3.5" class="icon"/>
+<rect x="176" y="145.5" width="6" height="3.5" class="icon"/>
+<text x="132" y="164.5" class="name" text-anchor="middle">Radio Task</text>
+<rect x="0" y="304" width="144" height="64" class="shape"/>
+<rect x="123" y="312" width="13" height="16" class="icon"/>
+<rect x="120" y="315" width="6" height="3.5" class="icon"/>
+<rect x="120" y="321.5" width="6" height="3.5" class="icon"/>
+<text x="72" y="340.5" class="name" text-anchor="middle">LoRa Driver</text>
+<rect x="120" y="0" width="160" height="64" class="shape"/>
+<rect x="259" y="8" width="13" height="16" class="icon"/>
+<rect x="256" y="11" width="6" height="3.5" class="icon"/>
+<rect x="256" y="17.5" width="6" height="3.5" class="icon"/>
+<text x="200" y="36.5" class="name" text-anchor="middle">Power Manager</text>
+<path d="M224 64 L224 304" class="edge dashed fine"/>
+<path d="M219.5 294 L224 304 L228.5 294" class="edge head fine"/>
+<path d="M136 64 L136 128" class="edge dashed fine"/>
+<path d="M131.5 118 L136 128 L140.5 118" class="edge head fine"/>
+<path d="M264 368 L264 392" class="edge"/>
+<path d="M264 453 L264 480" class="edge"/>
+<path d="M264 400 L264 443" class="edge dashed fine"/>
+<path d="M259.5 433 L264 443 L268.5 433" class="edge head fine"/>
+<path d="M256 400 A8 8 0 0 1 272 400" class="edge"/>
+<circle cx="264" cy="448" r="5" class="shape"/>
+<text x="277" y="428" class="small" text-anchor="start">II2c</text>
+<path d="M72 192 L72 216" class="edge"/>
+<path d="M72 277 L72 304" class="edge"/>
+<path d="M72 224 L72 267" class="edge dashed fine"/>
+<path d="M67.5 257 L72 267 L76.5 257" class="edge head fine"/>
+<path d="M64 224 A8 8 0 0 1 80 224" class="edge"/>
+<circle cx="72" cy="272" r="5" class="shape"/>
+<text x="85" y="252" class="small" text-anchor="start">IRadio</text>
+<path d="M192 192 L192 216" class="edge"/>
+<path d="M192 277 L192 304" class="edge"/>
+<path d="M192 224 L192 267" class="edge dashed fine"/>
+<path d="M187.5 257 L192 267 L196.5 257" class="edge head fine"/>
+<path d="M184 224 A8 8 0 0 1 200 224" class="edge"/>
+<circle cx="192" cy="272" r="5" class="shape"/>
+<text x="179" y="252" class="small" text-anchor="end">ISamples</text>
+<text x="232" y="188" class="small halo" text-anchor="start">wake</text>
+<text x="144" y="100" class="small halo" text-anchor="start">wake</text>
+</svg>

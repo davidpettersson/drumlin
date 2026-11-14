@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -56 1208 256" width="1208" height="256">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-24" y="-56" width="1208" height="256" fill="#fff"/>
+<text x="0" y="-20" class="title">Hexagonal service</text>
+<rect x="0" y="64" width="160" height="64" class="shape"/>
+<rect x="139" y="72" width="13" height="16" class="icon"/>
+<rect x="136" y="75" width="6" height="3.5" class="icon"/>
+<rect x="136" y="81.5" width="6" height="3.5" class="icon"/>
+<text x="80" y="100.5" class="name" text-anchor="middle">HTTP Adapter</text>
+<rect x="312" y="16" width="416" height="144" class="shape heavy"/>
+<rect x="707" y="24" width="13" height="16" class="icon"/>
+<rect x="704" y="27" width="6" height="3.5" class="icon"/>
+<rect x="704" y="33.5" width="6" height="3.5" class="icon"/>
+<text x="520" y="40" class="name" text-anchor="middle">Core</text>
+<rect x="336" y="64" width="128" height="64" class="shape"/>
+<rect x="443" y="72" width="13" height="16" class="icon"/>
+<rect x="440" y="75" width="6" height="3.5" class="icon"/>
+<rect x="440" y="81.5" width="6" height="3.5" class="icon"/>
+<text x="400" y="100.5" class="name" text-anchor="middle">Use Cases</text>
+<rect x="528" y="64" width="160" height="64" class="shape"/>
+<rect x="667" y="72" width="13" height="16" class="icon"/>
+<rect x="664" y="75" width="6" height="3.5" class="icon"/>
+<rect x="664" y="81.5" width="6" height="3.5" class="icon"/>
+<text x="608" y="100.5" class="name" text-anchor="middle">Domain Model</text>
+<rect x="1008" y="0" width="144" height="64" class="shape"/>
+<rect x="1131" y="8" width="13" height="16" class="icon"/>
+<rect x="1128" y="11" width="6" height="3.5" class="icon"/>
+<rect x="1128" y="17.5" width="6" height="3.5" class="icon"/>
+<text x="1080" y="36.5" class="name" text-anchor="middle">SQL Adapter</text>
+<rect x="1000" y="112" width="160" height="64" class="shape"/>
+<rect x="1139" y="120" width="13" height="16" class="icon"/>
+<rect x="1136" y="123" width="6" height="3.5" class="icon"/>
+<rect x="1136" y="129.5" width="6" height="3.5" class="icon"/>
+<text x="1080" y="148.5" class="name" text-anchor="middle">Kafka Adapter</text>
+<path d="M318 96 L336 96" class="edge"/>
+<path d="M326 100.5 L336 96 L326 91.5" class="edge head"/>
+<path d="M464 96 L528 96" class="edge"/>
+<path d="M518 100.5 L528 96 L518 91.5" class="edge head"/>
+<path d="M400 64 L400 48 L704 48 L704 72 L722 72" class="edge"/>
+<path d="M712 76.5 L722 72 L712 67.5" class="edge head"/>
+<path d="M400 128 L400 144 L704 144 L704 120 L722 120" class="edge"/>
+<path d="M712 124.5 L722 120 L712 115.5" class="edge head"/>
+<path d="M734 120 L771 120" class="edge"/>
+<path d="M832 120 L872 120 L872 144 L1000 144" class="edge"/>
+<path d="M779 120 L822 120" class="edge dashed fine"/>
+<path d="M812 124.5 L822 120 L812 115.5" class="edge head fine"/>
+<path d="M779 128 A8 8 0 0 1 779 112" class="edge"/>
+<circle cx="827" cy="120" r="5" class="shape"/>
+<text x="803" y="107" class="small" text-anchor="middle">IEvents</text>
+<path d="M734 72 L771 72" class="edge"/>
+<path d="M832 72 L872 72 L872 32 L1008 32" class="edge"/>
+<path d="M779 72 L822 72" class="edge dashed fine"/>
+<path d="M812 76.5 L822 72 L812 67.5" class="edge head fine"/>
+<path d="M779 80 A8 8 0 0 1 779 64" class="edge"/>
+<circle cx="827" cy="72" r="5" class="shape"/>
+<text x="803" y="59" class="small" text-anchor="middle">IRepository</text>
+<path d="M160 96 L201 96" class="edge"/>
+<path d="M262 96 L306 96" class="edge"/>
+<path d="M209 96 L252 96" class="edge dashed fine"/>
+<path d="M242 100.5 L252 96 L242 91.5" class="edge head fine"/>
+<path d="M209 104 A8 8 0 0 1 209 88" class="edge"/>
+<circle cx="257" cy="96" r="5" class="shape"/>
+<text x="233" y="83" class="small" text-anchor="middle">IUseCases</text>
+<rect x="306" y="90" width="12" height="12" class="shape"/>
+<text x="302" y="87" class="small" text-anchor="end">api</text>
+<rect x="722" y="66" width="12" height="12" class="shape"/>
+<text x="738" y="63" class="small" text-anchor="start">repo</text>
+<rect x="722" y="114" width="12" height="12" class="shape"/>
+<text x="738" y="111" class="small" text-anchor="start">publish</text>
+</svg>

@@ -1,0 +1,24 @@
+diagram component "Motor controller firmware"
+direction right
+
+package "Application" as app {
+  component "Speed Loop" as speed
+  component "Fault Monitor" as fault
+  fault --> speed : limits
+}
+
+package "Drivers" as drivers {
+  component PWM { provides IPwm }
+  component ADC { provides IAdc }
+  component CAN { provides ICan }
+}
+
+component "Control Task" as control {
+  requires IPwm
+  requires IAdc
+}
+
+component Telemetry { requires ICan }
+
+speed --> control : setpoint
+note control: Runs at 20 kHz in interrupt context.

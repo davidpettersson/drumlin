@@ -1,0 +1,12 @@
+diagram package "Lettering: x+1, 512, 401, IO and l1I"
+direction right
+
+class "Account_2024" as account <<abstract>>
+class "Ledger(v1.0)" as ledger
+package "I/O & <Net>" as io {
+  class "Socket#8" as socket
+}
+ledger --> account : x+1 = 512 - 401
+ledger ..> io : <<import>>
+socket --> account : "q" 'x' {a|b} ~^$%@ *;?!
+note ledger: Digits 0123456789 against IO l1I |, and 0O 1l 5S 8B 2Z. Non-ASCII: «guillemets» Åsa Gödel señor ß é – — × ² → 中.

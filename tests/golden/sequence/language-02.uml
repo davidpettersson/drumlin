@@ -1,0 +1,8 @@
+diagram sequence "Heads"
+
+actor "Operator" as op
+participant "Controller" as ctl <<service>>
+participant Disk
+
+op -> ctl : mount()
+ctl ->> Disk : spin up

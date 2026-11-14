@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -56 217.25 680" width="217.25" height="680">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .solid { fill: #22201c; stroke: none; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-24" y="-56" width="217.25" height="680" fill="#fff"/>
+<text x="0" y="-20" class="title">All the state elements</text>
+<rect x="0" y="208" width="144" height="304" class="shape heavy" rx="10"/>
+<text x="72" y="228.5" class="name" text-anchor="middle">Busy</text>
+<text x="12" y="252" class="small" text-anchor="start">entry / open()</text>
+<path d="M0 240 L144 240" class="edge fine"/>
+<path d="M0 264 L144 264" class="edge fine"/>
+<rect x="24" y="352" width="96" height="48" class="shape" rx="10"/>
+<text x="72" y="380.5" class="name" text-anchor="middle">Work</text>
+<circle cx="72" cy="280" r="8" class="solid"/>
+<circle cx="72" cy="476" r="11" class="shape"/>
+<circle cx="72" cy="476" r="6.5" class="solid"/>
+<rect x="24" y="80" width="96" height="48" class="shape" rx="10"/>
+<text x="72" y="108.5" class="name" text-anchor="middle">Idle</text>
+<circle cx="72" cy="8" r="8" class="solid"/>
+<circle cx="72" cy="588" r="11" class="shape"/>
+<circle cx="72" cy="588" r="6.5" class="solid"/>
+<path d="M72 16 L72 80" class="edge"/>
+<path d="M67.5 70 L72 80 L76.5 70" class="edge head"/>
+<path d="M72 128 L72 208" class="edge"/>
+<path d="M67.5 198 L72 208 L76.5 198" class="edge head"/>
+<path d="M72 288 L72 352" class="edge"/>
+<path d="M67.5 342 L72 352 L76.5 342" class="edge head"/>
+<path d="M72 400 L72 464" class="edge"/>
+<path d="M67.5 454 L72 464 L76.5 454" class="edge head"/>
+<path d="M72 512 L72 576" class="edge"/>
+<path d="M67.5 566 L72 576 L76.5 566" class="edge head"/>
+<text x="80" y="171" class="small" text-anchor="start">start [ready] / log()</text>
+</svg>

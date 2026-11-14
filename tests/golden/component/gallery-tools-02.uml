@@ -1,0 +1,20 @@
+diagram component "Language server"
+direction right
+
+component Editor { requires ILsp }
+
+component Server as server {
+  port lsp provides ILsp
+  component Dispatcher
+  component "Incremental Parser" as parser
+  component "Symbol Index" as index
+  component Diagnostics
+
+  lsp --> Dispatcher
+  Dispatcher --> parser : didChange
+  parser --> index : update
+  parser --> Diagnostics : errors
+}
+
+component "File Watcher" as watcher
+watcher --> server : changes

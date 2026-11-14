@@ -1,0 +1,3 @@
+component "Memory Allocator" as alloc
+component "Page Table" as pages
+alloc --> pages

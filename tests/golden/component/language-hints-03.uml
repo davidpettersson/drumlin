@@ -1,0 +1,7 @@
+diagram component "Metrics above Logs"
+component App
+component Logs
+component Metrics
+App --> Logs
+App --> Metrics
+Metrics above Logs

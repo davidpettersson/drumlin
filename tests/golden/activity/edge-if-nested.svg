@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -56 616 608" width="616" height="608">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .solid { fill: #22201c; stroke: none; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-24" y="-56" width="616" height="608" fill="#fff"/>
+<text x="0" y="-20" class="title">Nested two-armed decisions</text>
+<path d="M64 16 L64 48" class="edge"/>
+<path d="M59.5 38 L64 48 L68.5 38" class="edge head"/>
+<path d="M64 216 L64 256" class="edge"/>
+<path d="M59.5 246 L64 256 L68.5 246" class="edge head"/>
+<path d="M80 200 L208 200 L208 256" class="edge"/>
+<path d="M203.5 246 L208 256 L212.5 246" class="edge head"/>
+<path d="M64 288 L64 320" class="edge"/>
+<path d="M59.5 310 L64 320 L68.5 310" class="edge head"/>
+<path d="M208 288 L208 336 L80 336" class="edge"/>
+<path d="M90 331.5 L80 336 L90 340.5" class="edge head"/>
+<path d="M64 144 L64 184" class="edge"/>
+<path d="M59.5 174 L64 184 L68.5 174" class="edge head"/>
+<path d="M344 216 L344 256" class="edge"/>
+<path d="M339.5 246 L344 256 L348.5 246" class="edge head"/>
+<path d="M360 200 L512 200 L512 256" class="edge"/>
+<path d="M507.5 246 L512 256 L516.5 246" class="edge head"/>
+<path d="M344 288 L344 320" class="edge"/>
+<path d="M339.5 310 L344 320 L348.5 310" class="edge head"/>
+<path d="M512 288 L512 336 L360 336" class="edge"/>
+<path d="M370 331.5 L360 336 L370 340.5" class="edge head"/>
+<path d="M80 128 L344 128 L344 184" class="edge"/>
+<path d="M339.5 174 L344 184 L348.5 174" class="edge head"/>
+<path d="M64 352 L64 384" class="edge"/>
+<path d="M59.5 374 L64 384 L68.5 374" class="edge head"/>
+<path d="M344 352 L344 400 L80 400" class="edge"/>
+<path d="M90 395.5 L80 400 L90 404.5" class="edge head"/>
+<path d="M64 80 L64 112" class="edge"/>
+<path d="M59.5 102 L64 112 L68.5 102" class="edge head"/>
+<path d="M64 416 L64 448" class="edge"/>
+<path d="M59.5 438 L64 448 L68.5 438" class="edge head"/>
+<path d="M64 480 L64 512" class="edge"/>
+<path d="M59.5 502 L64 512 L68.5 502" class="edge head"/>
+<circle cx="64" cy="8" r="8" class="solid"/>
+<rect x="0" y="48" width="128" height="32" class="shape" rx="10"/>
+<text x="64" y="68" class="name" text-anchor="middle">Receive order</text>
+<path d="M64 112 L80 128 L64 144 L48 128 Z" class="shape"/>
+<path d="M64 184 L80 200 L64 216 L48 200 Z" class="shape"/>
+<rect x="24" y="256" width="80" height="32" class="shape" rx="10"/>
+<text x="64" y="276" class="name" text-anchor="middle">Ship</text>
+<rect x="152" y="256" width="112" height="32" class="shape" rx="10"/>
+<text x="208" y="276" class="name" text-anchor="middle">Back-order</text>
+<path d="M64 320 L80 336 L64 352 L48 336 Z" class="shape"/>
+<path d="M344 184 L360 200 L344 216 L328 200 Z" class="shape"/>
+<rect x="296" y="256" width="96" height="32" class="shape" rx="10"/>
+<text x="344" y="276" class="name" text-anchor="middle">Ask again</text>
+<rect x="456" y="256" width="112" height="32" class="shape" rx="10"/>
+<text x="512" y="276" class="name" text-anchor="middle">Cancel order</text>
+<path d="M344 320 L360 336 L344 352 L328 336 Z" class="shape"/>
+<path d="M64 384 L80 400 L64 416 L48 400 Z" class="shape"/>
+<rect x="24" y="448" width="80" height="32" class="shape" rx="10"/>
+<text x="64" y="468" class="name" text-anchor="middle">Close</text>
+<circle cx="64" cy="520" r="8" class="shape"/>
+<circle cx="64" cy="520" r="4.5" class="solid"/>
+<text x="70" y="231" class="small" text-anchor="start">[in stock]</text>
+<text x="86" y="192" class="small" text-anchor="start">[else]</text>
+<text x="70" y="159" class="small" text-anchor="start">[paid]</text>
+<text x="350" y="231" class="small" text-anchor="start">[retry allowed]</text>
+<text x="366" y="192" class="small" text-anchor="start">[else]</text>
+<text x="86" y="120" class="small" text-anchor="start">[else]</text>
+</svg>

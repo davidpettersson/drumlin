@@ -1,0 +1,9 @@
+component Kernel {
+  component "I/O" as io {
+    component VFS
+    component Block
+    VFS --> Block
+  }
+  component Memory
+  io --> Memory
+}

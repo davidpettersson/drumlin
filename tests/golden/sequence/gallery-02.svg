@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-41.78 -62 873.78 862" width="873.78" height="862">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .lifeline { fill: none; stroke: #22201c; stroke-width: 0.75; stroke-dasharray: 7 3; }
+.drumlin.pens .frame { fill: none; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .solid { fill: #22201c; stroke: none; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-41.78" y="-62" width="873.78" height="862" fill="#fff"/>
+<text x="-17.78" y="-26" class="title">Raft: replicating one log entry</text>
+<path d="M0 48 L0 776" class="lifeline"/>
+<path d="M96 48 L96 776" class="lifeline"/>
+<path d="M288 48 L288 776" class="lifeline"/>
+<path d="M464 48 L464 776" class="lifeline"/>
+<path d="M744 48 L744 776" class="lifeline"/>
+<rect x="78" y="320" width="620" height="224" class="frame"/>
+<path d="M78 424 L698 424" class="frame dashed"/>
+<rect x="66" y="144" width="644" height="424" class="frame"/>
+<path d="M66 272 L710 272" class="frame dashed"/>
+<rect x="78" y="584" width="684" height="144" class="frame"/>
+<rect x="96" y="112" width="12" height="12" class="shape"/>
+<rect x="288" y="224" width="12" height="12" class="shape"/>
+<rect x="282" y="192" width="12" height="72" class="shape"/>
+<rect x="464" y="376" width="12" height="12" class="shape"/>
+<rect x="458" y="304" width="12" height="248" class="shape"/>
+<rect x="96" y="640" width="12" height="12" class="shape"/>
+<rect x="738" y="680" width="12" height="32" class="shape"/>
+<rect x="90" y="80" width="12" height="680" class="shape"/>
+<path d="M78 320 L126 320 L126 334 L118 342 L78 342 Z" class="shape fine"/>
+<text x="86" y="335" class="name" text-anchor="start">alt</text>
+<text x="478" y="334" class="small halo" text-anchor="start">[log matches prevLogIndex]</text>
+<text x="478" y="438" class="small halo" text-anchor="start">[prevLogTerm mismatch]</text>
+<path d="M66 144 L114 144 L114 158 L106 166 L66 166 Z" class="shape fine"/>
+<text x="74" y="159" class="name" text-anchor="start">par</text>
+<path d="M78 584 L150 584 L150 598 L142 606 L78 606 Z" class="shape fine"/>
+<text x="86" y="599" class="name" text-anchor="start">critical</text>
+<text x="158" y="598" class="small halo" text-anchor="start">[majority acknowledged]</text>
+<circle cx="0" cy="0" r="6" class="shape"/>
+<path d="M0 6 L0 18 M-12 10 L12 10 M0 18 L-8 30 M0 18 L8 30" class="edge"/>
+<text x="0" y="44" class="name" text-anchor="middle">Client</text>
+<rect x="56" y="0" width="80" height="48" class="shape"/>
+<text x="96" y="19" class="small" text-anchor="middle">«raft»</text>
+<text x="96" y="35" class="name" text-anchor="middle">Leader</text>
+<rect x="240" y="0" width="96" height="48" class="shape"/>
+<text x="288" y="28" class="name" text-anchor="middle">Follower 1</text>
+<rect x="416" y="0" width="96" height="48" class="shape"/>
+<text x="464" y="28" class="name" text-anchor="middle">Follower 2</text>
+<rect x="680" y="0" width="128" height="48" class="shape"/>
+<text x="744" y="28" class="name" text-anchor="middle">State machine</text>
+<path d="M478 480 L676 480 L686 490 L686 528 L478 528 Z" class="shape fine"/>
+<path d="M676 480 L676 490 L686 490" class="edge fine"/>
+<text x="490" y="500" class="small" text-anchor="start">Leader walks nextIndex back and</text>
+<text x="490" y="515" class="small" text-anchor="start">retries.</text>
+<path d="M0 80 L90 80" class="edge"/>
+<path d="M80 84.5 L90 80 L80 75.5 Z" class="solid"/>
+<path d="M102 96 L134 96 L134 112 L108 112" class="edge"/>
+<path d="M118 107.5 L108 112 L118 116.5 Z" class="solid"/>
+<path d="M102 192 L282 192" class="edge"/>
+<path d="M272 196.5 L282 192 L272 187.5 Z" class="solid"/>
+<path d="M294 208 L326 208 L326 224 L300 224" class="edge"/>
+<path d="M310 219.5 L300 224 L310 228.5 Z" class="solid"/>
+<path d="M282 264 L102 264" class="edge dashed fine"/>
+<path d="M112 259.5 L102 264 L112 268.5" class="edge head fine"/>
+<path d="M102 304 L458 304" class="edge"/>
+<path d="M448 308.5 L458 304 L448 299.5 Z" class="solid"/>
+<path d="M470 360 L502 360 L502 376 L476 376" class="edge"/>
+<path d="M486 371.5 L476 376 L486 380.5 Z" class="solid"/>
+<path d="M458 416 L102 416" class="edge dashed fine"/>
+<path d="M112 411.5 L102 416 L112 420.5" class="edge head fine"/>
+<path d="M458 464 L102 464" class="edge dashed fine"/>
+<path d="M112 459.5 L102 464 L112 468.5" class="edge head fine"/>
+<path d="M102 624 L134 624 L134 640 L108 640" class="edge"/>
+<path d="M118 635.5 L108 640 L118 644.5 Z" class="solid"/>
+<path d="M102 680 L738 680" class="edge"/>
+<path d="M728 684.5 L738 680 L728 675.5 Z" class="solid"/>
+<path d="M738 712 L102 712" class="edge dashed fine"/>
+<path d="M112 707.5 L102 712 L112 716.5" class="edge head fine"/>
+<path d="M90 760 L0 760" class="edge dashed fine"/>
+<path d="M10 755.5 L0 760 L10 764.5" class="edge head fine"/>
+<text x="45" y="75" class="small halo" text-anchor="middle">command(x)</text>
+<text x="140" y="107.5" class="small halo" text-anchor="start">append to log</text>
+<text x="192" y="187" class="small halo" text-anchor="middle">AppendEntries(term, entry)</text>
+<text x="332" y="219.5" class="small halo" text-anchor="start">append and persist</text>
+<text x="192" y="259" class="small halo" text-anchor="middle">success</text>
+<text x="189" y="299" class="small halo" text-anchor="middle">AppendEntries(term, entry)</text>
+<text x="508" y="371.5" class="small halo" text-anchor="start">append and persist</text>
+<text x="379" y="411" class="small halo" text-anchor="middle">success</text>
+<text x="379" y="459" class="small halo" text-anchor="middle">reject (conflict index)</text>
+<text x="140" y="635.5" class="small halo" text-anchor="start">advance commitIndex</text>
+<text x="189" y="675" class="small halo" text-anchor="middle">apply(x)</text>
+<text x="607" y="707" class="small halo" text-anchor="middle">result</text>
+<text x="45" y="755" class="small halo" text-anchor="middle">result</text>
+</svg>

@@ -1,0 +1,22 @@
+diagram sequence "Page fault"
+
+participant "MMU" as mmu
+participant "Kernel" as k
+participant "Swap device" as swap
+
+[-> mmu : translate(vaddr)
+mmu -> k : page fault(vaddr) {
+  k -> new "Fault context" as fc <<per fault>> : allocate
+  k -> k : find VMA
+  alt "anonymous page" {
+    k -> swap : read(slot) {
+      note right of swap: The request is queued and the task sleeps.
+      return page
+    }
+    k -> k : map page
+  } else "invalid access" {
+    k ->] : SIGSEGV to task
+  }
+  destroy fc
+  return retry the access
+}

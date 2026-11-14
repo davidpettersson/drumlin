@@ -1,0 +1,14 @@
+diagram component "Query engine"
+direction down
+
+component "SQL Parser" as parser
+component Planner { requires ICatalog }
+component Catalog { provides ICatalog }
+component Optimizer
+component Executor
+component "Storage Layer" as storage
+
+parser --> Planner : AST
+Planner --> Optimizer : logical plan
+Optimizer --> Executor : physical plan
+Executor --> storage : scans

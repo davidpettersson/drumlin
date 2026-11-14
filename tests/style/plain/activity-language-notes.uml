@@ -1,0 +1,10 @@
+diagram activity "Notes"
+start
+action "Load config"
+note: Falls back to defaults when the file is missing.
+if "debug" {
+  action "Enable traces"
+}
+note: Checked once at startup.
+action "Run"
+stop

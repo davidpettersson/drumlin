@@ -1,0 +1,7 @@
+diagram state "layout longest-path"
+layout longest-path
+
+[*] --> Idle
+Idle --> Running
+Running --> Stopping
+Stopping --> [*]

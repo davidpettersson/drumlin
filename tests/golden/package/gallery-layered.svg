@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-48 -56 768 768" width="768" height="768">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-48" y="-56" width="768" height="768" fill="#fff"/>
+<text x="-24" y="-20" class="title">Layered architecture</text>
+<rect x="0" y="0" width="102.09" height="24" class="shape heavy"/>
+<rect x="0" y="24" width="320" height="120" class="shape heavy"/>
+<text x="12" y="16.5" class="name" text-anchor="start">Presentation</text>
+<rect x="24" y="48" width="40" height="16" class="shape"/>
+<rect x="24" y="64" width="112" height="48" class="shape"/>
+<text x="80" y="92.5" class="name" text-anchor="middle">Web</text>
+<rect x="176" y="48" width="40" height="16" class="shape"/>
+<rect x="176" y="64" width="112" height="48" class="shape"/>
+<text x="232" y="92.5" class="name" text-anchor="middle">Mobile</text>
+<rect x="0" y="208" width="92.03" height="24" class="shape heavy"/>
+<rect x="0" y="232" width="320" height="120" class="shape heavy"/>
+<text x="12" y="224.5" class="name" text-anchor="start">Application</text>
+<rect x="24" y="256" width="40" height="16" class="shape"/>
+<rect x="24" y="272" width="112" height="48" class="shape"/>
+<text x="80" y="300.5" class="name" text-anchor="middle">Commands</text>
+<rect x="176" y="256" width="40" height="16" class="shape"/>
+<rect x="176" y="272" width="112" height="48" class="shape"/>
+<text x="232" y="300.5" class="name" text-anchor="middle">Queries</text>
+<rect x="-24" y="416" width="71.92" height="24" class="shape heavy"/>
+<rect x="-24" y="440" width="368" height="248" class="shape heavy"/>
+<text x="-12" y="432.5" class="name" text-anchor="start">Domain</text>
+<rect x="72" y="472" width="96" height="48" class="shape"/>
+<text x="120" y="500.5" class="name" text-anchor="middle">Order</text>
+<rect x="0" y="600" width="96" height="48" class="shape"/>
+<text x="48" y="628.5" class="name" text-anchor="middle">Customer</text>
+<rect x="208" y="464" width="112" height="64" class="shape"/>
+<text x="264" y="491.5" class="small" text-anchor="middle">«interface»</text>
+<text x="264" y="508.5" class="name" text-anchor="middle">Repository</text>
+<rect x="136" y="592" width="112" height="64" class="shape"/>
+<text x="192" y="619.5" class="small" text-anchor="middle">«enumeration»</text>
+<text x="192" y="636.5" class="name" text-anchor="middle">Status</text>
+<rect x="360" y="208" width="105.94" height="24" class="shape heavy"/>
+<rect x="360" y="232" width="336" height="120" class="shape heavy"/>
+<text x="372" y="224.5" class="name" text-anchor="start">Infrastructure</text>
+<rect x="384" y="256" width="40" height="16" class="shape"/>
+<rect x="384" y="272" width="128" height="48" class="shape"/>
+<text x="448" y="300.5" class="name" text-anchor="middle">Persistence</text>
+<rect x="552" y="256" width="40" height="16" class="shape"/>
+<rect x="552" y="272" width="112" height="48" class="shape"/>
+<text x="608" y="300.5" class="name" text-anchor="middle">Messaging</text>
+<path d="M376 528 L574 528 L584 538 L584 576 L376 576 Z" class="shape fine"/>
+<path d="M574 528 L574 538 L584 538" class="edge fine"/>
+<text x="388" y="548" class="small" text-anchor="start">Depends on nothing else. Keep it</text>
+<text x="388" y="563" class="small" text-anchor="start">free of framework types.</text>
+<path d="M72 496 L48 496 L48 600" class="edge"/>
+<path d="M43.5 590 L48 600 L52.5 590" class="edge head"/>
+<path d="M168 496 L192 496 L192 592" class="edge dashed fine"/>
+<path d="M187.5 582 L192 592 L196.5 582" class="edge head fine"/>
+<path d="M160 144 L160 232" class="edge dashed fine"/>
+<path d="M155.5 222 L160 232 L164.5 222" class="edge head fine"/>
+<path d="M160 352 L160 440" class="edge dashed fine"/>
+<path d="M155.5 430 L160 440 L164.5 430" class="edge head fine"/>
+<path d="M528 352 L528 392 L328 392 L328 440" class="edge dashed fine"/>
+<path d="M323.5 430 L328 440 L332.5 430" class="edge head fine"/>
+<path d="M376 552 L344 552" class="edge dashed fine"/>
+<text x="168" y="192" class="small halo" text-anchor="start">«import»</text>
+<text x="168" y="400" class="small halo" text-anchor="start">«import»</text>
+<text x="428" y="385" class="small halo" text-anchor="middle">«access»</text>
+</svg>

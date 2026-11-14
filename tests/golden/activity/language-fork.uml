@@ -1,0 +1,17 @@
+diagram activity "Concurrent flows"
+start
+fork {
+  action "Fetch profile"
+} and {
+  action "Fetch orders"
+} and {
+  action "Fetch feed"
+}
+action "Compose page"
+fork {
+  action "Audit"
+  end
+} and {
+  action "Respond"
+}
+stop

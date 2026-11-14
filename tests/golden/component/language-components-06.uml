@@ -1,0 +1,2 @@
+component Sensor { provides ISample }
+component Logger { requires ISample }

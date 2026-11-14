@@ -1,0 +1,36 @@
+diagram activity "Deployment with parallel checks"
+start
+lane "Developer" {
+  action "Merge to main"
+}
+lane "CI" {
+  action "Build image"
+  send "Image ready"
+}
+lane "Staging" {
+  accept "Image ready"
+  action "Deploy to staging"
+}
+fork {
+  lane "Staging" {
+    action "Smoke tests"
+  }
+} and {
+  lane "Security" {
+    action "Scan image"
+  }
+} and {
+  lane "CI" {
+    action "Contract tests"
+  }
+}
+lane "Developer" {
+  if "all green" {
+    lane "Production" {
+      action "Roll out canary"
+    }
+  } else {
+    action "Roll back and file issue"
+  }
+}
+stop

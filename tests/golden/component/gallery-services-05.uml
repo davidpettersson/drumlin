@@ -1,0 +1,14 @@
+diagram component "Event-driven checkout"
+direction right
+
+component Checkout { requires IBus }
+component "Message Bus" as bus { provides IBus }
+component Payments
+component Inventory
+component Shipping
+
+bus --> Payments : OrderPlaced
+bus --> Inventory : OrderPlaced
+Payments --> Shipping : PaymentCaptured
+Inventory --> Shipping : StockReserved
+note bus: Delivery is at least once. Handlers are idempotent.

@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -56 1056 368" width="1056" height="368">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-24" y="-56" width="1056" height="368" fill="#fff"/>
+<text x="0" y="-20" class="title">Container runtime</text>
+<rect x="0" y="104" width="128" height="64" class="shape"/>
+<rect x="107" y="112" width="13" height="16" class="icon"/>
+<rect x="104" y="115" width="6" height="3.5" class="icon"/>
+<rect x="104" y="121.5" width="6" height="3.5" class="icon"/>
+<text x="64" y="140.5" class="name" text-anchor="middle">CLI</text>
+<rect x="264" y="104" width="128" height="64" class="shape"/>
+<rect x="371" y="112" width="13" height="16" class="icon"/>
+<rect x="368" y="115" width="6" height="3.5" class="icon"/>
+<rect x="368" y="121.5" width="6" height="3.5" class="icon"/>
+<text x="328" y="140.5" class="name" text-anchor="middle">Daemon</text>
+<rect x="584" y="0" width="144" height="64" class="shape"/>
+<rect x="707" y="8" width="13" height="16" class="icon"/>
+<rect x="704" y="11" width="6" height="3.5" class="icon"/>
+<rect x="704" y="17.5" width="6" height="3.5" class="icon"/>
+<text x="656" y="36.5" class="name" text-anchor="middle">Image Store</text>
+<rect x="592" y="104" width="128" height="64" class="shape"/>
+<rect x="699" y="112" width="13" height="16" class="icon"/>
+<rect x="696" y="115" width="6" height="3.5" class="icon"/>
+<rect x="696" y="121.5" width="6" height="3.5" class="icon"/>
+<text x="656" y="140.5" class="name" text-anchor="middle">Shim</text>
+<rect x="864" y="104" width="144" height="64" class="shape"/>
+<rect x="987" y="112" width="13" height="16" class="icon"/>
+<rect x="984" y="115" width="6" height="3.5" class="icon"/>
+<rect x="984" y="121.5" width="6" height="3.5" class="icon"/>
+<text x="936" y="131.5" class="small" text-anchor="middle">«platform»</text>
+<text x="936" y="148.5" class="name" text-anchor="middle">Linux Kernel</text>
+<path d="M568 240 L734 240 L744 250 L744 288 L568 288 Z" class="shape fine"/>
+<path d="M734 240 L734 250 L744 250" class="edge fine"/>
+<text x="580" y="260" class="small" text-anchor="start">Outlives the daemon so that</text>
+<text x="580" y="275" class="small" text-anchor="start">containers survive restarts.</text>
+<path d="M656 240 L656 168" class="edge dashed fine"/>
+<path d="M328 104 L328 32 L424 32" class="edge"/>
+<path d="M485 32 L584 32" class="edge"/>
+<path d="M432 32 L475 32" class="edge dashed fine"/>
+<path d="M465 36.5 L475 32 L465 27.5" class="edge head fine"/>
+<path d="M432 40 A8 8 0 0 1 432 24" class="edge"/>
+<circle cx="480" cy="32" r="5" class="shape"/>
+<text x="456" y="19" class="small" text-anchor="middle">IImages</text>
+<path d="M392 136 L460 136" class="edge"/>
+<path d="M521 136 L592 136" class="edge"/>
+<path d="M468 136 L511 136" class="edge dashed fine"/>
+<path d="M501 140.5 L511 136 L501 131.5" class="edge head fine"/>
+<path d="M468 144 A8 8 0 0 1 468 128" class="edge"/>
+<circle cx="516" cy="136" r="5" class="shape"/>
+<text x="492" y="123" class="small" text-anchor="middle">IOci</text>
+<path d="M128 136 L164 136" class="edge"/>
+<path d="M225 136 L264 136" class="edge"/>
+<path d="M172 136 L215 136" class="edge dashed fine"/>
+<path d="M205 140.5 L215 136 L205 131.5" class="edge head fine"/>
+<path d="M172 144 A8 8 0 0 1 172 128" class="edge"/>
+<circle cx="220" cy="136" r="5" class="shape"/>
+<text x="196" y="123" class="small" text-anchor="middle">IRuntimeApi</text>
+<path d="M720 136 L760 136" class="edge"/>
+<path d="M821 136 L864 136" class="edge"/>
+<path d="M768 136 L811 136" class="edge dashed fine"/>
+<path d="M801 140.5 L811 136 L801 131.5" class="edge head fine"/>
+<path d="M768 144 A8 8 0 0 1 768 128" class="edge"/>
+<circle cx="816" cy="136" r="5" class="shape"/>
+<text x="792" y="123" class="small" text-anchor="middle">ISyscalls</text>
+</svg>

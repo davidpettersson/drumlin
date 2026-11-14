@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -56 488 408" width="488" height="408">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .solid { fill: #22201c; stroke: none; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-24" y="-56" width="488" height="408" fill="#fff"/>
+<text x="0" y="-20" class="title">Multi-way decision</text>
+<path d="M136 128 L40 128 L40 184" class="edge"/>
+<path d="M35.5 174 L40 184 L44.5 174" class="edge head"/>
+<path d="M152 144 L152 184" class="edge"/>
+<path d="M147.5 174 L152 184 L156.5 174" class="edge head"/>
+<path d="M168 128 L280 128 L280 184" class="edge"/>
+<path d="M275.5 174 L280 184 L284.5 174" class="edge head"/>
+<path d="M168 128 L400 128 L400 184" class="edge"/>
+<path d="M395.5 174 L400 184 L404.5 174" class="edge head"/>
+<path d="M40 216 L40 264 L136 264" class="edge"/>
+<path d="M126 268.5 L136 264 L126 259.5" class="edge head"/>
+<path d="M152 216 L152 248" class="edge"/>
+<path d="M147.5 238 L152 248 L156.5 238" class="edge head"/>
+<path d="M280 216 L280 264 L168 264" class="edge"/>
+<path d="M178 259.5 L168 264 L178 268.5" class="edge head"/>
+<path d="M400 216 L400 264 L168 264" class="edge"/>
+<path d="M178 259.5 L168 264 L178 268.5" class="edge head"/>
+<path d="M152 16 L152 112" class="edge"/>
+<path d="M147.5 102 L152 112 L156.5 102" class="edge head"/>
+<path d="M152 280 L152 312" class="edge"/>
+<path d="M147.5 302 L152 312 L156.5 302" class="edge head"/>
+<path d="M176 96 L160 120" class="edge dashed fine"/>
+<circle cx="152" cy="8" r="8" class="solid"/>
+<path d="M152 112 L168 128 L152 144 L136 128 Z" class="shape"/>
+<rect x="0" y="184" width="80" height="32" class="shape" rx="10"/>
+<text x="40" y="204" class="name" text-anchor="middle">Read</text>
+<rect x="112" y="184" width="80" height="32" class="shape" rx="10"/>
+<text x="152" y="204" class="name" text-anchor="middle">Create</text>
+<rect x="232" y="184" width="96" height="32" class="shape" rx="10"/>
+<text x="280" y="204" class="name" text-anchor="middle">Replace</text>
+<rect x="360" y="184" width="80" height="32" class="shape" rx="10"/>
+<text x="400" y="204" class="name" text-anchor="middle">405</text>
+<path d="M152 248 L168 264 L152 280 L136 264 Z" class="shape"/>
+<circle cx="152" cy="320" r="8" class="shape"/>
+<circle cx="152" cy="320" r="4.5" class="solid"/>
+<path d="M176 48 L278 48 L288 58 L288 96 L176 96 Z" class="shape fine"/>
+<path d="M278 48 L278 58 L288 58" class="edge fine"/>
+<text x="188" y="68" class="small" text-anchor="start">«decisionInput»</text>
+<text x="188" y="83" class="small" text-anchor="start">HTTP method</text>
+<text x="101" y="120" class="small" text-anchor="start">[GET]</text>
+<text x="158" y="159" class="small" text-anchor="start">[POST]</text>
+<text x="265.5" y="120" class="small" text-anchor="start">[PUT]</text>
+<text x="386.5" y="120" class="small" text-anchor="start">[else]</text>
+</svg>

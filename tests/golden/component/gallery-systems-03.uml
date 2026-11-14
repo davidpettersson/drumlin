@@ -1,0 +1,22 @@
+diagram component "Type 1 hypervisor"
+direction down
+
+package "Guests" as guests {
+  component "Linux Guest" as linux { requires IVirtio }
+  component "RTOS Guest" as rtos { requires IVirtio }
+}
+
+component "Virtual Devices" as vdev {
+  provides IVirtio
+  requires IDriver
+}
+
+package "Hypervisor" as hv {
+  component "vCPU Scheduler" as vcpu
+  component "Stage-2 MMU" as mmu
+  vcpu --> mmu
+}
+
+component "Hardware Drivers" as drv { provides IDriver }
+
+guests ..> hv : traps

@@ -1,0 +1,17 @@
+diagram activity "Multi-way decision"
+start
+switch "HTTP method" {
+  case "GET" {
+    action "Read"
+  }
+  case "POST" {
+    action "Create"
+  }
+  case "PUT" {
+    action "Replace"
+  }
+  case "else" {
+    action "405"
+  }
+}
+stop

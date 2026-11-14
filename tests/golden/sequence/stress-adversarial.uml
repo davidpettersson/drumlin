@@ -1,0 +1,34 @@
+diagram sequence "Adversarial"
+participant "Far left" as a
+participant "A rather long participant name that wraps" as b
+actor "Op" as c
+note left of a: A note placed left of the leftmost lifeline to check that the margin grows outward.
+a -> c : a message long enough that it wants to wrap across several words and cross a lifeline in the middle
+c -> a : short
+alt "first condition with a guard which is quite long indeed and wraps at the width" {
+  c -> c : a long self message whose text wants to wrap more than once when it has only so much room on the right edge
+  loop "(1,5)" {
+    a ->> b : tick
+    break "stop now" {
+      b -> a : bail {
+        a --> a : async self
+      }
+    }
+  }
+}
+[-> a : found message whose label is long enough to demand a generous stub length here
+a ->] : lost signal
+c ->] : gone far right with a long, long label to the right
+b -> new "Worker Thread" as w : spawn
+b -> w : run {
+  w -> new "Inner" as x <<ephemeral>> : make
+  return done
+}
+destroy x
+critical "lock held" {
+  neg {
+    b -> a : no
+  }
+}
+note over c: Note over only one lifeline which is fairly long too.
+ref over c : One lifeline only, with a long reference name

@@ -1,0 +1,2 @@
+component Cache
+note Cache: Write-through. Entries expire after 30 seconds.

@@ -1,0 +1,9 @@
+diagram state "All the state elements"
+[*] --> Idle
+Idle --> Busy : start [ready] / log()
+state Busy {
+  entry / open()
+  [*] --> Work
+  Work --> [*]
+}
+Busy --> [*]

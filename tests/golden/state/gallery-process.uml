@@ -1,0 +1,11 @@
+diagram state "Process lifecycle"
+[*] --> New
+New --> Ready : admitted
+Ready --> Running : dispatch
+Running --> Ready : preempt [quantum expired]
+Running --> Waiting : wait(event) / block()
+Waiting --> Ready : event occurs
+Running --> Zombie : exit() / release resources
+Zombie --> [*] : reaped by parent
+Running --> Running : syscall [fast path] / handle inline
+note Zombie: Holds only its exit status until the parent calls wait.

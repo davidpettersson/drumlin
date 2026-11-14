@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -56 568 784" width="568" height="784">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-24" y="-56" width="568" height="784" fill="#fff"/>
+<text x="0" y="-20" class="title">Type 1 hypervisor</text>
+<rect x="0" y="0" width="68.07" height="24" class="shape heavy"/>
+<rect x="0" y="24" width="384" height="120" class="shape heavy"/>
+<text x="12" y="16.5" class="name" text-anchor="start">Guests</text>
+<rect x="24" y="48" width="144" height="64" class="shape"/>
+<rect x="147" y="56" width="13" height="16" class="icon"/>
+<rect x="144" y="59" width="6" height="3.5" class="icon"/>
+<rect x="144" y="65.5" width="6" height="3.5" class="icon"/>
+<text x="96" y="84.5" class="name" text-anchor="middle">Linux Guest</text>
+<rect x="208" y="48" width="144" height="64" class="shape"/>
+<rect x="331" y="56" width="13" height="16" class="icon"/>
+<rect x="328" y="59" width="6" height="3.5" class="icon"/>
+<rect x="328" y="65.5" width="6" height="3.5" class="icon"/>
+<text x="280" y="84.5" class="name" text-anchor="middle">RTOS Guest</text>
+<rect x="16" y="360" width="160" height="64" class="shape"/>
+<rect x="155" y="368" width="13" height="16" class="icon"/>
+<rect x="152" y="371" width="6" height="3.5" class="icon"/>
+<rect x="152" y="377.5" width="6" height="3.5" class="icon"/>
+<text x="96" y="396.5" class="name" text-anchor="middle">Virtual Devices</text>
+<rect x="312" y="256" width="90.46" height="24" class="shape heavy"/>
+<rect x="312" y="280" width="208" height="248" class="shape heavy"/>
+<text x="324" y="272.5" class="name" text-anchor="start">Hypervisor</text>
+<rect x="336" y="304" width="160" height="64" class="shape"/>
+<rect x="475" y="312" width="13" height="16" class="icon"/>
+<rect x="472" y="315" width="6" height="3.5" class="icon"/>
+<rect x="472" y="321.5" width="6" height="3.5" class="icon"/>
+<text x="416" y="340.5" class="name" text-anchor="middle">vCPU Scheduler</text>
+<rect x="344" y="432" width="144" height="64" class="shape"/>
+<rect x="467" y="440" width="13" height="16" class="icon"/>
+<rect x="464" y="443" width="6" height="3.5" class="icon"/>
+<rect x="464" y="449.5" width="6" height="3.5" class="icon"/>
+<text x="416" y="468.5" class="name" text-anchor="middle">Stage-2 MMU</text>
+<rect x="8" y="640" width="176" height="64" class="shape"/>
+<rect x="163" y="648" width="13" height="16" class="icon"/>
+<rect x="160" y="651" width="6" height="3.5" class="icon"/>
+<rect x="160" y="657.5" width="6" height="3.5" class="icon"/>
+<text x="96" y="676.5" class="name" text-anchor="middle">Hardware Drivers</text>
+<path d="M416 368 L416 432" class="edge"/>
+<path d="M411.5 422 L416 432 L420.5 422" class="edge head"/>
+<path d="M368 144 L368 208 L432 208 L432 280" class="edge dashed fine"/>
+<path d="M427.5 270 L432 280 L436.5 270" class="edge head fine"/>
+<path d="M96 424 L96 500" class="edge"/>
+<path d="M96 561 L96 640" class="edge"/>
+<path d="M96 508 L96 551" class="edge dashed fine"/>
+<path d="M91.5 541 L96 551 L100.5 541" class="edge head fine"/>
+<path d="M88 508 A8 8 0 0 1 104 508" class="edge"/>
+<circle cx="96" cy="556" r="5" class="shape"/>
+<text x="109" y="536" class="small" text-anchor="start">IDriver</text>
+<path d="M96 112 L96 204" class="edge"/>
+<path d="M96 265 L96 360" class="edge"/>
+<path d="M96 212 L96 255" class="edge dashed fine"/>
+<path d="M91.5 245 L96 255 L100.5 245" class="edge head fine"/>
+<path d="M88 212 A8 8 0 0 1 104 212" class="edge"/>
+<circle cx="96" cy="260" r="5" class="shape"/>
+<text x="109" y="240" class="small" text-anchor="start">IVirtio</text>
+<path d="M280 112 L280 192" class="edge"/>
+<path d="M280 253 L280 392 L176 392" class="edge"/>
+<path d="M280 200 L280 243" class="edge dashed fine"/>
+<path d="M275.5 233 L280 243 L284.5 233" class="edge head fine"/>
+<path d="M272 200 A8 8 0 0 1 288 200" class="edge"/>
+<circle cx="280" cy="248" r="5" class="shape"/>
+<text x="293" y="228" class="small" text-anchor="start">IVirtio</text>
+<text x="400" y="201" class="small halo" text-anchor="middle">traps</text>
+</svg>

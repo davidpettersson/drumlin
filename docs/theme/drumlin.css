@@ -1,0 +1,24 @@
+/* Copyright 2026 David Pettersson
+   SPDX-License-Identifier: Apache-2.0 */
+
+/* Diagrams stay on a white sheet in every mdBook theme. */
+.drumlin-figure {
+  margin: 1em 0 2em;
+  padding: 8px;
+  background: #fff;
+  border: 1px solid #d9dee4;
+  border-radius: 6px;
+  overflow-x: auto;
+  text-align: center;
+}
+
+.drumlin-figure svg {
+  max-width: 100%;
+  height: auto;
+}
+
+.drumlin-output {
+  margin-bottom: 0.25em;
+  font-size: 0.9em;
+  opacity: 0.75;
+}

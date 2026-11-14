@@ -1,0 +1,10 @@
+diagram sequence "Ordering a pizza"
+
+actor "Customer" as c
+participant "Web app" as web
+participant "Kitchen" as k
+
+c -> web : place(order) {
+  web ->> k : cook(order)
+  return confirmation
+}

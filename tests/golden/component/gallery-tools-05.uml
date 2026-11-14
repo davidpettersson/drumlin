@@ -1,0 +1,14 @@
+diagram component "Documentation build"
+direction right
+
+component "Markdown Chapters" as md <<input>>
+component mdBook { requires IPreprocessor }
+component "mdbook-drumlin" as pre {
+  provides IPreprocessor
+  requires IRender
+}
+component "drumlin library" as lib { provides IRender }
+component "Static Site" as site <<output>>
+
+md --> mdBook
+mdBook --> site : HTML with inline SVG

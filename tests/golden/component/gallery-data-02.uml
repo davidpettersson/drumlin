@@ -1,0 +1,21 @@
+diagram component "Stream processor"
+direction right
+
+component Producers { requires ILog }
+component "Partitioned Log" as log {
+  provides ILog
+  provides ISubscribe
+}
+
+component Job as job {
+  port source requires ISubscribe
+  component Windowing
+  component Aggregator
+  component Sink
+  source --> Windowing
+  Windowing --> Aggregator
+  Aggregator --> Sink
+}
+
+component "State Backend" as state <<rocksdb>>
+job ..> state : checkpoints

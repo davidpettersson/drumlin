@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -56 760 256" width="760" height="256">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-24" y="-56" width="760" height="256" fill="#fff"/>
+<text x="0" y="-20" class="title">Debugger</text>
+<rect x="0" y="0" width="128" height="64" class="shape"/>
+<rect x="107" y="8" width="13" height="16" class="icon"/>
+<rect x="104" y="11" width="6" height="3.5" class="icon"/>
+<rect x="104" y="17.5" width="6" height="3.5" class="icon"/>
+<text x="64" y="36.5" class="name" text-anchor="middle">Debug UI</text>
+<rect x="240" y="0" width="128" height="64" class="shape"/>
+<rect x="347" y="8" width="13" height="16" class="icon"/>
+<rect x="344" y="11" width="6" height="3.5" class="icon"/>
+<rect x="344" y="17.5" width="6" height="3.5" class="icon"/>
+<text x="304" y="36.5" class="name" text-anchor="middle">Engine</text>
+<rect x="552" y="0" width="160" height="64" class="shape"/>
+<rect x="691" y="8" width="13" height="16" class="icon"/>
+<rect x="688" y="11" width="6" height="3.5" class="icon"/>
+<rect x="688" y="17.5" width="6" height="3.5" class="icon"/>
+<text x="632" y="36.5" class="name" text-anchor="middle">DWARF Reader</text>
+<rect x="552" y="112" width="160" height="64" class="shape"/>
+<rect x="691" y="120" width="13" height="16" class="icon"/>
+<rect x="688" y="123" width="6" height="3.5" class="icon"/>
+<rect x="688" y="129.5" width="6" height="3.5" class="icon"/>
+<text x="632" y="148.5" class="name" text-anchor="middle">ptrace Backend</text>
+<path d="M128 32 L152 32" class="edge"/>
+<path d="M213 32 L240 32" class="edge"/>
+<path d="M160 32 L203 32" class="edge dashed fine"/>
+<path d="M193 36.5 L203 32 L193 27.5" class="edge head fine"/>
+<path d="M160 40 A8 8 0 0 1 160 24" class="edge"/>
+<circle cx="208" cy="32" r="5" class="shape"/>
+<text x="184" y="19" class="small" text-anchor="middle">IDebug</text>
+<path d="M368 32 L428 32" class="edge"/>
+<path d="M489 32 L552 32" class="edge"/>
+<path d="M436 32 L479 32" class="edge dashed fine"/>
+<path d="M469 36.5 L479 32 L469 27.5" class="edge head fine"/>
+<path d="M436 40 A8 8 0 0 1 436 24" class="edge"/>
+<circle cx="484" cy="32" r="5" class="shape"/>
+<text x="460" y="19" class="small" text-anchor="middle">ISymbols</text>
+<path d="M304 64 L304 144 L396 144" class="edge"/>
+<path d="M457 144 L552 144" class="edge"/>
+<path d="M404 144 L447 144" class="edge dashed fine"/>
+<path d="M437 148.5 L447 144 L437 139.5" class="edge head fine"/>
+<path d="M404 152 A8 8 0 0 1 404 136" class="edge"/>
+<circle cx="452" cy="144" r="5" class="shape"/>
+<text x="428" y="131" class="small" text-anchor="middle">ITarget</text>
+</svg>

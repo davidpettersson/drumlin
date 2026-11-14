@@ -1,0 +1,7 @@
+diagram activity "Signals"
+start
+action "Request payment"
+send "PaymentRequested"
+accept "PaymentConfirmed"
+action "Ship goods"
+stop

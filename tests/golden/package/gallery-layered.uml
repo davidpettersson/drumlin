@@ -1,0 +1,27 @@
+diagram package "Layered architecture"
+
+package "Presentation" as ui {
+  package Web
+  package Mobile
+}
+package "Application" as app {
+  package Commands
+  package Queries
+}
+package "Domain" as domain {
+  class Order
+  class Customer
+  interface Repository
+  enum Status
+  Order --> Customer
+  Order ..> Status
+}
+package "Infrastructure" as infra {
+  package Persistence
+  package Messaging
+}
+
+ui ..> app : <<import>>
+app ..> domain : <<import>>
+infra ..> domain : <<access>>
+note domain: Depends on nothing else. Keep it free of framework types.

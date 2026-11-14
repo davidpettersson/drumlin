@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-284 -56 1204 1280" width="1204" height="1280">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .lifeline { fill: none; stroke: #22201c; stroke-width: 0.75; stroke-dasharray: 7 3; }
+.drumlin.pens .frame { fill: none; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .solid { fill: #22201c; stroke: none; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-284" y="-56" width="1204" height="1280" fill="#fff"/>
+<text x="-260" y="-20" class="title">Adversarial</text>
+<path d="M0 56 L0 1200" class="lifeline"/>
+<path d="M240 56 L240 1200" class="lifeline"/>
+<path d="M424 56 L424 1200" class="lifeline"/>
+<path d="M720 772 L720 1200" class="lifeline"/>
+<path d="M848 868 L848 912" class="lifeline"/>
+<rect x="-18" y="456" width="328.14" height="104" class="frame"/>
+<rect x="-30" y="392" width="352.14" height="184" class="frame"/>
+<rect x="-42" y="248" width="709.76" height="344" class="frame"/>
+<rect x="-18" y="976" width="276" height="64" class="frame"/>
+<rect x="-30" y="936" width="339.52" height="120" class="frame"/>
+<rect x="418" y="360" width="12" height="12" class="shape"/>
+<rect x="-6" y="504" width="12" height="40" class="shape"/>
+<rect x="714" y="800" width="12" height="96" class="shape"/>
+<path d="M-18 456 L46 456 L46 470 L38 478 L-18 478 Z" class="shape fine"/>
+<text x="-10" y="471" class="name" text-anchor="start">break</text>
+<text x="248" y="470" class="small halo" text-anchor="start">[stop now]</text>
+<path d="M-30 392 L58 392 L58 406 L50 414 L-30 414 Z" class="shape fine"/>
+<text x="-22" y="407" class="name" text-anchor="start">loop(1,5)</text>
+<path d="M-42 248 L6 248 L6 262 L-2 270 L-42 270 Z" class="shape fine"/>
+<text x="-34" y="263" class="name" text-anchor="start">alt</text>
+<text x="432" y="262" class="small halo" text-anchor="start">[first condition with a guard which is quite long</text>
+<text x="432" y="277" class="small halo" text-anchor="start">indeed and wraps at the width]</text>
+<path d="M-18 976 L38 976 L38 990 L30 998 L-18 998 Z" class="shape fine"/>
+<text x="-10" y="991" class="name" text-anchor="start">neg</text>
+<path d="M-30 936 L42 936 L42 950 L34 958 L-30 958 Z" class="shape fine"/>
+<text x="-22" y="951" class="name" text-anchor="start">critical</text>
+<text x="248" y="950" class="small halo" text-anchor="start">[lock held]</text>
+<rect x="-40" y="0" width="80" height="56" class="shape"/>
+<text x="0" y="32" class="name" text-anchor="middle">Far left</text>
+<rect x="160" y="0" width="160" height="56" class="shape"/>
+<text x="240" y="16" class="name" text-anchor="middle">A rather long</text>
+<text x="240" y="32" class="name" text-anchor="middle">participant name that</text>
+<text x="240" y="48" class="name" text-anchor="middle">wraps</text>
+<circle cx="424" cy="8" r="6" class="shape"/>
+<path d="M424 14 L424 26 M412 18 L436 18 M424 26 L416 38 M424 26 L432 38" class="edge"/>
+<text x="424" y="52" class="name" text-anchor="middle">Op</text>
+<rect x="656" y="716" width="128" height="56" class="shape"/>
+<text x="720" y="748" class="name" text-anchor="middle">Worker Thread</text>
+<rect x="800" y="812" width="96" height="56" class="shape"/>
+<text x="848" y="835" class="small" text-anchor="middle">«ephemeral»</text>
+<text x="848" y="851" class="name" text-anchor="middle">Inner</text>
+<rect x="311.45" y="1136" width="225.1" height="48" class="shape fine"/>
+<path d="M311.449 1136 L359.449 1136 L359.449 1148 L351.449 1156 L311.449 1156 Z" class="shape fine"/>
+<text x="319.45" y="1149" class="name" text-anchor="start">ref</text>
+<text x="424" y="1155" class="small" text-anchor="middle">One lifeline only, with a</text>
+<text x="424" y="1170" class="small" text-anchor="middle">long reference name</text>
+<path d="M-200 72 L-18 72 L-8 82 L-8 136 L-200 136 Z" class="shape fine"/>
+<path d="M-18 72 L-18 82 L-8 82" class="edge fine"/>
+<text x="-188" y="92.5" class="small" text-anchor="start">A note placed left of the leftmost</text>
+<text x="-188" y="107.5" class="small" text-anchor="start">lifeline to check that the margin</text>
+<text x="-188" y="122.5" class="small" text-anchor="start">grows outward.</text>
+<path d="M328 1072 L510 1072 L520 1082 L520 1120 L328 1120 Z" class="shape fine"/>
+<path d="M510 1072 L510 1082 L520 1082" class="edge fine"/>
+<text x="340" y="1092" class="small" text-anchor="start">Note over only one lifeline which</text>
+<text x="340" y="1107" class="small" text-anchor="start">is fairly long too.</text>
+<path d="M0 200 L424 200" class="edge"/>
+<path d="M414 204.5 L424 200 L414 195.5 Z" class="solid"/>
+<path d="M424 232 L0 232" class="edge"/>
+<path d="M10 227.5 L0 232 L10 236.5 Z" class="solid"/>
+<path d="M424 304 L456 304 L456 360 L430 360" class="edge"/>
+<path d="M440 355.5 L430 360 L440 364.5 Z" class="solid"/>
+<path d="M0 440 L240 440" class="edge"/>
+<path d="M230 444.5 L240 440 L230 435.5" class="edge head"/>
+<path d="M240 504 L6 504" class="edge"/>
+<path d="M16 499.5 L6 504 L16 508.5 Z" class="solid"/>
+<path d="M6 520 L32 520 L32 536 L6 536" class="edge dashed fine"/>
+<path d="M16 531.5 L6 536 L16 540.5" class="edge head fine"/>
+<path d="M-256 640 L0 640" class="edge"/>
+<path d="M-10 644.5 L0 640 L-10 635.5 Z" class="solid"/>
+<circle cx="-256" cy="640" r="4" class="solid"/>
+<path d="M0 672 L76 672" class="edge"/>
+<path d="M66 676.5 L76 672 L66 667.5 Z" class="solid"/>
+<circle cx="80" cy="672" r="4" class="solid"/>
+<path d="M424 704 L684 704" class="edge"/>
+<path d="M674 708.5 L684 704 L674 699.5 Z" class="solid"/>
+<circle cx="688" cy="704" r="4" class="solid"/>
+<path d="M240 744 L656 744" class="edge dashed fine"/>
+<path d="M646 748.5 L656 744 L646 739.5" class="edge head fine"/>
+<path d="M240 800 L714 800" class="edge"/>
+<path d="M704 804.5 L714 800 L704 795.5 Z" class="solid"/>
+<path d="M726 840 L800 840" class="edge dashed fine"/>
+<path d="M790 844.5 L800 840 L790 835.5" class="edge head fine"/>
+<path d="M714 896 L240 896" class="edge dashed fine"/>
+<path d="M250 891.5 L240 896 L250 900.5" class="edge head fine"/>
+<path d="M240 1024 L0 1024" class="edge"/>
+<path d="M10 1019.5 L0 1024 L10 1028.5 Z" class="solid"/>
+<path d="M841 905 L855 919 M841 919 L855 905" class="edge"/>
+<text x="120" y="165" class="small halo" text-anchor="middle">a message long enough that it wants to wrap</text>
+<text x="120" y="180" class="small halo" text-anchor="middle">across several words and cross a lifeline in</text>
+<text x="120" y="195" class="small halo" text-anchor="middle">the middle</text>
+<text x="332" y="227" class="small halo" text-anchor="middle">short</text>
+<text x="462" y="313" class="small halo" text-anchor="start">a long self message whose text</text>
+<text x="462" y="328" class="small halo" text-anchor="start">wants to wrap more than once</text>
+<text x="462" y="343" class="small halo" text-anchor="start">when it has only so much room on</text>
+<text x="462" y="358" class="small halo" text-anchor="start">the right edge</text>
+<text x="120" y="435" class="small halo" text-anchor="middle">tick</text>
+<text x="123" y="499" class="small halo" text-anchor="middle">bail</text>
+<text x="38" y="531.5" class="small halo" text-anchor="start">async self</text>
+<text x="-130" y="620" class="small halo" text-anchor="middle">found message whose label is long enough to</text>
+<text x="-130" y="635" class="small halo" text-anchor="middle">demand a generous stub length here</text>
+<text x="35" y="667" class="small halo" text-anchor="middle">lost signal</text>
+<text x="551" y="699" class="small halo" text-anchor="middle">gone far right with a long, long label to the right</text>
+<text x="329" y="739" class="small halo" text-anchor="middle">spawn</text>
+<text x="329" y="795" class="small halo" text-anchor="middle">run</text>
+<text x="763" y="835" class="small halo" text-anchor="middle">make</text>
+<text x="572" y="891" class="small halo" text-anchor="middle">done</text>
+<text x="120" y="1019" class="small halo" text-anchor="middle">no</text>
+</svg>

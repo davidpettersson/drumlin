@@ -1,0 +1,23 @@
+diagram state "OTA firmware update"
+[*] --> Idle
+Idle --> Downloading : update available / open session
+state Downloading {
+  entry / start watchdog
+  exit / stop watchdog
+  chunk received / append to flash
+  [*] --> Fetching
+  Fetching --> Verifying : last chunk
+  Verifying --> c1 
+  choice c1
+  c1 --> [*] : [hash ok]
+  c1 --> Fetching : [hash bad] / clear buffer
+}
+Downloading --> Installing
+Downloading --> Idle : network lost
+Installing --> Rebooting : image written / mark pending
+Rebooting --> j1 : boot complete
+junction j1
+j1 --> Confirmed : [self test passed]
+j1 --> RolledBack : [self test failed] / restore slot A
+Confirmed --> [*]
+RolledBack --> [*]

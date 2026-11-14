@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -56 984 336" width="984" height="336">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-24" y="-56" width="984" height="336" fill="#fff"/>
+<text x="0" y="-20" class="title">Language server</text>
+<rect x="8" y="48" width="128" height="64" class="shape"/>
+<rect x="115" y="56" width="13" height="16" class="icon"/>
+<rect x="112" y="59" width="6" height="3.5" class="icon"/>
+<rect x="112" y="65.5" width="6" height="3.5" class="icon"/>
+<text x="72" y="84.5" class="name" text-anchor="middle">Editor</text>
+<rect x="280" y="0" width="656" height="256" class="shape heavy"/>
+<rect x="915" y="8" width="13" height="16" class="icon"/>
+<rect x="912" y="11" width="6" height="3.5" class="icon"/>
+<rect x="912" y="17.5" width="6" height="3.5" class="icon"/>
+<text x="608" y="24" class="name" text-anchor="middle">Server</text>
+<rect x="304" y="48" width="128" height="64" class="shape"/>
+<rect x="411" y="56" width="13" height="16" class="icon"/>
+<rect x="408" y="59" width="6" height="3.5" class="icon"/>
+<rect x="408" y="65.5" width="6" height="3.5" class="icon"/>
+<text x="368" y="84.5" class="name" text-anchor="middle">Dispatcher</text>
+<rect x="520" y="48" width="176" height="64" class="shape"/>
+<rect x="675" y="56" width="13" height="16" class="icon"/>
+<rect x="672" y="59" width="6" height="3.5" class="icon"/>
+<rect x="672" y="65.5" width="6" height="3.5" class="icon"/>
+<text x="608" y="84.5" class="name" text-anchor="middle">Incremental Parser</text>
+<rect x="768" y="48" width="144" height="64" class="shape"/>
+<rect x="891" y="56" width="13" height="16" class="icon"/>
+<rect x="888" y="59" width="6" height="3.5" class="icon"/>
+<rect x="888" y="65.5" width="6" height="3.5" class="icon"/>
+<text x="840" y="84.5" class="name" text-anchor="middle">Symbol Index</text>
+<rect x="776" y="160" width="128" height="64" class="shape"/>
+<rect x="883" y="168" width="13" height="16" class="icon"/>
+<rect x="880" y="171" width="6" height="3.5" class="icon"/>
+<rect x="880" y="177.5" width="6" height="3.5" class="icon"/>
+<text x="840" y="196.5" class="name" text-anchor="middle">Diagnostics</text>
+<rect x="0" y="152" width="144" height="64" class="shape"/>
+<rect x="123" y="160" width="13" height="16" class="icon"/>
+<rect x="120" y="163" width="6" height="3.5" class="icon"/>
+<rect x="120" y="169.5" width="6" height="3.5" class="icon"/>
+<text x="72" y="188.5" class="name" text-anchor="middle">File Watcher</text>
+<path d="M286 80 L304 80" class="edge"/>
+<path d="M294 84.5 L304 80 L294 75.5" class="edge head"/>
+<path d="M432 80 L520 80" class="edge"/>
+<path d="M510 84.5 L520 80 L510 75.5" class="edge head"/>
+<path d="M696 80 L768 80" class="edge"/>
+<path d="M758 84.5 L768 80 L758 75.5" class="edge head"/>
+<path d="M608 112 L608 192 L776 192" class="edge"/>
+<path d="M766 196.5 L776 192 L766 187.5" class="edge head"/>
+<path d="M144 184 L280 184" class="edge"/>
+<path d="M270 188.5 L280 184 L270 179.5" class="edge head"/>
+<path d="M136 80 L173 80" class="edge"/>
+<path d="M234 80 L274 80" class="edge"/>
+<path d="M181 80 L224 80" class="edge dashed fine"/>
+<path d="M214 84.5 L224 80 L214 75.5" class="edge head fine"/>
+<path d="M181 88 A8 8 0 0 1 181 72" class="edge"/>
+<circle cx="229" cy="80" r="5" class="shape"/>
+<text x="205" y="67" class="small" text-anchor="middle">ILsp</text>
+<rect x="274" y="74" width="12" height="12" class="shape"/>
+<text x="270" y="71" class="small" text-anchor="end">lsp</text>
+<text x="476" y="73" class="small halo" text-anchor="middle">didChange</text>
+<text x="732" y="73" class="small halo" text-anchor="middle">update</text>
+<text x="692" y="185" class="small halo" text-anchor="middle">errors</text>
+<text x="212" y="177" class="small halo" text-anchor="middle">changes</text>
+</svg>

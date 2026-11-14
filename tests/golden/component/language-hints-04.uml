@@ -1,0 +1,6 @@
+diagram component "Order without connectors"
+component Boot
+component Init
+component Run
+Boot left-of Init
+Init left-of Run

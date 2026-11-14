@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -56 640 840" width="640" height="840">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .solid { fill: #22201c; stroke: none; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-24" y="-56" width="640" height="840" fill="#fff"/>
+<text x="0" y="-20" class="title">Nested blocks</text>
+<path d="M152 664 L0 664 L0 64 L152 64" class="edge"/>
+<path d="M142 68.5 L152 64 L142 59.5" class="edge head"/>
+<path d="M168 136 L168 176" class="edge"/>
+<path d="M163.5 166 L168 176 L172.5 166" class="edge head"/>
+<path d="M168 80 L168 104" class="edge"/>
+<path d="M163.5 94 L168 104 L172.5 94" class="edge head"/>
+<path d="M64 254 L64 288" class="edge"/>
+<path d="M59.5 278 L64 288 L68.5 278" class="edge head"/>
+<path d="M256 432 L184 432 L184 304 L256 304" class="edge"/>
+<path d="M246 308.5 L256 304 L246 299.5" class="edge head"/>
+<path d="M272 320 L272 352" class="edge"/>
+<path d="M267.5 342 L272 352 L276.5 342" class="edge head"/>
+<path d="M272 384 L272 416" class="edge"/>
+<path d="M267.5 406 L272 416 L276.5 406" class="edge head"/>
+<path d="M272 254 L272 288" class="edge"/>
+<path d="M267.5 278 L272 288 L276.5 278" class="edge head"/>
+<path d="M64 320 L64 488" class="edge"/>
+<path d="M59.5 478 L64 488 L68.5 478" class="edge head"/>
+<path d="M272 448 L272 488" class="edge"/>
+<path d="M267.5 478 L272 488 L276.5 478" class="edge head"/>
+<path d="M168 208 L168 248" class="edge"/>
+<path d="M163.5 238 L168 248 L172.5 238" class="edge head"/>
+<path d="M384 280 L384 320" class="edge"/>
+<path d="M379.5 310 L384 320 L388.5 310" class="edge head"/>
+<path d="M496 352 L496 392" class="edge"/>
+<path d="M491.5 382 L496 392 L500.5 382" class="edge head"/>
+<path d="M496 424 L496 456" class="edge"/>
+<path d="M491.5 446 L496 456 L500.5 446" class="edge head"/>
+<path d="M512 336 L568 336 L568 472 L512 472" class="edge"/>
+<path d="M522 467.5 L512 472 L522 476.5" class="edge head"/>
+<path d="M496 488 L496 520" class="edge"/>
+<path d="M491.5 510 L496 520 L500.5 510" class="edge head"/>
+<path d="M400 264 L496 264 L496 320" class="edge"/>
+<path d="M491.5 310 L496 320 L500.5 310" class="edge head"/>
+<path d="M384 352 L384 584" class="edge"/>
+<path d="M379.5 574 L384 584 L388.5 574" class="edge head"/>
+<path d="M496 552 L496 600 L400 600" class="edge"/>
+<path d="M410 595.5 L400 600 L410 604.5" class="edge head"/>
+<path d="M184 192 L384 192 L384 248" class="edge"/>
+<path d="M379.5 238 L384 248 L388.5 238" class="edge head"/>
+<path d="M168 494 L168 648" class="edge"/>
+<path d="M163.5 638 L168 648 L172.5 638" class="edge head"/>
+<path d="M384 616 L384 664 L184 664" class="edge"/>
+<path d="M194 659.5 L184 664 L194 668.5" class="edge head"/>
+<path d="M168 16 L168 48" class="edge"/>
+<path d="M163.5 38 L168 48 L172.5 38" class="edge head"/>
+<path d="M184 120 L592 120 L592 712 L168 712 L168 744" class="edge"/>
+<path d="M163.5 734 L168 744 L172.5 734" class="edge head"/>
+<circle cx="168" cy="8" r="8" class="solid"/>
+<path d="M168 48 L184 64 L168 80 L152 64 Z" class="shape"/>
+<path d="M168 104 L184 120 L168 136 L152 120 Z" class="shape"/>
+<path d="M168 176 L184 192 L168 208 L152 192 Z" class="shape"/>
+<rect x="48" y="248" width="240" height="6" class="solid"/>
+<rect x="24" y="288" width="80" height="32" class="shape" rx="10"/>
+<text x="64" y="308" class="name" text-anchor="middle">A</text>
+<path d="M272 288 L288 304 L272 320 L256 304 Z" class="shape"/>
+<path d="M272 416 L288 432 L272 448 L256 432 Z" class="shape"/>
+<rect x="232" y="352" width="80" height="32" class="shape" rx="10"/>
+<text x="272" y="372" class="name" text-anchor="middle">B</text>
+<rect x="48" y="488" width="240" height="6" class="solid"/>
+<path d="M384 248 L400 264 L384 280 L368 264 Z" class="shape"/>
+<rect x="344" y="320" width="80" height="32" class="shape" rx="10"/>
+<text x="384" y="340" class="name" text-anchor="middle">C</text>
+<path d="M496 320 L512 336 L496 352 L480 336 Z" class="shape"/>
+<rect x="456" y="392" width="80" height="32" class="shape" rx="10"/>
+<text x="496" y="412" class="name" text-anchor="middle">D</text>
+<path d="M496 456 L512 472 L496 488 L480 472 Z" class="shape"/>
+<rect x="456" y="520" width="80" height="32" class="shape" rx="10"/>
+<text x="496" y="540" class="name" text-anchor="middle">E</text>
+<path d="M384 584 L400 600 L384 616 L368 600 Z" class="shape"/>
+<path d="M168 648 L184 664 L168 680 L152 664 Z" class="shape"/>
+<circle cx="168" cy="752" r="8" class="shape"/>
+<circle cx="168" cy="752" r="4.5" class="solid"/>
+<text x="174" y="151" class="small" text-anchor="start">[tasks]</text>
+<text x="190" y="112" class="small" text-anchor="start">[else]</text>
+<text x="278" y="463" class="small" text-anchor="start">[ok]</text>
+<text x="223" y="424" class="small" text-anchor="start">[else]</text>
+<text x="174" y="223" class="small" text-anchor="start">[urgent]</text>
+<text x="390" y="295" class="small" text-anchor="start">[x]</text>
+<text x="502" y="367" class="small" text-anchor="start">[z]</text>
+<text x="518" y="328" class="small" text-anchor="start">[else]</text>
+<text x="406" y="256" class="small" text-anchor="start">[y]</text>
+<text x="190" y="184" class="small" text-anchor="start">[else]</text>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -56 560 144" width="560" height="144">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-24" y="-56" width="560" height="144" fill="#fff"/>
+<text x="0" y="-20" class="title">Without align</text>
+<rect x="0" y="0" width="128" height="64" class="shape"/>
+<rect x="107" y="8" width="13" height="16" class="icon"/>
+<rect x="104" y="11" width="6" height="3.5" class="icon"/>
+<rect x="104" y="17.5" width="6" height="3.5" class="icon"/>
+<text x="64" y="36.5" class="name" text-anchor="middle">Gateway</text>
+<rect x="192" y="0" width="128" height="64" class="shape"/>
+<rect x="299" y="8" width="13" height="16" class="icon"/>
+<rect x="296" y="11" width="6" height="3.5" class="icon"/>
+<rect x="296" y="17.5" width="6" height="3.5" class="icon"/>
+<text x="256" y="36.5" class="name" text-anchor="middle">Auth</text>
+<rect x="384" y="0" width="128" height="64" class="shape"/>
+<rect x="491" y="8" width="13" height="16" class="icon"/>
+<rect x="488" y="11" width="6" height="3.5" class="icon"/>
+<rect x="488" y="17.5" width="6" height="3.5" class="icon"/>
+<text x="448" y="36.5" class="name" text-anchor="middle">Orders</text>
+<path d="M128 32 L192 32" class="edge"/>
+<path d="M182 36.5 L192 32 L182 27.5" class="edge head"/>
+<path d="M320 32 L384 32" class="edge"/>
+<path d="M374 36.5 L384 32 L374 27.5" class="edge head"/>
+</svg>

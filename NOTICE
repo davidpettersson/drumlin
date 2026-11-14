@@ -1,0 +1,12 @@
+drumlin
+Copyright 2026 David Pettersson
+
+This product includes software developed by David Pettersson
+(https://github.com/davidpettersson/drumlin).
+
+The glyph data of the lettering style, src/core/lettering/glyphs.rs, is
+derived from Routed Gothic, Copyright (c) 2017 Darren Embry, with Reserved
+Font Name "Routed Gothic", and modified. That one file is licensed under the
+SIL Open Font License, Version 1.1 (LICENSES/OFL-1.1.txt), not under the
+Apache License. Everything else in drumlin is licensed under the Apache
+License, Version 2.0.

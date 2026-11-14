@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -56 696 608" width="696" height="608">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-24" y="-56" width="696" height="608" fill="#fff"/>
+<text x="0" y="-20" class="title">Kernel subsystems</text>
+<rect x="264" y="0" width="192" height="64" class="shape"/>
+<rect x="435" y="8" width="13" height="16" class="icon"/>
+<rect x="432" y="11" width="6" height="3.5" class="icon"/>
+<rect x="432" y="17.5" width="6" height="3.5" class="icon"/>
+<text x="360" y="36.5" class="name" text-anchor="middle">System Call Interface</text>
+<rect x="0" y="128" width="54.14" height="24" class="shape heavy"/>
+<rect x="0" y="152" width="224" height="248" class="shape heavy"/>
+<text x="12" y="144.5" class="name" text-anchor="start">Core</text>
+<rect x="24" y="176" width="176" height="64" class="shape"/>
+<rect x="179" y="184" width="13" height="16" class="icon"/>
+<rect x="176" y="187" width="6" height="3.5" class="icon"/>
+<rect x="176" y="193.5" width="6" height="3.5" class="icon"/>
+<text x="112" y="212.5" class="name" text-anchor="middle">Process Scheduler</text>
+<rect x="24" y="304" width="176" height="64" class="shape"/>
+<rect x="179" y="312" width="13" height="16" class="icon"/>
+<rect x="176" y="315" width="6" height="3.5" class="icon"/>
+<rect x="176" y="321.5" width="6" height="3.5" class="icon"/>
+<text x="112" y="340.5" class="name" text-anchor="middle">Memory Manager</text>
+<rect x="264" y="128" width="42.56" height="24" class="shape heavy"/>
+<rect x="264" y="152" width="384" height="248" class="shape heavy"/>
+<text x="276" y="144.5" class="name" text-anchor="start">I/O</text>
+<rect x="296" y="176" width="128" height="64" class="shape"/>
+<rect x="403" y="184" width="13" height="16" class="icon"/>
+<rect x="400" y="187" width="6" height="3.5" class="icon"/>
+<rect x="400" y="193.5" width="6" height="3.5" class="icon"/>
+<text x="360" y="212.5" class="name" text-anchor="middle">VFS</text>
+<rect x="464" y="176" width="160" height="64" class="shape"/>
+<rect x="603" y="184" width="13" height="16" class="icon"/>
+<rect x="600" y="187" width="6" height="3.5" class="icon"/>
+<rect x="600" y="193.5" width="6" height="3.5" class="icon"/>
+<text x="544" y="212.5" class="name" text-anchor="middle">Network Stack</text>
+<rect x="288" y="304" width="144" height="64" class="shape"/>
+<rect x="411" y="312" width="13" height="16" class="icon"/>
+<rect x="408" y="315" width="6" height="3.5" class="icon"/>
+<rect x="408" y="321.5" width="6" height="3.5" class="icon"/>
+<text x="360" y="340.5" class="name" text-anchor="middle">Block Layer</text>
+<rect x="280" y="464" width="160" height="64" class="shape"/>
+<rect x="419" y="472" width="13" height="16" class="icon"/>
+<rect x="416" y="475" width="6" height="3.5" class="icon"/>
+<rect x="416" y="481.5" width="6" height="3.5" class="icon"/>
+<text x="360" y="500.5" class="name" text-anchor="middle">Device Drivers</text>
+<path d="M112 240 L112 304" class="edge"/>
+<path d="M107.5 294 L112 304 L116.5 294" class="edge head"/>
+<path d="M360 240 L360 304" class="edge"/>
+<path d="M355.5 294 L360 304 L364.5 294" class="edge head"/>
+<path d="M264 32 L112 32 L112 176" class="edge"/>
+<path d="M107.5 166 L112 176 L116.5 166" class="edge head"/>
+<path d="M360 64 L360 176" class="edge"/>
+<path d="M355.5 166 L360 176 L364.5 166" class="edge head"/>
+<path d="M456 32 L544 32 L544 176" class="edge"/>
+<path d="M539.5 166 L544 176 L548.5 166" class="edge head"/>
+<path d="M360 368 L360 464" class="edge"/>
+<path d="M355.5 454 L360 464 L364.5 454" class="edge head"/>
+<path d="M544 240 L544 496 L440 496" class="edge"/>
+<path d="M450 491.5 L440 496 L450 500.5" class="edge head"/>
+<text x="120" y="276" class="small halo" text-anchor="start">page faults</text>
+</svg>

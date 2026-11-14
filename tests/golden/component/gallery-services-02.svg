@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -56 1360 224" width="1360" height="224">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-24" y="-56" width="1360" height="224" fill="#fff"/>
+<text x="0" y="-20" class="title">Replicated state machine</text>
+<rect x="0" y="48" width="128" height="64" class="shape"/>
+<rect x="107" y="56" width="13" height="16" class="icon"/>
+<rect x="104" y="59" width="6" height="3.5" class="icon"/>
+<rect x="104" y="65.5" width="6" height="3.5" class="icon"/>
+<text x="64" y="84.5" class="name" text-anchor="middle">Client</text>
+<rect x="296" y="0" width="720" height="144" class="shape heavy"/>
+<rect x="995" y="8" width="13" height="16" class="icon"/>
+<rect x="992" y="11" width="6" height="3.5" class="icon"/>
+<rect x="992" y="17.5" width="6" height="3.5" class="icon"/>
+<text x="656" y="24" class="name" text-anchor="middle">Replica</text>
+<rect x="320" y="48" width="176" height="64" class="shape"/>
+<rect x="475" y="56" width="13" height="16" class="icon"/>
+<rect x="472" y="59" width="6" height="3.5" class="icon"/>
+<rect x="472" y="65.5" width="6" height="3.5" class="icon"/>
+<text x="408" y="84.5" class="name" text-anchor="middle">Consensus Module</text>
+<rect x="568" y="48" width="128" height="64" class="shape"/>
+<rect x="675" y="56" width="13" height="16" class="icon"/>
+<rect x="672" y="59" width="6" height="3.5" class="icon"/>
+<rect x="672" y="65.5" width="6" height="3.5" class="icon"/>
+<text x="632" y="84.5" class="name" text-anchor="middle">Log</text>
+<rect x="816" y="48" width="160" height="64" class="shape"/>
+<rect x="955" y="56" width="13" height="16" class="icon"/>
+<rect x="952" y="59" width="6" height="3.5" class="icon"/>
+<rect x="952" y="65.5" width="6" height="3.5" class="icon"/>
+<text x="896" y="84.5" class="name" text-anchor="middle">State Machine</text>
+<rect x="1168" y="64" width="144" height="64" class="shape"/>
+<rect x="1291" y="72" width="13" height="16" class="icon"/>
+<rect x="1288" y="75" width="6" height="3.5" class="icon"/>
+<rect x="1288" y="81.5" width="6" height="3.5" class="icon"/>
+<text x="1240" y="100.5" class="name" text-anchor="middle">Peer Replicas</text>
+<path d="M302 80 L320 80" class="edge"/>
+<path d="M310 84.5 L320 80 L310 75.5" class="edge head"/>
+<path d="M496 80 L568 80" class="edge"/>
+<path d="M558 84.5 L568 80 L558 75.5" class="edge head"/>
+<path d="M696 80 L816 80" class="edge"/>
+<path d="M806 84.5 L816 80 L806 75.5" class="edge head"/>
+<path d="M408 112 L408 128 L992 128 L992 96 L1010 96" class="edge"/>
+<path d="M1000 100.5 L1010 96 L1000 91.5" class="edge head"/>
+<path d="M128 80 L177 80" class="edge"/>
+<path d="M238 80 L290 80" class="edge"/>
+<path d="M185 80 L228 80" class="edge dashed fine"/>
+<path d="M218 84.5 L228 80 L218 75.5" class="edge head fine"/>
+<path d="M185 88 A8 8 0 0 1 185 72" class="edge"/>
+<circle cx="233" cy="80" r="5" class="shape"/>
+<text x="209" y="67" class="small" text-anchor="middle">IPropose</text>
+<path d="M1022 96 L1063 96" class="edge"/>
+<path d="M1124 96 L1168 96" class="edge"/>
+<path d="M1071 96 L1114 96" class="edge dashed fine"/>
+<path d="M1104 100.5 L1114 96 L1104 91.5" class="edge head fine"/>
+<path d="M1071 104 A8 8 0 0 1 1071 88" class="edge"/>
+<circle cx="1119" cy="96" r="5" class="shape"/>
+<text x="1095" y="83" class="small" text-anchor="middle">IRaftRpc</text>
+<rect x="290" y="74" width="12" height="12" class="shape"/>
+<text x="286" y="71" class="small" text-anchor="end">propose</text>
+<rect x="1010" y="90" width="12" height="12" class="shape"/>
+<text x="1026" y="87" class="small" text-anchor="start">peers</text>
+<text x="532" y="73" class="small halo" text-anchor="middle">append</text>
+<text x="756" y="73" class="small halo" text-anchor="middle">apply committed</text>
+</svg>

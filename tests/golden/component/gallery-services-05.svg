@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -56 976 256" width="976" height="256">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-24" y="-56" width="976" height="256" fill="#fff"/>
+<text x="0" y="-20" class="title">Event-driven checkout</text>
+<rect x="0" y="0" width="128" height="64" class="shape"/>
+<rect x="107" y="8" width="13" height="16" class="icon"/>
+<rect x="104" y="11" width="6" height="3.5" class="icon"/>
+<rect x="104" y="17.5" width="6" height="3.5" class="icon"/>
+<text x="64" y="36.5" class="name" text-anchor="middle">Checkout</text>
+<rect x="272" y="0" width="144" height="64" class="shape"/>
+<rect x="395" y="8" width="13" height="16" class="icon"/>
+<rect x="392" y="11" width="6" height="3.5" class="icon"/>
+<rect x="392" y="17.5" width="6" height="3.5" class="icon"/>
+<text x="344" y="36.5" class="name" text-anchor="middle">Message Bus</text>
+<rect x="544" y="0" width="128" height="64" class="shape"/>
+<rect x="651" y="8" width="13" height="16" class="icon"/>
+<rect x="648" y="11" width="6" height="3.5" class="icon"/>
+<rect x="648" y="17.5" width="6" height="3.5" class="icon"/>
+<text x="608" y="36.5" class="name" text-anchor="middle">Payments</text>
+<rect x="544" y="112" width="128" height="64" class="shape"/>
+<rect x="651" y="120" width="13" height="16" class="icon"/>
+<rect x="648" y="123" width="6" height="3.5" class="icon"/>
+<rect x="648" y="129.5" width="6" height="3.5" class="icon"/>
+<text x="608" y="148.5" class="name" text-anchor="middle">Inventory</text>
+<rect x="800" y="56" width="128" height="64" class="shape"/>
+<rect x="907" y="64" width="13" height="16" class="icon"/>
+<rect x="904" y="67" width="6" height="3.5" class="icon"/>
+<rect x="904" y="73.5" width="6" height="3.5" class="icon"/>
+<text x="864" y="92.5" class="name" text-anchor="middle">Shipping</text>
+<path d="M240 104 L438 104 L448 114 L448 152 L240 152 Z" class="shape fine"/>
+<path d="M438 104 L438 114 L448 114" class="edge fine"/>
+<text x="252" y="124" class="small" text-anchor="start">Delivery is at least once. Handlers</text>
+<text x="252" y="139" class="small" text-anchor="start">are idempotent.</text>
+<path d="M416 32 L544 32" class="edge"/>
+<path d="M534 36.5 L544 32 L534 27.5" class="edge head"/>
+<path d="M416 48 L488 48 L488 144 L544 144" class="edge"/>
+<path d="M534 148.5 L544 144 L534 139.5" class="edge head"/>
+<path d="M672 32 L864 32 L864 56" class="edge"/>
+<path d="M859.5 46 L864 56 L868.5 46" class="edge head"/>
+<path d="M672 144 L864 144 L864 120" class="edge"/>
+<path d="M868.5 130 L864 120 L859.5 130" class="edge head"/>
+<path d="M344 104 L344 64" class="edge dashed fine"/>
+<path d="M128 32 L168 32" class="edge"/>
+<path d="M229 32 L272 32" class="edge"/>
+<path d="M176 32 L219 32" class="edge dashed fine"/>
+<path d="M209 36.5 L219 32 L209 27.5" class="edge head fine"/>
+<path d="M176 40 A8 8 0 0 1 176 24" class="edge"/>
+<circle cx="224" cy="32" r="5" class="shape"/>
+<text x="200" y="19" class="small" text-anchor="middle">IBus</text>
+<text x="480" y="25" class="small halo" text-anchor="middle">OrderPlaced</text>
+<text x="496" y="100" class="small halo" text-anchor="start">OrderPlaced</text>
+<text x="768" y="25" class="small halo" text-anchor="middle">PaymentCaptured</text>
+<text x="768" y="137" class="small halo" text-anchor="middle">StockReserved</text>
+</svg>

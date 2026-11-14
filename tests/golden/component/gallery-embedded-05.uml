@@ -1,0 +1,19 @@
+diagram component "Vehicle gateway"
+direction right
+
+component "Powertrain ECU" as ptrain { port can requires IFrames }
+component "Body ECU" as body { port can requires IFrames }
+
+component Gateway {
+  port bus provides IFrames
+  port uplink requires IEthernet
+
+  component Router
+  component Firewall
+
+  bus --> Firewall
+  Firewall --> Router
+  Router --> uplink
+}
+
+component "Telematics Unit" as tcu { provides IEthernet }

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -56 304 472" width="304" height="472">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .solid { fill: #22201c; stroke: none; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-24" y="-56" width="304" height="472" fill="#fff"/>
+<text x="0" y="-20" class="title">First arm ends</text>
+<path d="M64 16 L64 48" class="edge"/>
+<path d="M59.5 38 L64 48 L68.5 38" class="edge head"/>
+<path d="M208 216 L208 248" class="edge"/>
+<path d="M203.5 238 L208 248 L212.5 238" class="edge head"/>
+<path d="M80 128 L208 128 L208 184" class="edge"/>
+<path d="M203.5 174 L208 184 L212.5 174" class="edge head"/>
+<path d="M64 216 L64 248" class="edge"/>
+<path d="M59.5 238 L64 248 L68.5 238" class="edge head"/>
+<path d="M64 144 L64 184" class="edge"/>
+<path d="M59.5 174 L64 184 L68.5 174" class="edge head"/>
+<path d="M64 80 L64 112" class="edge"/>
+<path d="M59.5 102 L64 112 L68.5 102" class="edge head"/>
+<path d="M64 280 L64 312" class="edge"/>
+<path d="M59.5 302 L64 312 L68.5 302" class="edge head"/>
+<path d="M64 344 L64 376" class="edge"/>
+<path d="M59.5 366 L64 376 L68.5 366" class="edge head"/>
+<circle cx="64" cy="8" r="8" class="solid"/>
+<rect x="0" y="48" width="128" height="32" class="shape" rx="10"/>
+<text x="64" y="68" class="name" text-anchor="middle">Read request</text>
+<path d="M64 112 L80 128 L64 144 L48 128 Z" class="shape"/>
+<rect x="160" y="184" width="96" height="32" class="shape" rx="10"/>
+<text x="208" y="204" class="name" text-anchor="middle">Send 401</text>
+<circle cx="208" cy="256" r="8" class="shape"/>
+<circle cx="208" cy="256" r="4.5" class="solid"/>
+<rect x="0" y="184" width="128" height="32" class="shape" rx="10"/>
+<text x="64" y="204" class="name" text-anchor="middle">Load account</text>
+<rect x="8" y="248" width="112" height="32" class="shape" rx="10"/>
+<text x="64" y="268" class="name" text-anchor="middle">Check limits</text>
+<rect x="24" y="312" width="80" height="32" class="shape" rx="10"/>
+<text x="64" y="332" class="name" text-anchor="middle">Reply</text>
+<circle cx="64" cy="384" r="8" class="shape"/>
+<circle cx="64" cy="384" r="4.5" class="solid"/>
+<text x="86" y="120" class="small" text-anchor="start">[unauthorised]</text>
+<text x="70" y="159" class="small" text-anchor="start">[else]</text>
+</svg>

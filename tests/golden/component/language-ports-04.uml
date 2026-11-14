@@ -1,0 +1,6 @@
+component Board {
+  port power top
+  port ground bottom
+  port uart left
+  port spi right
+}

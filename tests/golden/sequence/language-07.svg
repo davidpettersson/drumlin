@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-64 -56 378 512" width="378" height="512">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .lifeline { fill: none; stroke: #22201c; stroke-width: 0.75; stroke-dasharray: 7 3; }
+.drumlin.pens .frame { fill: none; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .solid { fill: #22201c; stroke: none; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-64" y="-56" width="378" height="512" fill="#fff"/>
+<text x="-40" y="-20" class="title">Retries and alternatives</text>
+<path d="M0 40 L0 432" class="lifeline"/>
+<path d="M96 40 L96 432" class="lifeline"/>
+<path d="M248 40 L248 432" class="lifeline"/>
+<rect x="78" y="288" width="188" height="64" class="frame"/>
+<rect x="66" y="120" width="212" height="248" class="frame"/>
+<path d="M66 208 L278 208" class="frame dashed"/>
+<rect x="-18" y="56" width="308" height="360" class="frame"/>
+<rect x="96" y="256" width="12" height="12" class="shape"/>
+<rect x="90" y="104" width="12" height="296" class="shape"/>
+<path d="M78 288 L126 288 L126 302 L118 310 L78 310 Z" class="shape fine"/>
+<text x="86" y="303" class="name" text-anchor="start">opt</text>
+<text x="134" y="302" class="small halo" text-anchor="start">[worth caching]</text>
+<path d="M66 120 L114 120 L114 134 L106 142 L66 142 Z" class="shape fine"/>
+<text x="74" y="135" class="name" text-anchor="start">alt</text>
+<text x="122" y="134" class="small halo" text-anchor="start">[cached]</text>
+<text x="122" y="222" class="small halo" text-anchor="start">[miss]</text>
+<path d="M-18 56 L70 56 L70 70 L62 78 L-18 78 Z" class="shape fine"/>
+<text x="-10" y="71" class="name" text-anchor="start">loop(1,3)</text>
+<rect x="-40" y="0" width="80" height="40" class="shape"/>
+<text x="0" y="24" class="name" text-anchor="middle">Client</text>
+<rect x="56" y="0" width="80" height="40" class="shape"/>
+<text x="96" y="24" class="name" text-anchor="middle">Server</text>
+<rect x="208" y="0" width="80" height="40" class="shape"/>
+<text x="248" y="24" class="name" text-anchor="middle">Cache</text>
+<path d="M0 104 L90 104" class="edge"/>
+<path d="M80 108.5 L90 104 L80 99.5 Z" class="solid"/>
+<path d="M102 168 L248 168" class="edge"/>
+<path d="M238 172.5 L248 168 L238 163.5 Z" class="solid"/>
+<path d="M248 200 L102 200" class="edge dashed fine"/>
+<path d="M112 195.5 L102 200 L112 204.5" class="edge head fine"/>
+<path d="M102 240 L134 240 L134 256 L108 256" class="edge"/>
+<path d="M118 251.5 L108 256 L118 260.5 Z" class="solid"/>
+<path d="M102 336 L248 336" class="edge"/>
+<path d="M238 340.5 L248 336 L238 331.5" class="edge head"/>
+<path d="M90 400 L0 400" class="edge dashed fine"/>
+<path d="M10 395.5 L0 400 L10 404.5" class="edge head fine"/>
+<text x="45" y="99" class="small halo" text-anchor="middle">fetch(key)</text>
+<text x="175" y="163" class="small halo" text-anchor="middle">get(key)</text>
+<text x="175" y="195" class="small halo" text-anchor="middle">value</text>
+<text x="140" y="251.5" class="small halo" text-anchor="start">recompute</text>
+<text x="175" y="331" class="small halo" text-anchor="middle">put(key, value)</text>
+<text x="45" y="395" class="small halo" text-anchor="middle">value</text>
+</svg>

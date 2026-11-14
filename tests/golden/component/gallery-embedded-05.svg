@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -56 1096 248" width="1096" height="248">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-24" y="-56" width="1096" height="248" fill="#fff"/>
+<text x="0" y="-20" class="title">Vehicle gateway</text>
+<rect x="0" y="0" width="160" height="64" class="shape"/>
+<rect x="139" y="8" width="13" height="16" class="icon"/>
+<rect x="136" y="11" width="6" height="3.5" class="icon"/>
+<rect x="136" y="17.5" width="6" height="3.5" class="icon"/>
+<text x="80" y="36.5" class="name" text-anchor="middle">Powertrain ECU</text>
+<rect x="16" y="104" width="128" height="64" class="shape"/>
+<rect x="123" y="112" width="13" height="16" class="icon"/>
+<rect x="120" y="115" width="6" height="3.5" class="icon"/>
+<rect x="120" y="121.5" width="6" height="3.5" class="icon"/>
+<text x="80" y="140.5" class="name" text-anchor="middle">Body ECU</text>
+<rect x="344" y="8" width="384" height="144" class="shape heavy"/>
+<rect x="707" y="16" width="13" height="16" class="icon"/>
+<rect x="704" y="19" width="6" height="3.5" class="icon"/>
+<rect x="704" y="25.5" width="6" height="3.5" class="icon"/>
+<text x="536" y="32" class="name" text-anchor="middle">Gateway</text>
+<rect x="560" y="56" width="128" height="64" class="shape"/>
+<rect x="667" y="64" width="13" height="16" class="icon"/>
+<rect x="664" y="67" width="6" height="3.5" class="icon"/>
+<rect x="664" y="73.5" width="6" height="3.5" class="icon"/>
+<text x="624" y="92.5" class="name" text-anchor="middle">Router</text>
+<rect x="368" y="56" width="128" height="64" class="shape"/>
+<rect x="475" y="64" width="13" height="16" class="icon"/>
+<rect x="472" y="67" width="6" height="3.5" class="icon"/>
+<rect x="472" y="73.5" width="6" height="3.5" class="icon"/>
+<text x="432" y="92.5" class="name" text-anchor="middle">Firewall</text>
+<rect x="888" y="56" width="160" height="64" class="shape"/>
+<rect x="1027" y="64" width="13" height="16" class="icon"/>
+<rect x="1024" y="67" width="6" height="3.5" class="icon"/>
+<rect x="1024" y="73.5" width="6" height="3.5" class="icon"/>
+<text x="968" y="92.5" class="name" text-anchor="middle">Telematics Unit</text>
+<path d="M350 88 L368 88" class="edge"/>
+<path d="M358 92.5 L368 88 L358 83.5" class="edge head"/>
+<path d="M496 88 L560 88" class="edge"/>
+<path d="M550 92.5 L560 88 L550 83.5" class="edge head"/>
+<path d="M688 88 L722 88" class="edge"/>
+<path d="M712 92.5 L722 88 L712 83.5" class="edge head"/>
+<path d="M734 88 L779 88" class="edge"/>
+<path d="M840 88 L888 88" class="edge"/>
+<path d="M787 88 L830 88" class="edge dashed fine"/>
+<path d="M820 92.5 L830 88 L820 83.5" class="edge head fine"/>
+<path d="M787 96 A8 8 0 0 1 787 80" class="edge"/>
+<circle cx="835" cy="88" r="5" class="shape"/>
+<text x="811" y="75" class="small" text-anchor="middle">IEthernet</text>
+<path d="M166 32 L203 32" class="edge"/>
+<path d="M216 32 L256 32 L256 88 L338 88" class="edge"/>
+<path d="M211 40 A8 8 0 0 1 211 24" class="edge"/>
+<circle cx="211" cy="32" r="5" class="shape"/>
+<text x="211" y="19" class="small" text-anchor="middle">IFrames</text>
+<path d="M150 136 L195 136" class="edge"/>
+<path d="M208 136 L256 136 L256 88 L338 88" class="edge"/>
+<path d="M203 144 A8 8 0 0 1 203 128" class="edge"/>
+<circle cx="203" cy="136" r="5" class="shape"/>
+<text x="203" y="123" class="small" text-anchor="middle">IFrames</text>
+<rect x="154" y="26" width="12" height="12" class="shape"/>
+<text x="170" y="23" class="small" text-anchor="start">can</text>
+<rect x="138" y="130" width="12" height="12" class="shape"/>
+<text x="154" y="127" class="small" text-anchor="start">can</text>
+<rect x="338" y="82" width="12" height="12" class="shape"/>
+<text x="334" y="79" class="small" text-anchor="end">bus</text>
+<rect x="722" y="82" width="12" height="12" class="shape"/>
+<text x="738" y="79" class="small" text-anchor="start">uplink</text>
+</svg>

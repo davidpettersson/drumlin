@@ -1,0 +1,11 @@
+package "Platform" {
+  package "Storage" {
+    component Blob
+    component Index
+    Index --> Blob
+  }
+  package "Compute" {
+    component Runner
+  }
+  Runner --> Index
+}

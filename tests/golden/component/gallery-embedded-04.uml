@@ -1,0 +1,13 @@
+diagram component "Secure boot chain"
+direction right
+
+component "ROM" as rom <<immutable>>
+component "First Stage" as fsbl
+component "Verifier" as verify { provides IVerify }
+component "Second Stage" as ssbl { requires IVerify }
+component "Kernel Image" as image
+
+rom --> fsbl : verifies
+fsbl --> ssbl : loads
+ssbl --> image : verifies, starts
+note rom: Holds the root public key hash.

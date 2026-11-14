@@ -1,0 +1,4 @@
+component Modem {
+  port serial
+  port radio
+}

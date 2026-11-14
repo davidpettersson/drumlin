@@ -1,0 +1,26 @@
+diagram activity "Nested blocks"
+start
+while "tasks" {
+  if "urgent" {
+    fork {
+      action "A"
+    } and {
+      repeat {
+        action "B"
+      } until "ok"
+    }
+  } else {
+    switch {
+      case "x" {
+        action "C"
+      }
+      case "y" {
+        if "z" {
+          action "D"
+        }
+        action "E"
+      }
+    }
+  }
+}
+stop

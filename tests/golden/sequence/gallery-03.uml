@@ -1,0 +1,31 @@
+diagram sequence "Nested interrupt handling"
+
+participant "Timer" as timer
+participant "CPU core" as cpu
+participant "Kernel entry" as entry
+participant "UART ISR" as isr
+participant "Timer ISR" as tisr
+participant "Scheduler" as sched
+
+[-> cpu : UART IRQ {
+  cpu ->> entry : vector through IDT
+  entry -> entry : save registers
+  entry -> isr : uart_isr() {
+    isr -> isr : read FIFO
+    timer ->> cpu : timer IRQ
+    note over cpu, tisr: Higher priority: the ISR is preempted.
+    cpu -> tisr : timer_isr() {
+      tisr ->> sched : mark reschedule
+      return eoi
+    }
+    return eoi
+  }
+  entry -> entry : check need_resched
+  opt "reschedule pending" {
+    entry -> sched : schedule() {
+      return next task
+    }
+  }
+  entry ->> cpu : iret
+  return resumes interrupted task
+}

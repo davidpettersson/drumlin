@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-72 -56 656 400" width="656" height="400">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .lifeline { fill: none; stroke: #22201c; stroke-width: 0.75; stroke-dasharray: 7 3; }
+.drumlin.pens .frame { fill: none; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .solid { fill: #22201c; stroke: none; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-72" y="-56" width="656" height="400" fill="#fff"/>
+<text x="-48" y="-20" class="title">Boot</text>
+<path d="M0 40 L0 320" class="lifeline"/>
+<path d="M192 40 L192 320" class="lifeline"/>
+<path d="M296 40 L296 320" class="lifeline"/>
+<path d="M392 244 L392 320" class="lifeline"/>
+<rect x="-48" y="0" width="96" height="40" class="shape"/>
+<text x="0" y="24" class="name" text-anchor="middle">Bootloader</text>
+<rect x="152" y="0" width="80" height="40" class="shape"/>
+<text x="192" y="24" class="name" text-anchor="middle">Kernel</text>
+<rect x="256" y="0" width="80" height="40" class="shape"/>
+<text x="296" y="24" class="name" text-anchor="middle">Init</text>
+<rect x="352" y="204" width="80" height="40" class="shape"/>
+<text x="392" y="228" class="name" text-anchor="middle">PID 1</text>
+<rect x="-12" y="56" width="216" height="40" class="shape fine"/>
+<path d="M-12 56 L36 56 L36 68 L28 76 L-12 76 Z" class="shape fine"/>
+<text x="-4" y="69" class="name" text-anchor="start">ref</text>
+<text x="96" y="78.5" class="small" text-anchor="middle">Verify signature</text>
+<path d="M96 144 L278 144 L288 154 L288 192 L96 192 Z" class="shape fine"/>
+<path d="M278 144 L278 154 L288 154" class="edge fine"/>
+<text x="108" y="164" class="small" text-anchor="start">Interrupts stay masked until the</text>
+<text x="108" y="179" class="small" text-anchor="start">scheduler starts.</text>
+<path d="M400 256 L550 256 L560 266 L560 304 L400 304 Z" class="shape fine"/>
+<path d="M550 256 L550 266 L560 266" class="edge fine"/>
+<text x="412" y="276" class="small" text-anchor="start">Everything runs under this</text>
+<text x="412" y="291" class="small" text-anchor="start">process.</text>
+<path d="M0 128 L192 128" class="edge"/>
+<path d="M182 132.5 L192 128 L182 123.5 Z" class="solid"/>
+<path d="M192 224 L352 224" class="edge dashed fine"/>
+<path d="M342 228.5 L352 224 L342 219.5" class="edge head fine"/>
+<text x="96" y="123" class="small halo" text-anchor="middle">jump(entry)</text>
+<text x="244" y="219" class="small halo" text-anchor="middle">exec</text>
+</svg>

@@ -1,0 +1,5 @@
+package "Ingest" { component Reader }
+package "Serve" { component Query }
+package "Admin" { component Console }
+Reader left-of Query
+Console left-of Query

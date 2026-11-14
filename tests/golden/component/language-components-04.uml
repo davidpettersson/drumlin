@@ -1,0 +1,7 @@
+component "Network Stack" as net {
+  component Socket
+  component TCP
+  component IP
+  Socket --> TCP
+  TCP --> IP
+}

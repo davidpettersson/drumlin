@@ -1,0 +1,23 @@
+diagram state "Every pseudostate"
+[*] --> Ready
+Ready --> c : request
+choice c
+c --> Worker : [workers free] / assign
+c --> Queued : [all busy]
+Queued --> j : worker free
+Worker --> j : done
+junction j
+j --> f : / prepare
+fork f
+f --> A
+f --> B
+state Tasks {
+  region "left" {
+    A --> [*]
+  }
+  region "right" {
+    B --> [*]
+  }
+}
+Tasks --> T : fatal
+terminate T

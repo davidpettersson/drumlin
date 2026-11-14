@@ -1,0 +1,17 @@
+[workspace]
+members = [".", "docs/mdbook-drumlin"]
+
+[package]
+name = "drumlin"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0 AND OFL-1.1"
+authors = ["David Pettersson"]
+description = "Text-to-SVG UML diagrams with hand-drafted quality layout"
+repository = "https://github.com/davidpettersson/drumlin"
+readme = "README.md"
+
+[dependencies]
+
+[profile.release]
+opt-level = 3

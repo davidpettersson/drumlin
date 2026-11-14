@@ -1,0 +1,25 @@
+diagram component "Kernel subsystems"
+direction down
+
+component "System Call Interface" as sci
+
+package "Core" as core {
+  component "Process Scheduler" as sched
+  component "Memory Manager" as mm
+  sched --> mm : page faults
+}
+
+package "I/O" as io {
+  component VFS
+  component "Network Stack" as net
+  component "Block Layer" as block
+  VFS --> block
+}
+
+component "Device Drivers" as drivers
+
+sci --> sched
+sci --> VFS
+sci --> net
+block --> drivers
+net --> drivers

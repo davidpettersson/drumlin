@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -56 872 336" width="872" height="336">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-24" y="-56" width="872" height="336" fill="#fff"/>
+<text x="0" y="-20" class="title">Model serving</text>
+<rect x="0" y="104" width="128" height="64" class="shape"/>
+<rect x="107" y="112" width="13" height="16" class="icon"/>
+<rect x="104" y="115" width="6" height="3.5" class="icon"/>
+<rect x="104" y="121.5" width="6" height="3.5" class="icon"/>
+<text x="64" y="140.5" class="name" text-anchor="middle">Client</text>
+<rect x="240" y="0" width="71.15" height="24" class="shape heavy"/>
+<rect x="240" y="24" width="368" height="232" class="shape heavy"/>
+<text x="252" y="16.5" class="name" text-anchor="start">Serving</text>
+<rect x="264" y="104" width="128" height="64" class="shape"/>
+<rect x="371" y="112" width="13" height="16" class="icon"/>
+<rect x="368" y="115" width="6" height="3.5" class="icon"/>
+<rect x="368" y="121.5" width="6" height="3.5" class="icon"/>
+<text x="328" y="140.5" class="name" text-anchor="middle">Router</text>
+<rect x="456" y="48" width="128" height="64" class="shape"/>
+<rect x="563" y="56" width="13" height="16" class="icon"/>
+<rect x="560" y="59" width="6" height="3.5" class="icon"/>
+<rect x="560" y="65.5" width="6" height="3.5" class="icon"/>
+<text x="520" y="84.5" class="name" text-anchor="middle">Model A</text>
+<rect x="456" y="160" width="128" height="64" class="shape"/>
+<rect x="563" y="168" width="13" height="16" class="icon"/>
+<rect x="560" y="171" width="6" height="3.5" class="icon"/>
+<rect x="560" y="177.5" width="6" height="3.5" class="icon"/>
+<text x="520" y="196.5" class="name" text-anchor="middle">Model B</text>
+<rect x="680" y="40" width="144" height="64" class="shape"/>
+<rect x="803" y="48" width="13" height="16" class="icon"/>
+<rect x="800" y="51" width="6" height="3.5" class="icon"/>
+<rect x="800" y="57.5" width="6" height="3.5" class="icon"/>
+<text x="752" y="67.5" class="small" text-anchor="middle">«database»</text>
+<text x="752" y="84.5" class="name" text-anchor="middle">Feature Store</text>
+<rect x="680" y="152" width="144" height="64" class="shape"/>
+<rect x="803" y="160" width="13" height="16" class="icon"/>
+<rect x="800" y="163" width="6" height="3.5" class="icon"/>
+<rect x="800" y="169.5" width="6" height="3.5" class="icon"/>
+<text x="752" y="188.5" class="name" text-anchor="middle">Metrics Sink</text>
+<path d="M328 104 L328 80 L456 80" class="edge"/>
+<path d="M446 84.5 L456 80 L446 75.5" class="edge head"/>
+<path d="M328 168 L328 192 L456 192" class="edge"/>
+<path d="M446 196.5 L456 192 L446 187.5" class="edge head"/>
+<path d="M608 72 L680 72" class="edge dashed fine"/>
+<path d="M670 76.5 L680 72 L670 67.5" class="edge head fine"/>
+<path d="M608 184 L680 184" class="edge dashed fine"/>
+<path d="M670 188.5 L680 184 L670 179.5" class="edge head fine"/>
+<path d="M128 136 L164 136" class="edge"/>
+<path d="M225 136 L264 136" class="edge"/>
+<path d="M172 136 L215 136" class="edge dashed fine"/>
+<path d="M205 140.5 L215 136 L205 131.5" class="edge head fine"/>
+<path d="M172 144 A8 8 0 0 1 172 128" class="edge"/>
+<circle cx="220" cy="136" r="5" class="shape"/>
+<text x="196" y="123" class="small" text-anchor="middle">IPredict</text>
+<text x="392" y="73" class="small halo" text-anchor="middle">95%</text>
+<text x="392" y="185" class="small halo" text-anchor="middle">5%</text>
+<text x="644" y="65" class="small halo" text-anchor="middle">lookup</text>
+<text x="644" y="177" class="small halo" text-anchor="middle">latency</text>
+</svg>

@@ -1,0 +1,21 @@
+diagram activity "Interrupt service with deferred work"
+accept "IRQ line raised"
+action "Acknowledge at the controller"
+action "Read status register"
+if "FIFO has data" {
+  action "Copy bytes to the ring buffer"
+  send "Wake softirq"
+} else "overrun" {
+  action "Count overrun"
+}
+action "Return from interrupt"
+accept "softirq scheduled"
+while "ring buffer not empty" {
+  action "Pop one packet"
+  if "checksum valid" {
+    action "Deliver to the stack"
+  } else {
+    action "Drop and count"
+  }
+}
+end

@@ -1,0 +1,15 @@
+diagram component "Layout pipeline"
+direction right
+
+component Parser
+component "Compound Layout" as layout
+component "Slot Allocation" as slots
+component Router
+component "Label Placement" as labels
+component "SVG Writer" as svg
+
+Parser --> layout : model
+layout --> slots : rectangles
+slots --> Router : terminals
+Router --> labels : polylines
+labels --> svg

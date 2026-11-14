@@ -1,0 +1,11 @@
+diagram state "Circuit breaker"
+[*] --> Closed
+Closed --> Closed : success / reset failure count
+Closed --> Open : failures >= threshold / start timer
+Open --> Open : call / fail fast
+Open --> HalfOpen : timer expired
+HalfOpen --> Closed : probe succeeded / reset failure count
+HalfOpen --> Open : probe failed / restart timer
+state Closed {
+  do / count failures
+}

@@ -1,0 +1,17 @@
+package "Application" as app {
+  component Handlers
+}
+
+package "Domain" as domain {
+  component Model
+}
+
+package "Adapters" as adapters {
+  component SQL
+  component Kafka
+  align SQL Kafka
+}
+
+Handlers --> Model
+SQL ..> Model : implements
+Kafka ..> Model : implements

@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-16.31 -56 384.31 896" width="384.31" height="896">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .solid { fill: #22201c; stroke: none; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-16.31" y="-56" width="384.31" height="896" fill="#fff"/>
+<text x="7.69" y="-20" class="title">USB device</text>
+<rect x="88" y="592" width="184" height="96" class="shape" rx="10"/>
+<text x="180" y="612.5" class="name" text-anchor="middle">Configured</text>
+<text x="100" y="636" class="small" text-anchor="start">entry / enable endpoints</text>
+<text x="100" y="652" class="small" text-anchor="start">exit / disable endpoints</text>
+<text x="100" y="668" class="small" text-anchor="start">SOF / update frame counter</text>
+<path d="M88 624 L272 624" class="edge fine"/>
+<rect x="128" y="464" width="96" height="48" class="shape" rx="10"/>
+<text x="176" y="492.5" class="name" text-anchor="middle">Address</text>
+<rect x="128" y="80" width="96" height="48" class="shape" rx="10"/>
+<text x="176" y="108.5" class="name" text-anchor="middle">Attached</text>
+<rect x="128" y="336" width="96" height="48" class="shape" rx="10"/>
+<text x="176" y="364.5" class="name" text-anchor="middle">Default</text>
+<rect x="128" y="208" width="96" height="48" class="shape" rx="10"/>
+<text x="176" y="236.5" class="name" text-anchor="middle">Powered</text>
+<rect x="120" y="768" width="112" height="48" class="shape" rx="10"/>
+<text x="176" y="796.5" class="name" text-anchor="middle">Suspended</text>
+<circle cx="176" cy="8" r="8" class="solid"/>
+<path d="M176 16 L176 80" class="edge"/>
+<path d="M171.5 70 L176 80 L180.5 70" class="edge head"/>
+<path d="M184 128 L184 208" class="edge"/>
+<path d="M179.5 198 L184 208 L188.5 198" class="edge head"/>
+<path d="M176 256 L176 336" class="edge"/>
+<path d="M171.5 326 L176 336 L180.5 326" class="edge head"/>
+<path d="M176 384 L176 464" class="edge"/>
+<path d="M171.5 454 L176 464 L180.5 454" class="edge head"/>
+<path d="M184 512 L184 592" class="edge"/>
+<path d="M179.5 582 L184 592 L188.5 582" class="edge head"/>
+<path d="M160 592 L160 512" class="edge"/>
+<path d="M164.5 522 L160 512 L155.5 522" class="edge head"/>
+<path d="M184 688 L184 768" class="edge"/>
+<path d="M179.5 758 L184 768 L188.5 758" class="edge head"/>
+<path d="M160 768 L160 688" class="edge"/>
+<path d="M164.5 698 L160 688 L155.5 698" class="edge head"/>
+<path d="M160 208 L160 128" class="edge"/>
+<path d="M164.5 138 L160 128 L155.5 138" class="edge head"/>
+<path d="M272 640 L344 640 L344 360 L224 360" class="edge"/>
+<path d="M234 355.5 L224 360 L234 364.5" class="edge head"/>
+<text x="192" y="171" class="small" text-anchor="start">hub configured</text>
+<text x="184" y="299" class="small" text-anchor="start">bus reset</text>
+<text x="184" y="427" class="small" text-anchor="start">set address</text>
+<text x="192" y="555" class="small" text-anchor="start">set configuration [config != 0]</text>
+<text x="152" y="555" class="small" text-anchor="end">set configuration [config == 0]</text>
+<text x="192" y="731" class="small" text-anchor="start">bus idle 3 ms</text>
+<text x="152" y="731" class="small" text-anchor="end">bus activity</text>
+<text x="152" y="171" class="small" text-anchor="end">hub deconfigured</text>
+<text x="336" y="503" class="small" text-anchor="end">bus reset</text>
+</svg>

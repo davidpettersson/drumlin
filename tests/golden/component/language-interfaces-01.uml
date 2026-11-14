@@ -1,0 +1,2 @@
+component Consumer { requires IQueue }
+component Broker { provides IQueue }

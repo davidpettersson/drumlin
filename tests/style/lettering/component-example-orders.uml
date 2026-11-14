@@ -1,0 +1,47 @@
+# Interfaces with the same name join into ball-and-socket connectors.
+diagram component "Order Platform"
+direction right
+
+package "Edge" {
+  component "Web Gateway" as gateway {
+    requires IOrders
+    requires IIdentity
+  }
+}
+
+component "Order Service" as orders {
+  port api provides IOrders
+  port events requires IEventBus
+
+  component "API Handler" as handler {
+    requires IPricing
+  }
+  component "Pricing Engine" as pricing {
+    provides IPricing
+  }
+  component "Outbox" as outbox
+
+  api --> handler
+  handler --> outbox : persist
+  outbox --> events
+}
+
+component "Identity" as identity <<external>> {
+  provides IIdentity
+}
+
+package "Infrastructure" as infra {
+  component "Event Bus" as bus {
+    provides IEventBus
+  }
+  component "Postgres" as db <<database>>
+  align bus db
+}
+
+component "Billing" as billing {
+  requires IEventBus
+  provides IInvoices
+}
+
+orders ..> db : SQL
+note outbox: Publishes at least once. Consumers deduplicate on event id.

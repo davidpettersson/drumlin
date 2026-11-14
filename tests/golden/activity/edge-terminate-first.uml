@@ -1,0 +1,11 @@
+diagram activity "Early exits"
+start
+if "bad input" {
+  action "Reject"
+  stop
+} else if "throttled" {
+  action "Queue for later"
+  end
+}
+action "Process"
+stop

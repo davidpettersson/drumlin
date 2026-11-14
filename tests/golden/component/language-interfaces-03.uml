@@ -1,0 +1,2 @@
+component Runtime { provides ITimer, IThreads, IFiles }
+component App { requires ITimer, IThreads, IFiles }

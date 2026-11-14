@@ -1,0 +1,11 @@
+[package]
+name = "mdbook-drumlin"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+authors = ["David Pettersson"]
+description = "mdBook preprocessor that renders drumlin code fences to inline SVG"
+
+[dependencies]
+drumlin = { path = "../.." }
+serde_json = "1"

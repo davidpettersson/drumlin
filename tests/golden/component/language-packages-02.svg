@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -24 496 472" width="496" height="472">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-24" y="-24" width="496" height="472" fill="#fff"/>
+
+<rect x="0" y="0" width="92.03" height="24" class="shape heavy"/>
+<rect x="0" y="24" width="176" height="120" class="shape heavy"/>
+<text x="12" y="16.5" class="name" text-anchor="start">Application</text>
+<rect x="24" y="48" width="128" height="64" class="shape"/>
+<rect x="131" y="56" width="13" height="16" class="icon"/>
+<rect x="128" y="59" width="6" height="3.5" class="icon"/>
+<rect x="128" y="65.5" width="6" height="3.5" class="icon"/>
+<text x="88" y="84.5" class="name" text-anchor="middle">Handlers</text>
+<rect x="272" y="120" width="71.92" height="24" class="shape heavy"/>
+<rect x="272" y="144" width="176" height="120" class="shape heavy"/>
+<text x="284" y="136.5" class="name" text-anchor="start">Domain</text>
+<rect x="296" y="168" width="128" height="64" class="shape"/>
+<rect x="403" y="176" width="13" height="16" class="icon"/>
+<rect x="400" y="179" width="6" height="3.5" class="icon"/>
+<rect x="400" y="185.5" width="6" height="3.5" class="icon"/>
+<text x="360" y="204.5" class="name" text-anchor="middle">Model</text>
+<rect x="0" y="184" width="79.67" height="24" class="shape heavy"/>
+<rect x="0" y="208" width="176" height="216" class="shape heavy"/>
+<text x="12" y="200.5" class="name" text-anchor="start">Adapters</text>
+<rect x="24" y="232" width="128" height="64" class="shape"/>
+<rect x="131" y="240" width="13" height="16" class="icon"/>
+<rect x="128" y="243" width="6" height="3.5" class="icon"/>
+<rect x="128" y="249.5" width="6" height="3.5" class="icon"/>
+<text x="88" y="268.5" class="name" text-anchor="middle">SQL</text>
+<rect x="24" y="336" width="128" height="64" class="shape"/>
+<rect x="131" y="344" width="13" height="16" class="icon"/>
+<rect x="128" y="347" width="6" height="3.5" class="icon"/>
+<rect x="128" y="353.5" width="6" height="3.5" class="icon"/>
+<text x="88" y="372.5" class="name" text-anchor="middle">Kafka</text>
+<path d="M152 80 L360 80 L360 168" class="edge"/>
+<path d="M355.5 158 L360 168 L364.5 158" class="edge head"/>
+<path d="M152 264 L208 264 L208 200 L296 200" class="edge dashed fine"/>
+<path d="M286 204.5 L296 200 L286 195.5" class="edge head fine"/>
+<path d="M152 368 L360 368 L360 232" class="edge dashed fine"/>
+<path d="M364.5 242 L360 232 L355.5 242" class="edge head fine"/>
+<text x="238.8" y="193" class="small halo" text-anchor="middle">implements</text>
+<text x="256" y="361" class="small halo" text-anchor="middle">implements</text>
+</svg>

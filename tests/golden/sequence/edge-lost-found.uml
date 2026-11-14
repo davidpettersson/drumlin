@@ -1,0 +1,7 @@
+diagram sequence "Lost and found"
+participant A
+participant B
+[-> A : found sync
+[->> A : found async
+B ->] : lost sync
+B ->>] : lost async

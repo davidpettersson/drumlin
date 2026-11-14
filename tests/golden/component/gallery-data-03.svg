@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -56 352 704" width="352" height="704">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-24" y="-56" width="352" height="704" fill="#fff"/>
+<text x="0" y="-20" class="title">Query engine</text>
+<rect x="160" y="0" width="144" height="64" class="shape"/>
+<rect x="283" y="8" width="13" height="16" class="icon"/>
+<rect x="280" y="11" width="6" height="3.5" class="icon"/>
+<rect x="280" y="17.5" width="6" height="3.5" class="icon"/>
+<text x="232" y="36.5" class="name" text-anchor="middle">SQL Parser</text>
+<rect x="168" y="128" width="128" height="64" class="shape"/>
+<rect x="275" y="136" width="13" height="16" class="icon"/>
+<rect x="272" y="139" width="6" height="3.5" class="icon"/>
+<rect x="272" y="145.5" width="6" height="3.5" class="icon"/>
+<text x="232" y="164.5" class="name" text-anchor="middle">Planner</text>
+<rect x="0" y="304" width="128" height="64" class="shape"/>
+<rect x="107" y="312" width="13" height="16" class="icon"/>
+<rect x="104" y="315" width="6" height="3.5" class="icon"/>
+<rect x="104" y="321.5" width="6" height="3.5" class="icon"/>
+<text x="64" y="340.5" class="name" text-anchor="middle">Catalog</text>
+<rect x="168" y="304" width="128" height="64" class="shape"/>
+<rect x="275" y="312" width="13" height="16" class="icon"/>
+<rect x="272" y="315" width="6" height="3.5" class="icon"/>
+<rect x="272" y="321.5" width="6" height="3.5" class="icon"/>
+<text x="232" y="340.5" class="name" text-anchor="middle">Optimizer</text>
+<rect x="168" y="432" width="128" height="64" class="shape"/>
+<rect x="275" y="440" width="13" height="16" class="icon"/>
+<rect x="272" y="443" width="6" height="3.5" class="icon"/>
+<rect x="272" y="449.5" width="6" height="3.5" class="icon"/>
+<text x="232" y="468.5" class="name" text-anchor="middle">Executor</text>
+<rect x="160" y="560" width="144" height="64" class="shape"/>
+<rect x="283" y="568" width="13" height="16" class="icon"/>
+<rect x="280" y="571" width="6" height="3.5" class="icon"/>
+<rect x="280" y="577.5" width="6" height="3.5" class="icon"/>
+<text x="232" y="596.5" class="name" text-anchor="middle">Storage Layer</text>
+<path d="M232 64 L232 128" class="edge"/>
+<path d="M227.5 118 L232 128 L236.5 118" class="edge head"/>
+<path d="M232 192 L232 304" class="edge"/>
+<path d="M227.5 294 L232 304 L236.5 294" class="edge head"/>
+<path d="M232 368 L232 432" class="edge"/>
+<path d="M227.5 422 L232 432 L236.5 422" class="edge head"/>
+<path d="M232 496 L232 560" class="edge"/>
+<path d="M227.5 550 L232 560 L236.5 550" class="edge head"/>
+<path d="M168 160 L64 160 L64 200" class="edge"/>
+<path d="M64 261 L64 304" class="edge"/>
+<path d="M64 208 L64 251" class="edge dashed fine"/>
+<path d="M59.5 241 L64 251 L68.5 241" class="edge head fine"/>
+<path d="M56 208 A8 8 0 0 1 72 208" class="edge"/>
+<circle cx="64" cy="256" r="5" class="shape"/>
+<text x="77" y="236" class="small" text-anchor="start">ICatalog</text>
+<text x="240" y="100" class="small halo" text-anchor="start">AST</text>
+<text x="240" y="252" class="small halo" text-anchor="start">logical plan</text>
+<text x="240" y="404" class="small halo" text-anchor="start">physical plan</text>
+<text x="240" y="532" class="small halo" text-anchor="start">scans</text>
+</svg>

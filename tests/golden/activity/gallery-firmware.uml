@@ -1,0 +1,25 @@
+diagram activity "Firmware boot"
+start
+action "Clock and RAM init"
+if "reset cause is brown-out" {
+  action "Record fault"
+}
+switch "boot slot" {
+  case "A" {
+    action "Verify slot A"
+  }
+  case "B" {
+    action "Verify slot B"
+  }
+  case "else" {
+    action "Enter recovery"
+    end
+  }
+}
+if "signature valid" {
+  action "Jump to application"
+  note: The vector table is relocated first.
+} else {
+  action "Enter recovery"
+}
+stop

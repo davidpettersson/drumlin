@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-18 -56 1066 328" width="1066" height="328">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-18" y="-56" width="1066" height="328" fill="#fff"/>
+<text x="6" y="-20" class="title">Stream processor</text>
+<rect x="265.01" y="0" width="128" height="64" class="shape"/>
+<rect x="372.01" y="8" width="13" height="16" class="icon"/>
+<rect x="369.01" y="11" width="6" height="3.5" class="icon"/>
+<rect x="369.01" y="17.5" width="6" height="3.5" class="icon"/>
+<text x="329.01" y="36.5" class="name" text-anchor="middle">Producers</text>
+<rect x="841.01" y="0" width="160" height="64" class="shape"/>
+<rect x="980.01" y="8" width="13" height="16" class="icon"/>
+<rect x="977.01" y="11" width="6" height="3.5" class="icon"/>
+<rect x="977.01" y="17.5" width="6" height="3.5" class="icon"/>
+<text x="921.01" y="36.5" class="name" text-anchor="middle">Partitioned Log</text>
+<rect x="49.01" y="104" width="560" height="144" class="shape heavy"/>
+<rect x="588.01" y="112" width="13" height="16" class="icon"/>
+<rect x="585.01" y="115" width="6" height="3.5" class="icon"/>
+<rect x="585.01" y="121.5" width="6" height="3.5" class="icon"/>
+<text x="329.01" y="128" class="name" text-anchor="middle">Job</text>
+<rect x="73.01" y="152" width="128" height="64" class="shape"/>
+<rect x="180.01" y="160" width="13" height="16" class="icon"/>
+<rect x="177.01" y="163" width="6" height="3.5" class="icon"/>
+<rect x="177.01" y="169.5" width="6" height="3.5" class="icon"/>
+<text x="137.01" y="188.5" class="name" text-anchor="middle">Windowing</text>
+<rect x="265.01" y="152" width="128" height="64" class="shape"/>
+<rect x="372.01" y="160" width="13" height="16" class="icon"/>
+<rect x="369.01" y="163" width="6" height="3.5" class="icon"/>
+<rect x="369.01" y="169.5" width="6" height="3.5" class="icon"/>
+<text x="329.01" y="188.5" class="name" text-anchor="middle">Aggregator</text>
+<rect x="457.01" y="152" width="128" height="64" class="shape"/>
+<rect x="564.01" y="160" width="13" height="16" class="icon"/>
+<rect x="561.01" y="163" width="6" height="3.5" class="icon"/>
+<rect x="561.01" y="169.5" width="6" height="3.5" class="icon"/>
+<text x="521.01" y="188.5" class="name" text-anchor="middle">Sink</text>
+<rect x="841.01" y="144" width="160" height="64" class="shape"/>
+<rect x="980.01" y="152" width="13" height="16" class="icon"/>
+<rect x="977.01" y="155" width="6" height="3.5" class="icon"/>
+<rect x="977.01" y="161.5" width="6" height="3.5" class="icon"/>
+<text x="921.01" y="171.5" class="small" text-anchor="middle">«rocksdb»</text>
+<text x="921.01" y="188.5" class="name" text-anchor="middle">State Backend</text>
+<path d="M55.01 184 L73.01 184" class="edge"/>
+<path d="M63.01 188.5 L73.01 184 L63.01 179.5" class="edge head"/>
+<path d="M201.01 184 L265.01 184" class="edge"/>
+<path d="M255.01 188.5 L265.01 184 L255.01 179.5" class="edge head"/>
+<path d="M393.01 184 L457.01 184" class="edge"/>
+<path d="M447.01 188.5 L457.01 184 L447.01 179.5" class="edge head"/>
+<path d="M609.01 176 L841.01 176" class="edge dashed fine"/>
+<path d="M831.01 180.5 L841.01 176 L831.01 171.5" class="edge head fine"/>
+<path d="M393.01 32 L585.01 32" class="edge"/>
+<path d="M646.01 32 L841.01 32" class="edge"/>
+<path d="M593.01 32 L636.01 32" class="edge dashed fine"/>
+<path d="M626.01 36.5 L636.01 32 L626.01 27.5" class="edge head fine"/>
+<path d="M593.01 40 A8 8 0 0 1 593.01 24" class="edge"/>
+<circle cx="641.01" cy="32" r="5" class="shape"/>
+<text x="617.01" y="19" class="small" text-anchor="middle">ILog</text>
+<path d="M43.01 184 L24 184 L24 80 L492 80" class="edge"/>
+<path d="M553 80 L1024 80 L1024 32 L1001.01 32" class="edge"/>
+<path d="M500 80 L543 80" class="edge dashed fine"/>
+<path d="M533 84.5 L543 80 L533 75.5" class="edge head fine"/>
+<path d="M500 88 A8 8 0 0 1 500 72" class="edge"/>
+<circle cx="548" cy="80" r="5" class="shape"/>
+<text x="524" y="67" class="small" text-anchor="middle">ISubscribe</text>
+<rect x="43.01" y="178" width="12" height="12" class="shape"/>
+<text x="39.01" y="175" class="small" text-anchor="end">source</text>
+<text x="725.01" y="169" class="small halo" text-anchor="middle">checkpoints</text>
+</svg>

@@ -1,0 +1,11 @@
+diagram package "Relations"
+
+package App
+package Lib
+package Util
+package Base
+
+App ..> Lib : <<import>>
+App ..> Util : <<access>>
+Lib ..> Base : <<merge>>
+Util ..> Base : uses

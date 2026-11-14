@@ -1,0 +1,15 @@
+diagram package "Plugin system"
+
+package Host {
+  class Registry
+  interface Plugin
+  Registry --> Plugin : loads
+  align Registry Plugin
+}
+package "plugins" as plugins <<framework>> {
+  package Markdown { class MarkdownPlugin }
+  package Search { class SearchPlugin }
+}
+MarkdownPlugin ..|> Plugin
+SearchPlugin ..|> Plugin
+note plugins: Discovered at startup from the plugin directory.

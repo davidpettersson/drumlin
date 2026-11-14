@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -56 1000 512" width="1000" height="512">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-24" y="-56" width="1000" height="512" fill="#fff"/>
+<text x="0" y="-20" class="title">LSM storage engine</text>
+<rect x="0" y="160" width="128" height="64" class="shape"/>
+<rect x="107" y="168" width="13" height="16" class="icon"/>
+<rect x="104" y="171" width="6" height="3.5" class="icon"/>
+<rect x="104" y="177.5" width="6" height="3.5" class="icon"/>
+<text x="64" y="196.5" class="name" text-anchor="middle">Client</text>
+<rect x="272" y="0" width="448" height="432" class="shape heavy"/>
+<rect x="699" y="8" width="13" height="16" class="icon"/>
+<rect x="696" y="11" width="6" height="3.5" class="icon"/>
+<rect x="696" y="17.5" width="6" height="3.5" class="icon"/>
+<text x="496" y="24" class="name" text-anchor="middle">Engine</text>
+<rect x="296" y="72" width="128" height="72" class="shape"/>
+<rect x="403" y="80" width="13" height="16" class="icon"/>
+<rect x="400" y="83" width="6" height="3.5" class="icon"/>
+<rect x="400" y="89.5" width="6" height="3.5" class="icon"/>
+<text x="360" y="112.5" class="name" text-anchor="middle">Write Path</text>
+<rect x="296" y="240" width="128" height="64" class="shape"/>
+<rect x="403" y="248" width="13" height="16" class="icon"/>
+<rect x="400" y="251" width="6" height="3.5" class="icon"/>
+<rect x="400" y="257.5" width="6" height="3.5" class="icon"/>
+<text x="360" y="276.5" class="name" text-anchor="middle">Read Path</text>
+<rect x="528" y="240" width="128" height="64" class="shape"/>
+<rect x="635" y="248" width="13" height="16" class="icon"/>
+<rect x="632" y="251" width="6" height="3.5" class="icon"/>
+<rect x="632" y="257.5" width="6" height="3.5" class="icon"/>
+<text x="592" y="276.5" class="name" text-anchor="middle">Memtable</text>
+<rect x="504" y="48" width="176" height="64" class="shape"/>
+<rect x="659" y="56" width="13" height="16" class="icon"/>
+<rect x="656" y="59" width="6" height="3.5" class="icon"/>
+<rect x="656" y="65.5" width="6" height="3.5" class="icon"/>
+<text x="592" y="84.5" class="name" text-anchor="middle">Write-Ahead Log</text>
+<rect x="296" y="344" width="128" height="64" class="shape"/>
+<rect x="403" y="352" width="13" height="16" class="icon"/>
+<rect x="400" y="355" width="6" height="3.5" class="icon"/>
+<rect x="400" y="361.5" width="6" height="3.5" class="icon"/>
+<text x="360" y="380.5" class="name" text-anchor="middle">Compactor</text>
+<path d="M496 152 L678 152 L688 162 L688 200 L496 200 Z" class="shape fine"/>
+<path d="M678 152 L678 162 L688 162" class="edge fine"/>
+<text x="508" y="172" class="small" text-anchor="start">Replayed on startup before the</text>
+<text x="508" y="187" class="small" text-anchor="start">engine accepts writes.</text>
+<rect x="808" y="128" width="144" height="64" class="shape"/>
+<rect x="931" y="136" width="13" height="16" class="icon"/>
+<rect x="928" y="139" width="6" height="3.5" class="icon"/>
+<rect x="928" y="145.5" width="6" height="3.5" class="icon"/>
+<text x="880" y="164.5" class="name" text-anchor="middle">Block Cache</text>
+<rect x="808" y="240" width="144" height="64" class="shape"/>
+<rect x="931" y="248" width="13" height="16" class="icon"/>
+<rect x="928" y="251" width="6" height="3.5" class="icon"/>
+<rect x="928" y="257.5" width="6" height="3.5" class="icon"/>
+<text x="880" y="267.5" class="small" text-anchor="middle">«filesystem»</text>
+<text x="880" y="284.5" class="name" text-anchor="middle">SSTable Files</text>
+<path d="M808 144 L776 144" class="edge"/>
+<circle cx="770" cy="144" r="6" class="shape"/>
+<text x="770" y="132" class="small" text-anchor="middle">ICache</text>
+<path d="M278 192 L360 192 L360 144" class="edge"/>
+<path d="M364.5 154 L360 144 L355.5 154" class="edge head"/>
+<path d="M278 192 L360 192 L360 240" class="edge"/>
+<path d="M355.5 230 L360 240 L364.5 230" class="edge head"/>
+<path d="M424 80 L504 80" class="edge"/>
+<path d="M494 84.5 L504 80 L494 75.5" class="edge head"/>
+<path d="M424 128 L464 128 L464 256 L528 256" class="edge"/>
+<path d="M518 260.5 L528 256 L518 251.5" class="edge head"/>
+<path d="M424 272 L528 272" class="edge"/>
+<path d="M518 276.5 L528 272 L518 267.5" class="edge head"/>
+<path d="M720 168 L808 168" class="edge dashed fine"/>
+<path d="M798 172.5 L808 168 L798 163.5" class="edge head fine"/>
+<path d="M720 272 L808 272" class="edge"/>
+<path d="M798 276.5 L808 272 L798 267.5" class="edge head"/>
+<path d="M592 152 L592 112" class="edge dashed fine"/>
+<path d="M128 192 L165 192" class="edge"/>
+<path d="M226 192 L266 192" class="edge"/>
+<path d="M173 192 L216 192" class="edge dashed fine"/>
+<path d="M206 196.5 L216 192 L206 187.5" class="edge head fine"/>
+<path d="M173 200 A8 8 0 0 1 173 184" class="edge"/>
+<circle cx="221" cy="192" r="5" class="shape"/>
+<text x="197" y="179" class="small" text-anchor="middle">IKeyValue</text>
+<rect x="266" y="186" width="12" height="12" class="shape"/>
+<text x="262" y="183" class="small" text-anchor="end">kv</text>
+<text x="464" y="73" class="small halo" text-anchor="middle">append</text>
+<text x="496" y="249" class="small halo" text-anchor="middle">insert</text>
+<text x="444.8" y="265" class="small halo" text-anchor="middle">probe</text>
+<text x="764" y="161" class="small halo" text-anchor="middle">uses</text>
+<text x="764" y="265" class="small halo" text-anchor="middle">flush, read</text>
+</svg>

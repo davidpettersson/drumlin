@@ -1,0 +1,7 @@
+diagram package "Names in the tab, or in the body"
+
+package Empty
+package Types {
+  class Integer
+  class Time
+}

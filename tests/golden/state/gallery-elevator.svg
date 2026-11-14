@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -56 664 1072" width="664" height="1072">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .solid { fill: #22201c; stroke: none; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-24" y="-56" width="664" height="1072" fill="#fff"/>
+<text x="0" y="-20" class="title">Elevator controller</text>
+<rect x="0" y="208" width="592" height="656" class="shape heavy" rx="10"/>
+<text x="296" y="228.5" class="name" text-anchor="middle">Operating</text>
+<text x="12" y="252" class="small" text-anchor="start">entry / release brake</text>
+<text x="12" y="268" class="small" text-anchor="start">exit / engage brake</text>
+<path d="M0 240 L592 240" class="edge fine"/>
+<path d="M0 280 L592 280" class="edge fine"/>
+<path d="M252 280 L252 864" class="edge dashed fine"/>
+<text x="12" y="302" class="small" text-anchor="start">motion</text>
+<rect x="16" y="656" width="96" height="48" class="shape" rx="10"/>
+<text x="64" y="684.5" class="name" text-anchor="middle">Levelled</text>
+<rect x="16" y="400" width="96" height="48" class="shape" rx="10"/>
+<text x="64" y="428.5" class="name" text-anchor="middle">Moving</text>
+<rect x="16" y="528" width="96" height="48" class="shape" rx="10"/>
+<text x="64" y="556.5" class="name" text-anchor="middle">Stopping</text>
+<circle cx="64" cy="328" r="8" class="solid"/>
+<text x="276" y="302" class="small" text-anchor="start">doors</text>
+<rect x="280" y="400" width="96" height="48" class="shape" rx="10"/>
+<text x="328" y="428.5" class="name" text-anchor="middle">Closed</text>
+<rect x="280" y="784" width="96" height="48" class="shape" rx="10"/>
+<text x="328" y="812.5" class="name" text-anchor="middle">Closing</text>
+<rect x="280" y="656" width="96" height="48" class="shape" rx="10"/>
+<text x="328" y="684.5" class="name" text-anchor="middle">Open</text>
+<rect x="280" y="528" width="96" height="48" class="shape" rx="10"/>
+<text x="328" y="556.5" class="name" text-anchor="middle">Opening</text>
+<circle cx="328" cy="328" r="8" class="solid"/>
+<rect x="248" y="944" width="96" height="48" class="shape" rx="10"/>
+<text x="296" y="972.5" class="name" text-anchor="middle">Fault</text>
+<rect x="240" y="80" width="112" height="48" class="shape" rx="10"/>
+<text x="296" y="108.5" class="name" text-anchor="middle">Idle</text>
+<circle cx="296" cy="8" r="8" class="solid"/>
+<path d="M296 16 L296 80" class="edge"/>
+<path d="M291.5 70 L296 80 L300.5 70" class="edge head"/>
+<path d="M304 128 L304 208" class="edge"/>
+<path d="M299.5 198 L304 208 L308.5 198" class="edge head"/>
+<path d="M280 208 L280 128" class="edge"/>
+<path d="M284.5 138 L280 128 L275.5 138" class="edge head"/>
+<path d="M296 864 L296 944" class="edge"/>
+<path d="M291.5 934 L296 944 L300.5 934" class="edge head"/>
+<path d="M344 968 L616 968 L616 104 L352 104" class="edge"/>
+<path d="M362 99.5 L352 104 L362 108.5" class="edge head"/>
+<path d="M64 336 L64 400" class="edge"/>
+<path d="M59.5 390 L64 400 L68.5 390" class="edge head"/>
+<path d="M56 448 L56 528" class="edge"/>
+<path d="M51.5 518 L56 528 L60.5 518" class="edge head"/>
+<path d="M64 576 L64 656" class="edge"/>
+<path d="M59.5 646 L64 656 L68.5 646" class="edge head"/>
+<path d="M112 680 L168 680 L168 424 L112 424" class="edge"/>
+<path d="M122 419.5 L112 424 L122 428.5" class="edge head"/>
+<path d="M328 336 L328 400" class="edge"/>
+<path d="M323.5 390 L328 400 L332.5 390" class="edge head"/>
+<path d="M328 448 L328 528" class="edge"/>
+<path d="M323.5 518 L328 528 L332.5 518" class="edge head"/>
+<path d="M320 576 L320 656" class="edge"/>
+<path d="M315.5 646 L320 656 L324.5 646" class="edge head"/>
+<path d="M320 704 L320 784" class="edge"/>
+<path d="M315.5 774 L320 784 L324.5 774" class="edge head"/>
+<path d="M376 808 L496 808 L496 424 L376 424" class="edge"/>
+<path d="M386 419.5 L376 424 L386 428.5" class="edge head"/>
+<path d="M336 784 L336 760 L408 760 L408 552 L376 552" class="edge"/>
+<path d="M386 547.5 L376 552 L386 556.5" class="edge head"/>
+<text x="312" y="171" class="small" text-anchor="start">call received / plan route</text>
+<text x="272" y="171" class="small" text-anchor="end">queue empty</text>
+<text x="304" y="907" class="small" text-anchor="start">motor overcurrent / cut power</text>
+<text x="64" y="491" class="small" text-anchor="start">near target floor</text>
+<text x="72" y="619" class="small" text-anchor="start">speed zero</text>
+<text x="176" y="491" class="small" text-anchor="start">next call</text>
+<text x="336" y="491" class="small" text-anchor="start">levelled at floor</text>
+<text x="328" y="619" class="small" text-anchor="start">fully open</text>
+<text x="328" y="747" class="small" text-anchor="start">door timer</text>
+<text x="504" y="619" class="small" text-anchor="start">fully closed</text>
+<text x="416" y="619" class="small" text-anchor="start">obstruction</text>
+<text x="480" y="957.5" class="small" text-anchor="middle">technician reset</text>
+</svg>

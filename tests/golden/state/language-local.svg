@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -56 256 568" width="256" height="568">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .solid { fill: #22201c; stroke: none; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-24" y="-56" width="256" height="568" fill="#fff"/>
+<text x="0" y="-20" class="title">Local transitions</text>
+<rect x="0" y="80" width="208" height="320" class="shape heavy" rx="10"/>
+<text x="104" y="100.5" class="name" text-anchor="middle">Active</text>
+<rect x="24" y="200" width="96" height="48" class="shape" rx="10"/>
+<text x="72" y="228.5" class="name" text-anchor="middle">One</text>
+<rect x="24" y="328" width="96" height="48" class="shape" rx="10"/>
+<text x="72" y="356.5" class="name" text-anchor="middle">Two</text>
+<circle cx="72" cy="128" r="8" class="solid"/>
+<circle cx="104" cy="8" r="8" class="solid"/>
+<circle cx="104" cy="476" r="11" class="shape"/>
+<circle cx="104" cy="476" r="6.5" class="solid"/>
+<path d="M104 16 L104 80" class="edge"/>
+<path d="M99.5 70 L104 80 L108.5 70" class="edge head"/>
+<path d="M72 136 L72 200" class="edge"/>
+<path d="M67.5 190 L72 200 L76.5 190" class="edge head"/>
+<path d="M72 248 L72 328" class="edge"/>
+<path d="M67.5 318 L72 328 L76.5 318" class="edge head"/>
+<path d="M120 352 L208 352" class="edge"/>
+<path d="M198 356.5 L208 352 L198 347.5" class="edge head"/>
+<path d="M104 400 L104 464" class="edge"/>
+<path d="M99.5 454 L104 464 L108.5 454" class="edge head"/>
+<text x="80" y="291" class="small" text-anchor="start">next</text>
+<text x="149.77" y="345" class="small" text-anchor="start">reset</text>
+</svg>

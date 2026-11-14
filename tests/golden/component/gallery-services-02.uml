@@ -1,0 +1,20 @@
+diagram component "Replicated state machine"
+direction right
+
+component Client { requires IPropose }
+
+component Replica as replica {
+  port propose provides IPropose
+  port peers requires IRaftRpc
+
+  component "Consensus Module" as raft
+  component Log
+  component "State Machine" as sm
+
+  propose --> raft
+  raft --> Log : append
+  Log --> sm : apply committed
+  raft --> peers
+}
+
+component "Peer Replicas" as others { provides IRaftRpc }

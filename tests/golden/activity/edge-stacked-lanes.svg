@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -56 496 808" width="496" height="808">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .solid { fill: #22201c; stroke: none; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-24" y="-56" width="496" height="808" fill="#fff"/>
+<text x="0" y="-20" class="title">Branches that interleave lanes</text>
+<rect x="0" y="0" width="144" height="728" class="shape heavy"/>
+<rect x="0" y="0" width="144" height="32" class="shape heavy"/>
+<text x="72" y="21" class="name" text-anchor="middle">A</text>
+<rect x="144" y="0" width="160" height="728" class="shape heavy"/>
+<rect x="144" y="0" width="160" height="32" class="shape heavy"/>
+<text x="224" y="21" class="name" text-anchor="middle">B</text>
+<rect x="304" y="0" width="144" height="728" class="shape heavy"/>
+<rect x="304" y="0" width="144" height="32" class="shape heavy"/>
+<text x="376" y="21" class="name" text-anchor="middle">C</text>
+<path d="M72 72 L72 104" class="edge"/>
+<path d="M67.5 94 L72 104 L76.5 94" class="edge head"/>
+<path d="M72 136 L72 168 L232 168 L232 184" class="edge"/>
+<path d="M227.5 174 L232 184 L236.5 174" class="edge head"/>
+<path d="M72 352 L72 384 L376 384 L376 400" class="edge"/>
+<path d="M371.5 390 L376 400 L380.5 390" class="edge head"/>
+<path d="M216 264 L72 264 L72 320" class="edge"/>
+<path d="M67.5 310 L72 320 L76.5 310" class="edge head"/>
+<path d="M232 280 L232 464" class="edge"/>
+<path d="M227.5 454 L232 464 L236.5 454" class="edge head"/>
+<path d="M376 432 L376 560 L248 560" class="edge"/>
+<path d="M258 555.5 L248 560 L258 564.5" class="edge head"/>
+<path d="M232 496 L232 544" class="edge"/>
+<path d="M227.5 534 L232 544 L236.5 534" class="edge head"/>
+<path d="M232 216 L232 248" class="edge"/>
+<path d="M227.5 238 L232 248 L236.5 238" class="edge head"/>
+<path d="M232 576 L232 608 L72 608 L72 624" class="edge"/>
+<path d="M67.5 614 L72 624 L76.5 614" class="edge head"/>
+<path d="M72 656 L72 688" class="edge"/>
+<path d="M67.5 678 L72 688 L76.5 678" class="edge head"/>
+<circle cx="72" cy="64" r="8" class="solid"/>
+<rect x="24" y="104" width="96" height="32" class="shape" rx="10"/>
+<text x="72" y="124" class="name" text-anchor="middle">Start work</text>
+<rect x="184" y="184" width="96" height="32" class="shape" rx="10"/>
+<text x="232" y="204" class="name" text-anchor="middle">Prepare</text>
+<path d="M232 248 L248 264 L232 280 L216 264 Z" class="shape"/>
+<rect x="32" y="320" width="80" height="32" class="shape" rx="10"/>
+<text x="72" y="340" class="name" text-anchor="middle">Left A</text>
+<rect x="336" y="400" width="80" height="32" class="shape" rx="10"/>
+<text x="376" y="420" class="name" text-anchor="middle">Right C</text>
+<rect x="184" y="464" width="96" height="32" class="shape" rx="10"/>
+<text x="232" y="484" class="name" text-anchor="middle">Middle B</text>
+<path d="M232 544 L248 560 L232 576 L216 560 Z" class="shape"/>
+<rect x="32" y="624" width="80" height="32" class="shape" rx="10"/>
+<text x="72" y="644" class="name" text-anchor="middle">Done</text>
+<circle cx="72" cy="696" r="8" class="shape"/>
+<circle cx="72" cy="696" r="4.5" class="solid"/>
+<text x="184" y="256" class="small" text-anchor="start">[split]</text>
+<text x="238" y="295" class="small" text-anchor="start">[else]</text>
+</svg>

@@ -1,0 +1,10 @@
+diagram state "Simple and composite"
+[*] --> Idle
+Idle --> Running : start
+state Running {
+  entry / open()
+  do / work()
+  [*] --> Step
+  Step --> [*]
+}
+Running --> [*]

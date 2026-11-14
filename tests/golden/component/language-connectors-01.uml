@@ -1,0 +1,8 @@
+component A
+component B
+component C
+component D
+A --> B
+A ..> C
+B -- D
+C .. D

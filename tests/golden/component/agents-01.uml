@@ -1,0 +1,12 @@
+diagram component "Agent feedback loop"
+direction right
+
+component Agent { provides IModel }
+component "drumlin check" as check {
+  requires IModel
+  provides IDiagnostics
+}
+component "drumlin render" as render { requires IDiagnostics }
+component Reviewer <<human>>
+
+render --> Reviewer : SVG

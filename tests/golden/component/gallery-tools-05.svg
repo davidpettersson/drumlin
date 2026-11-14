@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -56 992 248" width="992" height="248">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-24" y="-56" width="992" height="248" fill="#fff"/>
+<text x="0" y="-20" class="title">Documentation build</text>
+<rect x="0" y="0" width="192" height="64" class="shape"/>
+<rect x="171" y="8" width="13" height="16" class="icon"/>
+<rect x="168" y="11" width="6" height="3.5" class="icon"/>
+<rect x="168" y="17.5" width="6" height="3.5" class="icon"/>
+<text x="96" y="27.5" class="small" text-anchor="middle">«input»</text>
+<text x="96" y="44.5" class="name" text-anchor="middle">Markdown Chapters</text>
+<rect x="256" y="0" width="128" height="64" class="shape"/>
+<rect x="363" y="8" width="13" height="16" class="icon"/>
+<rect x="360" y="11" width="6" height="3.5" class="icon"/>
+<rect x="360" y="17.5" width="6" height="3.5" class="icon"/>
+<text x="320" y="36.5" class="name" text-anchor="middle">mdBook</text>
+<rect x="528" y="0" width="160" height="64" class="shape"/>
+<rect x="667" y="8" width="13" height="16" class="icon"/>
+<rect x="664" y="11" width="6" height="3.5" class="icon"/>
+<rect x="664" y="17.5" width="6" height="3.5" class="icon"/>
+<text x="608" y="36.5" class="name" text-anchor="middle">mdbook-drumlin</text>
+<rect x="800" y="0" width="144" height="64" class="shape"/>
+<rect x="923" y="8" width="13" height="16" class="icon"/>
+<rect x="920" y="11" width="6" height="3.5" class="icon"/>
+<rect x="920" y="17.5" width="6" height="3.5" class="icon"/>
+<text x="872" y="36.5" class="name" text-anchor="middle">drumlin library</text>
+<rect x="544" y="104" width="128" height="64" class="shape"/>
+<rect x="651" y="112" width="13" height="16" class="icon"/>
+<rect x="648" y="115" width="6" height="3.5" class="icon"/>
+<rect x="648" y="121.5" width="6" height="3.5" class="icon"/>
+<text x="608" y="131.5" class="small" text-anchor="middle">«output»</text>
+<text x="608" y="148.5" class="name" text-anchor="middle">Static Site</text>
+<path d="M192 32 L256 32" class="edge"/>
+<path d="M246 36.5 L256 32 L246 27.5" class="edge head"/>
+<path d="M320 64 L320 136 L544 136" class="edge"/>
+<path d="M534 140.5 L544 136 L534 131.5" class="edge head"/>
+<path d="M384 32 L424 32" class="edge"/>
+<path d="M485 32 L528 32" class="edge"/>
+<path d="M432 32 L475 32" class="edge dashed fine"/>
+<path d="M465 36.5 L475 32 L465 27.5" class="edge head fine"/>
+<path d="M432 40 A8 8 0 0 1 432 24" class="edge"/>
+<circle cx="480" cy="32" r="5" class="shape"/>
+<text x="456" y="19" class="small" text-anchor="middle">IPreprocessor</text>
+<path d="M688 32 L712 32" class="edge"/>
+<path d="M773 32 L800 32" class="edge"/>
+<path d="M720 32 L763 32" class="edge dashed fine"/>
+<path d="M753 36.5 L763 32 L753 27.5" class="edge head fine"/>
+<path d="M720 40 A8 8 0 0 1 720 24" class="edge"/>
+<circle cx="768" cy="32" r="5" class="shape"/>
+<text x="744" y="19" class="small" text-anchor="middle">IRender</text>
+<text x="432" y="129" class="small halo" text-anchor="middle">HTML with inline SVG</text>
+</svg>

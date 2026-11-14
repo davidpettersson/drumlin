@@ -1,0 +1,16 @@
+diagram sequence "Parallel and critical regions"
+
+participant "Task A" as a
+participant Lock
+participant "Task B" as b
+
+par {
+  a -> Lock : acquire()
+} and {
+  b -> Lock : acquire()
+}
+critical "mutex held" {
+  Lock --> a : granted
+  a -> a : update state
+  a -> Lock : release()
+}

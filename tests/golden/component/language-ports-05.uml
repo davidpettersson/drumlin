@@ -1,0 +1,15 @@
+component Client { requires IApi }
+
+component Service as svc {
+  port api provides IApi
+  port store requires IStore
+
+  component Router
+  component Worker
+
+  api --> Router
+  Router --> Worker
+  Worker --> store
+}
+
+component Database { provides IStore }

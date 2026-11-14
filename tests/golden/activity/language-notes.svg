@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -56 376 536" width="376" height="536">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .solid { fill: #22201c; stroke: none; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-24" y="-56" width="376" height="536" fill="#fff"/>
+<text x="0" y="-20" class="title">Notes</text>
+<path d="M64 16 L64 56" class="edge"/>
+<path d="M59.5 46 L64 56 L68.5 46" class="edge head"/>
+<path d="M64 208 L64 248" class="edge"/>
+<path d="M59.5 238 L64 248 L68.5 238" class="edge head"/>
+<path d="M64 280 L64 312" class="edge"/>
+<path d="M59.5 302 L64 312 L68.5 302" class="edge head"/>
+<path d="M80 192 L160 192 L160 328 L80 328" class="edge"/>
+<path d="M90 323.5 L80 328 L90 332.5" class="edge head"/>
+<path d="M64 88 L64 176" class="edge"/>
+<path d="M59.5 166 L64 176 L68.5 166" class="edge head"/>
+<path d="M64 344 L64 376" class="edge"/>
+<path d="M59.5 366 L64 376 L68.5 366" class="edge head"/>
+<path d="M64 408 L64 440" class="edge"/>
+<path d="M59.5 430 L64 440 L68.5 430" class="edge head"/>
+<path d="M120 72 L136 72" class="edge dashed fine"/>
+<path d="M88 160 L72 184" class="edge dashed fine"/>
+<circle cx="64" cy="8" r="8" class="solid"/>
+<rect x="8" y="56" width="112" height="32" class="shape" rx="10"/>
+<text x="64" y="76" class="name" text-anchor="middle">Load config</text>
+<path d="M64 176 L80 192 L64 208 L48 192 Z" class="shape"/>
+<rect x="0" y="248" width="128" height="32" class="shape" rx="10"/>
+<text x="64" y="268" class="name" text-anchor="middle">Enable traces</text>
+<path d="M64 312 L80 328 L64 344 L48 328 Z" class="shape"/>
+<rect x="24" y="376" width="80" height="32" class="shape" rx="10"/>
+<text x="64" y="396" class="name" text-anchor="middle">Run</text>
+<circle cx="64" cy="448" r="8" class="shape"/>
+<circle cx="64" cy="448" r="4.5" class="solid"/>
+<path d="M136 48 L318 48 L328 58 L328 96 L136 96 Z" class="shape fine"/>
+<path d="M318 48 L318 58 L328 58" class="edge fine"/>
+<text x="148" y="68" class="small" text-anchor="start">Falls back to defaults when the</text>
+<text x="148" y="83" class="small" text-anchor="start">file is missing.</text>
+<path d="M88 128 L238 128 L248 138 L248 160 L88 160 Z" class="shape fine"/>
+<path d="M238 128 L238 138 L248 138" class="edge fine"/>
+<text x="100" y="147.5" class="small" text-anchor="start">Checked once at startup.</text>
+<text x="70" y="223" class="small" text-anchor="start">[debug]</text>
+<text x="86" y="184" class="small" text-anchor="start">[else]</text>
+</svg>

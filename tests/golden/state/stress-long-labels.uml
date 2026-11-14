@@ -1,0 +1,9 @@
+diagram state "Long labels"
+[*] --> A
+A --> B : a very long trigger name with many words [and a guard that keeps going for a while] / then an effect that also goes on and on
+A --> C : another long one [x > 0 and y < 0] / do_something_with_a_long_name(argument, another_argument)
+B --> D : short
+C --> D : somewhat longer label here [flag]
+D --> A : reset everything back to the beginning / clear()
+D --> D : retry the operation again [attempts remaining] / backoff()
+D --> [*] : give up

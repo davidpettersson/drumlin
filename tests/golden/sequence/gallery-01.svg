@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-64 -56 352 744" width="352" height="744">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .lifeline { fill: none; stroke: #22201c; stroke-width: 0.75; stroke-dasharray: 7 3; }
+.drumlin.pens .frame { fill: none; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .solid { fill: #22201c; stroke: none; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-64" y="-56" width="352" height="744" fill="#fff"/>
+<text x="-40" y="-20" class="title">TCP connection</text>
+<path d="M0 40 L0 664" class="lifeline"/>
+<path d="M224 40 L224 664" class="lifeline"/>
+<rect x="-18" y="312" width="260" height="96" class="frame"/>
+<path d="M-18 312 L30 312 L30 326 L22 334 L-18 334 Z" class="shape fine"/>
+<text x="-10" y="327" class="name" text-anchor="start">opt</text>
+<text x="38" y="326" class="small halo" text-anchor="start">[segment lost]</text>
+<rect x="-40" y="0" width="80" height="40" class="shape"/>
+<text x="0" y="24" class="name" text-anchor="middle">Client</text>
+<rect x="184" y="0" width="80" height="40" class="shape"/>
+<text x="224" y="24" class="name" text-anchor="middle">Server</text>
+<path d="M-16 56 L230 56 L240 66 L240 88 L-16 88 Z" class="shape fine"/>
+<path d="M230 56 L230 66 L240 66" class="edge fine"/>
+<text x="-4" y="75.5" class="small" text-anchor="start">Three-way handshake</text>
+<path d="M-16 200 L230 200 L240 210 L240 232 L-16 232 Z" class="shape fine"/>
+<path d="M230 200 L230 210 L240 210" class="edge fine"/>
+<text x="-4" y="219.5" class="small" text-anchor="start">Established</text>
+<path d="M-16 424 L230 424 L240 434 L240 456 L-16 456 Z" class="shape fine"/>
+<path d="M230 424 L230 434 L240 434" class="edge fine"/>
+<text x="-4" y="443.5" class="small" text-anchor="start">Graceful close</text>
+<path d="M8 600 L206 600 L216 610 L216 648 L8 648 Z" class="shape fine"/>
+<path d="M206 600 L206 610 L216 610" class="edge fine"/>
+<text x="20" y="620" class="small" text-anchor="start">TIME_WAIT for 2 MSL before the</text>
+<text x="20" y="635" class="small" text-anchor="start">socket is freed.</text>
+<path d="M0 120 L224 120" class="edge"/>
+<path d="M214 124.5 L224 120 L214 115.5" class="edge head"/>
+<path d="M224 152 L0 152" class="edge"/>
+<path d="M10 147.5 L0 152 L10 156.5" class="edge head"/>
+<path d="M0 184 L224 184" class="edge"/>
+<path d="M214 188.5 L224 184 L214 179.5" class="edge head"/>
+<path d="M0 264 L224 264" class="edge"/>
+<path d="M214 268.5 L224 264 L214 259.5" class="edge head"/>
+<path d="M224 296 L0 296" class="edge"/>
+<path d="M10 291.5 L0 296 L10 300.5" class="edge head"/>
+<path d="M0 360 L108 360" class="edge"/>
+<path d="M98 364.5 L108 360 L98 355.5 Z" class="solid"/>
+<circle cx="112" cy="360" r="4" class="solid"/>
+<path d="M0 392 L224 392" class="edge"/>
+<path d="M214 396.5 L224 392 L214 387.5" class="edge head"/>
+<path d="M0 488 L224 488" class="edge"/>
+<path d="M214 492.5 L224 488 L214 483.5" class="edge head"/>
+<path d="M224 520 L0 520" class="edge"/>
+<path d="M10 515.5 L0 520 L10 524.5" class="edge head"/>
+<path d="M224 552 L0 552" class="edge"/>
+<path d="M10 547.5 L0 552 L10 556.5" class="edge head"/>
+<path d="M0 584 L224 584" class="edge"/>
+<path d="M214 588.5 L224 584 L214 579.5" class="edge head"/>
+<text x="112" y="115" class="small halo" text-anchor="middle">SYN seq=x</text>
+<text x="112" y="147" class="small halo" text-anchor="middle">SYN+ACK seq=y, ack=x+1</text>
+<text x="112" y="179" class="small halo" text-anchor="middle">ACK ack=y+1</text>
+<text x="112" y="259" class="small halo" text-anchor="middle">data seq=x+1, len=512</text>
+<text x="112" y="291" class="small halo" text-anchor="middle">ACK ack=x+513</text>
+<text x="51" y="355" class="small halo" text-anchor="middle">data seq=x+513</text>
+<text x="112" y="387" class="small halo" text-anchor="middle">retransmit after RTO</text>
+<text x="112" y="483" class="small halo" text-anchor="middle">FIN</text>
+<text x="112" y="515" class="small halo" text-anchor="middle">ACK</text>
+<text x="112" y="547" class="small halo" text-anchor="middle">FIN</text>
+<text x="112" y="579" class="small halo" text-anchor="middle">ACK</text>
+</svg>

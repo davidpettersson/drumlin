@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-22 -24 295.41 128" width="295.41" height="128">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-22" y="-24" width="295.41" height="128" fill="#fff"/>
+
+<rect x="60.48" y="0" width="128" height="80" class="shape"/>
+<rect x="167.48" y="8" width="13" height="16" class="icon"/>
+<rect x="164.48" y="11" width="6" height="3.5" class="icon"/>
+<rect x="164.48" y="17.5" width="6" height="3.5" class="icon"/>
+<text x="124.48" y="44.5" class="name" text-anchor="middle">Codec</text>
+<path d="M188.48 40 L220.48 40" class="edge"/>
+<path d="M228.48 48 A8 8 0 0 1 228.48 32" class="edge"/>
+<text x="226.48" y="28" class="small" text-anchor="middle">IAllocator</text>
+<path d="M60.48 32 L28.48 32" class="edge"/>
+<circle cx="22.48" cy="32" r="6" class="shape"/>
+<text x="22.48" y="20" class="small" text-anchor="middle">IDecode</text>
+<path d="M60.48 56 L28.48 56" class="edge"/>
+<circle cx="22.48" cy="56" r="6" class="shape"/>
+<text x="22.48" y="44" class="small" text-anchor="middle">IEncode</text>
+</svg>

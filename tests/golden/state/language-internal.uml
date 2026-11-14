@@ -1,0 +1,9 @@
+diagram state "Password entry"
+[*] --> Typing
+state Typing {
+  entry / set echo invisible
+  exit / set echo normal
+  character / handle character
+  help / display help
+}
+Typing --> [*] : enter

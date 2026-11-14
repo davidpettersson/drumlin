@@ -1,0 +1,8 @@
+diagram component "direction right"
+direction right
+
+component A
+component B
+component C
+A --> B
+B --> C

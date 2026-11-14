@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -56 1136 432" width="1136" height="432">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-24" y="-56" width="1136" height="432" fill="#fff"/>
+<text x="0" y="-20" class="title">Motor controller firmware</text>
+<rect x="0" y="16" width="92.03" height="24" class="shape heavy"/>
+<rect x="0" y="40" width="400" height="120" class="shape heavy"/>
+<text x="12" y="32.5" class="name" text-anchor="start">Application</text>
+<rect x="232" y="64" width="144" height="64" class="shape"/>
+<rect x="355" y="72" width="13" height="16" class="icon"/>
+<rect x="352" y="75" width="6" height="3.5" class="icon"/>
+<rect x="352" y="81.5" width="6" height="3.5" class="icon"/>
+<text x="304" y="100.5" class="name" text-anchor="middle">Speed Loop</text>
+<rect x="24" y="64" width="144" height="64" class="shape"/>
+<rect x="147" y="72" width="13" height="16" class="icon"/>
+<rect x="144" y="75" width="6" height="3.5" class="icon"/>
+<rect x="144" y="81.5" width="6" height="3.5" class="icon"/>
+<text x="96" y="100.5" class="name" text-anchor="middle">Fault Monitor</text>
+<rect x="912" y="0" width="68.04" height="24" class="shape heavy"/>
+<rect x="912" y="24" width="176" height="328" class="shape heavy"/>
+<text x="924" y="16.5" class="name" text-anchor="start">Drivers</text>
+<rect x="936" y="48" width="128" height="64" class="shape"/>
+<rect x="1043" y="56" width="13" height="16" class="icon"/>
+<rect x="1040" y="59" width="6" height="3.5" class="icon"/>
+<rect x="1040" y="65.5" width="6" height="3.5" class="icon"/>
+<text x="1000" y="84.5" class="name" text-anchor="middle">PWM</text>
+<rect x="936" y="152" width="128" height="64" class="shape"/>
+<rect x="1043" y="160" width="13" height="16" class="icon"/>
+<rect x="1040" y="163" width="6" height="3.5" class="icon"/>
+<rect x="1040" y="169.5" width="6" height="3.5" class="icon"/>
+<text x="1000" y="188.5" class="name" text-anchor="middle">ADC</text>
+<rect x="936" y="256" width="128" height="64" class="shape"/>
+<rect x="1043" y="264" width="13" height="16" class="icon"/>
+<rect x="1040" y="267" width="6" height="3.5" class="icon"/>
+<rect x="1040" y="273.5" width="6" height="3.5" class="icon"/>
+<text x="1000" y="292.5" class="name" text-anchor="middle">CAN</text>
+<rect x="488" y="64" width="144" height="64" class="shape"/>
+<rect x="611" y="72" width="13" height="16" class="icon"/>
+<rect x="608" y="75" width="6" height="3.5" class="icon"/>
+<rect x="608" y="81.5" width="6" height="3.5" class="icon"/>
+<text x="560" y="100.5" class="name" text-anchor="middle">Control Task</text>
+<rect x="496" y="256" width="128" height="64" class="shape"/>
+<rect x="603" y="264" width="13" height="16" class="icon"/>
+<rect x="600" y="267" width="6" height="3.5" class="icon"/>
+<rect x="600" y="273.5" width="6" height="3.5" class="icon"/>
+<text x="560" y="292.5" class="name" text-anchor="middle">Telemetry</text>
+<path d="M472 168 L638 168 L648 178 L648 216 L472 216 Z" class="shape fine"/>
+<path d="M638 168 L638 178 L648 178" class="edge fine"/>
+<text x="484" y="188" class="small" text-anchor="start">Runs at 20 kHz in interrupt</text>
+<text x="484" y="203" class="small" text-anchor="start">context.</text>
+<path d="M168 96 L232 96" class="edge"/>
+<path d="M222 100.5 L232 96 L222 91.5" class="edge head"/>
+<path d="M376 96 L488 96" class="edge"/>
+<path d="M478 100.5 L488 96 L478 91.5" class="edge head"/>
+<path d="M560 168 L560 128" class="edge dashed fine"/>
+<path d="M632 112 L776 112 L776 184 L824 184" class="edge"/>
+<path d="M885 184 L936 184" class="edge"/>
+<path d="M832 184 L875 184" class="edge dashed fine"/>
+<path d="M865 188.5 L875 184 L865 179.5" class="edge head fine"/>
+<path d="M832 192 A8 8 0 0 1 832 176" class="edge"/>
+<circle cx="880" cy="184" r="5" class="shape"/>
+<text x="856" y="171" class="small" text-anchor="middle">IAdc</text>
+<path d="M624 288 L748 288" class="edge"/>
+<path d="M809 288 L936 288" class="edge"/>
+<path d="M756 288 L799 288" class="edge dashed fine"/>
+<path d="M789 292.5 L799 288 L789 283.5" class="edge head fine"/>
+<path d="M756 296 A8 8 0 0 1 756 280" class="edge"/>
+<circle cx="804" cy="288" r="5" class="shape"/>
+<text x="780" y="275" class="small" text-anchor="middle">ICan</text>
+<path d="M632 80 L752 80" class="edge"/>
+<path d="M813 80 L936 80" class="edge"/>
+<path d="M760 80 L803 80" class="edge dashed fine"/>
+<path d="M793 84.5 L803 80 L793 75.5" class="edge head fine"/>
+<path d="M760 88 A8 8 0 0 1 760 72" class="edge"/>
+<circle cx="808" cy="80" r="5" class="shape"/>
+<text x="784" y="67" class="small" text-anchor="middle">IPwm</text>
+<text x="200" y="89" class="small halo" text-anchor="middle">limits</text>
+<text x="432" y="89" class="small halo" text-anchor="middle">setpoint</text>
+</svg>

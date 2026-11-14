@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin lettering" viewBox="-24 -56 568 432" width="568" height="432">
+<style>
+.drumlin.lettering .lt { fill: none; stroke: #22201c; stroke-width: 1.1; stroke-linecap: round; stroke-linejoin: round; }
+.drumlin.lettering .lt-halo { fill: #fff; stroke: none; }
+.drumlin.lettering .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.lettering .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.lettering .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.lettering .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.lettering .dashed { stroke-dasharray: 7 3; }
+.drumlin.lettering .heavy { stroke-width: 1.75; }
+.drumlin.lettering .fine { stroke-width: 0.75; }
+</style>
+<defs>
+<path id="dl-n41" d="M1.2-.6l.6-1.7M1.8-2.3l1.9-5.6 .2-.5 .6 0 .1 .1 1.9 5.7 .1 .2M1.8-2.3l4.8-.1M6.6-2.4l.6 1.8"/>
+<path id="dl-n43" d="M6.6-7l-.3-.6-.4-.5-.5-.2-.6-.2-.6 0-.3 .1-.6 .2-.4 .2-.5 .6-.3 .4-.2 .5-.3 .7-.1 .5 0 1.2 .1 .8 .2 .6 .2 .5 .3 .4 .8 .8 .5 .3 .4 .2 .4 0 .5 0 .4-.1 .4-.2 .3-.2 .3-.4 .4-.6 .2-.4"/>
+<path id="dl-n44" d="M1.8-.6l0-7.8 2.7 0 .6 .2 .7 .4 .5 .5 .3 .7 .2 .6 .2 .8 0 1.4-.1 .6-.3 .9-.3 .5-.4 .5-.5 .4-.5 .2-.5 .1-2.6 0"/>
+<path id="dl-n45" d="M1.8-4.7l3.5 0M1.8-4.7l0 4.1 5.2 0M1.8-4.7l0-3.7 5 0"/>
+<path id="dl-n46" d="M1.8-.6l0-4.1M1.8-4.7l3.6 0M1.8-4.7l0-3.7 4.8 0"/>
+<path id="dl-n48" d="M1.8-.6l0-4.1M1.8-8.4l0 3.7M1.8-4.7l5.1 0M6.9-4.7l0-3.7M6.9-4.7l0 4.1"/>
+<path id="dl-n49" d="M2.1-.6l0-7.8"/>
+<path id="dl-n4b" d="M1.8-.6l0-2.9M1.8-8.4l0 4.9M1.8-3.5l.2-.1 1.6-1.6 .1-.1M3.7-5.3l3.3 4.7M3.7-5.3l0-.1 3.1-3"/>
+<path id="dl-n4c" d="M1.8-8.4l0 7.8 5 0"/>
+<path id="dl-n4d" d="M1.8-.6l0-7.8 .4 0 .1 .1 2.7 7.5 .1 .1 .2-.4 2.6-7.2 0-.1 .5 0 0 7.8"/>
+<path id="dl-n4e" d="M1.8-.6l0-7.8 .4 0 4.4 7.8 .4 0 0 0 0-7.8"/>
+<path id="dl-n4f" d="M1.5-4.1l0-1.2 .1-.5 .3-.7 .2-.5 .3-.4 .5-.6 .7-.3 .6-.2 .5 0 .7 .2 .6 .3 .5 .6 .6 .8 .3 .8 .1 .7 0 1.2-.2 .9-.4 .9-.4 .5-.5 .6-.6 .3-.5 .2-.8 0-.5-.2-.7-.4-.7-.7-.3-.7-.3-.7-.1-.9"/>
+<path id="dl-n50" d="M1.8-.6l0-3.7M1.8-4.3l3.3 0 .6-.2 .4-.2 .4-.5 .3-.8 0-.7-.1-.4-.2-.5-.4-.4-.8-.3-.3-.1-3.2 0 0 4.1"/>
+<path id="dl-n52" d="M1.8-.6l0-4.1M1.8-4.7l3.5 0M1.8-4.7l0-3.7 3.5 0 .9 .2 .3 .2 .2 .3 .2 .3 .2 .5 0 .7-.2 .5-.2 .3-.4 .4-.4 .2-.6 .1M5.3-4.7l0 .3 1.6 3.8"/>
+<path id="dl-n53" d="M1.5-2.1l.4 .6 .3 .4 .5 .3 .8 .3 .5 0 .8 0 .6-.2 .4-.2 .3-.3 .4-.5 .2-.5 0-.8-.1-.3-.3-.4-.3-.4-.6-.3-.5-.2-1.5-.3-1-.4-.5-.6-.2-.4 0-.5 .1-.4 .1-.3 .4-.5 .6-.3 .9-.2 .8 0 .4 .1 .6 .2 .6 .6 .3 .6"/>
+<path id="dl-n54" d="M1.2-8.4l3 0M4.2-.6l0-7.8M4.2-8.4l3 0"/>
+<path id="dl-n55" d="M1.8-8.4l0 6 .1 .3 .2 .6 .6 .5 .8 .4 .7 .1 .9-.1 .8-.3 .5-.5 .4-.5 .1-.6 0-5.9"/>
+<path id="dl-n56" d="M1.2-8.4l2.8 7.7 .1 .1 .2 0 0-.1 2.9-7.7"/>
+<path id="dl-n59" d="M1.2-8.4l2.7 3.6 .1 .1M4-.6l0-4.1M4-4.7l.1-.1 2.7-3.6"/>
+<path id="dl-s61" d="M4.7-1.5l-.1 0-.2 .4-.3 .3-.5 .3-.5 .1-.5-.1-.5-.3-.5-.4-.3-.6-.1-.8 0-.5 .2-.9 .3-.6 .4-.3 .3-.3 .5 0 .3 0 .5 0 .3 .3 .4 .3 .2 .4 .1 .1M4.7-1.5l.1 0 0 1M4.7-1.5l.1-.3 0-2.1-.1-.2M4.7-4.1l.1-.1 0-1"/>
+<path id="dl-s63" d="M4.4-4.4l-.4-.5-.5-.3-.7 0-.6 .1-.5 .5-.3 .6-.2 .7 0 .7 .1 .6 .2 .7 .5 .5 .5 .3 .3 .1 .3 0 .3-.1 .3-.1 .3-.2 .3-.3 .2-.4"/>
+<path id="dl-s64" d="M4.8-1.5l-.2 0-.2 .4-.3 .3-.4 .3-.5 .1-.5-.1-.6-.3-.4-.4-.3-.6-.2-.8 0-.5 .2-.9 .4-.6 .3-.3 .4-.3 .4 0 .4 0 .4 0 .4 .3 .3 .3 .2 .4 .2 .1M4.8-1.5l0 0 0 .4 .1 .6M4.8-1.5l0-.3 0-2.1 0-.2M4.8-4.1l0-.1 0-3.2"/>
+<path id="dl-s65" d="M1.2-3.1l3.4 0 0-.5-.1-.7-.3-.3-.3-.4-.5-.2-.6 0-.3 0-.3 .1-.5 .5-.4 .7-.1 .8M1.2-3.1l0 .6 .2 .8 .1 .4 .3 .4 .3 .2 .6 .3 .7 0 .3-.2 .6-.3 .4-.5"/>
+<path id="dl-s6c" d="M1.5-7.4l0 6.3 .1 .6"/>
+<path id="dl-s6d" d="M1.5-.5l.1-3.7M1.5-5.2l.1 1M1.6-4.2l.5-.6 .4-.3 .4-.1 .6 0 .3 0 .3 .2 .3 .3 .2 .6M4.6-.5l0-3.6M4.6-4.1l.6-.7 .4-.3 .4-.1 .3 0 .5 0 .4 .2 .2 .2 .2 .3 .1 .6 0 3.4"/>
+<path id="dl-s6f" d="M1.2-2.6l0-.5 .2-.9 .3-.6 .4-.3 .3-.3 .5 0 .3 0 .5 0 .3 .3 .4 .3 .3 .6 .2 .7 0 .9-.2 .8-.3 .5-.3 .3-.5 .3-.2 .1-.6 0-.3-.1-.4-.3-.4-.3-.2-.3-.2-.5-.1-.7"/>
+<path id="dl-s73" d="M1.2-1.2l.3 .3 .3 .2 .5 .2 .3 .1 .4 0 .3-.1 .3-.2 .3-.2 .2-.3 .1-.4-.1-.5-.1-.3-.3-.3-.3-.1-.5-.1-.7-.1-.5-.3-.2-.2-.2-.3-.1-.5 .1-.3 .4-.4 .4-.2 .4 0 .4 0 .5 0 .4 .3 .3 .3"/>
+<path id="dl-sab" d="M3.7-.5l-2.3-2.3 2.3-2.4M6.7-.5l-2.3-2.3 2.3-2.4"/>
+<path id="dl-sbb" d="M1.5-.5l2.3-2.3 0-.1-2.3-2.3M4.6-.5l2.2-2.3 0-.1-2.2-2.3"/>
+<path id="dl-t41" d="M1.5-.8l.8-2.2M2.3-3l2.4-7.1 .3-.7 .8 0 .1 .2 2.5 7.3 0 .2M2.3-3l6.1-.1M8.4-3.1l.9 2.3"/>
+<path id="dl-t44" d="M2.3-.8l0-10 3.5 0 .7 .3 .9 .5 .6 .6 .5 .9 .3 .9 .2 1 0 1.7-.1 .8-.4 1.1-.4 .7-.6 .7-.6 .4-.6 .3-.7 .1-3.3 0"/>
+<path id="dl-t45" d="M2.3-6.1l4.5 0M2.3-6.1l0 5.3 6.7 0M2.3-6.1l0-4.7 6.5 0"/>
+<path id="dl-t47" d="M6-5.4l2.6 0 0 3-.3 .6-.6 .5-.6 .4-.7 .2-.8 .1-.5-.1-.9-.4-.5-.3-.6-.5-.4-.7-.4-.9-.3-.8-.1-1 0-1 .2-1.1 .3-.9 .5-1 .9-.9 .5-.3 .8-.3 1-.1 .8 .2 .7 .4 .5 .5 .4 .8"/>
+<path id="dl-t49" d="M2.6-.8l0-10"/>
+<path id="dl-t4b" d="M2.3-.8l0-3.7M2.3-10.8l0 6.3M2.3-4.5l.2-.1 2.1-2.1 .2-.1M4.8-6.8l4.2 6M4.8-6.8l0-.1 4-3.9"/>
+<path id="dl-t4e" d="M2.3-.8l0-10 .6 0 5.6 10 .4 0 .1 0 0-10"/>
+<path id="dl-t4f" d="M1.9-5.3l0-1.5 .2-.6 .3-.9 .4-.7 .3-.5 .7-.7 .8-.4 .8-.3 .7 0 .8 .3 .7 .3 .8 .8 .7 1.1 .3 1 .2 .9 0 1.5-.2 1.1-.5 1.1-.5 .8-.8 .7-.7 .4-.6 .3-1 0-.7-.3-.8-.5-.9-.9-.5-.9-.3-.9-.2-1.2"/>
+<path id="dl-t52" d="M2.3-.8l0-5.2M2.3-6l4.5 0M2.3-6l0-4.8 4.5 0 1.1 .3 .5 .3 .2 .3 .3 .4 .2 .6 0 1-.2 .6-.3 .4-.5 .5-.6 .3-.7 .1M6.8-6l0 .4 2.1 4.8"/>
+<path id="dl-t53" d="M1.9-2.6l.5 .7 .5 .5 .6 .4 .9 .3 .7 .1 1-.1 .8-.2 .5-.3 .4-.3 .5-.6 .3-.8 0-1-.1-.4-.4-.5-.5-.5-.7-.4-.6-.2-2-.4-1.2-.5-.7-.7-.3-.6 0-.7 .2-.5 .1-.3 .6-.7 .7-.3 1.1-.3 1.1 0 .5 .1 .7 .4 .8 .6 .5 .8"/>
+<path id="dl-t54" d="M1.5-10.8l3.9 0M5.4-.8l0-10M5.4-10.8l3.9 0"/>
+<path id="dl-t57" d="M1.5-10.8l2.5 9.8 .1 .2 .3 0 0-.1 2.1-9 .2-.6 .1-.1 .1 .1 .1 .1 2.3 9.6 0 0 .2 0 2.6-10"/>
+<path id="dl-t59" d="M1.5-10.8l3.5 4.6 .1 .1M5.1-.8l0-5.3M5.1-6.1l.2-.1 3.5-4.6"/>
+</defs>
+<rect x="-24" y="-56" width="568" height="432" fill="#fff"/>
+<g class="lt" role="img" aria-label="Nesting and keywords" transform="translate(0 -20)"><use href="#dl-t4e"/><use href="#dl-t45" x="12.2"/><use href="#dl-t53" x="24"/><use href="#dl-t54" x="35.5"/><use href="#dl-t49" x="47.2"/><use href="#dl-t4e" x="53.4"/><use href="#dl-t47" x="65.6"/><use href="#dl-t41" x="82.6"/><use href="#dl-t4e" x="94.3"/><use href="#dl-t44" x="106.5"/><use href="#dl-t4b" x="123.8"/><use href="#dl-t45" x="135.2"/><use href="#dl-t59" x="147.1"/><use href="#dl-t57" x="158.3"/><use href="#dl-t4f" x="172.9"/><use href="#dl-t52" x="185.3"/><use href="#dl-t44" x="197.3"/><use href="#dl-t53" x="209.1"/></g>
+<rect x="152" y="0" width="98.17" height="40" class="shape heavy"/>
+<rect x="152" y="40" width="368" height="312" class="shape heavy"/>
+<g class="lt" role="img" aria-label="«model»" transform="translate(164 15.5)"><use href="#dl-sab"/><use href="#dl-s6d" x="8.3"/><use href="#dl-s6f" x="17.5"/><use href="#dl-s64" x="23.6"/><use href="#dl-s65" x="30"/><use href="#dl-s6c" x="35.8"/><use href="#dl-sbb" x="38.9"/></g>
+<g class="lt" role="img" aria-label="Platform" transform="translate(164 32.5)"><use href="#dl-n50"/><use href="#dl-n4c" x="9.1"/><use href="#dl-n41" x="17.8"/><use href="#dl-n54" x="27"/><use href="#dl-n46" x="36.1"/><use href="#dl-n4f" x="45"/><use href="#dl-n52" x="54.7"/><use href="#dl-n4d" x="64"/></g>
+<rect x="176" y="192" width="78.34" height="24" class="shape heavy"/>
+<rect x="176" y="216" width="320" height="104" class="shape heavy"/>
+<g class="lt" role="img" aria-label="Kernel" transform="translate(188 208.5)"><use href="#dl-n4b"/><use href="#dl-n45" x="9"/><use href="#dl-n52" x="18.2"/><use href="#dl-n4e" x="27.5"/><use href="#dl-n45" x="37.1"/><use href="#dl-n4c" x="46.3"/></g>
+<rect x="200" y="240" width="128" height="48" class="shape"/>
+<g class="lt" role="img" aria-label="Scheduler" transform="translate(222.99 268.5)"><use href="#dl-n53"/><use href="#dl-n43" x="9"/><use href="#dl-n48" x="18.1"/><use href="#dl-n45" x="27.5"/><use href="#dl-n44" x="36.7"/><use href="#dl-n55" x="46"/><use href="#dl-n4c" x="55.4"/><use href="#dl-n45" x="64.2"/><use href="#dl-n52" x="73.4"/></g>
+<rect x="368" y="240" width="96" height="48" class="shape"/>
+<g class="lt" role="img" aria-label="Timer" transform="translate(394.64 268.5)"><use href="#dl-n54"/><use href="#dl-n49" x="9.1"/><use href="#dl-n4d" x="14"/><use href="#dl-n45" x="24.9"/><use href="#dl-n52" x="34.1"/></g>
+<rect x="280" y="64" width="40" height="16" class="shape"/>
+<rect x="280" y="80" width="112" height="48" class="shape"/>
+<g class="lt" role="img" aria-label="Drivers" transform="translate(306.31 108.5)"><use href="#dl-n44"/><use href="#dl-n52" x="9.2"/><use href="#dl-n49" x="18.6"/><use href="#dl-n56" x="23.4"/><use href="#dl-n45" x="32.6"/><use href="#dl-n52" x="41.8"/><use href="#dl-n53" x="51.2"/></g>
+<rect x="0" y="144" width="40" height="16" class="shape"/>
+<rect x="0" y="160" width="112" height="48" class="shape"/>
+<g class="lt" role="img" aria-label="Empty" transform="translate(32.83 188.5)"><use href="#dl-n45"/><use href="#dl-n4d" x="9.2"/><use href="#dl-n50" x="20.1"/><use href="#dl-n54" x="29.2"/><use href="#dl-n59" x="38.3"/></g>
+<path d="M336 128 L336 216" class="edge dashed fine"/>
+<path d="M331.5 206 L336 216 L340.5 206" class="edge head fine"/>
+<g class="lt" role="img" aria-label="«access»" transform="translate(344 176)"><rect class="lt-halo" x="-1.5" y="-9.41" width="53.66" height="13.31"/><use href="#dl-sab"/><use href="#dl-s61" x="8.3"/><use href="#dl-s63" x="14.6"/><use href="#dl-s63" x="20.2"/><use href="#dl-s65" x="25.9"/><use href="#dl-s73" x="31.8"/><use href="#dl-s73" x="37.1"/><use href="#dl-sbb" x="42.4"/></g>
+</svg>

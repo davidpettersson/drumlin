@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-64 -56 856 744" width="856" height="744">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .lifeline { fill: none; stroke: #22201c; stroke-width: 0.75; stroke-dasharray: 7 3; }
+.drumlin.pens .frame { fill: none; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .solid { fill: #22201c; stroke: none; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-64" y="-56" width="856" height="744" fill="#fff"/>
+<text x="-40" y="-20" class="title">Nested interrupt handling</text>
+<path d="M0 40 L0 664" class="lifeline"/>
+<path d="M176 40 L176 664" class="lifeline"/>
+<path d="M312 40 L312 664" class="lifeline"/>
+<path d="M472 40 L472 664" class="lifeline"/>
+<path d="M592 40 L592 664" class="lifeline"/>
+<path d="M720 40 L720 664" class="lifeline"/>
+<rect x="294" y="488" width="444" height="96" class="frame"/>
+<rect x="306" y="136" width="12" height="12" class="shape"/>
+<rect x="472" y="208" width="12" height="12" class="shape"/>
+<rect x="586" y="328" width="12" height="64" class="shape"/>
+<rect x="466" y="176" width="12" height="248" class="shape"/>
+<rect x="306" y="456" width="12" height="12" class="shape"/>
+<rect x="714" y="536" width="12" height="32" class="shape"/>
+<rect x="170" y="72" width="12" height="576" class="shape"/>
+<path d="M294 488 L342 488 L342 502 L334 510 L294 510 Z" class="shape fine"/>
+<text x="302" y="503" class="name" text-anchor="start">opt</text>
+<text x="350" y="502" class="small halo" text-anchor="start">[reschedule pending]</text>
+<rect x="-40" y="0" width="80" height="40" class="shape"/>
+<text x="0" y="24" class="name" text-anchor="middle">Timer</text>
+<rect x="128" y="0" width="96" height="40" class="shape"/>
+<text x="176" y="24" class="name" text-anchor="middle">CPU core</text>
+<rect x="256" y="0" width="112" height="40" class="shape"/>
+<text x="312" y="24" class="name" text-anchor="middle">Kernel entry</text>
+<rect x="424" y="0" width="96" height="40" class="shape"/>
+<text x="472" y="24" class="name" text-anchor="middle">UART ISR</text>
+<rect x="544" y="0" width="96" height="40" class="shape"/>
+<text x="592" y="24" class="name" text-anchor="middle">Timer ISR</text>
+<rect x="672" y="0" width="96" height="40" class="shape"/>
+<text x="720" y="24" class="name" text-anchor="middle">Scheduler</text>
+<path d="M160 264 L598 264 L608 274 L608 296 L160 296 Z" class="shape fine"/>
+<path d="M598 264 L598 274 L608 274" class="edge fine"/>
+<text x="172" y="283.5" class="small" text-anchor="start">Higher priority: the ISR is preempted.</text>
+<path d="M82 72 L170 72" class="edge"/>
+<path d="M160 76.5 L170 72 L160 67.5 Z" class="solid"/>
+<circle cx="82" cy="72" r="4" class="solid"/>
+<path d="M182 104 L312 104" class="edge"/>
+<path d="M302 108.5 L312 104 L302 99.5" class="edge head"/>
+<path d="M312 120 L344 120 L344 136 L318 136" class="edge"/>
+<path d="M328 131.5 L318 136 L328 140.5 Z" class="solid"/>
+<path d="M312 176 L466 176" class="edge"/>
+<path d="M456 180.5 L466 176 L456 171.5 Z" class="solid"/>
+<path d="M478 192 L510 192 L510 208 L484 208" class="edge"/>
+<path d="M494 203.5 L484 208 L494 212.5 Z" class="solid"/>
+<path d="M0 248 L170 248" class="edge"/>
+<path d="M160 252.5 L170 248 L160 243.5" class="edge head"/>
+<path d="M182 328 L586 328" class="edge"/>
+<path d="M576 332.5 L586 328 L576 323.5 Z" class="solid"/>
+<path d="M598 360 L720 360" class="edge"/>
+<path d="M710 364.5 L720 360 L710 355.5" class="edge head"/>
+<path d="M586 392 L182 392" class="edge dashed fine"/>
+<path d="M192 387.5 L182 392 L192 396.5" class="edge head fine"/>
+<path d="M466 424 L312 424" class="edge dashed fine"/>
+<path d="M322 419.5 L312 424 L322 428.5" class="edge head fine"/>
+<path d="M312 440 L344 440 L344 456 L318 456" class="edge"/>
+<path d="M328 451.5 L318 456 L328 460.5 Z" class="solid"/>
+<path d="M312 536 L714 536" class="edge"/>
+<path d="M704 540.5 L714 536 L704 531.5 Z" class="solid"/>
+<path d="M714 568 L312 568" class="edge dashed fine"/>
+<path d="M322 563.5 L312 568 L322 572.5" class="edge head fine"/>
+<path d="M312 616 L182 616" class="edge"/>
+<path d="M192 611.5 L182 616 L192 620.5" class="edge head"/>
+<path d="M170 648 L22 648" class="edge dashed fine"/>
+<path d="M32 643.5 L22 648 L32 652.5" class="edge head fine"/>
+<circle cx="18" cy="648" r="4" class="solid"/>
+<text x="124" y="67" class="small halo" text-anchor="middle">UART IRQ</text>
+<text x="247" y="99" class="small halo" text-anchor="middle">vector through IDT</text>
+<text x="350" y="131.5" class="small halo" text-anchor="start">save registers</text>
+<text x="389" y="171" class="small halo" text-anchor="middle">uart_isr()</text>
+<text x="516" y="203.5" class="small halo" text-anchor="start">read FIFO</text>
+<text x="85" y="243" class="small halo" text-anchor="middle">timer IRQ</text>
+<text x="244" y="323" class="small halo" text-anchor="middle">timer_isr()</text>
+<text x="659" y="355" class="small halo" text-anchor="middle">mark reschedule</text>
+<text x="535" y="387" class="small halo" text-anchor="middle">eoi</text>
+<text x="389" y="419" class="small halo" text-anchor="middle">eoi</text>
+<text x="350" y="451.5" class="small halo" text-anchor="start">check need_resched</text>
+<text x="386" y="531" class="small halo" text-anchor="middle">schedule()</text>
+<text x="656" y="563" class="small halo" text-anchor="middle">next task</text>
+<text x="247" y="611" class="small halo" text-anchor="middle">iret</text>
+<text x="99" y="643" class="small halo" text-anchor="middle">resumes interrupted task</text>
+</svg>

@@ -1,0 +1,14 @@
+diagram state "TCP connection"
+[*] --> Closed
+Closed --> Listen : passive open / create TCB
+Closed --> SynSent : active open / send SYN
+Listen --> SynRcvd : rcv SYN / send SYN+ACK
+SynSent --> Established : rcv SYN+ACK / send ACK
+SynRcvd --> Established : rcv ACK
+Established --> FinWait1 : close / send FIN
+Established --> CloseWait : rcv FIN / send ACK
+FinWait1 --> FinWait2 : rcv ACK
+FinWait2 --> TimeWait : rcv FIN / send ACK
+CloseWait --> LastAck : close / send FIN
+LastAck --> Closed : rcv ACK
+TimeWait --> Closed : timeout 2MSL

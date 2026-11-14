@@ -1,0 +1,15 @@
+[book]
+title = "drumlin"
+description = "Text-to-SVG UML diagrams with hand-drafted quality layout"
+language = "en"
+
+[preprocessor.drumlin]
+command = "mdbook-drumlin"
+
+[output.html]
+default-theme = "light"
+preferred-dark-theme = "navy"
+additional-css = ["theme/drumlin.css"]
+no-section-label = true
+site-url = "/drumlin/"
+git-repository-url = "https://github.com/davidpettersson/drumlin"

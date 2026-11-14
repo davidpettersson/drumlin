@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-64 -56 592 768" width="592" height="768">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .lifeline { fill: none; stroke: #22201c; stroke-width: 0.75; stroke-dasharray: 7 3; }
+.drumlin.pens .frame { fill: none; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .solid { fill: #22201c; stroke: none; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-64" y="-56" width="592" height="768" fill="#fff"/>
+<text x="-40" y="-20" class="title">TLS 1.3 handshake</text>
+<path d="M0 40 L0 688" class="lifeline"/>
+<path d="M272 40 L272 688" class="lifeline"/>
+<path d="M464 40 L464 688" class="lifeline"/>
+<rect x="-28" y="384" width="398.86" height="288" class="frame"/>
+<path d="M-28 584 L370.859 584" class="frame dashed"/>
+<rect x="272" y="104" width="12" height="12" class="shape"/>
+<rect x="266" y="72" width="12" height="72" class="shape"/>
+<rect x="458" y="336" width="12" height="32" class="shape"/>
+<path d="M-28 384 L20 384 L20 398 L12 406 L-28 406 Z" class="shape fine"/>
+<text x="-20" y="399" class="name" text-anchor="start">alt</text>
+<text x="280" y="398" class="small halo" text-anchor="start">[certificate valid]</text>
+<text x="28" y="598" class="small halo" text-anchor="start">[verification failed]</text>
+<rect x="-40" y="0" width="80" height="40" class="shape"/>
+<text x="0" y="24" class="name" text-anchor="middle">Client</text>
+<rect x="232" y="0" width="80" height="40" class="shape"/>
+<text x="272" y="24" class="name" text-anchor="middle">Server</text>
+<rect x="424" y="0" width="80" height="40" class="shape"/>
+<text x="464" y="24" class="name" text-anchor="middle">CA store</text>
+<path d="M-16 160 L278 160 L288 170 L288 208 L-16 208 Z" class="shape fine"/>
+<path d="M278 160 L278 170 L288 170" class="edge fine"/>
+<text x="-4" y="180" class="small" text-anchor="start">Encrypted from here on: EncryptedExtensions,</text>
+<text x="-4" y="195" class="small" text-anchor="start">Certificate, CertificateVerify, Finished</text>
+<path d="M-16 480 L278 480 L288 490 L288 512 L-16 512 Z" class="shape fine"/>
+<path d="M278 480 L278 490 L288 490" class="edge fine"/>
+<text x="-4" y="499.5" class="small" text-anchor="start">Application data, protected by traffic keys</text>
+<path d="M0 72 L266 72" class="edge"/>
+<path d="M256 76.5 L266 72 L256 67.5 Z" class="solid"/>
+<path d="M278 88 L310 88 L310 104 L284 104" class="edge"/>
+<path d="M294 99.5 L284 104 L294 108.5 Z" class="solid"/>
+<path d="M266 144 L0 144" class="edge dashed fine"/>
+<path d="M10 139.5 L0 144 L10 148.5" class="edge head fine"/>
+<path d="M272 240 L0 240" class="edge"/>
+<path d="M10 235.5 L0 240 L10 244.5" class="edge head"/>
+<path d="M272 272 L0 272" class="edge"/>
+<path d="M10 267.5 L0 272 L10 276.5" class="edge head"/>
+<path d="M272 304 L0 304" class="edge"/>
+<path d="M10 299.5 L0 304 L10 308.5" class="edge head"/>
+<path d="M0 336 L458 336" class="edge"/>
+<path d="M448 340.5 L458 336 L448 331.5 Z" class="solid"/>
+<path d="M458 368 L0 368" class="edge dashed fine"/>
+<path d="M10 363.5 L0 368 L10 372.5" class="edge head fine"/>
+<path d="M272 432 L0 432" class="edge"/>
+<path d="M10 427.5 L0 432 L10 436.5" class="edge head"/>
+<path d="M0 464 L272 464" class="edge"/>
+<path d="M262 468.5 L272 464 L262 459.5" class="edge head"/>
+<path d="M0 544 L272 544" class="edge"/>
+<path d="M262 548.5 L272 544 L262 539.5" class="edge head"/>
+<path d="M272 576 L0 576" class="edge"/>
+<path d="M10 571.5 L0 576 L10 580.5" class="edge head"/>
+<path d="M0 624 L272 624" class="edge"/>
+<path d="M262 628.5 L272 624 L262 619.5" class="edge head"/>
+<path d="M0 656 L108 656" class="edge"/>
+<path d="M98 660.5 L108 656 L98 651.5 Z" class="solid"/>
+<circle cx="112" cy="656" r="4" class="solid"/>
+<text x="133" y="67" class="small halo" text-anchor="middle">ClientHello(key_share, sni, supported_versions)</text>
+<text x="316" y="99.5" class="small halo" text-anchor="start">derive handshake secrets</text>
+<text x="133" y="139" class="small halo" text-anchor="middle">ServerHello(key_share)</text>
+<text x="136" y="235" class="small halo" text-anchor="middle">EncryptedExtensions</text>
+<text x="136" y="267" class="small halo" text-anchor="middle">Certificate</text>
+<text x="136" y="299" class="small halo" text-anchor="middle">CertificateVerify</text>
+<text x="130" y="331" class="small halo" text-anchor="middle">verify chain(certificate)</text>
+<text x="371" y="363" class="small halo" text-anchor="middle">ok</text>
+<text x="136" y="427" class="small halo" text-anchor="middle">Finished</text>
+<text x="136" y="459" class="small halo" text-anchor="middle">Finished</text>
+<text x="136" y="539" class="small halo" text-anchor="middle">HTTP request</text>
+<text x="136" y="571" class="small halo" text-anchor="middle">HTTP response</text>
+<text x="136" y="619" class="small halo" text-anchor="middle">alert(bad_certificate)</text>
+<text x="51" y="651" class="small halo" text-anchor="middle">close connection</text>
+</svg>

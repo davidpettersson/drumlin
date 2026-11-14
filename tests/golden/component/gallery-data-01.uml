@@ -1,0 +1,15 @@
+diagram component "Nightly ETL"
+direction right
+
+component "Source Databases" as src <<database>>
+component Extract
+component Transform
+component Load
+component Warehouse <<database>>
+component "Data Quality" as dq
+
+src --> Extract
+Extract --> Transform : parquet
+Transform --> Load
+Load --> Warehouse
+Transform ..> dq : assertions

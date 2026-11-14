@@ -1,0 +1,4 @@
+component App {
+  component Controller { requires IRepo }
+  component Repo { provides IRepo }
+}

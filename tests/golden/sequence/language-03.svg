@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-64 -56 309.6 312" width="309.6" height="312">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .lifeline { fill: none; stroke: #22201c; stroke-width: 0.75; stroke-dasharray: 7 3; }
+.drumlin.pens .frame { fill: none; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .solid { fill: #22201c; stroke: none; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-64" y="-56" width="309.6" height="312" fill="#fff"/>
+<text x="-40" y="-20" class="title">Kinds of message</text>
+<path d="M0 40 L0 232" class="lifeline"/>
+<path d="M104 40 L104 232" class="lifeline"/>
+<rect x="98" y="168" width="12" height="12" class="shape"/>
+<rect x="-40" y="0" width="80" height="40" class="shape"/>
+<text x="0" y="24" class="name" text-anchor="middle">Client</text>
+<rect x="64" y="0" width="80" height="40" class="shape"/>
+<text x="104" y="24" class="name" text-anchor="middle">Server</text>
+<path d="M0 72 L104 72" class="edge"/>
+<path d="M94 76.5 L104 72 L94 67.5 Z" class="solid"/>
+<path d="M104 104 L0 104" class="edge dashed fine"/>
+<path d="M10 99.5 L0 104 L10 108.5" class="edge head fine"/>
+<path d="M0 136 L104 136" class="edge"/>
+<path d="M94 140.5 L104 136 L94 131.5" class="edge head"/>
+<path d="M104 152 L136 152 L136 168 L110 168" class="edge"/>
+<path d="M120 163.5 L110 168 L120 172.5 Z" class="solid"/>
+<path d="M104 200 L130 200 L130 216 L104 216" class="edge"/>
+<path d="M114 211.5 L104 216 L114 220.5" class="edge head"/>
+<text x="52" y="67" class="small halo" text-anchor="middle">request()</text>
+<text x="52" y="99" class="small halo" text-anchor="middle">response</text>
+<text x="52" y="131" class="small halo" text-anchor="middle">fire and forget</text>
+<text x="142" y="163.5" class="small halo" text-anchor="start">log the request</text>
+<text x="136" y="211.5" class="small halo" text-anchor="start">schedule cleanup</text>
+</svg>

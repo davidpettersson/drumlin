@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -56 960 432" width="960" height="432">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-24" y="-56" width="960" height="432" fill="#fff"/>
+<text x="0" y="-20" class="title">API gateway</text>
+<rect x="0" y="144" width="128" height="64" class="shape"/>
+<rect x="107" y="152" width="13" height="16" class="icon"/>
+<rect x="104" y="155" width="6" height="3.5" class="icon"/>
+<rect x="104" y="161.5" width="6" height="3.5" class="icon"/>
+<text x="64" y="180.5" class="name" text-anchor="middle">Mobile App</text>
+<rect x="0" y="248" width="128" height="64" class="shape"/>
+<rect x="107" y="256" width="13" height="16" class="icon"/>
+<rect x="104" y="259" width="6" height="3.5" class="icon"/>
+<rect x="104" y="265.5" width="6" height="3.5" class="icon"/>
+<text x="64" y="284.5" class="name" text-anchor="middle">Web App</text>
+<rect x="328" y="152" width="128" height="64" class="shape"/>
+<rect x="435" y="160" width="13" height="16" class="icon"/>
+<rect x="432" y="163" width="6" height="3.5" class="icon"/>
+<rect x="432" y="169.5" width="6" height="3.5" class="icon"/>
+<text x="392" y="188.5" class="name" text-anchor="middle">Gateway</text>
+<rect x="736" y="0" width="77.33" height="24" class="shape heavy"/>
+<rect x="736" y="24" width="176" height="328" class="shape heavy"/>
+<text x="748" y="16.5" class="name" text-anchor="start">Services</text>
+<rect x="760" y="48" width="128" height="64" class="shape"/>
+<rect x="867" y="56" width="13" height="16" class="icon"/>
+<rect x="864" y="59" width="6" height="3.5" class="icon"/>
+<rect x="864" y="65.5" width="6" height="3.5" class="icon"/>
+<text x="824" y="84.5" class="name" text-anchor="middle">Auth</text>
+<rect x="760" y="152" width="128" height="64" class="shape"/>
+<rect x="867" y="160" width="13" height="16" class="icon"/>
+<rect x="864" y="163" width="6" height="3.5" class="icon"/>
+<rect x="864" y="169.5" width="6" height="3.5" class="icon"/>
+<text x="824" y="188.5" class="name" text-anchor="middle">Catalog</text>
+<rect x="760" y="256" width="128" height="64" class="shape"/>
+<rect x="867" y="264" width="13" height="16" class="icon"/>
+<rect x="864" y="267" width="6" height="3.5" class="icon"/>
+<rect x="864" y="273.5" width="6" height="3.5" class="icon"/>
+<text x="824" y="292.5" class="name" text-anchor="middle">Checkout</text>
+<path d="M392 152 L392 80 L544 80" class="edge"/>
+<path d="M605 80 L760 80" class="edge"/>
+<path d="M552 80 L595 80" class="edge dashed fine"/>
+<path d="M585 84.5 L595 80 L585 75.5" class="edge head fine"/>
+<path d="M552 88 A8 8 0 0 1 552 72" class="edge"/>
+<circle cx="600" cy="80" r="5" class="shape"/>
+<text x="576" y="67" class="small" text-anchor="middle">IAuth</text>
+<path d="M456 184 L576 184" class="edge"/>
+<path d="M637 184 L760 184" class="edge"/>
+<path d="M584 184 L627 184" class="edge dashed fine"/>
+<path d="M617 188.5 L627 184 L617 179.5" class="edge head fine"/>
+<path d="M584 192 A8 8 0 0 1 584 176" class="edge"/>
+<circle cx="632" cy="184" r="5" class="shape"/>
+<text x="608" y="171" class="small" text-anchor="middle">ICatalog</text>
+<path d="M392 216 L392 288 L544 288" class="edge"/>
+<path d="M605 288 L760 288" class="edge"/>
+<path d="M552 288 L595 288" class="edge dashed fine"/>
+<path d="M585 292.5 L595 288 L585 283.5" class="edge head fine"/>
+<path d="M552 296 A8 8 0 0 1 552 280" class="edge"/>
+<circle cx="600" cy="288" r="5" class="shape"/>
+<text x="576" y="275" class="small" text-anchor="middle">ICheckout</text>
+<path d="M128 176 L196 176" class="edge"/>
+<path d="M257 176 L328 176" class="edge"/>
+<path d="M204 176 L247 176" class="edge dashed fine"/>
+<path d="M237 180.5 L247 176 L237 171.5" class="edge head fine"/>
+<path d="M204 184 A8 8 0 0 1 204 168" class="edge"/>
+<circle cx="252" cy="176" r="5" class="shape"/>
+<text x="228" y="163" class="small" text-anchor="middle">IPublicApi</text>
+<path d="M128 280 L148 280" class="edge"/>
+<path d="M209 280 L232 280 L232 200 L328 200" class="edge"/>
+<path d="M156 280 L199 280" class="edge dashed fine"/>
+<path d="M189 284.5 L199 280 L189 275.5" class="edge head fine"/>
+<path d="M156 288 A8 8 0 0 1 156 272" class="edge"/>
+<circle cx="204" cy="280" r="5" class="shape"/>
+<text x="180" y="267" class="small" text-anchor="middle">IPublicApi</text>
+</svg>

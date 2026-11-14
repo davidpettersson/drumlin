@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-72 -56 586.83 640" width="586.83" height="640">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .lifeline { fill: none; stroke: #22201c; stroke-width: 0.75; stroke-dasharray: 7 3; }
+.drumlin.pens .frame { fill: none; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .solid { fill: #22201c; stroke: none; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-72" y="-56" width="586.83" height="640" fill="#fff"/>
+<text x="-48" y="-20" class="title">RPC with retry</text>
+<path d="M0 40 L0 560" class="lifeline"/>
+<path d="M224 40 L224 560" class="lifeline"/>
+<path d="M344 40 L344 560" class="lifeline"/>
+<rect x="-18" y="248" width="260" height="64" class="frame"/>
+<rect x="-30" y="184" width="508.83" height="240" class="frame"/>
+<path d="M-30 320 L478.834 320" class="frame dashed"/>
+<rect x="-42" y="56" width="532.83" height="392" class="frame"/>
+<rect x="218" y="104" width="12" height="32" class="shape"/>
+<rect x="-6" y="368" width="12" height="12" class="shape"/>
+<rect x="338" y="168" width="12" height="264" class="shape"/>
+<path d="M-18 248 L46 248 L46 262 L38 270 L-18 270 Z" class="shape fine"/>
+<text x="-10" y="263" class="name" text-anchor="start">break</text>
+<text x="54" y="262" class="small halo" text-anchor="start">[success]</text>
+<path d="M-30 184 L18 184 L18 198 L10 206 L-30 206 Z" class="shape fine"/>
+<text x="-22" y="199" class="name" text-anchor="start">alt</text>
+<text x="358" y="198" class="small halo" text-anchor="start">[reply before deadline]</text>
+<text x="26" y="334" class="small halo" text-anchor="start">[deadline exceeded]</text>
+<path d="M-42 56 L46 56 L46 70 L38 78 L-42 78 Z" class="shape fine"/>
+<text x="-34" y="71" class="name" text-anchor="start">loop(1,3)</text>
+<rect x="-48" y="0" width="96" height="40" class="shape"/>
+<text x="0" y="24" class="name" text-anchor="middle">Client stub</text>
+<rect x="160" y="0" width="128" height="40" class="shape"/>
+<text x="224" y="24" class="name" text-anchor="middle">Circuit breaker</text>
+<rect x="304" y="0" width="80" height="40" class="shape"/>
+<text x="344" y="24" class="name" text-anchor="middle">Service</text>
+<path d="M8 496 L190 496 L200 506 L200 544 L8 544 Z" class="shape fine"/>
+<path d="M190 496 L190 506 L200 506" class="edge fine"/>
+<text x="20" y="516" class="small" text-anchor="start">The stub surfaces the last error</text>
+<text x="20" y="531" class="small" text-anchor="start">once retries run out.</text>
+<path d="M0 104 L218 104" class="edge"/>
+<path d="M208 108.5 L218 104 L208 99.5 Z" class="solid"/>
+<path d="M218 136 L0 136" class="edge dashed fine"/>
+<path d="M10 131.5 L0 136 L10 140.5" class="edge head fine"/>
+<path d="M0 168 L338 168" class="edge"/>
+<path d="M328 172.5 L338 168 L328 163.5 Z" class="solid"/>
+<path d="M338 232 L0 232" class="edge dashed fine"/>
+<path d="M10 227.5 L0 232 L10 236.5" class="edge head fine"/>
+<path d="M0 296 L224 296" class="edge"/>
+<path d="M214 300.5 L224 296 L214 291.5" class="edge head"/>
+<path d="M0 352 L32 352 L32 368 L6 368" class="edge"/>
+<path d="M16 363.5 L6 368 L16 372.5 Z" class="solid"/>
+<path d="M0 408 L224 408" class="edge"/>
+<path d="M214 412.5 L224 408 L214 403.5" class="edge head"/>
+<path d="M0 464 L26 464 L26 480 L0 480" class="edge dashed fine"/>
+<path d="M10 475.5 L0 480 L10 484.5" class="edge head fine"/>
+<text x="109" y="99" class="small halo" text-anchor="middle">allow?</text>
+<text x="109" y="131" class="small halo" text-anchor="middle">true</text>
+<text x="109" y="163" class="small halo" text-anchor="middle">GetOrder(id, deadline=200ms)</text>
+<text x="284" y="227" class="small halo" text-anchor="middle">order</text>
+<text x="112" y="291" class="small halo" text-anchor="middle">record success</text>
+<text x="38" y="363.5" class="small halo" text-anchor="start">sleep(backoff with jitter)</text>
+<text x="112" y="403" class="small halo" text-anchor="middle">record failure</text>
+<text x="32" y="475.5" class="small halo" text-anchor="start">surface error to caller</text>
+</svg>

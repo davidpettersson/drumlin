@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-100 -56 350 264" width="350" height="264">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .lifeline { fill: none; stroke: #22201c; stroke-width: 0.75; stroke-dasharray: 7 3; }
+.drumlin.pens .frame { fill: none; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .solid { fill: #22201c; stroke: none; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-100" y="-56" width="350" height="264" fill="#fff"/>
+<text x="-76" y="-20" class="title">Boundaries</text>
+<path d="M0 40 L0 184" class="lifeline"/>
+<path d="M96 40 L96 184" class="lifeline"/>
+<rect x="90" y="104" width="12" height="64" class="shape"/>
+<rect x="-40" y="0" width="80" height="40" class="shape"/>
+<text x="0" y="24" class="name" text-anchor="middle">Bus</text>
+<rect x="56" y="0" width="80" height="40" class="shape"/>
+<text x="96" y="24" class="name" text-anchor="middle">Handler</text>
+<path d="M-72 72 L0 72" class="edge"/>
+<path d="M-10 76.5 L0 72 L-10 67.5 Z" class="solid"/>
+<circle cx="-72" cy="72" r="4" class="solid"/>
+<path d="M0 104 L90 104" class="edge"/>
+<path d="M80 108.5 L90 104 L80 99.5 Z" class="solid"/>
+<path d="M102 136 L218 136" class="edge"/>
+<path d="M208 140.5 L218 136 L208 131.5 Z" class="solid"/>
+<circle cx="222" cy="136" r="4" class="solid"/>
+<path d="M90 168 L0 168" class="edge dashed fine"/>
+<path d="M10 163.5 L0 168 L10 172.5" class="edge head fine"/>
+<text x="-38" y="67" class="small halo" text-anchor="middle">interrupt</text>
+<text x="45" y="99" class="small halo" text-anchor="middle">dispatch()</text>
+<text x="157" y="131" class="small halo" text-anchor="middle">retransmit (no ack)</text>
+<text x="45" y="163" class="small halo" text-anchor="middle">handled</text>
+</svg>

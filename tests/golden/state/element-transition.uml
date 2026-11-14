@@ -1,0 +1,6 @@
+diagram state "Transitions"
+direction right
+[*] --> Waiting
+Waiting --> Armed : arm [ready] / log()
+Armed --> Armed : tick / count()
+Armed --> [*] : done

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -56 728 248" width="728" height="248">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-24" y="-56" width="728" height="248" fill="#fff"/>
+<text x="0" y="-20" class="title">Agent feedback loop</text>
+<rect x="552" y="0" width="128" height="64" class="shape"/>
+<rect x="659" y="8" width="13" height="16" class="icon"/>
+<rect x="656" y="11" width="6" height="3.5" class="icon"/>
+<rect x="656" y="17.5" width="6" height="3.5" class="icon"/>
+<text x="616" y="36.5" class="name" text-anchor="middle">Agent</text>
+<rect x="296" y="0" width="144" height="64" class="shape"/>
+<rect x="419" y="8" width="13" height="16" class="icon"/>
+<rect x="416" y="11" width="6" height="3.5" class="icon"/>
+<rect x="416" y="17.5" width="6" height="3.5" class="icon"/>
+<text x="368" y="36.5" class="name" text-anchor="middle">drumlin check</text>
+<rect x="0" y="0" width="160" height="64" class="shape"/>
+<rect x="139" y="8" width="13" height="16" class="icon"/>
+<rect x="136" y="11" width="6" height="3.5" class="icon"/>
+<rect x="136" y="17.5" width="6" height="3.5" class="icon"/>
+<text x="80" y="36.5" class="name" text-anchor="middle">drumlin render</text>
+<rect x="304" y="104" width="128" height="64" class="shape"/>
+<rect x="411" y="112" width="13" height="16" class="icon"/>
+<rect x="408" y="115" width="6" height="3.5" class="icon"/>
+<rect x="408" y="121.5" width="6" height="3.5" class="icon"/>
+<text x="368" y="131.5" class="small" text-anchor="middle">«human»</text>
+<text x="368" y="148.5" class="name" text-anchor="middle">Reviewer</text>
+<path d="M80 64 L80 136 L304 136" class="edge"/>
+<path d="M294 140.5 L304 136 L294 131.5" class="edge head"/>
+<path d="M160 32 L196 32" class="edge"/>
+<path d="M257 32 L296 32" class="edge"/>
+<path d="M204 32 L247 32" class="edge dashed fine"/>
+<path d="M237 36.5 L247 32 L237 27.5" class="edge head fine"/>
+<path d="M204 40 A8 8 0 0 1 204 24" class="edge"/>
+<circle cx="252" cy="32" r="5" class="shape"/>
+<text x="228" y="19" class="small" text-anchor="middle">IDiagnostics</text>
+<path d="M440 32 L464 32" class="edge"/>
+<path d="M525 32 L552 32" class="edge"/>
+<path d="M472 32 L515 32" class="edge dashed fine"/>
+<path d="M505 36.5 L515 32 L505 27.5" class="edge head fine"/>
+<path d="M472 40 A8 8 0 0 1 472 24" class="edge"/>
+<circle cx="520" cy="32" r="5" class="shape"/>
+<text x="496" y="19" class="small" text-anchor="middle">IModel</text>
+<text x="192" y="129" class="small halo" text-anchor="middle">SVG</text>
+</svg>

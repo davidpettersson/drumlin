@@ -1,0 +1,22 @@
+diagram component "RTOS layers"
+direction down
+
+package "Middleware" as mid {
+  component "File System" as fs
+  component "TCP/IP" as tcp
+}
+
+package "Kernel" as kernel {
+  component Tasks
+  component Queues
+  component Timers
+  Tasks --> Queues
+  Tasks --> Timers
+}
+
+component HAL <<port layer>>
+
+fs --> Tasks
+tcp --> Tasks
+Queues --> HAL
+Timers --> HAL

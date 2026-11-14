@@ -1,0 +1,10 @@
+diagram package "Dependency cycle"
+
+package A
+package B
+package C
+
+A ..> B
+B ..> C : <<use>>
+C ..> A : <<use>>
+A .. C

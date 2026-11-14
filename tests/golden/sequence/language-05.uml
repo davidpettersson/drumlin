@@ -1,0 +1,9 @@
+diagram sequence "Worker lifetime"
+
+participant Pool
+Pool -> new "Worker" as w : spawn()
+Pool -> w : run(job) {
+  return result
+}
+Pool ->> w : stop
+destroy w

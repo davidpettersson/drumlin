@@ -1,0 +1,20 @@
+diagram component "Battery sensor node"
+direction down
+
+component "Sampling Task" as sampler {
+  requires II2c
+  provides ISamples
+}
+
+component "I2C Driver" as i2c { provides II2c }
+
+component "Radio Task" as radio {
+  requires ISamples
+  requires IRadio
+}
+
+component "LoRa Driver" as lora { provides IRadio }
+component "Power Manager" as power
+
+power ..> sampler : wake
+power ..> radio : wake

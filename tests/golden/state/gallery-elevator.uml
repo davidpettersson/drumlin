@@ -1,0 +1,24 @@
+diagram state "Elevator controller"
+[*] --> Idle
+Idle --> Operating : call received / plan route
+Operating --> Idle : queue empty
+Operating --> Fault : motor overcurrent / cut power
+Fault --> Idle : technician reset
+state Operating {
+  entry / release brake
+  exit / engage brake
+  region "motion" {
+    [*] --> Moving
+    Moving --> Stopping : near target floor
+    Stopping --> Levelled : speed zero
+    Levelled --> Moving : next call
+  }
+  region "doors" {
+    [*] --> Closed
+    Closed --> Opening : levelled at floor
+    Opening --> Open : fully open
+    Open --> Closing : door timer
+    Closing --> Closed : fully closed
+    Closing --> Opening : obstruction
+  }
+}

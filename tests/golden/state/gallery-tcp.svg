@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -56 547.86 976" width="547.86" height="976">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .solid { fill: #22201c; stroke: none; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-24" y="-56" width="547.86" height="976" fill="#fff"/>
+<text x="0" y="-20" class="title">TCP connection</text>
+<rect x="160" y="592" width="96" height="48" class="shape" rx="10"/>
+<text x="208" y="620.5" class="name" text-anchor="middle">CloseWait</text>
+<rect x="0" y="80" width="144" height="48" class="shape" rx="10"/>
+<text x="72" y="108.5" class="name" text-anchor="middle">Closed</text>
+<rect x="16" y="464" width="112" height="48" class="shape" rx="10"/>
+<text x="72" y="492.5" class="name" text-anchor="middle">Established</text>
+<rect x="24" y="592" width="96" height="48" class="shape" rx="10"/>
+<text x="72" y="620.5" class="name" text-anchor="middle">FinWait1</text>
+<rect x="24" y="720" width="96" height="48" class="shape" rx="10"/>
+<text x="72" y="748.5" class="name" text-anchor="middle">FinWait2</text>
+<rect x="160" y="720" width="96" height="48" class="shape" rx="10"/>
+<text x="208" y="748.5" class="name" text-anchor="middle">LastAck</text>
+<rect x="24" y="208" width="96" height="48" class="shape" rx="10"/>
+<text x="72" y="236.5" class="name" text-anchor="middle">Listen</text>
+<rect x="24" y="336" width="96" height="48" class="shape" rx="10"/>
+<text x="72" y="364.5" class="name" text-anchor="middle">SynRcvd</text>
+<rect x="176" y="208" width="96" height="48" class="shape" rx="10"/>
+<text x="224" y="236.5" class="name" text-anchor="middle">SynSent</text>
+<rect x="24" y="848" width="96" height="48" class="shape" rx="10"/>
+<text x="72" y="876.5" class="name" text-anchor="middle">TimeWait</text>
+<circle cx="72" cy="8" r="8" class="solid"/>
+<path d="M72 16 L72 80" class="edge"/>
+<path d="M67.5 70 L72 80 L76.5 70" class="edge head"/>
+<path d="M48 128 L48 208" class="edge"/>
+<path d="M43.5 198 L48 208 L52.5 198" class="edge head"/>
+<path d="M80 128 L80 152 L216 152 L216 208" class="edge"/>
+<path d="M211.5 198 L216 208 L220.5 198" class="edge head"/>
+<path d="M72 256 L72 336" class="edge"/>
+<path d="M67.5 326 L72 336 L76.5 326" class="edge head"/>
+<path d="M240 256 L240 488 L128 488" class="edge"/>
+<path d="M138 483.5 L128 488 L138 492.5" class="edge head"/>
+<path d="M72 384 L72 464" class="edge"/>
+<path d="M67.5 454 L72 464 L76.5 454" class="edge head"/>
+<path d="M72 512 L72 592" class="edge"/>
+<path d="M67.5 582 L72 592 L76.5 582" class="edge head"/>
+<path d="M112 512 L112 536 L192 536 L192 592" class="edge"/>
+<path d="M187.5 582 L192 592 L196.5 582" class="edge head"/>
+<path d="M72 640 L72 720" class="edge"/>
+<path d="M67.5 710 L72 720 L76.5 710" class="edge head"/>
+<path d="M72 768 L72 848" class="edge"/>
+<path d="M67.5 838 L72 848 L76.5 838" class="edge head"/>
+<path d="M208 640 L208 720" class="edge"/>
+<path d="M203.5 710 L208 720 L212.5 710" class="edge head"/>
+<path d="M256 744 L344 744 L344 360 L400 360 L400 144 L104 144 L104 128" class="edge"/>
+<path d="M108.5 138 L104 128 L99.5 138" class="edge head"/>
+<path d="M120 872 L424 872 L424 104 L144 104" class="edge"/>
+<path d="M154 99.5 L144 104 L154 108.5" class="edge head"/>
+<text x="56" y="171" class="small" text-anchor="start">passive open / create TCB</text>
+<text x="224" y="171" class="small" text-anchor="start">active open / send SYN</text>
+<text x="80" y="299" class="small" text-anchor="start">rcv SYN / send SYN+ACK</text>
+<text x="248" y="299" class="small" text-anchor="start">rcv SYN+ACK / send ACK</text>
+<text x="80" y="427" class="small" text-anchor="start">rcv ACK</text>
+<text x="80" y="555" class="small" text-anchor="start">close / send FIN</text>
+<text x="200" y="555" class="small" text-anchor="start">rcv FIN / send ACK</text>
+<text x="80" y="683" class="small" text-anchor="start">rcv ACK</text>
+<text x="80" y="811" class="small" text-anchor="start">rcv FIN / send ACK</text>
+<text x="216" y="683" class="small" text-anchor="start">close / send FIN</text>
+<text x="352" y="427" class="small" text-anchor="start">rcv ACK</text>
+<text x="432" y="427" class="small" text-anchor="start">timeout 2MSL</text>
+</svg>

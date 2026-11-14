@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -56 416 688" width="416" height="688">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-24" y="-56" width="416" height="688" fill="#fff"/>
+<text x="0" y="-20" class="title">RTOS layers</text>
+<rect x="0" y="0" width="95.11" height="24" class="shape heavy"/>
+<rect x="0" y="24" width="368" height="120" class="shape heavy"/>
+<text x="12" y="16.5" class="name" text-anchor="start">Middleware</text>
+<rect x="24" y="48" width="144" height="64" class="shape"/>
+<rect x="147" y="56" width="13" height="16" class="icon"/>
+<rect x="144" y="59" width="6" height="3.5" class="icon"/>
+<rect x="144" y="65.5" width="6" height="3.5" class="icon"/>
+<text x="96" y="84.5" class="name" text-anchor="middle">File System</text>
+<rect x="208" y="48" width="128" height="64" class="shape"/>
+<rect x="315" y="56" width="13" height="16" class="icon"/>
+<rect x="312" y="59" width="6" height="3.5" class="icon"/>
+<rect x="312" y="65.5" width="6" height="3.5" class="icon"/>
+<text x="272" y="84.5" class="name" text-anchor="middle">TCP/IP</text>
+<rect x="8" y="208" width="64.2" height="24" class="shape heavy"/>
+<rect x="8" y="232" width="352" height="248" class="shape heavy"/>
+<text x="20" y="224.5" class="name" text-anchor="start">Kernel</text>
+<rect x="120" y="256" width="128" height="64" class="shape"/>
+<rect x="227" y="264" width="13" height="16" class="icon"/>
+<rect x="224" y="267" width="6" height="3.5" class="icon"/>
+<rect x="224" y="273.5" width="6" height="3.5" class="icon"/>
+<text x="184" y="292.5" class="name" text-anchor="middle">Tasks</text>
+<rect x="32" y="384" width="128" height="64" class="shape"/>
+<rect x="139" y="392" width="13" height="16" class="icon"/>
+<rect x="136" y="395" width="6" height="3.5" class="icon"/>
+<rect x="136" y="401.5" width="6" height="3.5" class="icon"/>
+<text x="96" y="420.5" class="name" text-anchor="middle">Queues</text>
+<rect x="208" y="384" width="128" height="64" class="shape"/>
+<rect x="315" y="392" width="13" height="16" class="icon"/>
+<rect x="312" y="395" width="6" height="3.5" class="icon"/>
+<rect x="312" y="401.5" width="6" height="3.5" class="icon"/>
+<text x="272" y="420.5" class="name" text-anchor="middle">Timers</text>
+<rect x="120" y="544" width="128" height="64" class="shape"/>
+<rect x="227" y="552" width="13" height="16" class="icon"/>
+<rect x="224" y="555" width="6" height="3.5" class="icon"/>
+<rect x="224" y="561.5" width="6" height="3.5" class="icon"/>
+<text x="184" y="571.5" class="small" text-anchor="middle">«port layer»</text>
+<text x="184" y="588.5" class="name" text-anchor="middle">HAL</text>
+<path d="M120 288 L96 288 L96 384" class="edge"/>
+<path d="M91.5 374 L96 384 L100.5 374" class="edge head"/>
+<path d="M248 288 L272 288 L272 384" class="edge"/>
+<path d="M267.5 374 L272 384 L276.5 374" class="edge head"/>
+<path d="M96 112 L96 272 L120 272" class="edge"/>
+<path d="M110 276.5 L120 272 L110 267.5" class="edge head"/>
+<path d="M272 112 L272 272 L248 272" class="edge"/>
+<path d="M258 267.5 L248 272 L258 276.5" class="edge head"/>
+<path d="M96 448 L96 576 L120 576" class="edge"/>
+<path d="M110 580.5 L120 576 L110 571.5" class="edge head"/>
+<path d="M272 448 L272 576 L248 576" class="edge"/>
+<path d="M258 571.5 L248 576 L258 580.5" class="edge head"/>
+</svg>

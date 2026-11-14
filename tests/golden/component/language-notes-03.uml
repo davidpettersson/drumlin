@@ -1,0 +1,5 @@
+component Reader
+component Writer
+Reader --> Writer : wakes
+note Reader: Lock-free. May retry.
+note Writer: Single owner only.

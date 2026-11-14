@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -56 288 696" width="288" height="696">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .solid { fill: #22201c; stroke: none; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-24" y="-56" width="288" height="696" fill="#fff"/>
+<text x="0" y="-20" class="title">Loops</text>
+<path d="M88 272 L88 288 L16 288 L16 64 L72 64" class="edge"/>
+<path d="M62 68.5 L72 64 L62 59.5" class="edge head"/>
+<path d="M88 136 L88 176" class="edge"/>
+<path d="M83.5 166 L88 176 L92.5 166" class="edge head"/>
+<path d="M88 80 L88 104" class="edge"/>
+<path d="M83.5 94 L88 104 L92.5 94" class="edge head"/>
+<path d="M88 208 L88 240" class="edge"/>
+<path d="M83.5 230 L88 240 L92.5 230" class="edge head"/>
+<path d="M88 16 L88 48" class="edge"/>
+<path d="M83.5 38 L88 48 L92.5 38" class="edge head"/>
+<path d="M72 544 L0 544 L0 352 L72 352" class="edge"/>
+<path d="M62 356.5 L72 352 L62 347.5" class="edge head"/>
+<path d="M88 368 L88 400" class="edge"/>
+<path d="M83.5 390 L88 400 L92.5 390" class="edge head"/>
+<path d="M88 496 L88 528" class="edge"/>
+<path d="M83.5 518 L88 528 L92.5 518" class="edge head"/>
+<path d="M88 432 L88 464" class="edge"/>
+<path d="M83.5 454 L88 464 L92.5 454" class="edge head"/>
+<path d="M104 120 L240 120 L240 304 L88 304 L88 336" class="edge"/>
+<path d="M83.5 326 L88 336 L92.5 326" class="edge head"/>
+<path d="M88 560 L88 600" class="edge"/>
+<path d="M83.5 590 L88 600 L92.5 590" class="edge head"/>
+<circle cx="88" cy="8" r="8" class="solid"/>
+<path d="M88 48 L104 64 L88 80 L72 64 Z" class="shape"/>
+<path d="M88 104 L104 120 L88 136 L72 120 Z" class="shape"/>
+<rect x="40" y="176" width="96" height="32" class="shape" rx="10"/>
+<text x="88" y="196" class="name" text-anchor="middle">Pop task</text>
+<rect x="40" y="240" width="96" height="32" class="shape" rx="10"/>
+<text x="88" y="260" class="name" text-anchor="middle">Run task</text>
+<path d="M88 336 L104 352 L88 368 L72 352 Z" class="shape"/>
+<path d="M88 528 L104 544 L88 560 L72 544 Z" class="shape"/>
+<rect x="32" y="400" width="112" height="32" class="shape" rx="10"/>
+<text x="88" y="420" class="name" text-anchor="middle">Read block</text>
+<rect x="32" y="464" width="112" height="32" class="shape" rx="10"/>
+<text x="88" y="484" class="name" text-anchor="middle">Verify CRC</text>
+<circle cx="88" cy="608" r="8" class="shape"/>
+<circle cx="88" cy="608" r="4.5" class="solid"/>
+<text x="94" y="151" class="small" text-anchor="start">[queue not empty]</text>
+<text x="110" y="112" class="small" text-anchor="start">[else]</text>
+<text x="94" y="575" class="small" text-anchor="start">[CRC ok]</text>
+<text x="39" y="536" class="small" text-anchor="start">[else]</text>
+</svg>

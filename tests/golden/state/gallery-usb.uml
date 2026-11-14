@@ -1,0 +1,16 @@
+diagram state "USB device"
+[*] --> Attached
+Attached --> Powered : hub configured
+Powered --> Default : bus reset
+Default --> Address : set address
+Address --> Configured : set configuration [config != 0]
+Configured --> Address : set configuration [config == 0]
+Configured --> Suspended : bus idle 3 ms
+Suspended --> Configured : bus activity
+Powered --> Attached : hub deconfigured
+Configured --> Default : bus reset
+state Configured {
+  entry / enable endpoints
+  exit / disable endpoints
+  SOF / update frame counter
+}

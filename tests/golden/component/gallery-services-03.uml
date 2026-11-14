@@ -1,0 +1,10 @@
+diagram component "Cache-aside read"
+direction right
+
+component Service
+component Redis <<cache>>
+component Postgres <<database>>
+
+Service --> Redis : 1. get
+Service --> Postgres : 2. on miss
+Service ..> Redis : 3. set, ttl 60s

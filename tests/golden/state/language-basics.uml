@@ -1,0 +1,9 @@
+diagram state "Door"
+[*] --> Closed
+Closed --> Opening : open [unlocked] / start motor
+Opening --> Open : fully open / stop motor
+Open --> Closing : close
+Closing --> Closed : fully closed
+Closing --> Opening : obstruction / reverse motor
+Closed --> Locked : lock
+Locked --> Closed : unlock [valid code]

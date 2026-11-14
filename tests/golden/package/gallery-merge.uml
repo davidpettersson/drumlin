@@ -1,0 +1,13 @@
+diagram package "Package merge"
+
+package P { class A; class B }
+package Q { class C }
+package R { class D }
+package S
+package T
+
+R ..> P : <<merge>>
+R ..> Q : <<merge>>
+S ..> Q : <<merge>>
+T ..> R : <<merge>>
+T ..> S : <<merge>>

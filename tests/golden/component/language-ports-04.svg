@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-18 -44 229.01 153" width="229.01" height="153">
+<style>
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens .title { font-size: 16px; font-weight: 600; }
+.drumlin.pens .name { font-size: 13px; font-weight: 600; }
+.drumlin.pens .italic { font-style: italic; }
+.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
+.drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
+.drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
+.drumlin.pens .head { stroke-linejoin: miter; stroke-miterlimit: 4; }
+.drumlin.pens .dashed { stroke-dasharray: 7 3; }
+.drumlin.pens .heavy { stroke-width: 1.75; }
+.drumlin.pens .fine { stroke-width: 0.75; }
+</style>
+<rect x="-18" y="-44" width="229.01" height="153" fill="#fff"/>
+
+<rect x="34.95" y="0" width="128" height="64" class="shape"/>
+<rect x="141.95" y="8" width="13" height="16" class="icon"/>
+<rect x="138.95" y="11" width="6" height="3.5" class="icon"/>
+<rect x="138.95" y="17.5" width="6" height="3.5" class="icon"/>
+<text x="98.95" y="36.5" class="name" text-anchor="middle">Board</text>
+<rect x="90" y="-6" width="12" height="12" class="shape"/>
+<text x="106" y="-9" class="small" text-anchor="start">power</text>
+<rect x="90" y="58" width="12" height="12" class="shape"/>
+<text x="106" y="82" class="small" text-anchor="start">ground</text>
+<rect x="28.95" y="26" width="12" height="12" class="shape"/>
+<text x="24.95" y="23" class="small" text-anchor="end">uart</text>
+<rect x="156.95" y="26" width="12" height="12" class="shape"/>
+<text x="172.95" y="23" class="small" text-anchor="start">spi</text>
+</svg>
