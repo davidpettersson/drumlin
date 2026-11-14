@@ -105,19 +105,17 @@ fn lane_of(ix: usize, iy: usize, dir: usize) -> Lane {
 }
 
 /// The search's working arrays, kept between the searches of one `route`.
-/// Only the states and segments a search touched are reset for the next.
+/// Only the states a search touched are reset for the next.
 struct Scratch {
     dist: Vec<i64>,
     previous: Vec<usize>,
-    segment: Vec<u8>,
     touched: Vec<usize>,
-    tried: Vec<usize>,
 }
 
 impl Scratch {
     fn new(grid: &Grid) -> Scratch {
         let cells = grid.xs.len() * grid.ys.len();
-        Scratch { dist: vec![i64::MAX; cells * 4], previous: vec![usize::MAX; cells * 4], segment: vec![0; cells * 2], touched: Vec::new(), tried: Vec::new() }
+        Scratch { dist: vec![i64::MAX; cells * 4], previous: vec![usize::MAX; cells * 4], touched: Vec::new() }
     }
 
     fn reset(&mut self) {
@@ -125,23 +123,19 @@ impl Scratch {
             self.dist[state] = i64::MAX;
             self.previous[state] = usize::MAX;
         }
-        for &lane in &self.tried {
-            self.segment[lane] = 0;
-        }
         self.touched.clear();
-        self.tried.clear();
     }
 }
 
 /// A* between two stems, returning the grid path and the lanes it occupies.
-fn search(grid: &Grid, from: &Terminal, to: &Terminal, connection: &Connection, used: &Lanes, crossable: &Lanes, scratch: &mut Scratch) -> Option<(Vec<Point>, Vec<Lane>)> {
+fn search(grid: &Grid, from: &Terminal, to: &Terminal, connection: &Connection, used: &Lanes, crossable: &Lanes, scratch: &mut Scratch, segment: &mut [u8]) -> Option<(Vec<Point>, Vec<Lane>)> {
     let (nx, ny) = (grid.xs.len(), grid.ys.len());
     let (start_dir, goal_dir) = (dir_of(from.outward), dir_of(to.outward.opposite()));
     let state = |ix: usize, iy: usize, dir: usize| (ix * ny + iy) * 4 + dir;
     let (sx, sy) = (grid_index(&grid.xs, from.stem.0), grid_index(&grid.ys, from.stem.1));
     let (gx, gy) = (grid_index(&grid.xs, to.stem.0), grid_index(&grid.ys, to.stem.1));
     scratch.reset();
-    let Scratch { dist, previous, segment, touched, tried } = scratch;
+    let Scratch { dist, previous, touched } = scratch;
     // Each entry is an estimate and a state packed into one number, estimate
     // high, so the smallest pops first and equal estimates pop by state.
     let mut heap = BinaryHeap::new();
@@ -150,7 +144,9 @@ fn search(grid: &Grid, from: &Terminal, to: &Terminal, connection: &Connection, 
         Reverse((estimate as u64) << 32 | state as u64)
     };
     // `segment` holds whether each unit segment is blocked (bit 0) or crosses a
-    // strip (bit 1), worked out the first time the search tries it (bit 2).
+    // strip (bit 1), worked out the first time a search for this connection
+    // tries it (bit 2): the connection's obstacles and strips stay the same
+    // through every round.
     let heuristic = |ix: usize, iy: usize| ((grid.xs[ix] - grid.xs[gx]).abs() + (grid.ys[iy] - grid.ys[gy]).abs()) as i64;
     let first = state(sx, sy, start_dir);
     dist[first] = 0;
@@ -193,7 +189,6 @@ fn search(grid: &Grid, from: &Terminal, to: &Terminal, connection: &Connection, 
             let index = used.index(lane);
             let known = &mut segment[index];
             if *known == 0 {
-                tried.push(index);
                 let strips = if next_dir < 2 { &connection.strips.horizontal } else { &connection.strips.vertical };
                 *known = 4 | blocked(&connection.obstacles, a, b) as u8 | (blocked(strips, a, b) as u8) << 1;
             }
@@ -418,6 +413,7 @@ fn route_afresh(problem: &Problem) -> Solution {
     let mut stubs: Vec<Vec<Lane>> = vec![Vec::new(); count];
     let mut failed = Vec::new();
     let mut scratch = Scratch::new(&grid);
+    let mut segments: Vec<Vec<u8>> = vec![Vec::new(); count];
     for round in 0..ROUNDS {
         for &e in &order {
             let Settled { from, to, .. } = &settled[e];
@@ -433,7 +429,10 @@ fn route_afresh(problem: &Problem) -> Solution {
                 lanes[o].iter().for_each(|&lane| used.insert(lane));
                 lanes[o].iter().chain(&stubs[o]).for_each(|&lane| crossable.insert(lane));
             }
-            let (points, found) = search(&grid, from, to, &problem.connections[e], &used, &crossable, &mut scratch).unwrap_or_else(|| {
+            if segments[e].is_empty() {
+                segments[e] = vec![0; grid.xs.len() * grid.ys.len() * 2];
+            }
+            let (points, found) = search(&grid, from, to, &problem.connections[e], &used, &crossable, &mut scratch, &mut segments[e]).unwrap_or_else(|| {
                 if round == ROUNDS - 1 {
                     failed.push(e);
                 }
