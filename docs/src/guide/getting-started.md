@@ -12,7 +12,7 @@ cargo install drumlin
 ```
 
 This puts `drumlin` into Cargo's binary folder (usually `~/.cargo/bin`, which must be on your `PATH`).
-If you do not want to build from source, continue at [Your first diagram](#your-first-diagram).
+If you only want to use drumlin (without checking out the source), continue at [Your first diagram](#your-first-diagram).
 
 ## Build from source
 
