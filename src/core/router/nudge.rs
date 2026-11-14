@@ -191,8 +191,8 @@ impl Room<'_> {
 type Standing = (usize, usize, usize, usize);
 
 pub(super) fn standing(paths: &[Vec<Point>], i: usize, candidate: &[Point]) -> Standing {
-    let others = paths.iter().enumerate().filter(|&(j, p)| j != i && p.len() >= 2).map(|(_, p)| p);
-    let (crossings, overlaps, close) = others.fold((0, 0, 0), |(c, o, n), p| (c + metrics::crossings_between(candidate, p), o + metrics::overlaps_between(candidate, p), n + metrics::close_runs(candidate, p, SEPARATION)));
+    let others = paths.iter().enumerate().filter(|&(j, p)| j != i && p.len() >= 2).map(|(_, p)| p.as_slice());
+    let (crossings, overlaps, close) = metrics::against(candidate, others, SEPARATION);
     (overlaps, crossings, close, metrics::bends(candidate))
 }
 
