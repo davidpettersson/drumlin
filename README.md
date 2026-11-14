@@ -14,9 +14,15 @@ command line and the drawings may still change between versions. The symbols fol
 elements each diagram kind accepts, and how a drawing looks, are drumlin's own choices (see
 [UML conformance](docs/src/reference/conformance.md)).
 
-## Build and use
+## Install and use
 
-There is no published package; build from source with a Rust toolchain:
+Install the published crate with a Rust toolchain:
+
+```
+cargo install drumlin
+```
+
+Or build from source:
 
 ```
 git clone https://github.com/davidpettersson/drumlin.git

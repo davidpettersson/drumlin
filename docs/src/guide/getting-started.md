@@ -1,12 +1,22 @@
 # Getting started
 
 This page takes you from nothing to a rendered SVG in about five minutes. You need a Rust toolchain
-(`cargo`); drumlin has no other dependencies. There is no published package, so you build it from
-source.
+(`cargo`); drumlin has no other dependencies.
 
-## Build and install
+## Install
 
-Get the source and build it:
+Install the published crate from [crates.io](https://crates.io/crates/drumlin):
+
+```sh
+cargo install drumlin
+```
+
+This puts `drumlin` into Cargo's binary folder (usually `~/.cargo/bin`, which must be on your `PATH`).
+If you only want to use drumlin (without checking out the source), continue at [Your first diagram](#your-first-diagram).
+
+## Build from source
+
+To work on drumlin, or to run a version that is not released yet, get the source and build it:
 
 ```sh
 git clone https://github.com/davidpettersson/drumlin.git
