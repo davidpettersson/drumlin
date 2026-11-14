@@ -7,7 +7,7 @@
 
 use super::l_over_z::prefer_l;
 use super::nudge::nudge;
-use super::{manhattan, Connection, Problem, Solution, Terminal};
+use super::{manhattan, Body, Connection, Problem, Solution, Strips, Terminal};
 use crate::core::geometry::{snap, snap_up, Point, Rect, Side, GRID};
 use crate::core::metrics;
 use std::cmp::Reverse;
@@ -335,15 +335,55 @@ const REMEMBERED: usize = 32;
 thread_local! {
     /// Recent problems and their solutions. Layout steps that compare layouts
     /// route the same layout many times over, and routing is the costly part of
-    /// drawing. A problem's debug text names every value in it exactly.
-    static SOLVED: std::cell::RefCell<std::collections::HashMap<String, Solution>> = std::cell::RefCell::default();
+    /// drawing.
+    static SOLVED: std::cell::RefCell<std::collections::HashMap<Vec<u64>, Solution>> = std::cell::RefCell::default();
+}
+
+/// Every value in a problem, numbers by their exact bits, so two problems have
+/// the same key only when they are the same. The patterns name every field, so
+/// a field added later must be added here too.
+fn key(problem: &Problem) -> Vec<u64> {
+    let mut out = Vec::new();
+    let rects = |out: &mut Vec<u64>, rects: &[Rect]| {
+        out.push(rects.len() as u64);
+        out.extend(rects.iter().flat_map(|&Rect { x, y, w, h }| [x, y, w, h].map(f64::to_bits)));
+    };
+    let terminal = |out: &mut Vec<u64>, &Terminal { point, stem, outward, slide, body }: &Terminal| {
+        out.extend([point.0, point.1, stem.0, stem.1].map(f64::to_bits));
+        out.push(outward as u64);
+        match slide {
+            Some((lo, hi)) => out.extend([1, lo.to_bits(), hi.to_bits()]),
+            None => out.push(0),
+        }
+        match body {
+            Some(Body { rect: Rect { x, y, w, h }, inset, sides, head }) => {
+                out.push(1);
+                out.extend([x, y, w, h, inset, head].map(f64::to_bits));
+                out.extend(sides.map(u64::from));
+            }
+            None => out.push(0),
+        }
+    };
+    let Problem { bounds, walls, connections, centred } = problem;
+    rects(&mut out, bounds);
+    rects(&mut out, walls);
+    out.push(connections.len() as u64);
+    for Connection { from, to, obstacles, strips: Strips { horizontal, vertical } } in connections {
+        terminal(&mut out, from);
+        terminal(&mut out, to);
+        rects(&mut out, obstacles);
+        rects(&mut out, horizontal);
+        rects(&mut out, vertical);
+    }
+    out.push(u64::from(*centred));
+    out
 }
 
 /// Routes all connections: short ones first, then two rip-up rounds to settle
 /// shared-lane conflicts. The same problem always gets the same solution, so a
 /// recent one is answered from memory.
 pub fn route(problem: &Problem) -> Solution {
-    let key = format!("{problem:?}");
+    let key = key(problem);
     if let Some(solution) = SOLVED.with(|solved| solved.borrow().get(&key).cloned()) {
         return solution;
     }
