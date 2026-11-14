@@ -142,16 +142,23 @@ fn search(grid: &Grid, from: &Terminal, to: &Terminal, connection: &Connection, 
     let (gx, gy) = (grid_index(&grid.xs, to.stem.0), grid_index(&grid.ys, to.stem.1));
     scratch.reset();
     let Scratch { dist, previous, segment, touched, tried } = scratch;
+    // Each entry is an estimate and a state packed into one number, estimate
+    // high, so the smallest pops first and equal estimates pop by state.
     let mut heap = BinaryHeap::new();
+    let entry = |estimate: i64, state: usize| {
+        debug_assert!((0..1 << 31).contains(&estimate) && state < 1 << 32);
+        Reverse((estimate as u64) << 32 | state as u64)
+    };
     // `segment` holds whether each unit segment is blocked (bit 0) or crosses a
     // strip (bit 1), worked out the first time the search tries it (bit 2).
     let heuristic = |ix: usize, iy: usize| ((grid.xs[ix] - grid.xs[gx]).abs() + (grid.ys[iy] - grid.ys[gy]).abs()) as i64;
     let first = state(sx, sy, start_dir);
     dist[first] = 0;
     touched.push(first);
-    heap.push(Reverse((heuristic(sx, sy), first)));
+    heap.push(entry(heuristic(sx, sy), first));
     let mut finish = None;
-    while let Some(Reverse((_, current))) = heap.pop() {
+    while let Some(Reverse(packed)) = heap.pop() {
+        let current = (packed & 0xffff_ffff) as usize;
         let dir = current % 4;
         let (ix, iy) = (current / 4 / ny, current / 4 % ny);
         if ix == gx && iy == gy && dir == goal_dir {
@@ -169,7 +176,7 @@ fn search(grid: &Grid, from: &Terminal, to: &Terminal, connection: &Connection, 
                 }
                 dist[turned] = total;
                 previous[turned] = current;
-                heap.push(Reverse((total, turned)));
+                heap.push(entry(total, turned));
             }
         }
         for (next_dir, &(dx, dy)) in DIRS.iter().enumerate() {
@@ -215,7 +222,7 @@ fn search(grid: &Grid, from: &Terminal, to: &Terminal, connection: &Connection, 
                 }
                 dist[next] = total;
                 previous[next] = current;
-                heap.push(Reverse((total + heuristic(jx, jy), next)));
+                heap.push(entry(total + heuristic(jx, jy), next));
             }
         }
     }
