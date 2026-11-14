@@ -13,7 +13,7 @@ Choose a style with a `style <name>` statement in the file, or with `--style <na
 line, which wins over the statement:
 
 ```sh
-drumlin render shop.uml -o shop.svg --style plain
+drumlin render station.uml -o station.svg --style plain
 ```
 
 Styles apply to all five diagram kinds. Like `direction` and `layout`, the statement may stand on any
@@ -32,14 +32,17 @@ what.
 diagram component "style pens"
 style pens
 
-component Shop {
-  component Cart
-  component Checkout
+component "Weather Station" as station {
+  component Sensors
+  component Logger
+  Sensors --> Logger : samples
 }
-component Payments
-Cart --> Checkout
-Checkout ..> Payments
-note Payments: Called once per order.
+component Forecast <<service>> { provides IForecast }
+component Display { requires IForecast }
+component Archive <<database>>
+Logger --> Forecast : readings
+Logger ..> Archive : nightly
+note Logger: Keeps 30 days of readings.
 ```
 
 ## plain
@@ -51,14 +54,17 @@ Compare the same diagram above in `pens`.
 diagram component "style plain"
 style plain
 
-component Shop {
-  component Cart
-  component Checkout
+component "Weather Station" as station {
+  component Sensors
+  component Logger
+  Sensors --> Logger : samples
 }
-component Payments
-Cart --> Checkout
-Checkout ..> Payments
-note Payments: Called once per order.
+component Forecast <<service>> { provides IForecast }
+component Display { requires IForecast }
+component Archive <<database>>
+Logger --> Forecast : readings
+Logger ..> Archive : nightly
+note Logger: Keeps 30 days of readings.
 ```
 
 ## lettering
@@ -72,14 +78,17 @@ notes in upright mixed case, one light pen for all of it. See
 diagram component "style lettering"
 style lettering
 
-component Shop {
-  component Cart
-  component Checkout
+component "Weather Station" as station {
+  component Sensors
+  component Logger
+  Sensors --> Logger : every 10 s
 }
-component Payments
-Cart --> Checkout
-Checkout ..> Payments : 3 retries
-note Payments: Called once per order, 0 or 1 times per retry.
+component Forecast <<service>> { provides IForecast }
+component Display { requires IForecast }
+component Archive <<database>>
+Logger --> Forecast : readings
+Logger ..> Archive : nightly
+note Logger: Keeps 30 days of readings, 1 per 10 s.
 ```
 
 Things to know about `lettering`:
