@@ -292,9 +292,36 @@ fn is_direct(from: &Terminal, to: &Terminal) -> bool {
     aligned && facing_distance(from, to).is_some_and(|along| along <= NARROW)
 }
 
+/// Problems remembered by `route` on each thread.
+const REMEMBERED: usize = 32;
+
+thread_local! {
+    /// Recent problems and their solutions. Layout steps that compare layouts
+    /// route the same layout many times over, and routing is the costly part of
+    /// drawing. A problem's debug text names every value in it exactly.
+    static SOLVED: std::cell::RefCell<std::collections::HashMap<String, Solution>> = std::cell::RefCell::default();
+}
+
 /// Routes all connections: short ones first, then two rip-up rounds to settle
-/// shared-lane conflicts.
+/// shared-lane conflicts. The same problem always gets the same solution, so a
+/// recent one is answered from memory.
 pub fn route(problem: &Problem) -> Solution {
+    let key = format!("{problem:?}");
+    if let Some(solution) = SOLVED.with(|solved| solved.borrow().get(&key).cloned()) {
+        return solution;
+    }
+    let solution = route_afresh(problem);
+    SOLVED.with(|solved| {
+        let mut solved = solved.borrow_mut();
+        if solved.len() >= REMEMBERED {
+            solved.clear();
+        }
+        solved.insert(key, solution.clone());
+    });
+    solution
+}
+
+fn route_afresh(problem: &Problem) -> Solution {
     let settled: Vec<Settled> = problem.connections.iter().map(settle_stems).collect();
     let grid = build_grid(problem, &settled);
     let count = settled.len();
