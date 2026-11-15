@@ -2,6 +2,7 @@
 <style>
 .drumlin.lettering .lt { fill: none; stroke: #22201c; stroke-width: 1.1; stroke-linecap: round; stroke-linejoin: round; }
 .drumlin.lettering .lt-halo { fill: #fff; stroke: none; }
+.drumlin.lettering .lt text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: transparent; stroke: none; white-space: pre; }
 .drumlin.lettering .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
 .drumlin.lettering .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
 .drumlin.lettering .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
@@ -55,25 +56,25 @@
 <path id="dl-t59" d="M1.5-10.8l3.5 4.6 .1 .1M5.1-.8l0-5.3M5.1-6.1l.2-.1 3.5-4.6"/>
 </defs>
 <rect x="-24" y="-56" width="568" height="432" fill="#fff"/>
-<g class="lt" role="img" aria-label="Nesting and keywords" transform="translate(0 -20)"><use href="#dl-t4e"/><use href="#dl-t45" x="12.2"/><use href="#dl-t53" x="24"/><use href="#dl-t54" x="35.5"/><use href="#dl-t49" x="47.2"/><use href="#dl-t4e" x="53.4"/><use href="#dl-t47" x="65.6"/><use href="#dl-t41" x="82.6"/><use href="#dl-t4e" x="94.3"/><use href="#dl-t44" x="106.5"/><use href="#dl-t4b" x="123.8"/><use href="#dl-t45" x="135.2"/><use href="#dl-t59" x="147.1"/><use href="#dl-t57" x="158.3"/><use href="#dl-t4f" x="172.9"/><use href="#dl-t52" x="185.3"/><use href="#dl-t44" x="197.3"/><use href="#dl-t53" x="209.1"/></g>
+<g class="lt" role="img" aria-label="Nesting and keywords" transform="translate(0 -20)"><use href="#dl-t4e"/><use href="#dl-t45" x="12.2"/><use href="#dl-t53" x="24"/><use href="#dl-t54" x="35.5"/><use href="#dl-t49" x="47.2"/><use href="#dl-t4e" x="53.4"/><use href="#dl-t47" x="65.6"/><use href="#dl-t41" x="82.6"/><use href="#dl-t4e" x="94.3"/><use href="#dl-t44" x="106.5"/><use href="#dl-t4b" x="123.8"/><use href="#dl-t45" x="135.2"/><use href="#dl-t59" x="147.1"/><use href="#dl-t57" x="158.3"/><use href="#dl-t4f" x="172.9"/><use href="#dl-t52" x="185.3"/><use href="#dl-t44" x="197.3"/><use href="#dl-t53" x="209.1"/><text font-size="16" textLength="219.62" lengthAdjust="spacingAndGlyphs">Nesting and keywords</text></g>
 <rect x="152" y="0" width="98.17" height="40" class="shape heavy"/>
 <rect x="152" y="40" width="368" height="312" class="shape heavy"/>
-<g class="lt" role="img" aria-label="«model»" transform="translate(164 15.5)"><use href="#dl-sab"/><use href="#dl-s6d" x="8.3"/><use href="#dl-s6f" x="17.5"/><use href="#dl-s64" x="23.6"/><use href="#dl-s65" x="30"/><use href="#dl-s6c" x="35.8"/><use href="#dl-sbb" x="38.9"/></g>
-<g class="lt" role="img" aria-label="Platform" transform="translate(164 32.5)"><use href="#dl-n50"/><use href="#dl-n4c" x="9.1"/><use href="#dl-n41" x="17.8"/><use href="#dl-n54" x="27"/><use href="#dl-n46" x="36.1"/><use href="#dl-n4f" x="45"/><use href="#dl-n52" x="54.7"/><use href="#dl-n4d" x="64"/></g>
+<g class="lt" role="img" aria-label="«model»" transform="translate(164 15.5)"><use href="#dl-sab"/><use href="#dl-s6d" x="8.3"/><use href="#dl-s6f" x="17.5"/><use href="#dl-s64" x="23.6"/><use href="#dl-s65" x="30"/><use href="#dl-s6c" x="35.8"/><use href="#dl-sbb" x="38.9"/><text font-size="11" textLength="47.18" lengthAdjust="spacingAndGlyphs">«model»</text></g>
+<g class="lt" role="img" aria-label="Platform" transform="translate(164 32.5)"><use href="#dl-n50"/><use href="#dl-n4c" x="9.1"/><use href="#dl-n41" x="17.8"/><use href="#dl-n54" x="27"/><use href="#dl-n46" x="36.1"/><use href="#dl-n4f" x="45"/><use href="#dl-n52" x="54.7"/><use href="#dl-n4d" x="64"/><text font-size="12.5" textLength="74.17" lengthAdjust="spacingAndGlyphs">Platform</text></g>
 <rect x="176" y="192" width="78.34" height="24" class="shape heavy"/>
 <rect x="176" y="216" width="320" height="104" class="shape heavy"/>
-<g class="lt" role="img" aria-label="Kernel" transform="translate(188 208.5)"><use href="#dl-n4b"/><use href="#dl-n45" x="9"/><use href="#dl-n52" x="18.2"/><use href="#dl-n4e" x="27.5"/><use href="#dl-n45" x="37.1"/><use href="#dl-n4c" x="46.3"/></g>
+<g class="lt" role="img" aria-label="Kernel" transform="translate(188 208.5)"><use href="#dl-n4b"/><use href="#dl-n45" x="9"/><use href="#dl-n52" x="18.2"/><use href="#dl-n4e" x="27.5"/><use href="#dl-n45" x="37.1"/><use href="#dl-n4c" x="46.3"/><text font-size="12.5" textLength="54.34" lengthAdjust="spacingAndGlyphs">Kernel</text></g>
 <rect x="200" y="240" width="128" height="48" class="shape"/>
-<g class="lt" role="img" aria-label="Scheduler" transform="translate(222.99 268.5)"><use href="#dl-n53"/><use href="#dl-n43" x="9"/><use href="#dl-n48" x="18.1"/><use href="#dl-n45" x="27.5"/><use href="#dl-n44" x="36.7"/><use href="#dl-n55" x="46"/><use href="#dl-n4c" x="55.4"/><use href="#dl-n45" x="64.2"/><use href="#dl-n52" x="73.4"/></g>
+<g class="lt" role="img" aria-label="Scheduler" transform="translate(222.99 268.5)"><use href="#dl-n53"/><use href="#dl-n43" x="9"/><use href="#dl-n48" x="18.1"/><use href="#dl-n45" x="27.5"/><use href="#dl-n44" x="36.7"/><use href="#dl-n55" x="46"/><use href="#dl-n4c" x="55.4"/><use href="#dl-n45" x="64.2"/><use href="#dl-n52" x="73.4"/><text font-size="12.5" textLength="82.03" lengthAdjust="spacingAndGlyphs">Scheduler</text></g>
 <rect x="368" y="240" width="96" height="48" class="shape"/>
-<g class="lt" role="img" aria-label="Timer" transform="translate(394.64 268.5)"><use href="#dl-n54"/><use href="#dl-n49" x="9.1"/><use href="#dl-n4d" x="14"/><use href="#dl-n45" x="24.9"/><use href="#dl-n52" x="34.1"/></g>
+<g class="lt" role="img" aria-label="Timer" transform="translate(394.64 268.5)"><use href="#dl-n54"/><use href="#dl-n49" x="9.1"/><use href="#dl-n4d" x="14"/><use href="#dl-n45" x="24.9"/><use href="#dl-n52" x="34.1"/><text font-size="12.5" textLength="42.72" lengthAdjust="spacingAndGlyphs">Timer</text></g>
 <rect x="280" y="64" width="40" height="16" class="shape"/>
 <rect x="280" y="80" width="112" height="48" class="shape"/>
-<g class="lt" role="img" aria-label="Drivers" transform="translate(306.31 108.5)"><use href="#dl-n44"/><use href="#dl-n52" x="9.2"/><use href="#dl-n49" x="18.6"/><use href="#dl-n56" x="23.4"/><use href="#dl-n45" x="32.6"/><use href="#dl-n52" x="41.8"/><use href="#dl-n53" x="51.2"/></g>
+<g class="lt" role="img" aria-label="Drivers" transform="translate(306.31 108.5)"><use href="#dl-n44"/><use href="#dl-n52" x="9.2"/><use href="#dl-n49" x="18.6"/><use href="#dl-n56" x="23.4"/><use href="#dl-n45" x="32.6"/><use href="#dl-n52" x="41.8"/><use href="#dl-n53" x="51.2"/><text font-size="12.5" textLength="59.38" lengthAdjust="spacingAndGlyphs">Drivers</text></g>
 <rect x="0" y="144" width="40" height="16" class="shape"/>
 <rect x="0" y="160" width="112" height="48" class="shape"/>
-<g class="lt" role="img" aria-label="Empty" transform="translate(32.83 188.5)"><use href="#dl-n45"/><use href="#dl-n4d" x="9.2"/><use href="#dl-n50" x="20.1"/><use href="#dl-n54" x="29.2"/><use href="#dl-n59" x="38.3"/></g>
+<g class="lt" role="img" aria-label="Empty" transform="translate(32.83 188.5)"><use href="#dl-n45"/><use href="#dl-n4d" x="9.2"/><use href="#dl-n50" x="20.1"/><use href="#dl-n54" x="29.2"/><use href="#dl-n59" x="38.3"/><text font-size="12.5" textLength="46.33" lengthAdjust="spacingAndGlyphs">Empty</text></g>
 <path d="M336 128 L336 216" class="edge dashed fine"/>
 <path d="M331.5 206 L336 216 L340.5 206" class="edge head fine"/>
-<g class="lt" role="img" aria-label="«access»" transform="translate(344 176)"><rect class="lt-halo" x="-1.5" y="-9.41" width="53.66" height="13.31"/><use href="#dl-sab"/><use href="#dl-s61" x="8.3"/><use href="#dl-s63" x="14.6"/><use href="#dl-s63" x="20.2"/><use href="#dl-s65" x="25.9"/><use href="#dl-s73" x="31.8"/><use href="#dl-s73" x="37.1"/><use href="#dl-sbb" x="42.4"/></g>
+<g class="lt" role="img" aria-label="«access»" transform="translate(344 176)"><rect class="lt-halo" x="-1.5" y="-9.41" width="53.66" height="13.31"/><use href="#dl-sab"/><use href="#dl-s61" x="8.3"/><use href="#dl-s63" x="14.6"/><use href="#dl-s63" x="20.2"/><use href="#dl-s65" x="25.9"/><use href="#dl-s73" x="31.8"/><use href="#dl-s73" x="37.1"/><use href="#dl-sbb" x="42.4"/><text font-size="11" textLength="50.66" lengthAdjust="spacingAndGlyphs">«access»</text></g>
 </svg>

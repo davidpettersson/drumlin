@@ -69,8 +69,9 @@ all lettering keeps it apart from the line hierarchy: text is read, not followed
 **Source.** ISO 3098 (technical product documentation: lettering); ISO 128 for the pens.
 
 **Status:** enforced, by the `lettering` style (`core::lettering`). The glyphs are drumlin's lettering,
-derived from Routed Gothic by Darren Embry (SIL Open Font License 1.1). Text drawn as strokes cannot be
-selected or searched in the SVG; each run carries its words as an accessible name.
+derived from Routed Gothic by Darren Embry (SIL Open Font License 1.1). Each run also carries its words
+as invisible text stretched over the strokes, so they can be selected, copied and searched, and as an
+accessible name.
 
 ## Size boxes to their text
 

@@ -273,6 +273,7 @@ fn pens_rules(extras: &[Extra], lettering: bool) -> Vec<Rule> {
         true => vec![
             (".lt", format!("fill: none; stroke: {ink}; stroke-width: {LETTERING_PEN}; stroke-linecap: round; stroke-linejoin: round;")),
             (".lt-halo", "fill: #fff; stroke: none;".to_string()),
+            (".lt text", format!("font-family: {FONT_STACK}; fill: transparent; stroke: none; white-space: pre;")),
         ],
     };
     rules(text.into_iter().chain(shared).chain(extra).chain(weights).collect())

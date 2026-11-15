@@ -29,10 +29,11 @@ All kinds:
 - No diagram has a UML frame, such as `sd` or `pkg`. UML makes the frame optional, and a title is a
   caption outside the drawing.
 - Builds have been tested only on Linux so far.
-- In the `lettering` style, text is drawn as pen strokes: it cannot be selected or found with a
-  browser's search, only read by assistive technology through each run's `aria-label`. Characters
-  without a glyph (anything beyond Latin-1, Latin Extended-A in part, common punctuation, arrows and
-  super- and subscript digits) are drawn as an open box. Files are about three to four times the size of
+- In the `lettering` style, text is drawn as pen strokes, with the words as invisible text over them
+  for selecting and searching. A selection is highlighted in the viewer's sans-serif squeezed to the
+  run's width, not traced around the strokes. Characters without a glyph (anything beyond Latin-1,
+  Latin Extended-A in part, common punctuation, arrows and super- and subscript digits) are drawn as an
+  open box, though the invisible text still holds them. Files are about three to four times the size of
   the same drawing in `pens`.
 
 Component, package and state diagrams:

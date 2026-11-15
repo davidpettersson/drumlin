@@ -234,7 +234,7 @@ mod tests {
         ];
         for source in sources {
             let lettered = render_with(source, &styled("lettering")).unwrap();
-            assert!(!lettered.contains("<text"), "{lettered}");
+            assert!(lettered.matches("<text").count() == lettered.matches("<g class=\"lt\"").count(), "only the invisible words of each run: {lettered}");
             assert!(lettered.contains("class=\"drumlin lettering\"") && lettered.contains("<defs>") && lettered.contains("aria-label=\"Alpha\""), "{lettered}");
             assert!(lettered.contains("<use href=\"#dl-n41\"/>"), "names in capitals: {lettered}");
             let stated = source.replacen('\n', "\nstyle lettering\n", 1);
