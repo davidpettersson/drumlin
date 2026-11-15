@@ -1,11 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -56 736 512" width="736" height="512">
 <style>
-.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; font-weight: 400; }
 .drumlin.pens .title { font-size: 16px; font-weight: 600; }
 .drumlin.pens .name { font-size: 13px; font-weight: 600; }
 .drumlin.pens .italic { font-style: italic; }
-.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .small { font-size: 11px; }
 .drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .tag { font-size: 10px; letter-spacing: 0.2px; fill: #5c574f; }
+.drumlin.pens .aside { fill: #5c574f; }
 .drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
 .drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
 .drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
@@ -22,11 +24,11 @@
 <rect x="112" y="344" width="96" height="48" class="shape"/>
 <text x="160" y="372.5" class="name" text-anchor="middle">Registry</text>
 <rect x="248" y="336" width="104" height="64" class="shape"/>
-<text x="300" y="363.5" class="small" text-anchor="middle">«interface»</text>
+<text x="300" y="363.5" class="small tag" text-anchor="middle">«interface»</text>
 <text x="300" y="380.5" class="name" text-anchor="middle">Plugin</text>
 <rect x="0" y="0" width="88.54" height="40" class="shape heavy"/>
 <rect x="0" y="40" width="464" height="184" class="shape heavy"/>
-<text x="12" y="15.5" class="small" text-anchor="start">«framework»</text>
+<text x="12" y="15.5" class="small tag" text-anchor="start">«framework»</text>
 <text x="12" y="32.5" class="name" text-anchor="start">plugins</text>
 <rect x="24" y="64" width="88.15" height="24" class="shape heavy"/>
 <rect x="24" y="88" width="192" height="104" class="shape heavy"/>
@@ -40,8 +42,8 @@
 <text x="344" y="140.5" class="name" text-anchor="middle">SearchPlugin</text>
 <path d="M496 88 L678 88 L688 98 L688 136 L496 136 Z" class="shape fine"/>
 <path d="M678 88 L678 98 L688 98" class="edge fine"/>
-<text x="508" y="108" class="small" text-anchor="start">Discovered at startup from the</text>
-<text x="508" y="123" class="small" text-anchor="start">plugin directory.</text>
+<text x="508" y="108" class="small aside" text-anchor="start">Discovered at startup from the</text>
+<text x="508" y="123" class="small aside" text-anchor="start">plugin directory.</text>
 <path d="M208 368 L248 368" class="edge"/>
 <path d="M238 372.5 L248 368 L238 363.5" class="edge head"/>
 <path d="M120 160 L120 256 L264 256 L264 336" class="edge dashed fine"/>

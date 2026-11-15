@@ -1,16 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" class="drumlin" viewBox="-24 -56 376 536" width="376" height="536">
 <style>
-.drumlin text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #1f2933; }
-.drumlin .title { font-size: 16px; font-weight: 600; }
-.drumlin .name { font-size: 13px; font-weight: 600; }
+.drumlin text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #000; font-weight: 400; }
+.drumlin .title { font-size: 16px; font-weight: 400; }
+.drumlin .name { font-size: 13px; font-weight: 400; }
 .drumlin .italic { font-style: italic; }
-.drumlin .small { font-size: 11px; fill: #52606d; }
+.drumlin .small { font-size: 11px; }
 .drumlin .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
-.drumlin .shape { fill: #fff; stroke: #1f2933; stroke-width: 1.25; }
-.drumlin .icon { fill: #fff; stroke: #1f2933; stroke-width: 1; }
-.drumlin .edge { fill: none; stroke: #1f2933; stroke-width: 1.25; stroke-linecap: round; stroke-linejoin: round; }
+.drumlin .shape { fill: #fff; stroke: #000; stroke-width: 1.25; }
+.drumlin .icon { fill: #fff; stroke: #000; stroke-width: 1.25; }
+.drumlin .edge { fill: none; stroke: #000; stroke-width: 1.25; stroke-linecap: round; stroke-linejoin: round; }
 .drumlin .dashed { stroke-dasharray: 6 4; }
-.drumlin .solid { fill: #1f2933; stroke: none; }
+.drumlin .solid { fill: #000; stroke: none; }
 </style>
 <rect x="-24" y="-56" width="376" height="536" fill="#fff"/>
 <text x="0" y="-20" class="title">Notes</text>
@@ -20,7 +20,7 @@
 <path d="M59.5 238 L64 248 L68.5 238" class="edge"/>
 <path d="M64 280 L64 312" class="edge"/>
 <path d="M59.5 302 L64 312 L68.5 302" class="edge"/>
-<path d="M80 192 L154 192 Q160 192 160 198 L160 322 Q160 328 154 328 L80 328" class="edge"/>
+<path d="M80 192 L160 192 L160 328 L80 328" class="edge"/>
 <path d="M90 323.5 L80 328 L90 332.5" class="edge"/>
 <path d="M64 88 L64 176" class="edge"/>
 <path d="M59.5 166 L64 176 L68.5 166" class="edge"/>
@@ -43,11 +43,11 @@
 <circle cx="64" cy="448" r="4.5" class="solid"/>
 <path d="M136 48 L318 48 L328 58 L328 96 L136 96 Z" class="shape"/>
 <path d="M318 48 L318 58 L328 58" class="edge"/>
-<text x="148" y="68" class="small" text-anchor="start">Falls back to defaults when the</text>
-<text x="148" y="83" class="small" text-anchor="start">file is missing.</text>
+<text x="148" y="68" class="small aside" text-anchor="start">Falls back to defaults when the</text>
+<text x="148" y="83" class="small aside" text-anchor="start">file is missing.</text>
 <path d="M88 128 L238 128 L248 138 L248 160 L88 160 Z" class="shape"/>
 <path d="M238 128 L238 138 L248 138" class="edge"/>
-<text x="100" y="147.5" class="small" text-anchor="start">Checked once at startup.</text>
+<text x="100" y="147.5" class="small aside" text-anchor="start">Checked once at startup.</text>
 <text x="70" y="223" class="small" text-anchor="start">[debug]</text>
 <text x="86" y="184" class="small" text-anchor="start">[else]</text>
 </svg>

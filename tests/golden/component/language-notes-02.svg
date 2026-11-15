@@ -1,11 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -24 496 256" width="496" height="256">
 <style>
-.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; font-weight: 400; }
 .drumlin.pens .title { font-size: 16px; font-weight: 600; }
 .drumlin.pens .name { font-size: 13px; font-weight: 600; }
 .drumlin.pens .italic { font-style: italic; }
-.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .small { font-size: 11px; }
 .drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .tag { font-size: 10px; letter-spacing: 0.2px; fill: #5c574f; }
+.drumlin.pens .aside { fill: #5c574f; }
 .drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
 .drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
 .drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
@@ -31,7 +33,7 @@
 <text x="360" y="84.5" class="name" text-anchor="middle">Pages</text>
 <path d="M24 152 L222 152 L232 162 L232 184 L24 184 Z" class="shape fine"/>
 <path d="M222 152 L222 162 L232 162" class="edge fine"/>
-<text x="36" y="171.5" class="small" text-anchor="start">fsync before every commit record.</text>
+<text x="36" y="171.5" class="small aside" text-anchor="start">fsync before every commit record.</text>
 <path d="M192 80 L296 80" class="edge"/>
 <path d="M286 84.5 L296 80 L286 75.5" class="edge head"/>
 <path d="M128 152 L128 112" class="edge dashed fine"/>

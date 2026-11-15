@@ -1,16 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" class="drumlin" viewBox="-24 -56 408 800" width="408" height="800">
 <style>
-.drumlin text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #1f2933; }
-.drumlin .title { font-size: 16px; font-weight: 600; }
-.drumlin .name { font-size: 13px; font-weight: 600; }
+.drumlin text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #000; font-weight: 400; }
+.drumlin .title { font-size: 16px; font-weight: 400; }
+.drumlin .name { font-size: 13px; font-weight: 400; }
 .drumlin .italic { font-style: italic; }
-.drumlin .small { font-size: 11px; fill: #52606d; }
+.drumlin .small { font-size: 11px; }
 .drumlin .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
-.drumlin .shape { fill: #fff; stroke: #1f2933; stroke-width: 1.25; }
-.drumlin .icon { fill: #fff; stroke: #1f2933; stroke-width: 1; }
-.drumlin .edge { fill: none; stroke: #1f2933; stroke-width: 1.25; stroke-linecap: round; stroke-linejoin: round; }
+.drumlin .shape { fill: #fff; stroke: #000; stroke-width: 1.25; }
+.drumlin .icon { fill: #fff; stroke: #000; stroke-width: 1.25; }
+.drumlin .edge { fill: none; stroke: #000; stroke-width: 1.25; stroke-linecap: round; stroke-linejoin: round; }
 .drumlin .dashed { stroke-dasharray: 6 4; }
-.drumlin .solid { fill: #1f2933; stroke: none; }
+.drumlin .solid { fill: #000; stroke: none; }
 </style>
 <rect x="-24" y="-56" width="408" height="800" fill="#fff"/>
 <text x="0" y="-20" class="title">Composite states and history</text>
@@ -45,13 +45,13 @@
 <path d="M132.5 442 L128 432 L123.5 442" class="edge"/>
 <path d="M136 592 L136 672" class="edge"/>
 <path d="M131.5 662 L136 672 L140.5 662" class="edge"/>
-<path d="M176 672 L176 654 Q176 648 182 648 L194 648 Q200 648 200 642 L200 582 Q200 576 194 576 L46 576 Q40 576 40 570 L40 420" class="edge"/>
+<path d="M176 672 L176 648 L200 648 L200 576 L40 576 L40 420" class="edge"/>
 <path d="M44.5 430 L40 420 L35.5 430" class="edge"/>
 <path d="M152 208 L152 128" class="edge"/>
 <path d="M156.5 138 L152 128 L147.5 138" class="edge"/>
-<path d="M216 696 L354 696 Q360 696 360 690 L360 190 Q360 184 354 184 L270 184 Q264 184 264 178 L264 110 Q264 104 258 104 L224 104" class="edge"/>
+<path d="M216 696 L360 696 L360 184 L264 184 L264 104 L224 104" class="edge"/>
 <path d="M234 99.5 L224 104 L234 108.5" class="edge"/>
-<path d="M188 400 L206 400 Q212 400 212 406 L212 410 Q212 416 206 416 L188 416" class="edge"/>
+<path d="M188 400 L212 400 L212 416 L188 416" class="edge"/>
 <path d="M198 411.5 L188 416 L198 420.5" class="edge"/>
 <text x="184" y="171" class="small" text-anchor="start">power</text>
 <text x="160" y="475" class="small" text-anchor="start">seek</text>

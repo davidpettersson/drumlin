@@ -1,11 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-64 -56 592 768" width="592" height="768">
 <style>
-.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; font-weight: 400; }
 .drumlin.pens .title { font-size: 16px; font-weight: 600; }
 .drumlin.pens .name { font-size: 13px; font-weight: 600; }
 .drumlin.pens .italic { font-style: italic; }
-.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .small { font-size: 11px; }
 .drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .tag { font-size: 10px; letter-spacing: 0.2px; fill: #5c574f; }
+.drumlin.pens .aside { fill: #5c574f; }
 .drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
 .drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
 .drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
@@ -39,11 +41,11 @@
 <text x="464" y="24" class="name" text-anchor="middle">CA store</text>
 <path d="M-16 160 L278 160 L288 170 L288 208 L-16 208 Z" class="shape fine"/>
 <path d="M278 160 L278 170 L288 170" class="edge fine"/>
-<text x="-4" y="180" class="small" text-anchor="start">Encrypted from here on: EncryptedExtensions,</text>
-<text x="-4" y="195" class="small" text-anchor="start">Certificate, CertificateVerify, Finished</text>
+<text x="-4" y="180" class="small aside" text-anchor="start">Encrypted from here on: EncryptedExtensions,</text>
+<text x="-4" y="195" class="small aside" text-anchor="start">Certificate, CertificateVerify, Finished</text>
 <path d="M-16 480 L278 480 L288 490 L288 512 L-16 512 Z" class="shape fine"/>
 <path d="M278 480 L278 490 L288 490" class="edge fine"/>
-<text x="-4" y="499.5" class="small" text-anchor="start">Application data, protected by traffic keys</text>
+<text x="-4" y="499.5" class="small aside" text-anchor="start">Application data, protected by traffic keys</text>
 <path d="M0 72 L266 72" class="edge"/>
 <path d="M256 76.5 L266 72 L256 67.5 Z" class="solid"/>
 <path d="M278 88 L310 88 L310 104 L284 104" class="edge"/>

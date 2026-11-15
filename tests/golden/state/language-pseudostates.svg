@@ -1,11 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -56 376 1008" width="376" height="1008">
 <style>
-.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; font-weight: 400; }
 .drumlin.pens .title { font-size: 16px; font-weight: 600; }
 .drumlin.pens .name { font-size: 13px; font-weight: 600; }
 .drumlin.pens .italic { font-style: italic; }
-.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .small { font-size: 11px; }
 .drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .tag { font-size: 10px; letter-spacing: 0.2px; fill: #5c574f; }
+.drumlin.pens .aside { fill: #5c574f; }
 .drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
 .drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
 .drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
@@ -24,12 +26,12 @@
 <text x="184" y="628.5" class="name" text-anchor="middle">Tasks</text>
 <path d="M40 640 L328 640" class="edge fine"/>
 <path d="M180 640 L180 832" class="edge dashed fine"/>
-<text x="52" y="662" class="small" text-anchor="start">left</text>
+<text x="52" y="662" class="small aside" text-anchor="start">left</text>
 <rect x="56" y="680" width="96" height="48" class="shape" rx="10"/>
 <text x="104" y="708.5" class="name" text-anchor="middle">A</text>
 <circle cx="104" cy="804" r="11" class="shape"/>
 <circle cx="104" cy="804" r="6.5" class="solid"/>
-<text x="204" y="662" class="small" text-anchor="start">right</text>
+<text x="204" y="662" class="small aside" text-anchor="start">right</text>
 <rect x="208" y="680" width="96" height="48" class="shape" rx="10"/>
 <text x="256" y="708.5" class="name" text-anchor="middle">B</text>
 <circle cx="256" cy="804" r="11" class="shape"/>

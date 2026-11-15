@@ -1,16 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" class="drumlin" viewBox="-24 -56 416 584" width="416" height="584">
 <style>
-.drumlin text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #1f2933; }
-.drumlin .title { font-size: 16px; font-weight: 600; }
-.drumlin .name { font-size: 13px; font-weight: 600; }
+.drumlin text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #000; font-weight: 400; }
+.drumlin .title { font-size: 16px; font-weight: 400; }
+.drumlin .name { font-size: 13px; font-weight: 400; }
 .drumlin .italic { font-style: italic; }
-.drumlin .small { font-size: 11px; fill: #52606d; }
+.drumlin .small { font-size: 11px; }
 .drumlin .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
-.drumlin .shape { fill: #fff; stroke: #1f2933; stroke-width: 1.25; }
-.drumlin .icon { fill: #fff; stroke: #1f2933; stroke-width: 1; }
-.drumlin .edge { fill: none; stroke: #1f2933; stroke-width: 1.25; stroke-linecap: round; stroke-linejoin: round; }
+.drumlin .shape { fill: #fff; stroke: #000; stroke-width: 1.25; }
+.drumlin .icon { fill: #fff; stroke: #000; stroke-width: 1.25; }
+.drumlin .edge { fill: none; stroke: #000; stroke-width: 1.25; stroke-linecap: round; stroke-linejoin: round; }
 .drumlin .dashed { stroke-dasharray: 6 4; }
-.drumlin .solid { fill: #1f2933; stroke: none; }
+.drumlin .solid { fill: #000; stroke: none; }
 </style>
 <rect x="-24" y="-56" width="416" height="584" fill="#fff"/>
 <text x="0" y="-20" class="title">Swimlanes</text>
@@ -22,15 +22,15 @@
 <text x="280" y="21" class="name" text-anchor="middle">Warehouse</text>
 <path d="M96 72 L96 104" class="edge"/>
 <path d="M91.5 94 L96 104 L100.5 94" class="edge"/>
-<path d="M96 136 L96 162 Q96 168 102 168 L282 168 Q288 168 288 174 L288 184" class="edge"/>
+<path d="M96 136 L96 168 L288 168 L288 184" class="edge"/>
 <path d="M283.5 174 L288 184 L292.5 174" class="edge"/>
 <path d="M288 280 L288 320" class="edge"/>
 <path d="M283.5 310 L288 320 L292.5 310" class="edge"/>
-<path d="M272 264 L102 264 Q96 264 96 270 L96 320" class="edge"/>
+<path d="M272 264 L96 264 L96 320" class="edge"/>
 <path d="M91.5 310 L96 320 L100.5 310" class="edge"/>
 <path d="M288 352 L288 400" class="edge"/>
 <path d="M283.5 390 L288 400 L292.5 390" class="edge"/>
-<path d="M96 352 L96 410 Q96 416 102 416 L272 416" class="edge"/>
+<path d="M96 352 L96 416 L272 416" class="edge"/>
 <path d="M262 420.5 L272 416 L262 411.5" class="edge"/>
 <path d="M288 216 L288 248" class="edge"/>
 <path d="M283.5 238 L288 248 L292.5 238" class="edge"/>

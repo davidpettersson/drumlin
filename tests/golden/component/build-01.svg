@@ -1,11 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -40 1288 248" width="1288" height="248">
 <style>
-.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; font-weight: 400; }
 .drumlin.pens .title { font-size: 16px; font-weight: 600; }
 .drumlin.pens .name { font-size: 13px; font-weight: 600; }
 .drumlin.pens .italic { font-style: italic; }
-.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .small { font-size: 11px; }
 .drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .tag { font-size: 10px; letter-spacing: 0.2px; fill: #5c574f; }
+.drumlin.pens .aside { fill: #5c574f; }
 .drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
 .drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
 .drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
@@ -20,7 +22,7 @@
 <rect x="155" y="80" width="13" height="16" class="icon"/>
 <rect x="152" y="83" width="6" height="3.5" class="icon"/>
 <rect x="152" y="89.5" width="6" height="3.5" class="icon"/>
-<text x="88" y="99.5" class="small" text-anchor="middle">«input»</text>
+<text x="88" y="99.5" class="small tag" text-anchor="middle">«input»</text>
 <text x="88" y="116.5" class="name" text-anchor="middle">Chapter Markdown</text>
 <rect x="240" y="32" width="416" height="144" class="shape heavy"/>
 <rect x="635" y="40" width="13" height="16" class="icon"/>
@@ -51,7 +53,7 @@
 <rect x="963" y="128" width="13" height="16" class="icon"/>
 <rect x="960" y="131" width="6" height="3.5" class="icon"/>
 <rect x="960" y="137.5" width="6" height="3.5" class="icon"/>
-<text x="904" y="147.5" class="small" text-anchor="middle">«output»</text>
+<text x="904" y="147.5" class="small tag" text-anchor="middle">«output»</text>
 <text x="904" y="164.5" class="name" text-anchor="middle">Published Site</text>
 <path d="M408 112 L472 112" class="edge"/>
 <path d="M462 116.5 L472 112 L462 107.5" class="edge head"/>

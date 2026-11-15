@@ -1,11 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-64 -56 352 744" width="352" height="744">
 <style>
-.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; font-weight: 400; }
 .drumlin.pens .title { font-size: 16px; font-weight: 600; }
 .drumlin.pens .name { font-size: 13px; font-weight: 600; }
 .drumlin.pens .italic { font-style: italic; }
-.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .small { font-size: 11px; }
 .drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .tag { font-size: 10px; letter-spacing: 0.2px; fill: #5c574f; }
+.drumlin.pens .aside { fill: #5c574f; }
 .drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
 .drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
 .drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
@@ -31,17 +33,17 @@
 <text x="224" y="24" class="name" text-anchor="middle">Server</text>
 <path d="M-16 56 L230 56 L240 66 L240 88 L-16 88 Z" class="shape fine"/>
 <path d="M230 56 L230 66 L240 66" class="edge fine"/>
-<text x="-4" y="75.5" class="small" text-anchor="start">Three-way handshake</text>
+<text x="-4" y="75.5" class="small aside" text-anchor="start">Three-way handshake</text>
 <path d="M-16 200 L230 200 L240 210 L240 232 L-16 232 Z" class="shape fine"/>
 <path d="M230 200 L230 210 L240 210" class="edge fine"/>
-<text x="-4" y="219.5" class="small" text-anchor="start">Established</text>
+<text x="-4" y="219.5" class="small aside" text-anchor="start">Established</text>
 <path d="M-16 424 L230 424 L240 434 L240 456 L-16 456 Z" class="shape fine"/>
 <path d="M230 424 L230 434 L240 434" class="edge fine"/>
-<text x="-4" y="443.5" class="small" text-anchor="start">Graceful close</text>
+<text x="-4" y="443.5" class="small aside" text-anchor="start">Graceful close</text>
 <path d="M8 600 L206 600 L216 610 L216 648 L8 648 Z" class="shape fine"/>
 <path d="M206 600 L206 610 L216 610" class="edge fine"/>
-<text x="20" y="620" class="small" text-anchor="start">TIME_WAIT for 2 MSL before the</text>
-<text x="20" y="635" class="small" text-anchor="start">socket is freed.</text>
+<text x="20" y="620" class="small aside" text-anchor="start">TIME_WAIT for 2 MSL before the</text>
+<text x="20" y="635" class="small aside" text-anchor="start">socket is freed.</text>
 <path d="M0 120 L224 120" class="edge"/>
 <path d="M214 124.5 L224 120 L214 115.5" class="edge head"/>
 <path d="M224 152 L0 152" class="edge"/>

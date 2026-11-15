@@ -101,7 +101,7 @@ fn draw_head(p: &Participant, line: &Lifeline, style: Style) -> Vec<Mark> {
             let body = rect(line.head, &class(style, Role::Box));
             let block = names.len() as f64 * 16.0 + keyword.as_ref().map_or(0.0, |_| 14.0);
             let top = line.head.y + (line.head.h - block) / 2.0;
-            let kw_lines: Vec<Mark> = keyword.iter().map(|k| text(cx, top + 10.0, k, TextStyle::Small, Anchor::Middle)).collect();
+            let kw_lines: Vec<Mark> = keyword.iter().map(|k| text(cx, top + 10.0, k, TextStyle::Stereotype, Anchor::Middle)).collect();
             let first = top + keyword.as_ref().map_or(0.0, |_| 14.0) + 12.0;
             let name_lines = names.iter().enumerate().map(|(i, n)| text(cx, first + i as f64 * 16.0, n, TextStyle::Name, Anchor::Middle)).collect();
             [vec![body], kw_lines, name_lines].concat()
@@ -111,7 +111,7 @@ fn draw_head(p: &Participant, line: &Lifeline, style: Style) -> Vec<Mark> {
             let text_block = names.len() as f64 * 16.0 + keyword.as_ref().map_or(0.0, |_| 14.0);
             let figure_top = bottom - text_block - 38.0;
             let names_top = bottom - names.len() as f64 * 16.0 + 12.0;
-            let kw = keyword.iter().map(|k| text(cx, names_top - 18.0, k, TextStyle::Small, Anchor::Middle)).collect();
+            let kw = keyword.iter().map(|k| text(cx, names_top - 18.0, k, TextStyle::Stereotype, Anchor::Middle)).collect();
             let name_lines = names.iter().enumerate().map(|(i, n)| text(cx, names_top + i as f64 * 16.0, n, TextStyle::Name, Anchor::Middle)).collect();
             [stick_figure(cx, figure_top, style), kw, name_lines].concat()
         }

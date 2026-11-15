@@ -1,11 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-284 -56 1204 1280" width="1204" height="1280">
 <style>
-.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; font-weight: 400; }
 .drumlin.pens .title { font-size: 16px; font-weight: 600; }
 .drumlin.pens .name { font-size: 13px; font-weight: 600; }
 .drumlin.pens .italic { font-style: italic; }
-.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .small { font-size: 11px; }
 .drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .tag { font-size: 10px; letter-spacing: 0.2px; fill: #5c574f; }
+.drumlin.pens .aside { fill: #5c574f; }
 .drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
 .drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
 .drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
@@ -58,7 +60,7 @@
 <rect x="656" y="716" width="128" height="56" class="shape"/>
 <text x="720" y="748" class="name" text-anchor="middle">Worker Thread</text>
 <rect x="800" y="812" width="96" height="56" class="shape"/>
-<text x="848" y="835" class="small" text-anchor="middle">«ephemeral»</text>
+<text x="848" y="835" class="small tag" text-anchor="middle">«ephemeral»</text>
 <text x="848" y="851" class="name" text-anchor="middle">Inner</text>
 <rect x="311.45" y="1136" width="225.1" height="48" class="shape fine"/>
 <path d="M311.449 1136 L359.449 1136 L359.449 1148 L351.449 1156 L311.449 1156 Z" class="shape fine"/>
@@ -67,13 +69,13 @@
 <text x="424" y="1170" class="small" text-anchor="middle">long reference name</text>
 <path d="M-200 72 L-18 72 L-8 82 L-8 136 L-200 136 Z" class="shape fine"/>
 <path d="M-18 72 L-18 82 L-8 82" class="edge fine"/>
-<text x="-188" y="92.5" class="small" text-anchor="start">A note placed left of the leftmost</text>
-<text x="-188" y="107.5" class="small" text-anchor="start">lifeline to check that the margin</text>
-<text x="-188" y="122.5" class="small" text-anchor="start">grows outward.</text>
+<text x="-188" y="92.5" class="small aside" text-anchor="start">A note placed left of the leftmost</text>
+<text x="-188" y="107.5" class="small aside" text-anchor="start">lifeline to check that the margin</text>
+<text x="-188" y="122.5" class="small aside" text-anchor="start">grows outward.</text>
 <path d="M328 1072 L510 1072 L520 1082 L520 1120 L328 1120 Z" class="shape fine"/>
 <path d="M510 1072 L510 1082 L520 1082" class="edge fine"/>
-<text x="340" y="1092" class="small" text-anchor="start">Note over only one lifeline which</text>
-<text x="340" y="1107" class="small" text-anchor="start">is fairly long too.</text>
+<text x="340" y="1092" class="small aside" text-anchor="start">Note over only one lifeline which</text>
+<text x="340" y="1107" class="small aside" text-anchor="start">is fairly long too.</text>
 <path d="M0 200 L424 200" class="edge"/>
 <path d="M414 204.5 L424 200 L414 195.5 Z" class="solid"/>
 <path d="M424 232 L0 232" class="edge"/>

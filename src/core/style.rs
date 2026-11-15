@@ -8,14 +8,15 @@
 //! line, and the stylesheet that gives those classes their strokes.
 //!
 //! `pens`, the default, draws with three pen weights in one warm black, as a
-//! draftsman would (Drawing principles, Shapes: draw with three pens). `plain` is one
-//! uniform line with grey small text and softened bends. `lettering` is `pens`
+//! draftsman would (Drawing principles, Shapes: draw with three pens), and
+//! sets its text in a hierarchy of weight, size and shade. `plain` is one ink,
+//! one line width and one text weight, with only the font size varying.
+//! `lettering` is `pens`
 //! with every piece of text drawn in single pen strokes (`core::lettering`)
 //! instead of set in a browser font; it is the one style that changes text
 //! widths, so it also gives layout its face (`Style::face`).
 
 use super::geometry::Point;
-use super::glyphs::rounded;
 use super::svg::n;
 use super::text::{Face, FONT, SMALL, TITLE};
 
@@ -25,7 +26,7 @@ pub enum Style {
     /// Three pen weights, warm black ink, sharp bends.
     #[default]
     Pens,
-    /// One line weight, grey small text, softened bends.
+    /// One ink, one line width, one text weight: only font sizes differ.
     Plain,
     /// As `Pens`, with text drawn as single-stroke technical lettering.
     Lettering,
@@ -98,11 +99,20 @@ pub struct Rule {
 /// metric-compatible faces.
 const FONT_STACK: &str = "Helvetica, Arial, \"Liberation Sans\", sans-serif";
 
-/// The ink of `plain`, and its grey for small text.
-const PLAIN_INK: &str = "#1f2933";
-const PLAIN_MUTED: &str = "#52606d";
-/// The ink of `pens`: one warm black for every line and every letter.
+/// The one ink of `plain`, for every line and every letter.
+const PLAIN_INK: &str = "#000";
+/// The one line width of `plain`, in pixels.
+const PLAIN_WIDTH: f64 = 1.25;
+/// The ink of `pens`: one warm black for every line and for text that states
+/// the model.
 const PENS_INK: &str = "#22201c";
+/// The warm grey of `pens` for text that classifies or comments: keywords,
+/// notes, region and pseudostate names.
+const PENS_SOFT: &str = "#5c574f";
+/// The size of keywords in `pens`, in pixels: a step below the small text.
+/// The tracking stays under what the smaller size saves on the narrowest
+/// glyph, so the text never outgrows the width measured at `SMALL`.
+const TAG: f64 = 10.0;
 /// The one pen of `lettering`'s strokes, in pixels.
 const LETTERING_PEN: f64 = 1.1;
 /// The pen weights of `pens`, in pixels.
@@ -126,7 +136,7 @@ impl Style {
     pub fn about(self) -> &'static str {
         match self {
             Style::Pens => "three pen weights in warm black: heavy containers, medium boxes and lines, fine details",
-            Style::Plain => "one line weight, grey small text, softened bends",
+            Style::Plain => "one ink, one line width and one text weight; only font sizes differ",
             Style::Lettering => "as pens, with text drawn in single-stroke technical lettering",
         }
     }
@@ -169,13 +179,10 @@ impl Style {
         }
     }
 
-    /// Path data for an orthogonal connector through `points`: softened
-    /// corners in `plain`, sharp corners in `pens`.
+    /// Path data for an orthogonal connector through `points`, with sharp
+    /// corners in every style.
     pub fn line(self, points: &[Point]) -> String {
-        match self {
-            Style::Plain => rounded(points),
-            Style::Pens | Style::Lettering => points.iter().enumerate().map(|(i, p)| format!("{}{} {}", if i == 0 { "M" } else { " L" }, n(p.0), n(p.1))).collect(),
-        }
+        points.iter().enumerate().map(|(i, p)| format!("{}{} {}", if i == 0 { "M" } else { " L" }, n(p.0), n(p.1))).collect()
     }
 
     /// The `class` of the `svg` element, which also scopes the stylesheet.
@@ -222,32 +229,35 @@ fn rules(list: Vec<(&'static str, String)>) -> Vec<Rule> {
     list.into_iter().map(|(selector, declarations)| Rule { selector, declarations }).collect()
 }
 
-fn text_rules(ink: &str, small: String) -> Vec<(&'static str, String)> {
+/// The text rules every Helvetica style shares: `weight` is the weight of
+/// names and the title.
+fn text_rules(ink: &str, weight: u16) -> Vec<(&'static str, String)> {
     vec![
-        ("text", format!("font-family: {FONT_STACK}; fill: {ink};")),
-        (".title", format!("font-size: {TITLE}px; font-weight: 600;")),
-        (".name", format!("font-size: {FONT}px; font-weight: 600;")),
+        ("text", format!("font-family: {FONT_STACK}; fill: {ink}; font-weight: 400;")),
+        (".title", format!("font-size: {TITLE}px; font-weight: {weight};")),
+        (".name", format!("font-size: {FONT}px; font-weight: {weight};")),
         (".italic", "font-style: italic;".to_string()),
-        (".small", small),
+        (".small", format!("font-size: {SMALL}px;")),
         (".halo", "paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round;".to_string()),
     ]
 }
 
+/// One ink, one width, one dash and one text weight. Names stay regular:
+/// layout measures them bold, so they only gain room.
 fn plain_rules(extras: &[Extra]) -> Vec<Rule> {
-    let ink = PLAIN_INK;
+    let (ink, width) = (PLAIN_INK, PLAIN_WIDTH);
     let shared = [
-        (".shape", format!("fill: #fff; stroke: {ink}; stroke-width: 1.25;")),
-        (".icon", format!("fill: #fff; stroke: {ink}; stroke-width: 1;")),
-        (".edge", format!("fill: none; stroke: {ink}; stroke-width: 1.25; stroke-linecap: round; stroke-linejoin: round;")),
+        (".shape", format!("fill: #fff; stroke: {ink}; stroke-width: {width};")),
+        (".icon", format!("fill: #fff; stroke: {ink}; stroke-width: {width};")),
+        (".edge", format!("fill: none; stroke: {ink}; stroke-width: {width}; stroke-linecap: round; stroke-linejoin: round;")),
         (".dashed", "stroke-dasharray: 6 4;".to_string()),
     ];
     let extra = extras.iter().map(|extra| match extra {
-        Extra::Lifeline => (".lifeline", format!("fill: none; stroke: {PLAIN_MUTED}; stroke-width: 1; stroke-dasharray: 5 4;")),
-        Extra::Frame => (".frame", format!("fill: none; stroke: {ink}; stroke-width: 1;")),
+        Extra::Lifeline => (".lifeline", format!("fill: none; stroke: {ink}; stroke-width: {width}; stroke-dasharray: 6 4;")),
+        Extra::Frame => (".frame", format!("fill: none; stroke: {ink}; stroke-width: {width};")),
         Extra::Solid => (".solid", format!("fill: {ink}; stroke: none;")),
     });
-    let small = format!("font-size: {SMALL}px; fill: {PLAIN_MUTED};");
-    rules(text_rules(ink, small).into_iter().chain(shared).chain(extra).collect())
+    rules(text_rules(ink, 400).into_iter().chain(shared).chain(extra).collect())
 }
 
 /// Three pens. The weight modifiers come last, so they win over the base
@@ -269,7 +279,13 @@ fn pens_rules(extras: &[Extra], lettering: bool) -> Vec<Rule> {
     });
     let weights = [(".heavy", format!("stroke-width: {HEAVY};")), (".fine", format!("stroke-width: {FINE};"))];
     let text = match lettering {
-        false => text_rules(ink, format!("font-size: {SMALL}px; fill: {ink};")),
+        false => text_rules(ink, 600)
+            .into_iter()
+            .chain([
+                (".tag", format!("font-size: {TAG}px; letter-spacing: 0.2px; fill: {PENS_SOFT};")),
+                (".aside", format!("fill: {PENS_SOFT};")),
+            ])
+            .collect(),
         true => vec![
             (".lt", format!("fill: none; stroke: {ink}; stroke-width: {LETTERING_PEN}; stroke-linecap: round; stroke-linejoin: round;")),
             (".lt-halo", "fill: #fff; stroke: none;".to_string()),
@@ -285,6 +301,7 @@ const HEAD_JOIN: &str = "stroke-linejoin: miter; stroke-miterlimit: 4;";
 #[cfg(test)]
 mod tests {
     use super::*;
+    use std::collections::BTreeSet;
 
     #[test]
     fn styles_are_found_by_name_and_the_default_comes_first() {
@@ -296,10 +313,25 @@ mod tests {
     }
 
     #[test]
-    fn pens_draw_bends_sharp_and_plain_softens_them() {
+    fn every_style_draws_bends_sharp() {
         let points = [(0.0, 0.0), (20.0, 0.0), (20.0, 20.0)];
-        assert_eq!(Style::Pens.line(&points), "M0 0 L20 0 L20 20");
-        assert_eq!(Style::Plain.line(&points), "M0 0 L14 0 Q20 0 20 6 L20 20");
+        for style in STYLES {
+            assert_eq!(style.line(&points), "M0 0 L20 0 L20 20");
+        }
+    }
+
+    /// Plain is one ink, one line width and one text weight: only sizes vary.
+    #[test]
+    fn plain_has_one_ink_one_width_and_one_weight() {
+        let sheet = Style::Plain.rules(&[Extra::Lifeline, Extra::Frame, Extra::Solid]);
+        let values = |property: &str| -> BTreeSet<String> {
+            sheet.iter().flat_map(|rule| rule.declarations.split(';')).filter_map(|d| d.trim().strip_prefix(property)).map(|v| v.trim().to_string()).collect()
+        };
+        let colours: BTreeSet<String> = values("fill:").into_iter().chain(values("stroke:")).filter(|v| v.starts_with('#') && v != "#fff").collect();
+        assert_eq!(colours, BTreeSet::from([PLAIN_INK.to_string()]));
+        let widths: BTreeSet<String> = values("stroke-width:").into_iter().filter(|v| v != "4px").collect();
+        assert_eq!(widths, BTreeSet::from([PLAIN_WIDTH.to_string()]), "one width; the 4px is the white halo");
+        assert_eq!(values("font-weight:"), BTreeSet::from(["400".to_string()]));
     }
 
     /// The weight modifiers must follow the classes they modify, since they
@@ -311,7 +343,7 @@ mod tests {
         for base in [".shape", ".edge", ".frame", ".icon"] {
             assert!(at(base) < at(".heavy") && at(base) < at(".fine"), "{base}");
         }
-        assert!(!sheet.iter().any(|rule| rule.declarations.contains(PLAIN_MUTED)), "no grey in pens");
+        assert!(!sheet.iter().any(|rule| rule.selector != ".tag" && rule.selector != ".aside" && rule.declarations.contains(PENS_SOFT)), "the soft ink is for keywords and asides only");
     }
 
     /// Lettering draws with the pens, and strokes its text instead of setting it.
@@ -319,7 +351,7 @@ mod tests {
     fn lettering_is_pens_with_stroked_text() {
         let extras = [Extra::Lifeline, Extra::Frame, Extra::Solid];
         let (pens, lettering) = (Style::Pens.rules(&extras), Style::Lettering.rules(&extras));
-        let lines = |sheet: &[Rule]| sheet.iter().filter(|rule| rule.selector.starts_with('.') && !rule.selector.starts_with(".lt") && !["text", ".title", ".name", ".italic", ".small", ".halo"].contains(&rule.selector)).map(|rule| (rule.selector, rule.declarations.clone())).collect::<Vec<_>>();
+        let lines = |sheet: &[Rule]| sheet.iter().filter(|rule| rule.selector.starts_with('.') && !rule.selector.starts_with(".lt") && !["text", ".title", ".name", ".italic", ".small", ".halo", ".tag", ".aside"].contains(&rule.selector)).map(|rule| (rule.selector, rule.declarations.clone())).collect::<Vec<_>>();
         assert_eq!(lines(&pens), lines(&lettering));
         assert!(lettering.iter().any(|rule| rule.selector == ".lt") && !lettering.iter().any(|rule| rule.selector == "text"));
         for role in [Role::Container, Role::DashedHead, Role::Note, Role::Lifeline] {

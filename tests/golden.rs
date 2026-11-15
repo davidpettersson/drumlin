@@ -63,7 +63,8 @@ fn golden_files_match() {
 }
 
 #[test]
-fn the_plain_style_draws_as_before() {
+fn the_plain_style_draws_as_expected() {
+    let bless = std::env::var_os("DRUMLIN_BLESS").is_some_and(|v| v == "1");
     let root = Path::new(env!("CARGO_MANIFEST_DIR")).join("tests/style/plain");
     let cases: Vec<PathBuf> = sorted_entries(&root).into_iter().filter(|path| path.extension().is_some_and(|e| e == "uml")).collect();
     assert!(cases.len() >= 5, "plain fixtures for every kind");
@@ -72,7 +73,10 @@ fn the_plain_style_draws_as_before() {
         .iter()
         .filter(|input| {
             let actual = drumlin::render_with(&fs::read_to_string(input).unwrap(), &options).unwrap();
-            actual != fs::read_to_string(input.with_extension("svg")).unwrap()
+            if bless {
+                fs::write(input.with_extension("svg"), &actual).unwrap();
+            }
+            fs::read_to_string(input.with_extension("svg")).map_or(true, |expected| expected != actual)
         })
         .map(|input| input.display().to_string())
         .collect();

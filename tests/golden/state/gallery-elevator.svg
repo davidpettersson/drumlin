@@ -1,11 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -56 664 1072" width="664" height="1072">
 <style>
-.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; font-weight: 400; }
 .drumlin.pens .title { font-size: 16px; font-weight: 600; }
 .drumlin.pens .name { font-size: 13px; font-weight: 600; }
 .drumlin.pens .italic { font-style: italic; }
-.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .small { font-size: 11px; }
 .drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .tag { font-size: 10px; letter-spacing: 0.2px; fill: #5c574f; }
+.drumlin.pens .aside { fill: #5c574f; }
 .drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
 .drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
 .drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
@@ -24,7 +26,7 @@
 <path d="M0 240 L592 240" class="edge fine"/>
 <path d="M0 280 L592 280" class="edge fine"/>
 <path d="M252 280 L252 864" class="edge dashed fine"/>
-<text x="12" y="302" class="small" text-anchor="start">motion</text>
+<text x="12" y="302" class="small aside" text-anchor="start">motion</text>
 <rect x="16" y="656" width="96" height="48" class="shape" rx="10"/>
 <text x="64" y="684.5" class="name" text-anchor="middle">Levelled</text>
 <rect x="16" y="400" width="96" height="48" class="shape" rx="10"/>
@@ -32,7 +34,7 @@
 <rect x="16" y="528" width="96" height="48" class="shape" rx="10"/>
 <text x="64" y="556.5" class="name" text-anchor="middle">Stopping</text>
 <circle cx="64" cy="328" r="8" class="solid"/>
-<text x="276" y="302" class="small" text-anchor="start">doors</text>
+<text x="276" y="302" class="small aside" text-anchor="start">doors</text>
 <rect x="280" y="400" width="96" height="48" class="shape" rx="10"/>
 <text x="328" y="428.5" class="name" text-anchor="middle">Closed</text>
 <rect x="280" y="784" width="96" height="48" class="shape" rx="10"/>

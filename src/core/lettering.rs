@@ -59,6 +59,8 @@ pub enum Hand {
     /// A keyword in a name's place, such as a fragment operator: mixed
     /// case at a name's size, as UML writes keywords.
     Keyword,
+    /// A keyword or stereotype above a name: small text in the finest pen.
+    Tag,
 }
 
 impl Hand {
@@ -77,8 +79,20 @@ impl Hand {
     pub fn em(self) -> f64 {
         match self {
             Hand::Name | Hand::Keyword => NAME_EM,
-            Hand::Small => SMALL_EM,
+            Hand::Small | Hand::Tag => SMALL_EM,
             Hand::Title => TITLE_EM,
+        }
+    }
+
+    /// The width of the pen, in px: heavier for larger letters, as a
+    /// draftsman changes pens with the lettering guide, and finest for
+    /// keywords, which classify rather than state.
+    pub fn pen(self) -> f64 {
+        match self {
+            Hand::Title => 1.5,
+            Hand::Name | Hand::Keyword => 1.1,
+            Hand::Small => 0.85,
+            Hand::Tag => 0.75,
         }
     }
 
@@ -101,11 +115,12 @@ impl Hand {
             Hand::Small => 's',
             Hand::Title => 't',
             Hand::Keyword => 'k',
+            Hand::Tag => 'g',
         }
     }
 
     fn from_key(key: char) -> Option<Hand> {
-        [Hand::Name, Hand::Small, Hand::Title, Hand::Keyword].into_iter().find(|hand| hand.key() == key)
+        [Hand::Name, Hand::Small, Hand::Title, Hand::Keyword, Hand::Tag].into_iter().find(|hand| hand.key() == key)
     }
 }
 
@@ -240,7 +255,7 @@ pub fn defs(body: &str) -> String {
     if used.is_empty() {
         return String::new();
     }
-    let paths: String = used.iter().map(|&(hand, c)| format!("<path id=\"{ID}{}{:x}\" d=\"{}\"/>\n", hand.key(), c as u32, path_data(drawn(c).1, hand.em()))).collect();
+    let paths: String = used.iter().map(|&(hand, c)| format!("<path id=\"{ID}{}{:x}\" stroke-width=\"{}\" d=\"{}\"/>\n", hand.key(), c as u32, hand.pen(), path_data(drawn(c).1, hand.em()))).collect();
     format!("<defs>\n{paths}</defs>\n")
 }
 
@@ -290,7 +305,7 @@ mod tests {
         assert_eq!(glyph('\u{4e2d}'), None);
         assert_eq!(width("\u{4e2d}", Hand::Small), MISSING.0 as f64 / UNITS * SMALL_EM);
         let svg = run(0.0, 0.0, "\u{4e2d}", Hand::Small, false, false);
-        assert!(defs(&svg).contains(&format!("id=\"dl-s4e2d\" d=\"{}\"", path_data(MISSING.1, SMALL_EM))));
+        assert!(defs(&svg).contains(&format!("id=\"dl-s4e2d\" stroke-width=\"0.85\" d=\"{}\"", path_data(MISSING.1, SMALL_EM))));
     }
 
     #[test]
@@ -300,6 +315,17 @@ mod tests {
         assert!(!svg.contains("#dl-s20"), "spaces only advance");
         let sheet = defs(&svg);
         assert_eq!(sheet.matches("<path ").count(), 7, "a \" b & < c >: {sheet}");
+    }
+
+    /// Each hand has its own pen, heavier for larger letters; a keyword is
+    /// small text in the finest pen, so it takes the same room.
+    #[test]
+    fn each_hand_draws_with_its_own_pen() {
+        let pens: Vec<f64> = [Hand::Title, Hand::Name, Hand::Small, Hand::Tag].iter().map(|hand| hand.pen()).collect();
+        assert!(pens.windows(2).all(|pair| pair[0] > pair[1]), "{pens:?}");
+        assert_eq!(width("entry", Hand::Tag), width("entry", Hand::Small));
+        let sheet = defs(&run(0.0, 0.0, "a", Hand::Tag, false, false));
+        assert!(sheet.contains("id=\"dl-g61\" stroke-width=\"0.75\""), "{sheet}");
     }
 
     #[test]

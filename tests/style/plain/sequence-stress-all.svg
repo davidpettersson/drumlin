@@ -1,18 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" class="drumlin" viewBox="-38.68 -62 950.68 1238" width="950.68" height="1238">
 <style>
-.drumlin text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #1f2933; }
-.drumlin .title { font-size: 16px; font-weight: 600; }
-.drumlin .name { font-size: 13px; font-weight: 600; }
+.drumlin text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #000; font-weight: 400; }
+.drumlin .title { font-size: 16px; font-weight: 400; }
+.drumlin .name { font-size: 13px; font-weight: 400; }
 .drumlin .italic { font-style: italic; }
-.drumlin .small { font-size: 11px; fill: #52606d; }
+.drumlin .small { font-size: 11px; }
 .drumlin .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
-.drumlin .shape { fill: #fff; stroke: #1f2933; stroke-width: 1.25; }
-.drumlin .icon { fill: #fff; stroke: #1f2933; stroke-width: 1; }
-.drumlin .edge { fill: none; stroke: #1f2933; stroke-width: 1.25; stroke-linecap: round; stroke-linejoin: round; }
+.drumlin .shape { fill: #fff; stroke: #000; stroke-width: 1.25; }
+.drumlin .icon { fill: #fff; stroke: #000; stroke-width: 1.25; }
+.drumlin .edge { fill: none; stroke: #000; stroke-width: 1.25; stroke-linecap: round; stroke-linejoin: round; }
 .drumlin .dashed { stroke-dasharray: 6 4; }
-.drumlin .lifeline { fill: none; stroke: #52606d; stroke-width: 1; stroke-dasharray: 5 4; }
-.drumlin .frame { fill: none; stroke: #1f2933; stroke-width: 1; }
-.drumlin .solid { fill: #1f2933; stroke: none; }
+.drumlin .lifeline { fill: none; stroke: #000; stroke-width: 1.25; stroke-dasharray: 6 4; }
+.drumlin .frame { fill: none; stroke: #000; stroke-width: 1.25; }
+.drumlin .solid { fill: #000; stroke: none; }
 </style>
 <rect x="-38.68" y="-62" width="950.68" height="1238" fill="#fff"/>
 <text x="-14.68" y="-26" class="title">Everything</text>
@@ -49,7 +49,7 @@
 <path d="M0 6 L0 18 M-12 10 L12 10 M0 18 L-8 30 M0 18 L8 30" class="edge"/>
 <text x="0" y="44" class="name" text-anchor="middle">User</text>
 <rect x="88" y="0" width="112" height="48" class="shape"/>
-<text x="144" y="19" class="small" text-anchor="middle">«service»</text>
+<text x="144" y="19" class="small tag" text-anchor="middle">«service»</text>
 <text x="144" y="35" class="name" text-anchor="middle">API Gateway</text>
 <rect x="248" y="0" width="112" height="48" class="shape"/>
 <text x="304" y="28" class="name" text-anchor="middle">Auth Service</text>
@@ -63,14 +63,14 @@
 <text x="372" y="1094.5" class="small" text-anchor="middle">Replicate state</text>
 <path d="M608 528 L790 528 L800 538 L800 576 L608 576 Z" class="shape"/>
 <path d="M790 528 L790 538 L800 538" class="edge"/>
-<text x="620" y="548" class="small" text-anchor="start">Locked for fifteen minutes, then</text>
-<text x="620" y="563" class="small" text-anchor="start">unlocked by a sweep.</text>
+<text x="620" y="548" class="small aside" text-anchor="start">Locked for fifteen minutes, then</text>
+<text x="620" y="563" class="small aside" text-anchor="start">unlocked by a sweep.</text>
 <path d="M128 696 L854 696 L864 706 L864 728 L128 728 Z" class="shape"/>
 <path d="M854 696 L854 706 L864 706" class="edge"/>
-<text x="140" y="715.5" class="small" text-anchor="start">Session lives until the user logs out or the token expires.</text>
+<text x="140" y="715.5" class="small aside" text-anchor="start">Session lives until the user logs out or the token expires.</text>
 <path d="M0 80 L138 80" class="edge"/>
 <path d="M128 84.5 L138 80 L128 75.5 Z" class="solid"/>
-<path d="M150 96 L176 96 Q182 96 182 102 L182 106 Q182 112 176 112 L156 112" class="edge"/>
+<path d="M150 96 L182 96 L182 112 L156 112" class="edge"/>
 <path d="M166 107.5 L156 112 L166 116.5 Z" class="solid"/>
 <path d="M150 152 L304 152" class="edge"/>
 <path d="M294 156.5 L304 152 L294 147.5" class="edge"/>
@@ -80,9 +80,9 @@
 <path d="M584 220.5 L594 216 L584 211.5 Z" class="solid"/>
 <path d="M594 248 L310 248" class="edge dashed"/>
 <path d="M320 243.5 L310 248 L320 252.5" class="edge"/>
-<path d="M310 304 L336 304 Q342 304 342 310 L342 314 Q342 320 336 320 L316 320" class="edge"/>
+<path d="M310 304 L342 304 L342 320 L316 320" class="edge"/>
 <path d="M326 315.5 L316 320 L326 324.5 Z" class="solid"/>
-<path d="M316 336 L342 336 Q348 336 348 342 L348 346 Q348 352 342 352 L322 352" class="edge"/>
+<path d="M316 336 L348 336 L348 352 L322 352" class="edge"/>
 <path d="M332 347.5 L322 352 L332 356.5 Z" class="solid"/>
 <path d="M298 400 L150 400" class="edge dashed"/>
 <path d="M160 395.5 L150 400 L160 404.5" class="edge"/>

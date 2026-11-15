@@ -22,7 +22,7 @@ fn centred_labels(r: Rect, keyword: Option<String>, name: &str, style: TextStyle
     let baseline = r.y + r.h / 2.0 + 4.5;
     match keyword {
         Some(k) => vec![
-            text(middle, baseline - 9.0, &k, TextStyle::Small, Anchor::Middle),
+            text(middle, baseline - 9.0, &k, TextStyle::Stereotype, Anchor::Middle),
             text(middle, baseline + 8.0, name, style, Anchor::Middle),
         ],
         None => vec![text(middle, baseline, name, style, Anchor::Middle)],
@@ -41,7 +41,7 @@ fn package_shape(node: &Node, r: Rect, style: Style) -> Vec<Mark> {
         let (x, y) = (r.x + 12.0, r.y + tab_h - 7.5);
         keyword
             .iter()
-            .map(|k| text(x, y - 17.0, k, TextStyle::Small, Anchor::Start))
+            .map(|k| text(x, y - 17.0, k, TextStyle::Stereotype, Anchor::Start))
             .chain([text(x, y, &node.name, TextStyle::Name, Anchor::Start)])
             .collect()
     };

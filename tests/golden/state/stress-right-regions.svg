@@ -1,11 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -56 1240 512" width="1240" height="512">
 <style>
-.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; font-weight: 400; }
 .drumlin.pens .title { font-size: 16px; font-weight: 600; }
 .drumlin.pens .name { font-size: 13px; font-weight: 600; }
 .drumlin.pens .italic { font-style: italic; }
-.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .small { font-size: 11px; }
 .drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .tag { font-size: 10px; letter-spacing: 0.2px; fill: #5c574f; }
+.drumlin.pens .aside { fill: #5c574f; }
 .drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
 .drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
 .drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
@@ -23,13 +25,13 @@
 <path d="M352 32 L880 32" class="edge fine"/>
 <path d="M352 56 L880 56" class="edge fine"/>
 <path d="M352 260 L880 260" class="edge dashed fine"/>
-<text x="364" y="78" class="small" text-anchor="start">speed</text>
+<text x="364" y="78" class="small aside" text-anchor="start">speed</text>
 <rect x="448" y="96" width="112" height="96" class="shape" rx="10"/>
 <text x="504" y="148.5" class="name" text-anchor="middle">Accelerating</text>
 <rect x="704" y="112" width="96" height="64" class="shape" rx="10"/>
 <text x="752" y="148.5" class="name" text-anchor="middle">Cruising</text>
 <circle cx="376" cy="144" r="8" class="solid"/>
-<text x="364" y="294" class="small" text-anchor="start">thermal</text>
+<text x="364" y="294" class="small aside" text-anchor="start">thermal</text>
 <rect x="448" y="312" width="96" height="96" class="shape" rx="10"/>
 <text x="496" y="364.5" class="name" text-anchor="middle">Cool</text>
 <rect x="760" y="328" width="96" height="64" class="shape" rx="10"/>

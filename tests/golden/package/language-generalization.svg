@@ -1,11 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -64 480 256" width="480" height="256">
 <style>
-.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; font-weight: 400; }
 .drumlin.pens .title { font-size: 16px; font-weight: 600; }
 .drumlin.pens .name { font-size: 13px; font-weight: 600; }
 .drumlin.pens .italic { font-style: italic; }
-.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .small { font-size: 11px; }
 .drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .tag { font-size: 10px; letter-spacing: 0.2px; fill: #5c574f; }
+.drumlin.pens .aside { fill: #5c574f; }
 .drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
 .drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
 .drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
@@ -17,7 +19,7 @@
 <rect x="-24" y="-64" width="480" height="256" fill="#fff"/>
 <text x="0" y="-28" class="title">Classifiers</text>
 <rect x="160" y="88" width="96" height="64" class="shape"/>
-<text x="208" y="115.5" class="small" text-anchor="middle">«interface»</text>
+<text x="208" y="115.5" class="small tag" text-anchor="middle">«interface»</text>
 <text x="208" y="132.5" class="name italic" text-anchor="middle">Shape</text>
 <rect x="0" y="-8" width="96" height="64" class="shape"/>
 <text x="48" y="28.5" class="name" text-anchor="middle">Circle</text>
@@ -26,7 +28,7 @@
 <rect x="160" y="0" width="96" height="48" class="shape"/>
 <text x="208" y="28.5" class="name" text-anchor="middle">Base</text>
 <rect x="320" y="-8" width="112" height="64" class="shape"/>
-<text x="376" y="19.5" class="small" text-anchor="middle">«enumeration»</text>
+<text x="376" y="19.5" class="small tag" text-anchor="middle">«enumeration»</text>
 <text x="376" y="36.5" class="name" text-anchor="middle">Kind</text>
 <path d="M48 56 L48 104 L160 104" class="edge dashed fine"/>
 <path d="M148 111 L160 104 L148 97 Z" class="shape head fine"/>
