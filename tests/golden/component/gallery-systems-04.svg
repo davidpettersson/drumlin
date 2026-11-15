@@ -1,11 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -56 1056 368" width="1056" height="368">
 <style>
-.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; font-weight: 400; }
 .drumlin.pens .title { font-size: 16px; font-weight: 600; }
 .drumlin.pens .name { font-size: 13px; font-weight: 600; }
 .drumlin.pens .italic { font-style: italic; }
-.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .small { font-size: 11px; }
 .drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .tag { font-size: 10px; letter-spacing: 0.2px; fill: #5c574f; }
+.drumlin.pens .aside { fill: #5c574f; }
 .drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
 .drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
 .drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
@@ -40,12 +42,12 @@
 <rect x="987" y="112" width="13" height="16" class="icon"/>
 <rect x="984" y="115" width="6" height="3.5" class="icon"/>
 <rect x="984" y="121.5" width="6" height="3.5" class="icon"/>
-<text x="936" y="131.5" class="small" text-anchor="middle">«platform»</text>
+<text x="936" y="131.5" class="small tag" text-anchor="middle">«platform»</text>
 <text x="936" y="148.5" class="name" text-anchor="middle">Linux Kernel</text>
 <path d="M568 240 L734 240 L744 250 L744 288 L568 288 Z" class="shape fine"/>
 <path d="M734 240 L734 250 L744 250" class="edge fine"/>
-<text x="580" y="260" class="small" text-anchor="start">Outlives the daemon so that</text>
-<text x="580" y="275" class="small" text-anchor="start">containers survive restarts.</text>
+<text x="580" y="260" class="small aside" text-anchor="start">Outlives the daemon so that</text>
+<text x="580" y="275" class="small aside" text-anchor="start">containers survive restarts.</text>
 <path d="M656 240 L656 168" class="edge dashed fine"/>
 <path d="M328 104 L328 32 L424 32" class="edge"/>
 <path d="M485 32 L584 32" class="edge"/>

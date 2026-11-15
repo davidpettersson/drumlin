@@ -19,8 +19,8 @@ reserved label boxes are measured from their text, so their edges need not lie o
 
 ## Draw with three pens
 
-**Rule.** The default style, `pens`, inks every line and every letter in one warm black (`#22201c`),
-with white fills and no grey. Three pen weights make a hierarchy:
+**Rule.** The default style, `pens`, inks every line in one warm black (`#22201c`), with white fills.
+Three pen weights make a hierarchy:
 
 | Pen | Width | Draws |
 |---|---|---|
@@ -31,7 +31,19 @@ with white fills and no grey. Three pen weights make a hierarchy:
 Filled marks, such as the initial dot, fork and join bars, filled arrowheads and the dot of a lost or
 found message, are solid ink. Dashes are 7 long with gaps of 3, so a fine dashed line still reads as
 a line. Connector bends are sharp, with mitred joins and butt caps; the rounded corners of states and
-actions stay, because they are notation. Text keeps one size per role and the same ink as the lines.
+actions stay, because they are notation.
+
+Text has a hierarchy of its own, made with weight, size and shade but one typeface:
+
+| Text | Size | Weight | Ink |
+|---|---|---|---|
+| Title | 16px | bold | black |
+| Names, and keywords in a name's place (`alt`, `loop`) | 13px | bold | black |
+| Labels, guards, interface and port names, activities | 11px | regular | black |
+| Keywords and stereotypes (`«component»`) | 10px, spaced 0.2px | regular | warm grey (`#5c574f`) |
+| Note text, region and pseudostate names | 11px | regular | warm grey |
+
+What states the model is black; what classifies or comments on it is grey. Abstract names are italic.
 
 **Why.** A line weight hierarchy is standard drafting practice: ISO 128 sets line types and groups of
 thicknesses, so that thick lines carry the visible outlines and thin lines carry dimensions, hatching
@@ -40,20 +52,25 @@ the boxes that group others; the medium pen marks the things and the relations b
 pen marks what annotates rather than structures: notes, dependencies, dividers and icons. A fragment
 frame annotates a stretch of an interaction, so it takes the fine pen. The weights stay within a ratio
 of about 1:2.3, so the hierarchy is clear but not loud. Dashes still mean a dependency or comment, never
-emphasis.
+emphasis. Text follows the same idea: a draftsman letters names larger and annotations smaller, and a
+softer ink lets keywords and notes recede behind the names they qualify. The grey keeps a contrast of
+about 7:1 on white.
 
 **Source.** ISO 128 (technical drawings: line types and line thicknesses); Tufte's smallest effective
 difference.
 
 **Status:** enforced, by the `pens` style in `core::style`: each drawn mark names its role, and the style
-maps the role to a class and the class to a pen. `style plain` keeps one pen for every outline and line
-(1.25px, `#1f2933`), with grey small text and softened bends. `style lettering` keeps the three pens
-and letters the text with a fourth, lighter one: see [Letter with one pen](#letter-with-one-pen).
+maps the role to a class and the class to a pen. `style plain` is one ink (black), one line width (1.25px) for
+every outline, line, icon, frame and lifeline, and regular text throughout: only the font size varies.
+Its bends are sharp too. `style lettering` keeps the three pens and letters the text with pens of its
+own: see [Letter with a pen per size](#letter-with-a-pen-per-size).
 
-## Letter with one pen
+## Letter with a pen per size
 
 **Rule.** In the `lettering` style every piece of text is single-stroke technical lettering, drawn in
-the warm black ink with one round pen of 1.1px, lighter than the lightest line pen. Names and the title
+the warm black ink with a round pen. The pen follows the hand, as a draftsman changes pens with the
+lettering guide: 1.5px for the title, 1.1px for names, 0.85px for small text and 0.75px for keywords
+and stereotypes, which are small text in the finest pen. Names and the title
 are in capitals with 0.06em letter spacing (names on a 12.5px em, the title on 16px); labels, keywords,
 notes and other small text are upright mixed case on an 11px em, whose x-height matches the default
 style's. Bold names become capitals, abstract names lean 15 degrees, and a label drawn over a line

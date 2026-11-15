@@ -1,11 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-48 -56 768 768" width="768" height="768">
 <style>
-.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; font-weight: 400; }
 .drumlin.pens .title { font-size: 16px; font-weight: 600; }
 .drumlin.pens .name { font-size: 13px; font-weight: 600; }
 .drumlin.pens .italic { font-style: italic; }
-.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .small { font-size: 11px; }
 .drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .tag { font-size: 10px; letter-spacing: 0.2px; fill: #5c574f; }
+.drumlin.pens .aside { fill: #5c574f; }
 .drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
 .drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
 .drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
@@ -42,10 +44,10 @@
 <rect x="0" y="600" width="96" height="48" class="shape"/>
 <text x="48" y="628.5" class="name" text-anchor="middle">Customer</text>
 <rect x="208" y="464" width="112" height="64" class="shape"/>
-<text x="264" y="491.5" class="small" text-anchor="middle">«interface»</text>
+<text x="264" y="491.5" class="small tag" text-anchor="middle">«interface»</text>
 <text x="264" y="508.5" class="name" text-anchor="middle">Repository</text>
 <rect x="136" y="592" width="112" height="64" class="shape"/>
-<text x="192" y="619.5" class="small" text-anchor="middle">«enumeration»</text>
+<text x="192" y="619.5" class="small tag" text-anchor="middle">«enumeration»</text>
 <text x="192" y="636.5" class="name" text-anchor="middle">Status</text>
 <rect x="360" y="208" width="105.94" height="24" class="shape heavy"/>
 <rect x="360" y="232" width="336" height="120" class="shape heavy"/>
@@ -58,8 +60,8 @@
 <text x="608" y="300.5" class="name" text-anchor="middle">Messaging</text>
 <path d="M376 528 L574 528 L584 538 L584 576 L376 576 Z" class="shape fine"/>
 <path d="M574 528 L574 538 L584 538" class="edge fine"/>
-<text x="388" y="548" class="small" text-anchor="start">Depends on nothing else. Keep it</text>
-<text x="388" y="563" class="small" text-anchor="start">free of framework types.</text>
+<text x="388" y="548" class="small aside" text-anchor="start">Depends on nothing else. Keep it</text>
+<text x="388" y="563" class="small aside" text-anchor="start">free of framework types.</text>
 <path d="M72 496 L48 496 L48 600" class="edge"/>
 <path d="M43.5 590 L48 600 L52.5 590" class="edge head"/>
 <path d="M168 496 L192 496 L192 592" class="edge dashed fine"/>

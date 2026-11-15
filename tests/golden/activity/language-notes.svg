@@ -1,11 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -56 376 536" width="376" height="536">
 <style>
-.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; font-weight: 400; }
 .drumlin.pens .title { font-size: 16px; font-weight: 600; }
 .drumlin.pens .name { font-size: 13px; font-weight: 600; }
 .drumlin.pens .italic { font-style: italic; }
-.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .small { font-size: 11px; }
 .drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .tag { font-size: 10px; letter-spacing: 0.2px; fill: #5c574f; }
+.drumlin.pens .aside { fill: #5c574f; }
 .drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
 .drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
 .drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
@@ -46,11 +48,11 @@
 <circle cx="64" cy="448" r="4.5" class="solid"/>
 <path d="M136 48 L318 48 L328 58 L328 96 L136 96 Z" class="shape fine"/>
 <path d="M318 48 L318 58 L328 58" class="edge fine"/>
-<text x="148" y="68" class="small" text-anchor="start">Falls back to defaults when the</text>
-<text x="148" y="83" class="small" text-anchor="start">file is missing.</text>
+<text x="148" y="68" class="small aside" text-anchor="start">Falls back to defaults when the</text>
+<text x="148" y="83" class="small aside" text-anchor="start">file is missing.</text>
 <path d="M88 128 L238 128 L248 138 L248 160 L88 160 Z" class="shape fine"/>
 <path d="M238 128 L238 138 L248 138" class="edge fine"/>
-<text x="100" y="147.5" class="small" text-anchor="start">Checked once at startup.</text>
+<text x="100" y="147.5" class="small aside" text-anchor="start">Checked once at startup.</text>
 <text x="70" y="223" class="small" text-anchor="start">[debug]</text>
 <text x="86" y="184" class="small" text-anchor="start">[else]</text>
 </svg>

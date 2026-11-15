@@ -429,7 +429,7 @@ simplex moves a box, the line length falls (`network_simplex_draws_shorter_lines
 These are stated with their reasons in [Shapes and spacing](../principles/shapes.md).
 
 - Every box and line coordinate sits on an 8px grid.
-- Lines are orthogonal. Their bends are sharp in the default style, `pens`, and softened in `plain`.
+- Lines are orthogonal. Their bends are sharp in every style.
 - One ink colour and a white fill. In `pens`, three pen weights by the role of each mark; in `plain`,
   one line weight.
 - Text widths come from embedded Helvetica metrics, so layout needs no font

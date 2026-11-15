@@ -55,13 +55,13 @@ fn component_labels(node: &Node, r: Rect) -> Vec<Mark> {
     if !node.children.is_empty() {
         // 9.2.4: name and keywords are centred, keywords above the name.
         let name_y = r.y + if stereo.is_some() { 40.0 } else { 24.0 };
-        let stereo_mark = stereo.iter().map(|s| text(middle, r.y + 22.0, s, TextStyle::Small, Anchor::Middle));
+        let stereo_mark = stereo.iter().map(|s| text(middle, r.y + 22.0, s, TextStyle::Stereotype, Anchor::Middle));
         return stereo_mark.chain([text(middle, name_y, &node.name, TextStyle::Name, Anchor::Middle)]).collect();
     }
     let baseline = r.y + r.h / 2.0 + 4.5;
     match stereo {
         Some(s) => vec![
-            text(middle, baseline - 9.0, &s, TextStyle::Small, Anchor::Middle),
+            text(middle, baseline - 9.0, &s, TextStyle::Stereotype, Anchor::Middle),
             text(middle, baseline + 8.0, &node.name, TextStyle::Name, Anchor::Middle),
         ],
         None => vec![text(middle, baseline, &node.name, TextStyle::Name, Anchor::Middle)],

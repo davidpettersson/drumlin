@@ -63,6 +63,12 @@ pub enum TextStyle {
     Small,
     /// Small text with a white halo, for labels drawn over lines.
     SmallHalo,
+    /// A keyword or stereotype, such as `«component»`: small text that
+    /// classifies. `pens` sets it a step smaller and softer.
+    Stereotype,
+    /// Small text that comments rather than states: note text, region and
+    /// pseudostate names. `pens` sets it softer.
+    Aside,
 }
 
 impl TextStyle {
@@ -72,12 +78,14 @@ impl TextStyle {
             TextStyle::NameItalic => "name italic",
             TextStyle::Small => "small",
             TextStyle::SmallHalo => "small halo",
+            TextStyle::Stereotype => "small tag",
+            TextStyle::Aside => "small aside",
         }
     }
     fn metrics(self) -> (f64, Weight) {
         match self {
             TextStyle::Name | TextStyle::NameItalic | TextStyle::Keyword => (FONT, Weight::Bold),
-            TextStyle::Small | TextStyle::SmallHalo => (SMALL, Weight::Regular),
+            TextStyle::Small | TextStyle::SmallHalo | TextStyle::Stereotype | TextStyle::Aside => (SMALL, Weight::Regular),
         }
     }
 }
@@ -130,7 +138,11 @@ fn lettered(left: f64, y: f64, w: f64, s: &str, style: TextStyle) -> Mark {
     let (size, _) = style.metrics();
     let italic = style == TextStyle::NameItalic;
     let lean = if italic { size * 0.3 } else { 0.0 };
-    let hand = if style == TextStyle::Keyword { Hand::Keyword } else { Hand::for_size(size) };
+    let hand = match style {
+        TextStyle::Keyword => Hand::Keyword,
+        TextStyle::Stereotype => Hand::Tag,
+        _ => Hand::for_size(size),
+    };
     Mark {
         svg: lettering::run(left, y, s, hand, italic, style == TextStyle::SmallHalo),
         extents: vec![(left - lean, y - size), (left + w + lean, y + 3.0)],

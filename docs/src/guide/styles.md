@@ -5,8 +5,8 @@ styles and how to choose one. You can skip it until you want a different look.
 
 | Style | Look |
 |---|---|
-| `pens` (default) | Three pen weights in one warm black, sharp bends |
-| `plain` | One line weight, grey small text, softened bends |
+| `pens` (default) | Three pen weights in one warm black, text in bold, regular and a softer grey |
+| `plain` | One ink, one line width, one text weight; only font sizes differ |
 | `lettering` | The pens of `pens`, with all text lettered in single pen strokes |
 
 Choose a style with a `style <name>` statement in the file, or with `--style <name>` on the command
@@ -25,7 +25,8 @@ be called `style`: only `style` followed by a name is the statement.
 `pens` is the default; every diagram in this book that names no style uses it. It inks with three pen
 weights in one warm black (`#22201c`): a heavy pen for boxes that hold other boxes, a medium pen for
 ordinary boxes, symbols and solid lines, and a fine pen for dashed lines, notes and small details. Bends
-are sharp. [Draw with three pens](../principles/shapes.md#draw-with-three-pens) says which pen draws
+are sharp. Names are bold; keywords such as `«service»` are a step smaller in a warm grey, as are notes,
+so the names stand out. [Draw with three pens](../principles/shapes.md#draw-with-three-pens) says which pen draws
 what.
 
 ```drumlin
@@ -47,8 +48,9 @@ note Logger: Keeps 30 days of readings.
 
 ## plain
 
-`plain` draws every outline and line with one weight, small text in grey, and bends slightly rounded.
-Compare the same diagram above in `pens`.
+`plain` is as plain as a drawing gets: one black ink, one line width for every outline and line, and
+regular text throughout, with only the font size changing between names and small text. Bends are
+sharp. Compare the same diagram above in `pens`.
 
 ```drumlin
 diagram component "style plain"
@@ -71,8 +73,8 @@ note Logger: Keeps 30 days of readings.
 
 `lettering` keeps the pens of `pens` and letters every piece of text in single pen strokes, as a
 draftsman letters a drawing with a lettering guide: names and the title in spaced capitals, labels and
-notes in upright mixed case, one light pen for all of it. See
-[Letter with one pen](../principles/shapes.md#letter-with-one-pen).
+notes in upright mixed case, and a pen for each size: heaviest for the title, finest for keywords. See
+[Letter with a pen per size](../principles/shapes.md#letter-with-a-pen-per-size).
 
 ```drumlin
 diagram component "style lettering"

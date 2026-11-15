@@ -1,11 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-48 -56 264 912" width="264" height="912">
 <style>
-.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; font-weight: 400; }
 .drumlin.pens .title { font-size: 16px; font-weight: 600; }
 .drumlin.pens .name { font-size: 13px; font-weight: 600; }
 .drumlin.pens .italic { font-style: italic; }
-.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .small { font-size: 11px; }
 .drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .tag { font-size: 10px; letter-spacing: 0.2px; fill: #5c574f; }
+.drumlin.pens .aside { fill: #5c574f; }
 .drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
 .drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
 .drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
@@ -47,10 +49,10 @@
 <path d="M96 720 L96 784" class="edge"/>
 <path d="M91.5 774 L96 784 L100.5 774" class="edge head"/>
 <circle cx="120" cy="208" r="8" class="shape"/>
-<text x="132" y="202" class="small" text-anchor="start">again</text>
+<text x="132" y="202" class="small aside" text-anchor="start">again</text>
 <circle cx="32" cy="720" r="8" class="shape"/>
 <path d="M26.32 714.32 L37.68 725.68 M26.32 725.68 L37.68 714.32" class="edge"/>
-<text x="44" y="734" class="small" text-anchor="start">aborted</text>
+<text x="44" y="734" class="small aside" text-anchor="start">aborted</text>
 <text x="128" y="419" class="small" text-anchor="start">submit</text>
 <text x="128" y="547" class="small" text-anchor="start">[ok]</text>
 <text x="128" y="167" class="small" text-anchor="start">retry</text>

@@ -1,11 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -56 1000 512" width="1000" height="512">
 <style>
-.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; font-weight: 400; }
 .drumlin.pens .title { font-size: 16px; font-weight: 600; }
 .drumlin.pens .name { font-size: 13px; font-weight: 600; }
 .drumlin.pens .italic { font-style: italic; }
-.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .small { font-size: 11px; }
 .drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .tag { font-size: 10px; letter-spacing: 0.2px; fill: #5c574f; }
+.drumlin.pens .aside { fill: #5c574f; }
 .drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
 .drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
 .drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
@@ -53,8 +55,8 @@
 <text x="360" y="380.5" class="name" text-anchor="middle">Compactor</text>
 <path d="M496 152 L678 152 L688 162 L688 200 L496 200 Z" class="shape fine"/>
 <path d="M678 152 L678 162 L688 162" class="edge fine"/>
-<text x="508" y="172" class="small" text-anchor="start">Replayed on startup before the</text>
-<text x="508" y="187" class="small" text-anchor="start">engine accepts writes.</text>
+<text x="508" y="172" class="small aside" text-anchor="start">Replayed on startup before the</text>
+<text x="508" y="187" class="small aside" text-anchor="start">engine accepts writes.</text>
 <rect x="808" y="128" width="144" height="64" class="shape"/>
 <rect x="931" y="136" width="13" height="16" class="icon"/>
 <rect x="928" y="139" width="6" height="3.5" class="icon"/>
@@ -64,7 +66,7 @@
 <rect x="931" y="248" width="13" height="16" class="icon"/>
 <rect x="928" y="251" width="6" height="3.5" class="icon"/>
 <rect x="928" y="257.5" width="6" height="3.5" class="icon"/>
-<text x="880" y="267.5" class="small" text-anchor="middle">«filesystem»</text>
+<text x="880" y="267.5" class="small tag" text-anchor="middle">«filesystem»</text>
 <text x="880" y="284.5" class="name" text-anchor="middle">SSTable Files</text>
 <path d="M808 144 L776 144" class="edge"/>
 <circle cx="770" cy="144" r="6" class="shape"/>

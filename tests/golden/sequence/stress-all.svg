@@ -1,11 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-38.68 -62 950.68 1238" width="950.68" height="1238">
 <style>
-.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; font-weight: 400; }
 .drumlin.pens .title { font-size: 16px; font-weight: 600; }
 .drumlin.pens .name { font-size: 13px; font-weight: 600; }
 .drumlin.pens .italic { font-style: italic; }
-.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .small { font-size: 11px; }
 .drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .tag { font-size: 10px; letter-spacing: 0.2px; fill: #5c574f; }
+.drumlin.pens .aside { fill: #5c574f; }
 .drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
 .drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
 .drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
@@ -52,7 +54,7 @@
 <path d="M0 6 L0 18 M-12 10 L12 10 M0 18 L-8 30 M0 18 L8 30" class="edge"/>
 <text x="0" y="44" class="name" text-anchor="middle">User</text>
 <rect x="88" y="0" width="112" height="48" class="shape"/>
-<text x="144" y="19" class="small" text-anchor="middle">«service»</text>
+<text x="144" y="19" class="small tag" text-anchor="middle">«service»</text>
 <text x="144" y="35" class="name" text-anchor="middle">API Gateway</text>
 <rect x="248" y="0" width="112" height="48" class="shape"/>
 <text x="304" y="28" class="name" text-anchor="middle">Auth Service</text>
@@ -66,11 +68,11 @@
 <text x="372" y="1094.5" class="small" text-anchor="middle">Replicate state</text>
 <path d="M608 528 L790 528 L800 538 L800 576 L608 576 Z" class="shape fine"/>
 <path d="M790 528 L790 538 L800 538" class="edge fine"/>
-<text x="620" y="548" class="small" text-anchor="start">Locked for fifteen minutes, then</text>
-<text x="620" y="563" class="small" text-anchor="start">unlocked by a sweep.</text>
+<text x="620" y="548" class="small aside" text-anchor="start">Locked for fifteen minutes, then</text>
+<text x="620" y="563" class="small aside" text-anchor="start">unlocked by a sweep.</text>
 <path d="M128 696 L854 696 L864 706 L864 728 L128 728 Z" class="shape fine"/>
 <path d="M854 696 L854 706 L864 706" class="edge fine"/>
-<text x="140" y="715.5" class="small" text-anchor="start">Session lives until the user logs out or the token expires.</text>
+<text x="140" y="715.5" class="small aside" text-anchor="start">Session lives until the user logs out or the token expires.</text>
 <path d="M0 80 L138 80" class="edge"/>
 <path d="M128 84.5 L138 80 L128 75.5 Z" class="solid"/>
 <path d="M150 96 L182 96 L182 112 L156 112" class="edge"/>

@@ -37,7 +37,7 @@ fn name_marks(node: &Node, r: Rect, (middle, anchor): (f64, Anchor)) -> Vec<Mark
     let baseline = r.y + row / 2.0 + 4.5 - if keyword(node).is_some() { 6.0 } else { 0.0 };
     match keyword(node) {
         Some(k) => vec![
-            text(middle, baseline, &k, TextStyle::Small, anchor),
+            text(middle, baseline, &k, TextStyle::Stereotype, anchor),
             text(middle, baseline + 16.0, &node.name, TextStyle::Name, anchor),
         ],
         None => vec![text(middle, baseline, &node.name, TextStyle::Name, anchor)],
@@ -94,7 +94,7 @@ fn connection_point_marks(node: &Node, r: Rect, direction: Direction, parent: Re
         Direction::Down => (c.0 + radius + 4.0, if r.center().1 <= parent.y + 1.0 { c.1 - 6.0 } else { c.1 + 14.0 }, Anchor::Start),
         Direction::Right => (c.0, if r.center().0 <= parent.x + 1.0 { c.1 - radius - 4.0 } else { c.1 - radius - 4.0 }, Anchor::Middle),
     };
-    [vec![bound(vec![(r.x, r.y), (r.right(), r.bottom())]), circle(c, radius, style.class(Role::Box))], cross, vec![text(x, y, &node.name, TextStyle::Small, anchor)]].concat()
+    [vec![bound(vec![(r.x, r.y), (r.right(), r.bottom())]), circle(c, radius, style.class(Role::Box))], cross, vec![text(x, y, &node.name, TextStyle::Aside, anchor)]].concat()
 }
 
 fn symbol_marks(node: &Node, r: Rect, style: Style) -> Vec<Mark> {
@@ -125,7 +125,7 @@ fn draw_node(d: &Diagram, g: &Geometry, n: usize) -> Vec<Mark> {
         Kind::Root => Vec::new(),
         Kind::State => state_marks(d, g, n, r),
         Kind::Region => {
-            if node.name.is_empty() { Vec::new() } else { vec![text(r.x + 4.0, r.y + 14.0, &node.name, TextStyle::Small, Anchor::Start)] }
+            if node.name.is_empty() { Vec::new() } else { vec![text(r.x + 4.0, r.y + 14.0, &node.name, TextStyle::Aside, Anchor::Start)] }
         }
         Kind::EntryPoint | Kind::ExitPoint => Vec::new(),
         _ => symbol_marks(node, r, d.style),

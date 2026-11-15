@@ -212,7 +212,7 @@ mod tests {
             let stated = |style: &str| source.replacen('\n', &format!("\nstyle {style}\n"), 1);
             let (pens, plain) = (render(source).unwrap(), render_with(source, &styled("plain")).unwrap());
             assert_ne!(pens, plain, "{source}");
-            assert!(pens.contains("#22201c") && !pens.contains("#52606d"), "{source}");
+            assert!(pens.contains("#22201c") && !plain.contains("#22201c") && !plain.contains("#5c574f"), "{source}");
             assert_eq!(render_with(source, &styled("pens")).unwrap(), pens);
             assert_eq!(render(&stated("plain")).unwrap(), plain);
             assert_eq!(render_with(&stated("plain"), &styled("pens")).unwrap(), pens);

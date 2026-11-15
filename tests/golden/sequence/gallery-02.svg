@@ -1,11 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-41.78 -62 873.78 862" width="873.78" height="862">
 <style>
-.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; font-weight: 400; }
 .drumlin.pens .title { font-size: 16px; font-weight: 600; }
 .drumlin.pens .name { font-size: 13px; font-weight: 600; }
 .drumlin.pens .italic { font-style: italic; }
-.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .small { font-size: 11px; }
 .drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .tag { font-size: 10px; letter-spacing: 0.2px; fill: #5c574f; }
+.drumlin.pens .aside { fill: #5c574f; }
 .drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
 .drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
 .drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
@@ -50,7 +52,7 @@
 <path d="M0 6 L0 18 M-12 10 L12 10 M0 18 L-8 30 M0 18 L8 30" class="edge"/>
 <text x="0" y="44" class="name" text-anchor="middle">Client</text>
 <rect x="56" y="0" width="80" height="48" class="shape"/>
-<text x="96" y="19" class="small" text-anchor="middle">«raft»</text>
+<text x="96" y="19" class="small tag" text-anchor="middle">«raft»</text>
 <text x="96" y="35" class="name" text-anchor="middle">Leader</text>
 <rect x="240" y="0" width="96" height="48" class="shape"/>
 <text x="288" y="28" class="name" text-anchor="middle">Follower 1</text>
@@ -60,8 +62,8 @@
 <text x="744" y="28" class="name" text-anchor="middle">State machine</text>
 <path d="M478 480 L676 480 L686 490 L686 528 L478 528 Z" class="shape fine"/>
 <path d="M676 480 L676 490 L686 490" class="edge fine"/>
-<text x="490" y="500" class="small" text-anchor="start">Leader walks nextIndex back and</text>
-<text x="490" y="515" class="small" text-anchor="start">retries.</text>
+<text x="490" y="500" class="small aside" text-anchor="start">Leader walks nextIndex back and</text>
+<text x="490" y="515" class="small aside" text-anchor="start">retries.</text>
 <path d="M0 80 L90 80" class="edge"/>
 <path d="M80 84.5 L90 80 L80 75.5 Z" class="solid"/>
 <path d="M102 96 L134 96 L134 112 L108 112" class="edge"/>

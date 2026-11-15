@@ -1,11 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-72 -56 656 400" width="656" height="400">
 <style>
-.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; font-weight: 400; }
 .drumlin.pens .title { font-size: 16px; font-weight: 600; }
 .drumlin.pens .name { font-size: 13px; font-weight: 600; }
 .drumlin.pens .italic { font-style: italic; }
-.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .small { font-size: 11px; }
 .drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .tag { font-size: 10px; letter-spacing: 0.2px; fill: #5c574f; }
+.drumlin.pens .aside { fill: #5c574f; }
 .drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
 .drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
 .drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
@@ -37,12 +39,12 @@
 <text x="96" y="78.5" class="small" text-anchor="middle">Verify signature</text>
 <path d="M96 144 L278 144 L288 154 L288 192 L96 192 Z" class="shape fine"/>
 <path d="M278 144 L278 154 L288 154" class="edge fine"/>
-<text x="108" y="164" class="small" text-anchor="start">Interrupts stay masked until the</text>
-<text x="108" y="179" class="small" text-anchor="start">scheduler starts.</text>
+<text x="108" y="164" class="small aside" text-anchor="start">Interrupts stay masked until the</text>
+<text x="108" y="179" class="small aside" text-anchor="start">scheduler starts.</text>
 <path d="M400 256 L550 256 L560 266 L560 304 L400 304 Z" class="shape fine"/>
 <path d="M550 256 L550 266 L560 266" class="edge fine"/>
-<text x="412" y="276" class="small" text-anchor="start">Everything runs under this</text>
-<text x="412" y="291" class="small" text-anchor="start">process.</text>
+<text x="412" y="276" class="small aside" text-anchor="start">Everything runs under this</text>
+<text x="412" y="291" class="small aside" text-anchor="start">process.</text>
 <path d="M0 128 L192 128" class="edge"/>
 <path d="M182 132.5 L192 128 L182 123.5 Z" class="solid"/>
 <path d="M192 224 L352 224" class="edge dashed fine"/>

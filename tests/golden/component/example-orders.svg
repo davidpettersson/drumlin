@@ -1,11 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" class="drumlin pens" viewBox="-24 -56 1384 688" width="1384" height="688">
 <style>
-.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; }
+.drumlin.pens text { font-family: Helvetica, Arial, "Liberation Sans", sans-serif; fill: #22201c; font-weight: 400; }
 .drumlin.pens .title { font-size: 16px; font-weight: 600; }
 .drumlin.pens .name { font-size: 13px; font-weight: 600; }
 .drumlin.pens .italic { font-style: italic; }
-.drumlin.pens .small { font-size: 11px; fill: #22201c; }
+.drumlin.pens .small { font-size: 11px; }
 .drumlin.pens .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.drumlin.pens .tag { font-size: 10px; letter-spacing: 0.2px; fill: #5c574f; }
+.drumlin.pens .aside { fill: #5c574f; }
 .drumlin.pens .shape { fill: #fff; stroke: #22201c; stroke-width: 1.25; stroke-linejoin: miter; }
 .drumlin.pens .icon { fill: #fff; stroke: #22201c; stroke-width: 0.75; stroke-linejoin: miter; }
 .drumlin.pens .edge { fill: none; stroke: #22201c; stroke-width: 1.25; stroke-linecap: butt; stroke-linejoin: miter; }
@@ -46,14 +48,14 @@
 <text x="776" y="196.5" class="name" text-anchor="middle">Outbox</text>
 <path d="M672 312 L870 312 L880 322 L880 376 L672 376 Z" class="shape fine"/>
 <path d="M870 312 L870 322 L880 322" class="edge fine"/>
-<text x="684" y="332.5" class="small" text-anchor="start">Publishes at least once.</text>
-<text x="684" y="347.5" class="small" text-anchor="start">Consumers deduplicate on event</text>
-<text x="684" y="362.5" class="small" text-anchor="start">id.</text>
+<text x="684" y="332.5" class="small aside" text-anchor="start">Publishes at least once.</text>
+<text x="684" y="347.5" class="small aside" text-anchor="start">Consumers deduplicate on event</text>
+<text x="684" y="362.5" class="small aside" text-anchor="start">id.</text>
 <rect x="592" y="440" width="128" height="64" class="shape"/>
 <rect x="699" y="448" width="13" height="16" class="icon"/>
 <rect x="696" y="451" width="6" height="3.5" class="icon"/>
 <rect x="696" y="457.5" width="6" height="3.5" class="icon"/>
-<text x="656" y="467.5" class="small" text-anchor="middle">«external»</text>
+<text x="656" y="467.5" class="small tag" text-anchor="middle">«external»</text>
 <text x="656" y="484.5" class="name" text-anchor="middle">Identity</text>
 <rect x="1160" y="128" width="105.94" height="24" class="shape heavy"/>
 <rect x="1160" y="152" width="176" height="216" class="shape heavy"/>
@@ -67,7 +69,7 @@
 <rect x="1291" y="288" width="13" height="16" class="icon"/>
 <rect x="1288" y="291" width="6" height="3.5" class="icon"/>
 <rect x="1288" y="297.5" width="6" height="3.5" class="icon"/>
-<text x="1248" y="307.5" class="small" text-anchor="middle">«database»</text>
+<text x="1248" y="307.5" class="small tag" text-anchor="middle">«database»</text>
 <text x="1248" y="324.5" class="name" text-anchor="middle">Postgres</text>
 <rect x="592" y="544" width="128" height="64" class="shape"/>
 <rect x="699" y="552" width="13" height="16" class="icon"/>

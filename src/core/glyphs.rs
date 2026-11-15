@@ -7,32 +7,9 @@ use super::geometry::{snap_up, Point, Rect};
 use super::style::{Role, Style};
 use super::svg::{self, n, Anchor, Mark, TextStyle};
 use super::text::{width, wrap, Weight, SMALL};
-use std::fmt::Write;
 
 pub const NOTE_WRAP: f64 = 168.0;
 const NOTE_LINE: f64 = 15.0;
-
-fn manhattan(u: Point, v: Point) -> f64 {
-    (u.0 - v.0).abs() + (u.1 - v.1).abs()
-}
-
-/// Path data for an orthogonal polyline with softened corners.
-pub fn rounded(points: &[Point]) -> String {
-    let start = format!("M{} {}", n(points[0].0), n(points[0].1));
-    let corners = points.windows(3).fold(start, |mut out, w| {
-        let (a, p, c) = (w[0], w[1], w[2]);
-        let radius = 6.0f64.min(manhattan(a, p) / 2.0).min(manhattan(p, c) / 2.0);
-        let toward = |to: Point| {
-            let l = manhattan(p, to).max(0.001);
-            (p.0 + (to.0 - p.0) / l * radius, p.1 + (to.1 - p.1) / l * radius)
-        };
-        let (enter, leave) = (toward(a), toward(c));
-        write!(out, " L{} {} Q{} {} {} {}", n(enter.0), n(enter.1), n(p.0), n(p.1), n(leave.0), n(leave.1)).unwrap();
-        out
-    });
-    let last = points[points.len() - 1];
-    format!("{corners} L{} {}", n(last.0), n(last.1))
-}
 
 /// The length of an open arrowhead, and of a filled triangle, along its line.
 pub const ARROWHEAD: f64 = 10.0;
@@ -109,7 +86,7 @@ pub fn note_wrapped(r: Rect, content: &str, wrap_at: f64, style: Style) -> Vec<M
         svg::path(&format!("M{} {} L{} {} L{} {} L{} {} L{} {} Z", n(x), n(y), n(right - fold), n(y), n(right), n(y + fold), n(right), n(bottom), n(x), n(bottom)), style.class(Role::Note)),
         svg::path(&format!("M{} {} L{} {} L{} {}", n(right - fold), n(y), n(right - fold), n(y + fold), n(right), n(y + fold)), style.class(Role::NoteFold)),
     ];
-    let text = lines.iter().enumerate().map(|(index, line)| svg::text(r.x + 12.0, start + index as f64 * NOTE_LINE, line, TextStyle::Small, Anchor::Start));
+    let text = lines.iter().enumerate().map(|(index, line)| svg::text(r.x + 12.0, start + index as f64 * NOTE_LINE, line, TextStyle::Aside, Anchor::Start));
     outline.into_iter().chain(text).collect()
 }
 
