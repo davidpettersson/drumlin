@@ -4,16 +4,17 @@
 //! Golden-file test. Every `tests/golden/<kind>/<name>.uml` must render to exactly
 //! the bytes in its sibling `<name>.svg`. Set `DRUMLIN_BLESS=1` to rewrite the files.
 //!
-//! The `plain` style must keep drawing exactly as drumlin drew before styles
-//! existed: every `tests/style/plain/<name>.uml` renders with `--style plain`
-//! to the bytes of its sibling `<name>.svg`. These files are never blessed.
-//!
-//! The `lettering` style has its own expected drawings: every
-//! `tests/style/lettering/<name>.uml` renders with `--style lettering` to the
+//! The `plain` and `lettering` styles have their own expected drawings: every
+//! `tests/style/<style>/<name>.uml` renders with `--style <style>` to the
 //! bytes of its sibling `<name>.svg`. `DRUMLIN_BLESS=1` rewrites these too.
 
 use std::fs;
 use std::path::{Path, PathBuf};
+
+/// Whether this run rewrites the expected drawings (`DRUMLIN_BLESS=1`).
+fn bless() -> bool {
+    std::env::var("DRUMLIN_BLESS").is_ok_and(|v| v == "1")
+}
 
 fn sorted_entries(dir: &Path) -> Vec<PathBuf> {
     let mut entries: Vec<PathBuf> = fs::read_dir(dir)
@@ -55,7 +56,7 @@ fn check_case(input: &Path, bless: bool) -> Option<String> {
 
 #[test]
 fn golden_files_match() {
-    let bless = std::env::var_os("DRUMLIN_BLESS").is_some_and(|v| v == "1");
+    let bless = bless();
     let cases = cases();
     assert!(!cases.is_empty(), "no golden cases found");
     let failures: Vec<String> = cases.iter().filter_map(|case| check_case(case, bless)).collect();
@@ -64,7 +65,7 @@ fn golden_files_match() {
 
 #[test]
 fn the_plain_style_draws_as_expected() {
-    let bless = std::env::var_os("DRUMLIN_BLESS").is_some_and(|v| v == "1");
+    let bless = bless();
     let root = Path::new(env!("CARGO_MANIFEST_DIR")).join("tests/style/plain");
     let cases: Vec<PathBuf> = sorted_entries(&root).into_iter().filter(|path| path.extension().is_some_and(|e| e == "uml")).collect();
     assert!(cases.len() >= 5, "plain fixtures for every kind");
@@ -85,7 +86,7 @@ fn the_plain_style_draws_as_expected() {
 
 #[test]
 fn the_lettering_style_draws_as_expected() {
-    let bless = std::env::var_os("DRUMLIN_BLESS").is_some_and(|v| v == "1");
+    let bless = bless();
     let root = Path::new(env!("CARGO_MANIFEST_DIR")).join("tests/style/lettering");
     let cases: Vec<PathBuf> = sorted_entries(&root).into_iter().filter(|path| path.extension().is_some_and(|e| e == "uml")).collect();
     assert!(cases.len() >= 6, "lettering fixtures for every kind and the text case");
