@@ -11,12 +11,14 @@
 //! A drawing in the `lettering` style defines each glyph it uses once, at the
 //! size of each hand, in its `<defs>`, and places it with `<use>`. Each text
 //! run is a group with `role="img"` and the text as its `aria-label`, so the
-//! words stay available to assistive technology.
+//! words stay available to assistive technology. The group also holds the
+//! text itself as an invisible `<text>`, stretched over the drawn letters, so
+//! a viewer can select, copy and search the words as in any other drawing.
 
 mod glyphs;
 
 use super::svg::n;
-use super::text::{escape_attribute, FONT, TITLE};
+use super::text::{escape, escape_attribute, FONT, TITLE};
 use glyphs::GLYPHS;
 use std::collections::BTreeSet;
 
@@ -172,7 +174,10 @@ pub fn run(left: f64, baseline: f64, s: &str, hand: Hand, italic: bool, halo: bo
     } else {
         String::new()
     };
-    format!("<g class=\"lt\" role=\"img\" aria-label=\"{}\" transform=\"{transform}\">{band}{uses}</g>\n", escape_attribute(s))
+    // The words as text, invisible, stretched to the drawn run so that a
+    // selection covers the letters it copies.
+    let words = format!("<text font-size=\"{}\" textLength=\"{}\" lengthAdjust=\"spacingAndGlyphs\">{}</text>", n(em), n(width(s, hand)), escape(s));
+    format!("<g class=\"lt\" role=\"img\" aria-label=\"{}\" transform=\"{transform}\">{band}{uses}{words}</g>\n", escape_attribute(s))
 }
 
 /// The path data of `strokes` at `em` px, x right and y down from the
@@ -295,6 +300,15 @@ mod tests {
         assert!(!svg.contains("#dl-s20"), "spaces only advance");
         let sheet = defs(&svg);
         assert_eq!(sheet.matches("<path ").count(), 7, "a \" b & < c >: {sheet}");
+    }
+
+    #[test]
+    fn a_run_carries_its_words_as_invisible_text_over_the_letters() {
+        let svg = run(10.0, 20.0, "Order <A>", Hand::Name, false, false);
+        let words = format!("<text font-size=\"12.5\" textLength=\"{}\" lengthAdjust=\"spacingAndGlyphs\">Order &lt;A&gt;</text></g>", n(width("Order <A>", Hand::Name)));
+        assert!(svg.ends_with(&format!("{words}\n")), "as written, not in capitals, after the glyphs: {svg}");
+        let leaning = run(0.0, 0.0, "ab", Hand::Small, true, true);
+        assert!(leaning.contains("skewX(-15)") && leaning.ends_with(">ab</text></g>\n"), "the text leans with the letters: {leaning}");
     }
 
     #[test]
