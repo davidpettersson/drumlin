@@ -1,9 +1,10 @@
 # drumlin
 
+[![Website](https://img.shields.io/badge/website-drumlin.ink-22201c.svg)](https://drumlin.ink)
 [![CI](https://github.com/davidpettersson/drumlin/actions/workflows/ci.yml/badge.svg)](https://github.com/davidpettersson/drumlin/actions/workflows/ci.yml)
 [![crates.io](https://img.shields.io/crates/v/drumlin.svg)](https://crates.io/crates/drumlin)
 [![Documentation](https://img.shields.io/badge/docs-the%20drumlin%20book-2b6cb0.svg)](https://davidpettersson.github.io/drumlin/)
-[![Playground](https://img.shields.io/badge/playground-try%20it%20in%20your%20browser-d9822b.svg)](https://drumlin.itsmedave.ca)
+[![Playground](https://img.shields.io/badge/playground-try%20it%20in%20your%20browser-d9822b.svg)](https://play.drumlin.ink)
 [![License](https://img.shields.io/crates/l/drumlin.svg)](#license)
 [![Dependencies](https://img.shields.io/badge/dependencies-none-2e8b57.svg)](Cargo.toml)
 
@@ -13,10 +14,11 @@ out and writes SVG. It draws five kinds of diagram: component, package, sequence
 
 ![A component diagram rendered by drumlin from examples/orders.uml](examples/orders.svg)
 
-**[Try it in your browser](https://drumlin.itsmedave.ca)**: the playground runs drumlin itself,
+**[Try it in your browser](https://play.drumlin.ink)**: the playground runs drumlin itself,
 compiled to WebAssembly, so every drawing is made on your machine as you type.
 **[Read the book](https://davidpettersson.github.io/drumlin/)** for every diagram kind, element and
 layout rule.
+**[drumlin.ink](https://drumlin.ink)** is the project's home page.
 
 ## From text to drawing
 
@@ -110,7 +112,7 @@ drumlin uses nothing beyond the Rust standard library, so it compiles cleanly wh
 builds and tests it on Linux, macOS and Windows with warnings as errors, and builds the library for
 WebAssembly (`wasm32-unknown-unknown`). The library is the whole program: `drumlin::render` takes the
 source text and returns the SVG, with no file system, threads or network involved. That is how the
-[playground](https://drumlin.itsmedave.ca) works: it loads drumlin compiled to WebAssembly and draws
+[playground](https://play.drumlin.ink) works: it loads drumlin compiled to WebAssembly and draws
 in the browser, with no server doing the rendering.
 
 ## Documentation
